@@ -63,3 +63,7 @@ The suggestions are only hints. A person decides the real `qualifies` value.
 A match requires web use to be in the same company-size license, so the classifier only suggests
 `likely` when the license text also mentions web use. `docs/index.html` lists the whole directory
 with each foundry's status below the curated results.
+
+To feed in another list of foundries, put one website per line (optionally `Name, https://site`) in a
+text file and run `python -m fontfind crawl seed list.txt`. Don't run `seed` while `sources` is running:
+both write `data/directory.json`.

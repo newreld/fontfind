@@ -86,6 +86,29 @@ def sources(limit: int | None = None) -> int:
     return 0
 
 
+def seed(path: str) -> int:
+    """Add foundries from a text file: one website per line, optionally 'Name, https://site'."""
+    directory = _read(DIRECTORY_PATH)
+    have = {host_of(d["website"]) for d in directory.values() if d.get("website")}
+    added = 0
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        name, _, site = line.rpartition(",")
+        site = site.strip()
+        if not site.startswith("http"):
+            site = "https://" + site
+        if host_of(site) in have:
+            continue
+        have.add(host_of(site))
+        directory[f"seed:{host_of(site)}"] = {"name": name.strip() or host_of(site), "source": "seed", "website": site}
+        added += 1
+    _write(DIRECTORY_PATH, directory)
+    print(f"added {added} foundries from {path}")
+    return 0
+
+
 def screen_site(website: str) -> dict:
     urls = discover.discover(website)[:SCREEN_PAGES]
     texts, errors = [], []
