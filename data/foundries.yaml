@@ -1,0 +1,685 @@
+# FontFind foundry database
+#
+# One entry per foundry. Fields a human maintains (everything except `auto`):
+#
+#   pricing_metric  company_size | mixed | seats | traffic | unknown
+#                   What the price scales with. `company_size` means headcount of
+#                   the licensee is the (main) metric for every usage; `mixed`
+#                   means company size for some usages, seats/traffic for others.
+#   logo            included            logo/wordmark use is in the standard license
+#                   included_small_only included only below some company size
+#                   separate_size_based extra logo license, priced by company size
+#                   separate            extra logo license, other pricing
+#                   restricted          logo use limited / not allowed
+#                   unknown
+#   all_media       yes | partial | no | unknown
+#                   Does one license cover desktop/print, web, app, social, video?
+#   qualifies       yes      company size pricing + logo included + all media
+#                   likely   looks like a match but one point is unconfirmed
+#                   partial  company size pricing, but logo or some media is extra
+#                   no       not priced by company size
+#                   unknown  not enough information yet
+#   verified        date + method. `search-snippet` means checked through web
+#                   search results quoting the foundry's own pages, NOT a full
+#                   read of the license text. Always read the EULA before buying.
+#
+# `auto` is written by `python -m fontfind scrape` and is overwritten on every run.
+
+foundries:
+  - name: Newlyn
+    website: https://newlyn.com
+    license_urls:
+      - https://newlyn.com/licensing
+      - https://newlyn.com/licensing/newlyn-license-agreement
+      - https://newlyn.com/licensing/procurement
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: One licence for the whole business across all media, priced only by Business
+      Size (employees + contractors, freelancers, temps). Annual or perpetual. Subsidiaries
+      and external agencies need an add-on.
+    evidence:
+      - claim: Pricing is based only on Business Size – the number of people involved in your
+          company.
+        source: https://newlyn.com/licensing
+      - claim: Licence covers logos, brand identities and trade marks (stated on a marketing
+          page, confirm in the agreement).
+        source: https://newlyn.com/licensing/self-hosted-fonts
+      - claim: 'Subsidiaries/affiliates/brands: Not automatically included; we can add them
+          via a quick add-on.'
+        source: https://newlyn.com/licensing/procurement
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Confirm logo/trademark clause in the licence agreement itself.
+
+  - name: Element Type
+    website: https://elementtype.co
+    license_urls:
+      - https://elementtype.co/license/
+      - https://elementtype.co/faq/
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: Headcount tiers (up to 3 / 15 / 50 employees, larger on request). Each license
+      includes print, self-hosted web, mobile app, social media, video and ePub without usage
+      limits. No separate logo license.
+    evidence:
+      - claim: '"We don''t sell a special kind of license for logo usage. You are clear after
+          buying just any license." (FAQ, page is ~4 years old)'
+        source: https://elementtype.co/faq/
+      - claim: Each license includes Print, Web (self-hosted), Mobile App, Social Media, Video
+          and ePub without any usage limit.
+        source: https://elementtype.co/homepage/
+      - claim: X-Large tier (contact) for >50 employees or >500,000 USD annual gross revenue.
+        source: https://elementtype.co/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Re-check FAQ logo answer is still current.
+
+  - name: Swiss Typefaces
+    website: https://www.swisstypefaces.com
+    license_urls:
+      - https://www.swisstypefaces.com/licensing/
+      - https://www.swisstypefaces.com/support/license/
+      - https://www.swisstypefaces.com/media/ul/bp/doc/2025-EULA-Company-preinfo.pdf
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: Company license priced by total employees (entry price up to 25). All employees
+      and devices covered, multiple locations. Covers websites, apps, social media, e-publications.
+      Logo incl. trademark allowed if the glyphs are not modified. One legal entity; affiliates
+      need a Group license, contractors need the optional Sharing Extension.
+    evidence:
+      - claim: Company EULA logo section gives the right to use the font software to create
+          a logo, including a trademark.
+        source: https://www.swisstypefaces.com/media/ul/bp/doc/2025-EULA-Company-preinfo.pdf
+      - claim: All the employees and devices are automatically covered, even in multiple locations.
+        source: https://www.swisstypefaces.com/licensing/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Confirm web/app traffic has no caps in the Company license.
+
+  - name: Yep! Type
+    website: https://yeptype.com
+    license_urls:
+      - https://www.yeptype.com/eula
+      - https://yeptype.com/licenses/commercial
+      - https://yeptype.com/article/on-the-yep-type-font-licensing
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: '"One transparent license, priced by company size." Tiers up to 5 / 100 / 1000
+      / 1000+ employees. Buy once, no upgrade needed when the company grows. No separate desktop/web/app
+      licenses. Licensing page says you can outline letters and edit the vector to make a
+      logo.'
+    evidence:
+      - claim: Tiers by headcount; one-time purchase, no upgrade when the company grows.
+        source: https://www.yeptype.com/eula
+      - claim: You can outline the letters and edit the resulting vector to make a logo.
+        source: https://www.yeptype.com/eula
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Confirm trademark registration of a logo is allowed.
+
+  - name: O'Plérou Studio (foundry)
+    website: https://foundry.oplerou.studio
+    license_urls:
+      - https://foundry.oplerou.studio/product/os-korhogo/
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: 'All-in-one license: unlimited use across print, social media, logos, videos,
+      ePub and websites. Price set by total size of the end user''s company, not computers.'
+    evidence:
+      - claim: All-in-one license covering Print, Social Media, Logos, Videos, ePub, and Websites;
+          cost determined by the TOTAL SIZE of the end user.
+        source: https://foundry.oplerou.studio/product/os-korhogo/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Find the licensing agreement page and the employee tiers. App use not mentioned.
+
+  - name: Mass-Driver
+    website: https://mass-driver.com
+    license_urls:
+      - https://mass-driver.com/licensing
+      - https://mass-driver.com/static/document/Mass_Driver-EULA-2_1.pdf
+    pricing_metric: company_size
+    logo: included
+    all_media: unknown
+    qualifies: likely
+    summary: Company size is the main metric. No renewal fees, no time limits, no extra fee
+      for logo use. Direct purchase up to 300 employees, quote above. License stays valid
+      if the company grows.
+    evidence:
+      - claim: No renewal fees, time limits, or extra fees for logo use; >300 staff get a
+          tailored quote.
+        source: https://mass-driver.com/licensing
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Confirm which media (web/app/video) are covered by the single license.
+
+  - name: Workhorse Type Foundry
+    website: https://workhorse.studio
+    license_urls:
+      - https://workhorse.studio/pages/licenses
+      - https://workhorse.studio/pages/license-all-purpose
+    pricing_metric: company_size
+    logo: included
+    all_media: unknown
+    qualifies: likely
+    summary: All-Purpose License priced by company size (all full-time, part-time and contracted
+      staff); includes unlimited desktop and broadcasting. Logo design is listed among common
+      usages.
+    evidence:
+      - claim: Unlimited Broadcasting and Desktop are included with an All-Purpose License,
+          which is based on company size.
+        source: https://workhorse.studio/pages/licenses
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Confirm logo clause and web/app coverage in the All-Purpose agreement.
+
+  - name: Displaay
+    website: https://displaay.net
+    license_urls:
+      - https://displaay.net/help/licenses
+      - https://displaay.net/help/faq
+    pricing_metric: company_size
+    logo: included
+    all_media: partial
+    qualifies: partial
+    summary: Price set by number of people in the company and the usages needed (minimum 3
+      people). Perpetual, worldwide, upgradable. Logo/logotype/ wordmark right (incl. trademark
+      registration) covers the headcount on the invoice. Web and app/game are separate usage
+      categories.
+    evidence:
+      - claim: The only factor that determines license price is ... company size ... and needed
+          usage.
+        source: https://displaay.net/help/licenses
+      - claim: Right to use the Fonts in the Licensee's logo, logotype, word-mark, up to the
+          number of people indicated in the invoice.
+        source: https://displaay.net/help/licenses
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Check whether logo is a separately priced usage at checkout.
+
+  - name: Dinamo
+    website: https://abcdinamo.com
+    license_urls:
+      - https://abcdinamo.com/licenses
+      - https://abcdinamo.com/news/about-our-pricing
+    pricing_metric: company_size
+    logo: included_small_only
+    all_media: partial
+    qualifies: partial
+    summary: Priced by the license owner's company size (incl. subsidiaries/parents). Logo/wordmark
+      is its own license per brand, but free when company size is under 50. Unlimited/enterprise
+      license bundles all media incl. logo for one brand; required for publicly traded or
+      >€100M revenue companies.
+    evidence:
+      - claim: If the License Owner's Company Size is less than 50 people, they get a free
+          logo/wordmark license.
+        source: https://abcdinamo.com/licenses
+      - claim: Unlimited/enterprise covers desktop/print, logo/wordmark, social media, web,
+          app/game and video for one brand.
+        source: https://abcdinamo.com/licenses
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: APK Type
+    website: https://apk-type.com
+    license_urls:
+      - https://apk-type.com/licences/
+      - https://apk-type.com/eula/
+    pricing_metric: company_size
+    logo: included
+    all_media: partial
+    qualifies: partial
+    summary: Employees (not users) are the only metric. Desktop License covers logos and brand
+      identities; logo artwork may be trademarked. Social media for brands of 250+ employees
+      and video need separate licenses. Unlimited and Enterprise options exist.
+    evidence:
+      - claim: The company size, measured in employees (not users), is the only metric.
+        source: https://apk-type.com/licences/
+      - claim: Social media posts for a brand of 250+ employees need a Social media License.
+        source: https://apk-type.com/licences/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Regular Lines
+    website: https://www.regularlines.com
+    license_urls:
+      - https://www.regularlines.com/eula/
+    pricing_metric: mixed
+    logo: included
+    all_media: unknown
+    qualifies: partial
+    summary: Tiers by employee count (1-10, 11-50, 51-200, 201+), but each tier caps the number
+      of devices. Logos and branding are permitted uses.
+    evidence:
+      - claim: Licenses categorized by total number of employees; each tier allows a limited
+          number of devices.
+        source: https://www.regularlines.com/eula/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: EULA seen was dated January 2024; re-check.
+
+  - name: JulyType
+    website: https://www.julytype.com
+    license_urls:
+      - https://julytype.com/licensing
+    pricing_metric: company_size
+    logo: unknown
+    all_media: partial
+    qualifies: partial
+    summary: 'One metric: total employees of the owning company (brackets up to 5,000). Standard
+      license = desktop + app; Extended = all media incl. web fonts. Product pages list Logo/Wordmark
+      as a usage option; which tier covers it is unconfirmed.'
+    evidence:
+      - claim: 'Our licenses are based on one clear metric only: the size of the company that
+          owns the license.'
+        source: https://julytype.com/licensing
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Does the Extended License include logo/wordmark?
+
+  - name: Typejockeys
+    website: https://www.typejockeys.com
+    license_urls:
+      - https://www.typejockeys.com/en/licensing
+    pricing_metric: company_size
+    logo: unknown
+    all_media: unknown
+    qualifies: unknown
+    summary: Pricing by company size (full-time, part-time, temporary staff), not devices,
+      page views or ePub titles. No relicensing when the company grows.
+    evidence:
+      - claim: Company size refers to the total number of employees – including full-time,
+          part-time, and temporary staff.
+        source: https://www.typejockeys.com/en/licensing
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: FAQ has a logo question; answer not captured.
+
+  - name: Typefaces.pizza
+    website: https://typefaces.pizza
+    license_urls:
+      - https://typefaces.pizza/licences/
+    pricing_metric: company_size
+    logo: separate_size_based
+    all_media: partial
+    qualifies: partial
+    summary: Priced by the client company's total employees, per use type. Logo is its own
+      use type (one brand), 1 employee to unlimited. >250 employees contact.
+    evidence:
+      - claim: Total number of employees in your client's company, not posts or users.
+        source: https://typefaces.pizza/licences/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Type Department
+    website: https://type-department.com
+    license_urls:
+      - https://type-department.com/pages/licensing
+    pricing_metric: company_size
+    logo: separate_size_based
+    all_media: partial
+    qualifies: partial
+    summary: Licensee type + size tier (XS 1-5 ... XL 200-500) + coverage. Logo coverage is
+      separate (one mark, trademark registration allowed). Unlimited corporate license covers
+      all media with no size limit.
+    evidence:
+      - claim: Size tiers by employees; logo license allows trademark registration in unlimited
+          countries.
+        source: https://type-department.com/pages/licensing
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: T1 Foundry
+    website: https://t1-foundry.com
+    license_urls:
+      - https://t1-foundry.com/pages/licensing
+    pricing_metric: company_size
+    logo: separate_size_based
+    all_media: partial
+    qualifies: partial
+    summary: Tiers by client employee count (custom above 500). Separate Logo/Mark license
+      with worldwide trademark rights. Max 3 locations unless Enterprise. Unlimited (Corporate)
+      license covers all media.
+    evidence:
+      - claim: Unlimited (Corporate) License covers all media with no restrictions on company
+          size, locations, projects, or distribution.
+        source: https://t1-foundry.com/pages/licensing
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Shaped Fonts
+    website: https://shapedfonts.com
+    license_urls:
+      - https://shapedfonts.com/licensing/
+    pricing_metric: company_size
+    logo: included
+    all_media: partial
+    qualifies: partial
+    summary: Small tiers for <10 people (Standard covers logos and print; Multimedia adds
+      webfonts). Larger organisations need the Extended license (price on request), which
+      covers unlimited employees and contracted agencies.
+    evidence:
+      - claim: License category determined by the size of the Licensee's organization ("10
+          employee rule").
+        source: https://shapedfonts.com/licensing/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+    todo: Terms page ~900 days old; confirm Extended includes logos.
+
+  - name: Overtype Foundry
+    website: https://www.overtypefoundry.com
+    license_urls:
+      - https://www.overtypefoundry.com/faq
+    pricing_metric: company_size
+    logo: separate
+    all_media: 'yes'
+    qualifies: partial
+    summary: License size by company size (incl. freelancers); covers print, web, apps, social
+      media and packaging. Logos/wordmarks are an optional add-on at checkout.
+    evidence:
+      - claim: The only exception is logos/wordmarks, which are available as an optional add-on
+          at checkout.
+        source: https://www.overtypefoundry.com/faq
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Faire Type
+    website: https://www.fairetype.com
+    license_urls:
+      - https://www.fairetype.com/licensing
+    pricing_metric: company_size
+    logo: unknown
+    all_media: 'no'
+    qualifies: partial
+    summary: Licensed by total full- and part-time staff; upgrade required when moving into
+      a higher tier. Desktop, web and app are separate license types. Subcontractors covered.
+    evidence:
+      - claim: Fonts are licensed by the total number of people working full-time and part-time
+          for Your Company.
+        source: https://www.fairetype.com/licensing
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Fontwerk
+    website: https://fontwerk.com
+    license_urls:
+      - https://fontwerk.com/en/licensing
+      - https://fontwerk.com/en/faq
+    pricing_metric: unknown
+    logo: separate_size_based
+    all_media: partial
+    qualifies: partial
+    summary: Logo license per logo/brand, priced by the licensee's employees (permanent +
+      freelance), part of the "Extended" tier. Pricing of other modules not confirmed.
+    evidence:
+      - claim: Logo scope determined per Logo based on the Licensee's company size (employees,
+          permanent and freelance).
+        source: https://fontwerk.com/en/licensing
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: F37
+    website: https://f37.com
+    license_urls:
+      - https://f37.com/information
+    pricing_metric: unknown
+    logo: separate_size_based
+    all_media: unknown
+    qualifies: partial
+    summary: Desktop licence replaced by a Basic Licence. Foundry Logo Licence per brand,
+      priced by employees in the business group (Startup 5 / Small 25 / Medium 100 / Large
+      250); >250 need a Brand Font Licence.
+    evidence:
+      - claim: Logo licence level determined by number of Employees (incl. contractors and
+          workers) in your business group.
+        source: https://f37.com/information
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: W Type Foundry
+    website: https://wtypefoundry.com
+    license_urls:
+      - https://wtypefoundry.com/licenses
+    pricing_metric: unknown
+    logo: separate_size_based
+    all_media: unknown
+    qualifies: partial
+    summary: Logo not allowed under desktop license; Logo License extra, priced by company
+      size.
+    evidence:
+      - claim: The Licensee may not use the font(s) as is in the logo or word mark ... A Logo
+          License is available for an additional fee, this will depend on the size of the
+          company.
+        source: https://wtypefoundry.com/licenses
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Facetype
+    website: https://facetype-foundry.fontdue.com
+    license_urls:
+      - https://facetype-foundry.fontdue.com/licensing-information
+    pricing_metric: company_size
+    logo: unknown
+    all_media: unknown
+    qualifies: unknown
+    summary: Charges by company size rather than workstations.
+    evidence:
+      - claim: They do not calculate license fees by the number of workstations since this
+          does not reflect how fonts are used.
+        source: https://facetype-foundry.fontdue.com/licensing-information
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: AlfaType
+    website: https://www.alfatypefonts.com
+    license_urls: []
+    pricing_metric: company_size
+    logo: unknown
+    all_media: unknown
+    qualifies: unknown
+    summary: Headcount of the organisation (or ultimate parent); standard license lasts five
+      years.
+    evidence:
+      - claim: Counts headcount of the organisation using the typeface; standard license lasts
+          five years.
+        source: https://www.alfatypefonts.com/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Pangram Pangram
+    website: https://pangrampangram.com
+    license_urls:
+      - https://pangrampangram.com/pages/faq
+      - https://pangrampangram.com/pages/eula
+    pricing_metric: mixed
+    logo: separate_size_based
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Print/desktop by workstations, apps by monthly active users. Logo license per
+      corporation and per logo design, priced by employees.
+    evidence:
+      - claim: Logo License coverage should reflect the total number of employees of the company
+          using the logo.
+        source: https://pangrampangram.com/pages/faq
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Typotheque
+    website: https://www.typotheque.com
+    license_urls:
+      - https://www.typotheque.com/licensing
+      - https://www.typotheque.com/corporate-licence
+      - https://www.typotheque.com/help/using-fonts/logo-design
+    pricing_metric: seats
+    logo: included
+    all_media: partial
+    qualifies: 'no'
+    summary: Desktop per user (multi-user sliding scale). Logo use allowed with a desktop
+      license. Corporate Licence covers one legal entity with no user limit (desktop + self-hosted
+      web up to 10M page views + app), one-time fee; how it is priced was not found.
+    evidence:
+      - claim: Corporate Licence combines Desktop, Self-hosting Webfont (up to 10 million
+          page views), and App Licenses for one legal entity.
+        source: https://www.typotheque.com/corporate-licence
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Rohh Type
+    website: https://rohhtype.com
+    license_urls:
+      - https://rohhtype.com/licensing-fonts/
+    pricing_metric: mixed
+    logo: separate
+    all_media: partial
+    qualifies: 'no'
+    summary: Usage-based (web by pageviews). Separate Logo & Trademark tier. Enterprise tier
+      covers everything for one organisation.
+    evidence:
+      - claim: Enterprise tier covers all media, unlimited employees, logo registration, sharing
+          with partner agencies.
+        source: https://rohhtype.com/licensing-fonts/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Klim Type Foundry
+    website: https://klim.co.nz
+    license_urls:
+      - https://klim.co.nz/licences/
+    pricing_metric: seats
+    logo: restricted
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Desktop by number of users; app by MAU/downloads. Logos allowed in limited form.
+    evidence:
+      - claim: Desktop licence tiers by users (1–5, 6–10, 11–20...).
+        source: https://klim.co.nz/licences/desktop-fonts/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Grilli Type
+    website: https://www.grillitype.com
+    license_urls:
+      - https://www.grillitype.com/information
+    pricing_metric: seats
+    logo: unknown
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Desktop by computers, web by monthly visitors, app by developers. Unlimited/corporate
+      on request.
+    evidence:
+      - claim: The correct licensing tier is determined by how many computers you need to
+          install the fonts on.
+        source: https://www.grillitype.com/information
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Commercial Type
+    website: https://commercialtype.com
+    license_urls:
+      - https://commercialtype.com/faqs
+      - https://commercialtype.com/eula
+    pricing_metric: seats
+    logo: included
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Desktop by seats, web by monthly unique visitors. Logotypes covered by desktop
+      license (merchandise excepted).
+    evidence:
+      - claim: Use in logotypes is covered by our standard desktop license, except logotypes
+          on merchandise for sale.
+        source: https://commercialtype.com/faqs
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Sharp Type
+    website: https://www.sharptype.co
+    license_urls:
+      - https://www.sharptype.co/licensing
+      - https://www.sharptype.co/faq
+    pricing_metric: seats
+    logo: included
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Desktop by computers, web by monthly visitors. Desktop license covers logotype
+      design.
+    evidence:
+      - claim: Desktop fonts are licensed based on the number of computers; webfonts by website
+          visitors per month.
+        source: https://www.sharptype.co/faq
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Studio Feixen Fonts
+    website: https://fonts.studiofeixen.ch
+    license_urls:
+      - https://fonts.studiofeixen.ch/wiki/
+    pricing_metric: mixed
+    logo: included
+    all_media: 'yes'
+    qualifies: 'no'
+    summary: Levels by computers + monthly visitors (desktop and web sold as a bundle). Desktop
+      covers logos/trademarks.
+    evidence:
+      - claim: Level 1 (1–5 computers, 50K monthly visitors) to Level 7 (501–1,000 computers,
+          10M visitors), plus Enterprise.
+        source: https://fonts.studiofeixen.ch/wiki/
+    verified:
+      date: 2026-10-29
+      method: search-snippet
+
+  - name: Colophon Foundry
+    website: https://colophon-foundry.org
+    license_urls: []
+    pricing_metric: mixed
+    logo: restricted
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Company Desktop by employees; web by pageviews; logo/trademark use may be restricted
+      per typeface.
+    evidence:
+      - claim: Some restrictions may apply, such as use in logos/trademarks.
+        source: https://colophon-foundry.org/typefaces/transcript/variable
+    verified:
+      date: 2026-10-29
+      method: search-snippet
