@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 # Raw copies of foundry license pages: local cache only, not redistributed.
 data/snapshots/
+data/crawl-*.log
+data/*.tmp

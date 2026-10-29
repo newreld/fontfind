@@ -71,6 +71,9 @@ ALL_MEDIA_PATTERNS = [
     r"(?:desktop|print).{0,40}web.{0,40}app",
 ]
 
+# Web use is part of the license (not a separate web/pageview product).
+WEB_PATTERN = re.compile(r"\bweb ?(?:site|fonts?|sites|pages?)?\b|\bwebfonts?\b|\bwoff2?\b|\bonline\b", re.I)
+
 _COMPILED = {
     "metric": {k: [re.compile(p, re.I) for p in v] for k, v in METRIC_PATTERNS.items()},
     "logo": {k: [re.compile(p, re.I) for p in v] for k, v in LOGO_PATTERNS.items()},
@@ -86,6 +89,7 @@ class Result:
     metric_scores: dict[str, int] = field(default_factory=dict)
     logo_scores: dict[str, int] = field(default_factory=dict)
     all_media_hits: int = 0
+    web_hits: int = 0
     evidence: dict[str, list[str]] = field(default_factory=dict)
 
     def metric(self) -> str:
@@ -117,7 +121,7 @@ class Result:
         if metric in ("seats", "traffic"):
             return "no"
         if metric == "company_size" and logo == "included":
-            return "likely" if self.all_media_hits else "partial"
+            return "likely" if self.all_media_hits and self.web_hits else "partial"
         if metric in ("company_size", "mixed"):
             return "partial"
         return "unknown"
@@ -130,6 +134,7 @@ class Result:
             "metric_scores": {k: v for k, v in self.metric_scores.items() if v},
             "logo_scores": {k: v for k, v in self.logo_scores.items() if v},
             "all_media_hits": self.all_media_hits,
+            "web_hits": self.web_hits,
             "evidence": {k: v for k, v in self.evidence.items() if v},
         }
 
@@ -170,6 +175,8 @@ def classify(text: str) -> Result:
             if name:
                 r.logo_scores[name] = r.logo_scores.get(name, 0) + 1
                 _add(r, f"logo:{name}", s)
+        if WEB_PATTERN.search(s):
+            r.web_hits += 1
         if any(p.search(s) for p in _COMPILED["all_media"]):
             r.all_media_hits += 1
             _add(r, "all_media", s)

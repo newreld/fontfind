@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 
-from fontfind import db, discover, fetch, report, scrape
+from fontfind import crawl, db, discover, fetch, report, scrape
 
 
 def cmd_list(args) -> int:
@@ -62,6 +62,18 @@ def cmd_report(args) -> int:
     return 0
 
 
+def cmd_crawl(args) -> int:
+    if args.stage == "sources":
+        return crawl.sources(limit=args.limit)
+    if args.stage == "screen":
+        return crawl.screen(limit=args.limit, workers=args.workers)
+    if args.stage == "promote":
+        return crawl.promote()
+    for stage in (lambda: crawl.sources(limit=args.limit), lambda: crawl.screen(limit=args.limit, workers=args.workers), crawl.promote):
+        stage()
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="fontfind", description="Track company-size font licenses.")
     sub = p.add_subparsers(dest="command", required=True)
@@ -83,6 +95,12 @@ def main(argv: list[str] | None = None) -> int:
 
     s = sub.add_parser("report", help="write docs/index.html")
     s.set_defaults(func=cmd_report)
+
+    s = sub.add_parser("crawl", help="build the full foundry directory and screen it automatically")
+    s.add_argument("stage", nargs="?", default="all", choices=["all", "sources", "screen", "promote"])
+    s.add_argument("--limit", type=int, help="process at most this many foundries per stage")
+    s.add_argument("--workers", type=int, default=8, help="parallel sites while screening")
+    s.set_defaults(func=cmd_crawl)
 
     args = p.parse_args(argv)
     return args.func(args)

@@ -34,6 +34,8 @@ python -m fontfind scrape "Mass-Driver"      # one foundry
 python -m fontfind scrape --offline          # re-classify saved snapshots, no network
 python -m fontfind add https://example-foundry.com --scrape   # new candidate
 python -m fontfind report                    # rebuild docs/index.html
+python -m fontfind crawl                     # build the full directory, screen it, promote candidates
+python -m fontfind crawl sources|screen|promote   # run one stage (all are resumable)
 python -m unittest                           # tests
 ```
 
@@ -46,3 +48,18 @@ block for each foundry:
 - `content_hash` / `changed_since_last_check`: tells you when a foundry changed its license text.
 
 The suggestions are only hints. A person decides the real `qualifies` value.
+
+
+## Automatic directory
+
+`crawl` removes the manual adding. It runs in three resumable stages:
+
+1. `sources` lists every foundry on Fonts In Use (about 5,300) and reads each one's official site
+   into `data/directory.json`. It honors that site's 10 second `Crawl-delay`, so a full run takes many hours.
+2. `screen` finds each site's license pages, classifies them and stores the result in `data/screen.json`.
+3. `promote` adds foundries whose text points to company-size pricing to `data/foundries.yaml`
+   as `unknown` / `auto-screened, not reviewed`, ready for a human to read and set `qualifies`.
+
+A match requires web use to be in the same company-size license, so the classifier only suggests
+`likely` when the license text also mentions web use. `docs/index.html` lists the whole directory
+with each foundry's status below the curated results.

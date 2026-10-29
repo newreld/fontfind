@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import io
+import threading
 import time
 import urllib.robotparser
 from urllib.parse import urlparse
@@ -15,6 +16,8 @@ DELAY_SECONDS = 2.0
 
 _robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
 _last_request: dict[str, float] = {}
+_lock = threading.Lock()
+MAX_CRAWL_DELAY = 15.0
 
 
 class FetchError(Exception):
@@ -36,17 +39,27 @@ def _allowed(url: str) -> bool:
     return rp is None or rp.can_fetch(USER_AGENT, url)
 
 
-def _throttle(host: str) -> None:
-    wait = DELAY_SECONDS - (time.monotonic() - _last_request.get(host, 0.0))
-    if wait > 0:
-        time.sleep(wait)
-    _last_request[host] = time.monotonic()
+def _delay_for(url: str) -> float:
+    parts = urlparse(url)
+    rp = _robots.get(f"{parts.scheme}://{parts.netloc}")
+    declared = rp.crawl_delay(USER_AGENT) if rp else None
+    return min(max(DELAY_SECONDS, float(declared or 0)), MAX_CRAWL_DELAY)
+
+
+def _throttle(host: str, delay: float) -> None:
+    # Reserve the next slot under the lock, then sleep outside it.
+    with _lock:
+        now = time.monotonic()
+        slot = max(now, _last_request.get(host, 0.0) + delay)
+        _last_request[host] = slot
+    if slot > now:
+        time.sleep(slot - now)
 
 
 def get(url: str) -> requests.Response:
     if not _allowed(url):
         raise FetchError(f"robots.txt disallows {url}")
-    _throttle(urlparse(url).netloc)
+    _throttle(urlparse(url).netloc, _delay_for(url))
     try:
         resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
     except requests.RequestException as e:

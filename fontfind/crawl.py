@@ -1,0 +1,204 @@
+"""Collect every foundry we can find, screen each for company-size licensing, promote candidates.
+
+Three resumable stages, each safe to interrupt and re-run:
+  sources  - list foundries on Fonts In Use and look up each one's official website
+  screen   - fetch each website's license pages and run the classifier
+  promote  - add screened candidates to data/foundries.yaml for human review
+"""
+
+from __future__ import annotations
+
+import datetime as dt
+import json
+import re
+import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import urljoin, urlparse
+
+from bs4 import BeautifulSoup
+
+from fontfind import classify, db, discover, fetch
+
+DIRECTORY_PATH = db.ROOT / "data" / "directory.json"
+SCREEN_PATH = db.ROOT / "data" / "screen.json"
+LISTING_URL = "https://fontsinuse.com/foundries"
+FOUNDRY_PATH = re.compile(r"^/foundry/\d+/[^/]+$")
+SCREEN_PAGES = 4
+SAVE_EVERY = 25
+
+
+def _read(path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def _write(path, data: dict) -> None:
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    tmp.replace(path)
+
+
+def host_of(url: str) -> str:
+    return urlparse(url).netloc.lower().removeprefix("www.")
+
+
+def parse_listing(html: str, base: str = LISTING_URL) -> dict[str, str]:
+    """Foundry page URL -> display name, from the Fonts In Use directory page."""
+    soup = BeautifulSoup(html, "html.parser")
+    found = {}
+    for a in soup.find_all("a", href=True):
+        if FOUNDRY_PATH.match(a["href"]):
+            found[urljoin(base, a["href"])] = a.get_text(" ", strip=True) or a["href"].rsplit("/", 1)[-1]
+    return found
+
+
+def parse_foundry_page(html: str) -> str | None:
+    """The foundry's own website: the 'Official Site' link."""
+    soup = BeautifulSoup(html, "html.parser")
+    for a in soup.find_all("a", href=True):
+        if a["href"].startswith("http") and "official site" in a.get_text(" ", strip=True).lower():
+            return a["href"]
+    return None
+
+
+def sources(limit: int | None = None) -> int:
+    directory = _read(DIRECTORY_PATH)
+    try:
+        listing = parse_listing(fetch.get(LISTING_URL).text)
+    except fetch.FetchError as e:
+        print(f"could not read directory: {e}", file=sys.stderr)
+        return 1
+    for url, name in listing.items():
+        directory.setdefault(url, {"name": name, "source": "fontsinuse.com"})
+    _write(DIRECTORY_PATH, directory)
+    todo = [u for u, d in directory.items() if "website" not in d and d.get("tries", 0) < 2]
+    print(f"{len(directory)} foundries listed, {len(todo)} still need a website", flush=True)
+    for i, url in enumerate(todo[:limit], 1):
+        d = directory[url]
+        try:
+            d["website"] = parse_foundry_page(fetch.get(url).text) or ""
+        except fetch.FetchError as e:
+            d["tries"] = d.get("tries", 0) + 1
+            print(f"  {d['name']}: {e}", flush=True)
+        if i % SAVE_EVERY == 0:
+            _write(DIRECTORY_PATH, directory)
+            print(f"  {i}/{min(len(todo), limit or len(todo))}", flush=True)
+    _write(DIRECTORY_PATH, directory)
+    return 0
+
+
+def screen_site(website: str) -> dict:
+    urls = discover.discover(website)[:SCREEN_PAGES]
+    texts, errors = [], []
+    for u in urls:
+        try:
+            texts.append(fetch.fetch_text(u))
+        except fetch.FetchError as e:
+            errors.append(str(e))
+    result = classify.classify("\n".join(texts)) if texts else None
+    out = {"license_urls": urls, "checked": dt.date.today().isoformat()}
+    if result:
+        out["auto"] = result.as_dict()
+    if errors:
+        out["errors"] = errors
+    if not urls:
+        out["errors"] = errors or ["no license page found"]
+    return out
+
+
+def screen(limit: int | None = None, workers: int = 8) -> int:
+    directory = _read(DIRECTORY_PATH)
+    screened = _read(SCREEN_PATH)
+    known = {host_of(f["website"]) for f in db.load() if f.get("website")}
+    todo = {}
+    for d in directory.values():
+        site = d.get("website")
+        if site and host_of(site) not in screened and host_of(site) not in known:
+            todo.setdefault(host_of(site), site)
+    sites = list(todo.items())[:limit]
+    print(f"screening {len(sites)} sites ({len(screened)} done already)", flush=True)
+
+    def work(item):
+        host, site = item
+        try:
+            return host, {"website": site, **screen_site(site)}
+        except fetch.FetchError as e:
+            return host, {"website": site, "errors": [str(e)], "checked": dt.date.today().isoformat()}
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(work, s) for s in sites]
+        for i, fut in enumerate(as_completed(futures), 1):
+            host, res = fut.result()
+            screened[host] = res
+            if i % SAVE_EVERY == 0:
+                _write(SCREEN_PATH, screened)
+                print(f"  {i}/{len(sites)}", flush=True)
+    _write(SCREEN_PATH, screened)
+    return 0
+
+
+def is_candidate(res: dict) -> bool:
+    auto = res.get("auto") or {}
+    return auto.get("suggested_metric") in ("company_size", "mixed")
+
+
+def display_name(host: str, directory: dict) -> str:
+    for d in directory.values():
+        if d.get("website") and host_of(d["website"]) == host:
+            return d["name"]
+    return host
+
+
+def promote() -> int:
+    directory = _read(DIRECTORY_PATH)
+    screened = _read(SCREEN_PATH)
+    foundries = db.load()
+    known = {host_of(f["website"]) for f in foundries if f.get("website")}
+    added = 0
+    for host, res in sorted(screened.items()):
+        if host in known or not is_candidate(res):
+            continue
+        name = display_name(host, directory)
+        if db.find(foundries, name):
+            name = f"{name} ({host})"
+        foundries.append({
+            "name": name,
+            "website": res["website"],
+            "license_urls": res.get("license_urls", []),
+            "pricing_metric": "unknown",
+            "logo": "unknown",
+            "all_media": "unknown",
+            "qualifies": "unknown",
+            "summary": "",
+            "evidence": [],
+            "verified": {"date": dt.date.today().isoformat(), "method": "auto-screened, not reviewed"},
+            "auto": {**res["auto"], "checked": res["checked"]},
+        })
+        added += 1
+    if added:
+        db.save(foundries)
+    print(f"promoted {added} candidates into {db.DB_PATH.name}")
+    return 0
+
+
+def directory_rows() -> list[dict]:
+    """Every known foundry with its screening status, for the report."""
+    directory = _read(DIRECTORY_PATH)
+    screened = _read(SCREEN_PATH)
+    curated = {host_of(f["website"]): f for f in db.load() if f.get("website")}
+    rows = []
+    for d in directory.values():
+        site = d.get("website") or ""
+        host = host_of(site) if site else ""
+        if host in curated:
+            status = "curated:" + str(curated[host].get("qualifies", "unknown"))
+        elif host in screened:
+            res = screened[host]
+            status = "candidate" if is_candidate(res) else ("no-license-page" if res.get("errors") and "auto" not in res else "not-company-size")
+        else:
+            status = "no-site" if not site else "unscreened"
+        rows.append({"name": d["name"], "website": site, "status": status})
+    listed = {host_of(r["website"]) for r in rows if r["website"]}
+    for host, f in curated.items():
+        if host not in listed:
+            rows.append({"name": f["name"], "website": f["website"], "status": "curated:" + str(f.get("qualifies", "unknown"))})
+    return sorted(rows, key=lambda r: r["name"].lower())

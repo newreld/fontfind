@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 
-from fontfind import db
+from fontfind import crawl, db
 
 OUT = db.ROOT / "docs" / "index.html"
 
@@ -59,6 +59,10 @@ dt {{ color:var(--muted); font-size:12px; }} dd {{ margin:0; }}
 details {{ color:var(--muted); font-size:13px; }}
 details li {{ margin:4px 0; }} details a {{ color:inherit; word-break:break-all; }}
 .meta {{ color:var(--muted); font-size:12px; }}
+.dirhead {{ margin-top:40px; }}
+#dirq {{ width:100%; max-width:360px; padding:6px 10px; margin-bottom:12px; font:inherit; }}
+.row {{ display:flex; gap:12px; border-top:1px solid var(--line); padding:4px 0; font-size:13px; }}
+.row a {{ flex:1; color:inherit; overflow:hidden; text-overflow:ellipsis; }} .row span {{ color:var(--muted); }}
 </style>
 </head>
 <body>
@@ -68,9 +72,15 @@ details li {{ margin:4px 0; }} details a {{ color:inherit; word-break:break-all;
 Checked {count} foundries. Always read the current EULA before buying.</p>
 <div class="filters" id="filters"></div>
 <div id="list"></div>
+<h2 class="dirhead">Directory: all {dircount} foundries found</h2>
+<p class="lede">Every foundry collected automatically and how far it got. "Candidate" means the license
+text mentions company-size pricing and is waiting for review.</p>
+<input id="dirq" type="search" placeholder="Search foundries" aria-label="Search directory">
+<div id="dir"></div>
 </main>
 <script>
 const DATA = {data};
+const DIR = {directory};
 const ORDER = ["yes","likely","partial","unknown","no"];
 const QL = {qlabels};
 let active = new Set(["yes","likely","partial"]);
@@ -97,6 +107,14 @@ function render() {{
     </div>`).join("");
 }}
 render();
+function renderDir() {{
+  const q = document.getElementById("dirq").value.toLowerCase();
+  const rows = DIR.filter(d => !q || d.name.toLowerCase().includes(q) || d.website.toLowerCase().includes(q)).slice(0, 400);
+  document.getElementById("dir").innerHTML = rows.map(d =>
+    `<div class="row"><a href="${{esc(d.website || "#")}}" target="_blank" rel="noopener">${{esc(d.name)}}</a><span>${{esc(d.status)}}</span></div>`).join("");
+}}
+document.getElementById("dirq").oninput = renderDir;
+renderDir();
 </script>
 </body>
 </html>
@@ -123,9 +141,12 @@ def build() -> str:
             "license_urls": f.get("license_urls") or [],
             "verified": f"{v.get('date', '?')} ({v.get('method', '?')})",
         })
+    dir_rows = crawl.directory_rows()
     data = json.dumps(rows, ensure_ascii=False, default=str).replace("</", "<\\/")
     page = PAGE.format(
         count=len(rows),
+        dircount=len(dir_rows),
+        directory=json.dumps(dir_rows, ensure_ascii=False).replace("</", "<\\/"),
         data=data,
         qlabels=json.dumps(LABELS["qualifies"]),
     )
