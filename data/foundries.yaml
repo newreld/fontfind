@@ -6226,8 +6226,8 @@ foundries:
       - claim: Web embedding is included "You may embed the Fonts on websites with CSS @font-face."
         source: https://www.arrowtype.com/licensing/commercial
       - claim: Video broadcast and streaming need a separate license "A separate license is
-          required for use of the Fonts in video content broadcast such as free TV, cable TV,
-          cinema, streaming services such as Netflix, web video platforms such as YouTube,
+          required for use of the Fonts in video content broadcast such as free TV, cable
+          TV, cinema, streaming services such as Netflix, web video platforms such as YouTube,
           etc."
         source: https://www.arrowtype.com/licensing/commercial
     verified:
@@ -6260,8 +6260,8 @@ foundries:
       web_hits: 1
       checked: '2026-10-30'
     todo: Broadcast and streaming video needs a separate license for companies of more than
-      5 people (logo-only broadcast appearances are exempt). The exact company-size tiers and
-      prices were not checked.
+      5 people (logo-only broadcast appearances are exempt). The exact company-size tiers
+      and prices were not checked.
     info:
       image: https://www.arrowtype.com/arrowtype-thumbnail.png
 
@@ -7326,8 +7326,8 @@ foundries:
       company size (number of employees). The purchase page says pricing is based only on
       company size and the license covers all commercial use; the FAQ lists print, web, social
       media, logos, apps and videos. Broadcasting, film, TV and large-scale video productions
-      need a custom license, and the EULA says an upgrade may be needed for more traffic, new
-      domains or more platforms.
+      need a custom license, and the EULA says an upgrade may be needed for more traffic,
+      new domains or more platforms.
     evidence:
       - claim: Purchase page states the pricing basis "Buy any typeface with a simple license
           that covers all commercial use. Pricing is based only on company size."
@@ -7346,8 +7346,8 @@ foundries:
           television, or large-scale video productions, please contact us for a custom license
           agreement."
         source: https://www.gunesmuhittin.com/eula
-      - claim: The EULA allows later upgrades for traffic, domains or platforms "However, you
-          may be required to upgrade your license if your use exceeds the original scope—such
+      - claim: The EULA allows later upgrades for traffic, domains or platforms "However,
+          you may be required to upgrade your license if your use exceeds the original scope—such
           as increased website traffic, new domains, or additional distribution platforms."
         source: https://www.gunesmuhittin.com/eula
       - claim: The FAQ says nothing is needed if the company grows "Nothing. The license is
@@ -7387,11 +7387,11 @@ foundries:
       suggested_qualifies: likely
       web_hits: 11
       checked: '2026-10-30'
-    todo: The EULA says an upgrade may be needed for increased website traffic, new domains or
-      additional platforms, and that a larger team must upgrade; the FAQ says nothing is
+    todo: The EULA says an upgrade may be needed for increased website traffic, new domains
+      or additional platforms, and that a larger team must upgrade; the FAQ says nothing is
       needed if the company grows. Ask which applies. Broadcast, film and TV need a custom
-      license. Prices are tiered by company size (1 person up to 4,000) and shown only in the
-      purchase flow.
+      license. Prices are tiered by company size (1 person up to 4,000) and shown only in
+      the purchase flow.
     info:
       image: https://framerusercontent.com/images/SzwdzYDTUW5Hz3RTVcdKZLsj2nM.png
       description: Independent type foundry based in Istanbul, focused on retail fonts and
@@ -7882,8 +7882,8 @@ foundries:
     logo: unknown
     all_media: 'yes'
     qualifies: likely
-    summary: Manic Type sells a single perpetual Commercial licence whose cost is based on the
-      Licensee Size (people working for the organization) and country. It covers desktop,
+    summary: Manic Type sells a single perpetual Commercial licence whose cost is based on
+      the Licensee Size (people working for the organization) and country. It covers desktop,
       websites the licensee owns, apps, digital products, static documents and broadcast,
       with no pageview or traffic pricing, and no upgrade needed if the organization grows.
       Logo use is not mentioned in the licence or on the font pages.
@@ -8294,7 +8294,7 @@ foundries:
     pricing_metric: company_size
     logo: included
     all_media: 'yes'
-    qualifies: 'yes'
+    qualifies: likely
     summary: nice to type sells a single standard licence priced by company size (≤10, ≤150,
       ≤500 employees) that covers logos, apps, e-books, web and more. Web fonts are self-hosted
       with no pageview limits, and the EULA allows analogue and digital media.
@@ -8353,7 +8353,8 @@ foundries:
         Germany and Japan. nice to type designs and publishes high-quality typefaces for text
         and display, like Massimo Grafia and Crack Grotesk.
     todo: Companies over 500 employees need a custom quote; actual prices per tier were not
-      in the provided text.
+      in the provided text. Judged by the automatic review only; confirm in a browser review
+      before treating it as a match.
 
   - name: phospho
     website: http://www.phospho.at/
@@ -8728,7 +8729,7 @@ foundries:
     pricing_metric: company_size
     logo: included
     all_media: 'yes'
-    qualifies: 'yes'
+    qualifies: likely
     summary: ToSupply prices licenses solely by the client's company size (total employees),
       with a proportional tier table and an unlimited option by quote. Licenses are all-inclusive
       for all media, including logo, web (no traffic limit), apps, video and social.
@@ -8793,6 +8794,8 @@ foundries:
         - Stack
         - Sustain
         - Temper
+    todo: Judged by the automatic review only; confirm in a browser review before treating
+      it as a match.
 
   - name: Terminal Design
     website: http://www.terminaldesign.com/

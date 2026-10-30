@@ -145,9 +145,13 @@ def assess(foundry: dict) -> tuple[dict, dict[str, str]] | list[str]:
 def apply(foundry: dict, verdict: dict, pages: dict[str, str]) -> str:
     evidence = verified_evidence(verdict.get("evidence"), pages)
     qualifies = verdict.get("qualifies", "unknown")
-    if qualifies == "yes" and (len(evidence) < 2 or verdict.get("web") != "yes"):
+    if qualifies == "yes":
+        # The automatic review tends to be generous, so a match is only ever set by a browser review.
         qualifies = "likely"
-        verdict["todo"] = (verdict.get("todo") or "Fewer than two quotes could be verified or web use is not confirmed.").strip()
+        reason = "Judged by the automatic review only; confirm in a browser review before treating it as a match."
+        if len(evidence) < 2 or verdict.get("web") != "yes":
+            reason += " Fewer than two quotes could be verified or web use is not confirmed."
+        verdict["todo"] = " ".join(filter(None, [(verdict.get("todo") or "").strip(), reason]))
     foundry.update({
         "pricing_metric": verdict.get("pricing_metric", "unknown"),
         "logo": verdict.get("logo", "unknown"),

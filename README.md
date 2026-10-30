@@ -20,7 +20,7 @@ What `update` does, in order:
 
 1. **Discover** (`discover`): collects foundry websites from `data/sources.yaml` (roundup articles, web searches Claude runs, your own seeds) plus links from foundries already matched.
 2. **Screen**: reads each site's license pages and keeps those whose text points to company-size pricing.
-3. **Review** (`review`): Claude reads the real license pages and sets the verdict. Every evidence quote must appear word for word on the page, otherwise it is dropped, and a `yes` needs two verified quotes and confirmed web use.
+3. **Review** (`review`): Claude reads the real license pages and sets the verdict. Every evidence quote must appear word for word on the page, otherwise it is dropped, and the automatic review never sets `yes`: its best verdict is `likely`, to be confirmed in a browser review.
 4. **Info**: preview image and typeface names.
 5. **Report**: rebuilds `docs/index.html`.
 

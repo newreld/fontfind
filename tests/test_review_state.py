@@ -33,3 +33,15 @@ class PendingTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CapTests(unittest.TestCase):
+    def test_automatic_yes_is_capped_at_likely(self):
+        pages = {"https://x.test/eula": "Prices depend on the number of employees in the company, logos are allowed."}
+        verdict = {"qualifies": "yes", "web": "yes", "evidence": [
+            {"claim": "a", "quote": "Prices depend on the number of employees in the company"},
+            {"claim": "b", "quote": "logos are allowed."}]}
+        f = {"name": "X"}
+        review.apply(f, verdict, pages)
+        self.assertEqual(f["qualifies"], "likely")
+        self.assertIn("browser review", f["todo"])
