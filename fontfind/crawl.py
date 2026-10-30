@@ -300,7 +300,7 @@ NOT_FOUNDRY_HOSTS = re.compile(
 
 def is_candidate(res: dict, host: str = "") -> bool:
     """Company size clearly outweighs seats and traffic in the license text."""
-    if host and NOT_FOUNDRY_HOSTS.search(host):
+    if host and (NOT_FOUNDRY_HOSTS.search(host) or IGNORED_HOSTS.search(host)):
         return False
     scores = (res.get("auto") or {}).get("metric_scores") or {}
     company = scores.get("company_size", 0)

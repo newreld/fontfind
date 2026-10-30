@@ -31,9 +31,10 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) 
     sys.stdout = status.Tee(st, real_stdout, echo=not real_stdout.isatty())
     live = None
     if real_stdout.isatty():
+        from rich.console import Console
         from rich.live import Live
 
-        live = Live(status.terminal_view(st), refresh_per_second=8, redirect_stdout=False, redirect_stderr=False)
+        live = Live(status.terminal_view(st), console=Console(file=real_stdout), refresh_per_second=8, redirect_stdout=False, redirect_stderr=False)
         live.start()
         st.view = live
     st.refresh()
