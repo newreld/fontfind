@@ -190,11 +190,21 @@
   "website": "https://accentiatype.com"
  },
  "access.mymind.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://access.mymind.com/signin",
+   "https://access.mymind.com/signin"
   ],
-  "license_urls": [],
   "website": "https://access.mymind.com"
  },
  "accessability.rgd.ca": {
@@ -244,14 +254,6 @@
    "https://www.adc.de/"
   ],
   "website": "https://www.adc.de"
- },
- "admin.formulatype.com": {
-  "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
-  ],
-  "license_urls": [],
-  "website": "https://admin.formulatype.com"
  },
  "adrienmidzic.fr": {
   "checked": "2026-10-30",
@@ -305,19 +307,59 @@
   "website": "https://ahmedghazi.com"
  },
  "ainsifont.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 1
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.ainsifont.com/eula",
+   "https://www.ainsifont.com/info"
   ],
-  "license_urls": [],
   "website": "http://www.ainsifont.com"
  },
  "alannamunro.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "You are allowed to convert text set in the Font into outlined vector files and modify the outlines to create logos and artwork but you may not use these outlines to create any font, typeface, or font software.",
+     "Desktop use includes (but is not limited to) the design of printed materials, logos, and static images including for use in social media."
+    ],
+    "metric:company_size": [
+     "Two coverage options and a license size based on the number of employees at your company.",
+     "We adjust prices by company size & location, offer discounts to social enterprises, and give students a free license.",
+     "✦ Company Size ✦",
+     "Every license is tiered by one metric: the number of employees at your company."
+    ],
+    "metric:traffic": [
+     "You don’t have to predict users, pageviews, or downloads.",
+     "You may also embed the Font in any number of apps, digital products, or ePubs, with no limit on number of downloads."
+    ]
+   },
+   "logo_scores": {
+    "included": 4
+   },
+   "metric_scores": {
+    "company_size": 14,
+    "traffic": 4
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 8
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.arcanetype.com/licensing",
+   "https://www.arcanetype.com/licensing"
   ],
-  "license_urls": [],
   "website": "https://alannamunro.com"
  },
  "alffrosine.com": {
@@ -329,18 +371,28 @@
   "website": "http://www.alffrosine.com"
  },
  "algonquincollege.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 4
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.algonquincollege.com/blog/event/info-evening-ottawa-campus/"
   ],
-  "license_urls": [],
   "website": "https://www.algonquincollege.com"
  },
  "alias.uk.com": {
   "checked": "2026-10-30",
   "errors": [
-   "http://alias.uk.com/: HTTPConnectionPool(host='alias.uk.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPConnection(host='alias.uk.com', port=80): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+   "no license page found"
   ],
+  "license_urls": [],
   "website": "http://alias.uk.com/"
  },
  "alistapart.com": {
@@ -513,13 +565,6 @@
    "https://apextypefoundry.com/about"
   ],
   "website": "http://www.apextypefoundry.com"
- },
- "api.f37foundry.com": {
-  "checked": "2026-10-30",
-  "errors": [
-   "https://api.f37foundry.com: HTTP 404"
-  ],
-  "website": "https://api.f37foundry.com"
  },
  "appliedartsmag.com": {
   "auto": {
@@ -974,11 +1019,22 @@
   "website": "http://betatype.com"
  },
  "bibliotheques-specialisees.paris.fr": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://bibliotheques-specialisees.paris.fr/licensing",
+   "https://bibliotheques-specialisees.paris.fr/license",
+   "https://bibliotheques-specialisees.paris.fr/licenses"
   ],
-  "license_urls": [],
   "website": "https://bibliotheques-specialisees.paris.fr"
  },
  "billetweb.fr": {
@@ -999,11 +1055,22 @@
   "website": "https://www.billetweb.fr"
  },
  "binnenland.ch": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.binnenland.ch/licensing",
+   "https://www.binnenland.ch/license",
+   "https://www.binnenland.ch/licenses"
   ],
-  "license_urls": [],
   "website": "http://www.binnenland.ch"
  },
  "bit.ly": {
@@ -1089,18 +1156,46 @@
   "website": "https://black-foundry.com"
  },
  "blast-foundry.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "A Brand Licence is tailored for larger companies and gives you unlimited permission to use the fonts cross-media (desktop, web, app, broadcast, social media, etc)."
+    ],
+    "logo:included": [
+     "You hereby grant to us the right and permission to (a) reference the relationship between us and you, (b) your use of the Font Software (including reference to your business name, trade mark, and/or service mark), and (c) display screenshots, photographs and captures of your use of the Font Software (and you hereby agree to promptly, within a reasonable period, supply copies of materials as reasonably requested by us to display the same)."
+    ],
+    "metric:company_size": [
+     "Where the Scope of Licence grants use in respect of .pdf creation and external distribution of the resulting .pdf documents to end users for the purpose of those end users to download/access the document, you and all Sublicensees (whether acting by themselves or by their employees, officers, suppliers, contractors and/or agents, as the case may be) may embed the Font Software (or any of part thereof) within a file intended for consumption by that end user, in accordance with the restrictions set out in the Scope of Licence.",
+     "You will use all reasonable endeavours to ensure that the Font Software is not distributed as, or within, an executable or installable file, nor that the Font Software is installed on or within any end user’s hardware operation system, by you, the Sublicensees or their employees, suppliers, contractors or agents.",
+     "Where the Scope of Licence grants use in respect of webpages, you and any Sublicensees (by themselves or by their employees, suppliers, contractors and/or agents) may only put online and/or link (excluding hotlinking) to the .WOFF, and .WOFF2, and/or Web-Only .TTF file formats of the Font Software (or any part thereof), provided the same is within the Scope of Licence.",
+     "You will ensure that you, Sublicensees, and their employees, suppliers, contractors and agents will not put online and/or link to any other file format, including, but not limited to, TrueType or OpenType."
+    ],
+    "metric:seats": [
+     "covers you for installing fonts on your multiple workstations and is based on the number of users that will ultimately have access to the font."
+    ],
+    "metric:traffic": [
+     "page views/month,"
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 7,
+    "seats": 1,
+    "traffic": 1
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "likely",
+   "web_hits": 15
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "https://blast-foundry.com: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  "license_urls": [
+   "https://blast-foundry.com/licensing"
   ],
   "website": "https://blast-foundry.com"
- },
- "blazetype.eu,": {
-  "checked": "2026-10-30",
-  "errors": [
-   "https://blazetype.eu,: HTTPSConnectionPool(host='blazetype.eu,', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='blazetype.eu,', port=443): Failed to resolve 'blazetype.eu,' ([Errno 8] nodename nor servname provided, or not known)\"))"
-  ],
-  "website": "https://blazetype.eu,"
  },
  "blkbktyp.com": {
   "auto": {
@@ -1216,11 +1311,22 @@
   "website": "https://www.bnicks.com"
  },
  "boharat.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://boharat.com/",
+   "https://boharat.com/",
+   "https://boharat.com/"
   ],
-  "license_urls": [],
   "website": "https://boharat.com"
  },
  "boldmonday.com": {
@@ -1369,11 +1475,22 @@
   "website": "https://cabargatype.com"
  },
  "cameo-kollektiv.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.cameo-kollektiv.de/",
+   "https://www.cameo-kollektiv.de/",
+   "https://www.cameo-kollektiv.de/"
   ],
-  "license_urls": [],
   "website": "https://www.cameo-kollektiv.de"
  },
  "canadatype.com": {
@@ -1384,11 +1501,26 @@
   "website": "https://canadatype.com"
  },
  "canadorecollege.ca": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:traffic": [
+     "Reports, Documents and Downloads"
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "traffic": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "traffic",
+   "suggested_qualifies": "no",
+   "web_hits": 14
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.canadorecollege.ca/support/admissions/admissions-faq"
   ],
-  "license_urls": [],
   "website": "https://www.canadorecollege.ca"
  },
  "capearconatypefoundry.tumblr.com": {
@@ -1501,11 +1633,20 @@
   "website": "http://www.cerclemagazine.com"
  },
  "chank.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 1
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.chank.com/license.php"
   ],
-  "license_urls": [],
   "website": "https://www.chank.com"
  },
  "charactertype.com": {
@@ -1861,13 +2002,6 @@
   ],
   "website": "https://creativemarket.com"
  },
- "csr.productiontype.com": {
-  "checked": "2026-10-30",
-  "errors": [
-   "https://csr.productiontype.com: HTTP 525"
-  ],
-  "website": "https://csr.productiontype.com"
- },
  "customer-portal.paddle.com": {
   "checked": "2026-10-30",
   "errors": [
@@ -2012,27 +2146,57 @@
   "website": "https://daverowlandtype.com"
  },
  "davidairey.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 3
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.davidairey.com/license",
+   "https://www.davidairey.com/terms"
   ],
-  "license_urls": [],
   "website": "https://www.davidairey.com"
  },
  "designthinkers.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.designthinkers.com",
+   "https://www.designthinkers.com",
+   "https://www.designthinkers.com"
   ],
-  "license_urls": [],
   "website": "https://www.designthinkers.com"
  },
  "designwest.eu": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "http://designwest.eu/info/"
   ],
-  "license_urls": [],
   "website": "http://designwest.eu"
  },
  "dev.rosettatype.com": {
@@ -3493,11 +3657,22 @@
   "website": "http://www.foundrytypes.co.uk"
  },
  "fount-magazine.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://fount-magazine.com/licensing",
+   "https://fount-magazine.com/license",
+   "https://fount-magazine.com/licenses"
   ],
-  "license_urls": [],
   "website": "http://fount-magazine.com"
  },
  "fountaintype.com": {
@@ -3551,11 +3726,20 @@
   "website": "https://framerusercontent.com"
  },
  "freiburg.social": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://freiburg.social/terms-of-service"
   ],
-  "license_urls": [],
   "website": "https://freiburg.social"
  },
  "freightcollection.com": {
@@ -3619,11 +3803,20 @@
   "website": "https://frenchtype.com"
  },
  "froh.ngo": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 2
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://froh.ngo/license"
   ],
-  "license_urls": [],
   "website": "https://froh.ngo"
  },
  "fsd.it": {
@@ -3779,13 +3972,6 @@
   ],
   "website": "https://ghost.org"
  },
- "global.productiontype.com": {
-  "checked": "2026-10-30",
-  "errors": [
-   "https://global.productiontype.com: HTTP 525"
-  ],
-  "website": "https://global.productiontype.com"
- },
  "graefe-druck.de": {
   "checked": "2026-10-30",
   "errors": [
@@ -3849,18 +4035,28 @@
   "website": "https://gregthompsontype.com"
  },
  "grok.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 21
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://docs.x.ai/grok/faq"
   ],
-  "license_urls": [],
   "website": "https://grok.com"
  },
  "gt-pressura.com": {
   "checked": "2026-10-30",
   "errors": [
-   "https://www.gt-pressura.com: HTTP 415"
+   "no license page found"
   ],
+  "license_urls": [],
   "website": "https://www.gt-pressura.com"
  },
  "gutenberg-intermedia.de": {
@@ -4187,11 +4383,29 @@
   "website": "https://idk.fh-joanneum.at"
  },
  "igepagroup.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:company_size": [
+     "The sustainable development of our group is based on around 3,300 employees at home and abroad, state-of-the-art logistics structures, and a growing international alliance.",
+     "employees, shareholders, customers, banks, suppliers, and associations"
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 6
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.igepa.de/international/",
+   "https://www.igepa.de/international/",
+   "https://www.igepa.de/international/"
   ],
-  "license_urls": [],
   "website": "http://www.igepagroup.com"
  },
  "iggesund.com": {
@@ -4203,11 +4417,22 @@
   "website": "https://www.iggesund.com"
  },
  "iliketoplay.dk": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 78
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://iliketoplay.dk/",
+   "https://iliketoplay.dk/",
+   "https://iliketoplay.dk/"
   ],
-  "license_urls": [],
   "website": "https://iliketoplay.dk"
  },
  "indienations.de": {
@@ -4311,11 +4536,20 @@
   "website": "https://www.inhousetype.com"
  },
  "instantschavires.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.instantschavires.com/infos-pratiques/"
   ],
-  "license_urls": [],
   "website": "https://www.instantschavires.com"
  },
  "invisioncommunity.com": {
@@ -4441,11 +4675,22 @@
   "website": "https://jfoundry.com"
  },
  "jingqi.work": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://jingqi.work/licensing",
+   "https://jingqi.work/license",
+   "https://jingqi.work/licenses"
   ],
-  "license_urls": [],
   "website": "https://jingqi.work"
  },
  "johnabbott.qc.ca": {
@@ -4473,11 +4718,21 @@
   "website": "https://www.josbuivenga.demon.nl"
  },
  "josef-spinner.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 8
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://josef-spinner.de/license.txt",
+   "https://josef-spinner.de/info-center/"
   ],
-  "license_urls": [],
   "website": "http://www.josef-spinner.de"
  },
  "joshownby.com": {
@@ -4543,11 +4798,20 @@
   "website": "http://www.julienfincker.com"
  },
  "justanotherfoundry.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 1
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://justanotherfoundry.com/legal"
   ],
-  "license_urls": [],
   "website": "https://justanotherfoundry.com"
  },
  "kilotype.de": {
@@ -4565,11 +4829,22 @@
   "website": "http://www.kimmydesign.com"
  },
  "kltf.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://kltf.de/licensing",
+   "https://kltf.de/kltf_about_license.shtml",
+   "https://kltf.de/licenses"
   ],
-  "license_urls": [],
   "website": "https://kltf.de"
  },
  "komma-mannheim.de": {
@@ -4579,14 +4854,6 @@
   ],
   "license_urls": [],
   "website": "http://komma-mannheim.de"
- },
- "kontrapunkt.com": {
-  "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
-  ],
-  "license_urls": [],
-  "website": "https://kontrapunkt.com"
  },
  "laboldevita.com": {
   "auto": {
@@ -4859,13 +5126,6 @@
   ],
   "website": "https://lettersfromsweden.se"
  },
- "licensing.productiontype.com": {
-  "checked": "2026-10-30",
-  "errors": [
-   "https://licensing.productiontype.com: HTTP 525"
-  ],
-  "website": "https://licensing.productiontype.com"
- },
  "lift-type.fr": {
   "auto": {
    "all_media_hits": 2,
@@ -4943,11 +5203,20 @@
   "website": "https://lineto.com"
  },
  "linotype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.myfonts.com/"
   ],
-  "license_urls": [],
   "website": "https://www.linotype.com"
  },
  "liptonletterdesign.com": {
@@ -5247,20 +5516,21 @@
   "license_urls": [],
   "website": "http://www.markvanleeuwen.co"
  },
- "mas.to": {
-  "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
-  ],
-  "license_urls": [],
-  "website": "https://mas.to"
- },
  "members.peopleofprint.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 13
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://members.peopleofprint.com/terms-of-use/"
   ],
-  "license_urls": [],
   "website": "https://members.peopleofprint.com"
  },
  "merz-akademie.de": {
@@ -5418,11 +5688,20 @@
   "website": "https://mindt.studio"
  },
  "minjooham.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "http://minjooham.com/eula/"
   ],
-  "license_urls": [],
   "website": "http://minjooham.com"
  },
  "mladenruzicic.com": {
@@ -5451,35 +5730,95 @@
   "website": "http://monkeytype.xyz"
  },
  "monotype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.monotypefonts.com/pages/eula"
   ],
-  "license_urls": [],
   "website": "https://www.monotype.com"
  },
  "moontype.de": {
+  "auto": {
+   "all_media_hits": 4,
+   "evidence": {
+    "all_media": [
+     "Our licenses are media-independent, meaning you can use the Fonts across all platforms—from print materials to digital media such as websites, mobile apps, eBooks, and more—without incurring additional fees.",
+     "Can I use the Fonts across all media?",
+     "Fonts may be used across print, digital, web, apps, and other media without additional fees."
+    ],
+    "metric:company_size": [
+     "The license is based on the total number of employees in the Licensee’s company, not the number of devices or designers using the Font.",
+     "Please select the appropriate license tier based on the total number of employees in the Licensee’s company, not the number of people actually using the Fonts.",
+     "If the company size significantly increases, the Licensee must update their license accordingly.",
+     "If purchasing Fonts for a client project, please select the appropriate license tier based on the client’s company size."
+    ],
+    "metric:seats": [
+     "The license is based on the total number of employees in the Licensee’s company, not the number of devices or designers using the Font."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 12,
+    "seats": 2
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 3
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://moontype.de/licensing",
+   "https://moontype.de/eula",
+   "https://moontype.de/faq"
   ],
-  "license_urls": [],
   "website": "https://moontype.de"
  },
  "moshik.net": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://moshik.net/",
+   "https://moshik.net/",
+   "https://moshik.net/"
   ],
-  "license_urls": [],
   "website": "http://www.moshik.net"
  },
  "moveable.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.moveable.com/licensing",
+   "https://www.moveable.com/license",
+   "https://www.moveable.com/licenses"
   ],
-  "license_urls": [],
   "website": "https://www.moveable.com"
  },
  "ms-studio.com": {
@@ -5529,11 +5868,20 @@
   "website": "https://www.ms-studio.com"
  },
  "mstdn.social": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://mstdn.social/terms-of-service"
   ],
-  "license_urls": [],
   "website": "https://mstdn.social"
  },
  "mycreativeland.com": {
@@ -5882,11 +6230,20 @@
   "website": "https://nootype.com"
  },
  "norden.social": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://norden.social/terms-of-service"
   ],
-  "license_urls": [],
   "website": "https://norden.social"
  },
  "norrebro.space": {
@@ -5970,11 +6327,28 @@
   "website": "https://novatypefoundry.com"
  },
  "now.blakewatson.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:seats": [
+     ", has really picked up steam in both the number of users and development of features."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "seats": 3
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "seats",
+   "suggested_qualifies": "no",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://now.blakewatson.com/licensing",
+   "https://now.blakewatson.com/license",
+   "https://now.blakewatson.com/licenses"
   ],
-  "license_urls": [],
   "website": "https://now.blakewatson.com"
  },
  "nts.live": {
@@ -6012,11 +6386,22 @@
   "website": "https://numbered.com"
  },
  "nvayrk.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.nvayrk.com/",
+   "https://www.nvayrk.com/",
+   "https://www.nvayrk.com/"
   ],
-  "license_urls": [],
   "website": "http://nvayrk.com"
  },
  "obrysy.xyz": {
@@ -6226,11 +6611,27 @@
   "website": "https://ogjtype.com"
  },
  "ohnotype.co": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:company_size": [
+     "The license granted herein does not extend to uses by temporary employees, freelancers or independent contractors using the Font Software in professional environments or for other professional uses in excess of the number of Authorized Users under this License."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 3
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://ohnotype.co/info/licenses/desktop",
+   "https://ohnotype.co/info/about"
   ],
-  "license_urls": [],
   "website": "https://www.ohnotype.co"
  },
  "okaytype.com": {
@@ -6297,19 +6698,40 @@
   "website": "https://onbehalfof.studio"
  },
  "openset.nl": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "http://www.openset.nl/cgi-sys/suspendedpage.cgi",
+   "http://www.openset.nl/cgi-sys/suspendedpage.cgi",
+   "http://www.openset.nl/cgi-sys/suspendedpage.cgi"
   ],
-  "license_urls": [],
   "website": "http://www.openset.nl"
  },
  "optimo.ch": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://optimo.ch/eula",
+   "https://optimo.ch/faq"
   ],
-  "license_urls": [],
   "website": "http://www.optimo.ch"
  },
  "order.design": {
@@ -6496,16 +6918,27 @@
  "papyrus-deutschland.de": {
   "checked": "2026-10-30",
   "errors": [
-   "https://www.papyrus-deutschland.de: HTTPSConnectionPool(host='www.papyrus-deutschland.de', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.papyrus-deutschland.de', port=443) at 0x10e80ae80>, 'Connection to www.papyrus-deutschland.de timed out. (connect timeout=30)'))"
+   "https://www.papyrus-deutschland.de: HTTPSConnectionPool(host='www.papyrus-deutschland.de', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.papyrus-deutschland.de', port=443) at 0x109a65370>, 'Connection to www.papyrus-deutschland.de timed out. (connect timeout=30)'))"
   ],
   "website": "https://www.papyrus-deutschland.de"
  },
  "paratype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.paratype.com/licensing",
+   "https://www.paratype.com/license",
+   "https://www.paratype.com/licenses"
   ],
-  "license_urls": [],
   "website": "https://paratype.com"
  },
  "pathfinders.rocks": {
@@ -6578,11 +7011,21 @@
   "website": "https://peopleofprint.store"
  },
  "perplexity.ai": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.perplexity.ai/pages/licensing",
+   "https://www.perplexity.ai/pages/licenses"
   ],
-  "license_urls": [],
   "website": "https://www.perplexity.ai"
  },
  "petra-d.com": {
@@ -6736,11 +7179,22 @@
   "website": "https://pintassilgoprints.com"
  },
  "playtype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 14
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://playtype.com/general-information/",
+   "https://playtype.com/general-information/privacy-policy/",
+   "https://playtype.com/general-information/terms-conditions/"
   ],
-  "license_urls": [],
   "website": "https://playtype.com"
  },
  "postdiplome.esad-amiens.fr": {
@@ -6882,19 +7336,69 @@
   "website": "https://processtypefoundry.com"
  },
  "prototypo.io": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://mathey.notion.site/Prototypo-22a55139f0324a7eb82a67bbceaa3a58",
+   "https://mathey.notion.site/Prototypo-22a55139f0324a7eb82a67bbceaa3a58",
+   "https://mathey.notion.site/Prototypo-22a55139f0324a7eb82a67bbceaa3a58"
   ],
-  "license_urls": [],
   "website": "https://www.prototypo.io"
  },
  "pstype.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "Your presentation of the TryAll Fonts may be via print, web or mobile applications."
+    ],
+    "logo:included": [
+     "Required for anything you print, including logos, signage, graphics, etc.",
+     "PS.Type retains all ownership, including intellectual property rights, trademarks, and copyrights, whether registered or not.",
+     "You’re allowed to make reasonable backup copies of the Webfonts, but these must include all original copyright, trademark, and proprietary notices."
+    ],
+    "metric:company_size": [
+     "The license granted to you under this Agreement includes use of the Font Software by members of your immediate household (in the case of Personal Use) and your employees, officers, directors and agents (in the case of Internal Business Use) (together, the “Authorized Persons”).",
+     "You must indemnify and hold harmless p.s.type, and its officers, directors, employees and agents, against any and all costs, expenses, liabilities, injuries, losses, damages, claims, demands and judgments that p.s.type incurs as a consequence of your breach of this Agreement."
+    ],
+    "metric:seats": [
+     "Licensed per user",
+     "Licensed per device",
+     "The license granted under this Agreement permits you to install and use the Font Software on the number of computers specified in your invoice for the purchase of the Font Software.",
+     "This license does not allow you to install Webfonts on a desktop, laptop, or workstation."
+    ],
+    "metric:traffic": [
+     "Approximate Monthly Pageviews",
+     "Licensed per Annual Impressions",
+     "You must take reasonable steps to prevent unauthorized access, like preventing hotlinking or direct file downloads unrelated to styling licensed Domains."
+    ]
+   },
+   "logo_scores": {
+    "included": 3
+   },
+   "metric_scores": {
+    "company_size": 2,
+    "seats": 4,
+    "traffic": 3
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 24
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://pstypelab.com/license"
   ],
-  "license_urls": [],
   "website": "http://Www.pstype.com"
  },
  "publictype.us": {
@@ -6940,11 +7444,22 @@
   "website": "http://www.radimpesko.com"
  },
  "rawtype.co.uk": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "http://www.rawtype.co.uk/licensing",
+   "http://www.rawtype.co.uk/license",
+   "http://www.rawtype.co.uk/licenses"
   ],
-  "license_urls": [],
   "website": "http://www.rawtype.co.uk"
  },
  "re-type.com": {
@@ -7026,11 +7541,22 @@
   "website": "https://www.renebieder.com"
  },
  "reportagen.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://reportagen.com/licensing",
+   "https://reportagen.com/license",
+   "https://reportagen.com/licenses"
   ],
-  "license_urls": [],
   "website": "https://reportagen.com"
  },
  "republi.sh": {
@@ -7142,11 +7668,20 @@
   "website": "https://www.roemerturm.de"
  },
  "romainoudin.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 2
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://romainoudin.com/license"
   ],
-  "license_urls": [],
   "website": "https://romainoudin.com"
  },
  "rosettatype.com": {
@@ -7344,11 +7879,22 @@
   "website": "https://schriftlabor.at"
  },
  "sebastianmoock.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 42
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://sebastianmoock.de/",
+   "https://sebastianmoock.de/",
+   "https://sebastianmoock.de/"
   ],
-  "license_urls": [],
   "website": "http://www.sebastianmoock.de"
  },
  "semplice.com": {
@@ -7497,19 +8043,37 @@
   "website": "https://www.slant-type.co"
  },
  "social.coop": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://social.coop/terms-of-service"
   ],
-  "license_urls": [],
   "website": "https://social.coop"
  },
  "social.lol": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://social.lol/terms-of-service"
   ],
-  "license_urls": [],
   "website": "https://social.lol"
  },
  "spoketype.com": {
@@ -7660,11 +8224,20 @@
   "website": "https://www.stonetypefoundry.com"
  },
  "store.jamieclarketype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://store.jamieclarketype.com/licenses"
   ],
-  "license_urls": [],
   "website": "https://store.jamieclarketype.com"
  },
  "stormtype.com": {
@@ -7728,14 +8301,6 @@
   "license_urls": [],
   "website": "https://strapi-julytype-1zhv.onrender.com"
  },
- "studiofeixen.ch": {
-  "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
-  ],
-  "license_urls": [],
-  "website": "https://www.studiofeixen.ch"
- },
  "sudtipos.com": {
   "auto": {
    "all_media_hits": 0,
@@ -7784,11 +8349,22 @@
   "website": "http://syntheticidea.tumblr.com"
  },
  "t-bi.link": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://app.rebrandly.com/broken-links",
+   "https://app.rebrandly.com/broken-links",
+   "https://app.rebrandly.com/broken-links"
   ],
-  "license_urls": [],
   "website": "http://t-bi.link"
  },
  "techdirt.com": {
@@ -8077,11 +8653,22 @@
   "website": "https://trashtype.com"
  },
  "twitch.tv": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://www.twitch.tv/licensing",
+   "https://www.twitch.tv/license",
+   "https://www.twitch.tv/licenses"
   ],
-  "license_urls": [],
   "website": "https://www.twitch.tv"
  },
  "type-01.com": {
@@ -8376,9 +8963,8 @@
  "typeoffeeling.com": {
   "checked": "2026-10-30",
   "errors": [
-   "no license page found"
+   "https://typeoffeeling.com: HTTP 403"
   ],
-  "license_urls": [],
   "website": "https://typeoffeeling.com"
  },
  "typerepublic.com": {
@@ -8550,11 +9136,44 @@
   "website": "https://typetanic.com"
  },
  "typetrust.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "\"Branding System\" as used herein shall mean any part of a graphic campaign or styleguide which involves the design and/or repetition of a logo, insignia, emblem, trademark, nameplate, logotype, typeface, symbol, standardized graphic arrangement or layout intended to signify or identify an agency or entity.",
+     "You agree that Publisher owns all right, title and interest in and to the Font Software, its structure, organization, code, and related files, including all property rights therein such as copyright, design and trademarks rights.",
+     "Any copies that you are expressly permitted to make pursuant to the Agreement must contain the same copyright, trademark, and other proprietary notices that appear on or in the Font Software.",
+     "You agree to use trademarks associated with the Font Software according to accepted trademark practice, including identification of the trademark owner's name."
+    ],
+    "metric:company_size": [
+     "\"Personal or Internal Business Use\" shall not include any Use of the Font Software by persons that are not members of your immediate household, your authorized employees, or your authorized agents.",
+     "All such household members, employees, and agents shall be notified by you as to the terms and conditions of the Agreement and shall agree to be bound by it before they make Use of the Font Software."
+    ],
+    "metric:seats": [
+     "This End User License Agreement (the \"Agreement\") becomes a binding contract between you and TypeTrust when you install the font for use on any Workstation.",
+     "1.5) Workstation",
+     "\"Workstation\" as used herein shall mean any component by which an individual is able to make Use of the Font Software.",
+     "\"Basic User License\" as used herein allows the Use of the Font Software on up to five (5) Workstations."
+    ]
+   },
+   "logo_scores": {
+    "included": 5
+   },
+   "metric_scores": {
+    "company_size": 2,
+    "seats": 7
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 9
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://typetrust.com/eula",
+   "https://typetrust.com/info",
+   "https://typetrust.com/terms"
   ],
-  "license_urls": [],
   "website": "http://typetrust.com"
  },
  "typetype.org": {
@@ -8904,19 +9523,39 @@
   "website": "https://typonine.com"
  },
  "typostammtisch.berlin": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 2
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://typostammtisch.berlin/license"
   ],
-  "license_urls": [],
   "website": "https://typostammtisch.berlin"
  },
  "typotage.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://typotage.de/LICENSE",
+   "https://typotage.de/LICENSE",
+   "https://typotage.de/LICENSE"
   ],
-  "license_urls": [],
   "website": "http://www.typotage.de"
  },
  "typoteka.pl": {
@@ -8996,11 +9635,22 @@
   "website": "https://ultra-kuhl.com"
  },
  "uncover-mannheim.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 9
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://uncover-mannheim.de/licensing",
+   "https://uncover-mannheim.de/license",
+   "https://uncover-mannheim.de/licenses"
   ],
-  "license_urls": [],
   "website": "https://www.uncover-mannheim.de"
  },
  "unit-type.com": {
@@ -9050,11 +9700,22 @@
   "website": "https://www.unit-type.com"
  },
  "universalthirst.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://universalthirst.com/eula",
+   "https://universalthirst.com/faq",
+   "https://universalthirst.com/terms"
   ],
-  "license_urls": [],
   "website": "https://universalthirst.com"
  },
  "uplustype.com": {
@@ -9142,11 +9803,22 @@
   "website": "https://us3.list-manage.com"
  },
  "velvetyne.fr": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://velvetyne.fr/greve/",
+   "https://velvetyne.fr/greve/",
+   "https://velvetyne.fr/greve/"
   ],
-  "license_urls": [],
   "website": "https://velvetyne.fr"
  },
  "viktornuebel.com": {
@@ -9235,11 +9907,20 @@
   "website": "https://vintagevoyagedesign.com"
  },
  "vis.social": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://vis.social/terms-of-service"
   ],
-  "license_urls": [],
   "website": "https://vis.social"
  },
  "viu.ca": {
@@ -9435,8 +10116,9 @@
  "web.archive.org": {
   "checked": "2026-10-30",
   "errors": [
-   "https://web.archive.org/web/20121030120825/http://www.faktor-i.de:80/: HTTP 429"
+   "no license page found"
   ],
+  "license_urls": [],
   "website": "https://web.archive.org/web/20121030120825/http://www.faktor-i.de:80/"
  },
  "web.hs-niederrhein.de": {
@@ -9521,11 +10203,21 @@
   "website": "https://www.weirfoulds.com"
  },
  "weltkern.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://weltkern.com/licensing",
+   "https://weltkern.com/licensing-terms"
   ],
-  "license_urls": [],
   "website": "https://www.weltkern.com"
  },
  "wenzeldaniel.com": {
@@ -9535,13 +10227,6 @@
   ],
   "license_urls": [],
   "website": "https://wenzeldaniel.com"
- },
- "wizard.productiontype.com": {
-  "checked": "2026-10-30",
-  "errors": [
-   "https://wizard.productiontype.com: HTTP 525"
-  ],
-  "website": "https://wizard.productiontype.com"
  },
  "wordpress.com": {
   "auto": {
@@ -9579,11 +10264,20 @@
   "website": "https://wordpress.com"
  },
  "wordpress.org": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://wordpress.org/about/license/"
   ],
-  "license_urls": [],
   "website": "https://wordpress.org"
  },
  "xing.com": {
@@ -9651,11 +10345,20 @@
   "website": "https://xotype.co"
  },
  "xplicit.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 1
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://xplicit.de/informieren-und-verkaufen/"
   ],
-  "license_urls": [],
   "website": "http://xplicit.de"
  },
  "yellowdesignstudio.com": {
@@ -9708,11 +10411,22 @@
   "website": "https://yellowdesignstudio.com"
  },
  "yoonmingoo.tf": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
   "checked": "2026-10-30",
-  "errors": [
-   "no license page found"
+  "license_urls": [
+   "https://yoonmingoo.tf/",
+   "https://yoonmingoo.tf/",
+   "https://yoonmingoo.tf/"
   ],
-  "license_urls": [],
   "website": "https://yoonmingoo.tf"
  },
  "yorku.ca": {

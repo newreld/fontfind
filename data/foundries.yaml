@@ -1891,28 +1891,29 @@ foundries:
     all_media: 'no'
     qualifies: 'no'
     summary: 'Pangram Pangram sells separate licenses per use: Print, Web, App, Social Media,
-      Broadcast, Video Game and Logo. Only the Logo license scales with employee count. Web
-      is priced by monthly pageviews, apps by active users, and social by followers. There
-      is no single company-size license covering all media.'
+      Broadcast and Logo. Only the Logo license scales with employee count. Web is priced
+      by monthly page views and the other licenses use other metrics, so there is no single
+      company-size license covering everything.'
     evidence:
-      - claim: Web license is priced by pageviews and is separate "To use a Font on a website,
-          the Licensee needs to purchase a Web License for each individual domain or subdomain
-          on which the Font is embedded, limited to a certain number of page views per month"
+      - claim: Web license is priced by pageviews, per domain "the Licensee needs to purchase
+          a Web License for each individual domain or subdomain on which the Font is embedded,
+          limited to a certain number of page views per month"
         source: https://pangrampangram.com/pages/eula
-      - claim: Logo license is separate and scales with employee count "To include the Use
-          of the Font in a corporation’s logo, the Licensee needs to purchase a Logo License
-          for each individual corporation for which the Fonts are used in the logo"
+      - claim: Logo license is separate and scaled by employee count "the Licensee needs to
+          purchase a Logo License for each individual corporation for which the Fonts are
+          used in the logo, and for each distinctive design of a corporation’s logo, other
+          than color and tagline, limited to the number of employees in the corporation."
         source: https://pangrampangram.com/pages/eula
-      - claim: Logo license coverage is based on number of employees "The license coverage
-          should reflect the total number of employees of the company using the logo."
-        source: https://pangrampangram.com/pages/faq
-      - claim: Multiple licenses are needed, one per use "Licenses are required for every
+      - claim: Multiple licenses are needed for multiple uses "Licenses are required for every
           use you intend to make."
         source: https://pangrampangram.com/pages/faq
-      - claim: App license is priced by active users, social by followers "The license coverage
-          should reflect the combined total number of followers from all social media platforms
-          where the font will be displayed."
+      - claim: Social media license is priced by followers "The license coverage should reflect
+          the combined total number of followers from all social media platforms where the
+          font will be displayed."
         source: https://pangrampangram.com/pages/faq
+      - claim: App license is priced by monthly active users "limited to a certain number
+          of active users per month, as specified during the checkout process."
+        source: https://pangrampangram.com/pages/eula
     verified:
       date: '2026-10-30'
       method: auto-reviewed (claude, quotes checked)
@@ -1987,31 +1988,31 @@ foundries:
     logo: included
     all_media: partial
     qualifies: 'no'
-    summary: Typotheque prices its standard licenses by number of users, with separate licenses
-      and fees for webfonts (by pageviews), apps/e-books, servers, broadcasting and OEM. The
-      Corporate Licence has no user limit and bundles Desktop, self-hosted webfont (up to
-      10 million page views) and App rights, but the pages give no sign that its price depends
-      on company size. Logo use is covered by a Desktop licence.
+    summary: Typotheque prices its Desktop licence per user. Its Webfont licence is priced
+      by monthly page views. The Corporate Licence is a one-time, company-wide licence with
+      no cap on users, but it is not priced by employee count. It covers Desktop, self-hosted
+      webfonts (up to 10 million page views) and apps. Logo use is allowed under a Desktop
+      licence.
     evidence:
-      - claim: Desktop licence is priced per user and covers logos "One-time fee, and perpetual
-          license for anything you print, including logos, signage, graphics, etc. Each user
-          needs their own license."
+      - claim: Desktop licence is priced per user and covers printed items including logos
+          "One-time fee, and perpetual license for anything you print, including logos, signage,
+          graphics, etc. Each user needs their own license."
         source: https://www.typotheque.com/licensing
-      - claim: Webfont pricing depends on monthly pageviews "For larger sites, we recommend
-          Self-hosted Webfonts, based on the number of your monthly page views."
+      - claim: Webfonts are priced by page views "For larger sites, we recommend Self-hosted
+          Webfonts, based on the number of your monthly page views."
         source: https://www.typotheque.com/licensing
-      - claim: Separate licenses exist for apps, servers, broadcasting and OEM "Additional
-          license for using fonts in TV broadcasting or in movie titling. The price is based
-          per location, and duration of the licence."
-        source: https://www.typotheque.com/licensing
-      - claim: Corporate Licence bundles desktop, web (capped at 10M page views) and apps
-          with unlimited users "combining the rights granted by our Desktop, Self-hosting
-          Webfont (up to 10 million page views), and App Licenses, with no limit on number
-          of users, number of domain names, or number of apps"
+      - claim: Corporate Licence bundles desktop, self-hosted webfont (up to 10M page views)
+          and app rights with unlimited users "combining the rights granted by our Desktop,
+          Self-hosting Webfont (up to 10 million page views), and App Licenses, with no limit
+          on number of users, number of domain names, or number of apps"
         source: https://www.typotheque.com/corporate-licence
-      - claim: Logo use needs only a Desktop licence "Yes, it is fine to use Typotheque fonts
-          in a logo. A simple Desktop licence is all you need."
+      - claim: Logo use is allowed with a Desktop licence "Yes, it is fine to use Typotheque
+          fonts in a logo. A simple Desktop licence is all you need."
         source: https://www.typotheque.com/help/using-fonts/logo-design
+      - claim: Broadcasting and server uses are separate additional licences "Additional license
+          for using fonts in TV broadcasting or in movie titling. The price is based per location,
+          and duration of the licence."
+        source: https://www.typotheque.com/licensing
     verified:
       date: '2026-10-30'
       method: auto-reviewed (claude, quotes checked)
@@ -2062,9 +2063,9 @@ foundries:
       checked: '2026-10-30'
       content_hash: 1c6e1a4a01dc4ba0
       changed_since_last_check: false
-    todo: Check how the Corporate Licence is priced (whether by employee count or company
-      size). Confirm whether it covers broadcasting, server and OEM use, and what happens
-      above 10 million page views.
+    todo: The pages do not say how the Corporate Licence price is calculated (for example,
+      whether it scales with company size). They also do not say whether TV/broadcast and
+      server use fall under it.
 
   - name: Rohh Type
     website: https://rohhtype.com
@@ -2074,27 +2075,24 @@ foundries:
     logo: separate
     all_media: 'no'
     qualifies: 'no'
-    summary: Rohh Type sells separate licenses per use case. Desktop is tiered by number of
-      users/workstations, Web by monthly pageviews, and Logo is its own license. Nothing on
-      the page prices by company size or employee count. The Enterprise license is unlimited
-      and covers all media, but the page gives no pricing basis for it.
+    summary: Rohh Type sells separate licenses per use case (Desktop, Logo, Web, App, etc.),
+      each scaled by its own metric such as workstations, pageviews, downloads or impressions.
+      None is priced by company size, and logo and web are separate licenses. The Enterprise
+      license is unlimited and all-inclusive, but its price basis isn't stated.
     evidence:
-      - claim: Desktop license is priced by number of users/workstations "Install on local
+      - claim: Desktop license is tiered by number of users/workstations "Install on local
           workstations for print, packaging, and static digital graphics. Tiered by the total
           number of users (workstations)."
         source: https://rohhtype.com/licensing-fonts/
-      - claim: Web license is priced by pageviews "Self-host and embed fonts into your website
+      - claim: Web license is scaled by pageviews "Self-host and embed fonts into your website
           using @font-face. Scaled by total monthly Pageviews."
         source: https://rohhtype.com/licensing-fonts/
       - claim: Logo is a separate license "Create and legally register a primary brand logo
           or trademark. Allows for vector outline modification for a single brand identity."
         source: https://rohhtype.com/licensing-fonts/
-      - claim: Desktop license excludes logo, web and broadcast use "Create a registered brand
-          logo"
-        source: https://rohhtype.com/licensing-fonts/
-      - claim: Enterprise license covers all media but is described as unlimited, not tiered
-          by company size "An unlimited, all-inclusive license for single organizations. Covers
-          all media, unlimited employees, logo registration, and sharing with partner agencies."
+      - claim: Enterprise license is unlimited and all-inclusive, with no stated size-based
+          pricing "An unlimited, all-inclusive license for single organizations. Covers all
+          media, unlimited employees, logo registration, and sharing with partner agencies."
         source: https://rohhtype.com/licensing-fonts/
     verified:
       date: '2026-10-30'
@@ -2141,8 +2139,8 @@ foundries:
       checked: '2026-10-30'
       content_hash: 63050bfefe299a83
       changed_since_last_check: false
-    todo: The page does not state how the Enterprise license is priced (possibly by quote).
-      Check whether it is based on company size.
+    todo: Enterprise license pricing basis is not stated; check whether it is priced by company
+      size.
 
   - name: Klim Type Foundry
     website: https://klim.co.nz
@@ -2150,14 +2148,16 @@ foundries:
       - https://klim.co.nz/licences/
     pricing_metric: seats
     logo: included
-    all_media: 'no'
+    all_media: partial
     qualifies: 'no'
-    summary: Klim prices by use case, not company size. Desktop licences scale with number
-      of users, web licences with page views or unique users, and app licences with MAUs or
-      downloads. Logos are covered by the Desktop licence. Enterprise and Unlimited licences
-      are bespoke, with no stated company-size pricing.
+    summary: Klim prices its licences by use case, not by company size. Desktop is based on
+      number of users, web on page views or unique users, apps on monthly active users or
+      downloads, and advertising and broadcasting on impressions or budget. Logos are covered
+      by the Desktop licence for print and marketing material, but web and app use need separate
+      licences. The only all-in option is a bespoke Enterprise licence, whose pricing is not
+      stated.
     evidence:
-      - claim: 'Desktop licence (covers logos/print) is priced by number of users "Pricing
+      - claim: 'Desktop licence is priced by number of users "Pricing
 
           Based on number of users"'
         source: https://klim.co.nz/licences/
@@ -2165,15 +2165,16 @@ foundries:
 
           Based on page views or unique users"'
         source: https://klim.co.nz/licences/
-      - claim: App licences are priced by MAUs or downloads "Based on monthly active users
-          (MAUs) or total downloads"
+      - claim: 'App licences are priced by MAUs or downloads "Pricing
+
+          Based on monthly active users (MAUs) or total downloads"'
         source: https://klim.co.nz/licences/
-      - claim: Logos are covered under the print/marketing use case, which uses the Desktop
-          licence "logos and logotypes; corporate documents; newsletters and annual reports"
+      - claim: Logos are covered under the print and marketing use case "logos and logotypes;
+          corporate documents; newsletters and annual reports"
         source: https://klim.co.nz/licences/
-      - claim: The Enterprise licence covers multiple media but its pricing is bespoke "use
-          them across various mediums, such as print media, online advertising, websites and
-          apps, without restriction."
+      - claim: The multi-medium Enterprise licence is bespoke, not size-tiered "use them across
+          various mediums, such as print media, online advertising, websites and apps, without
+          restriction."
         source: https://klim.co.nz/licences/
     verified:
       date: '2026-10-30'
@@ -2207,8 +2208,8 @@ foundries:
       checked: '2026-10-30'
       content_hash: 6be44a994676605a
       changed_since_last_check: false
-    todo: Check whether the bespoke Enterprise licence pricing is based on company size. The
-      page does not say.
+    todo: Enterprise licence pricing basis is not stated (bespoke, by request). Check whether
+      it scales with company size.
 
   - name: Grilli Type
     website: https://www.grillitype.com
@@ -2220,28 +2221,28 @@ foundries:
     qualifies: 'no'
     summary: Grilli Type does not price by company size. Desktop licenses scale with the number
       of computers, web licenses with unique monthly visitors, and app licenses with the number
-      of developers. Logo use is included with Desktop licensing, but web and apps need separate
-      licenses. There is also an unlimited tier for larger companies, priced from $10,000
-      per style.
+      of developers. Logo use is covered by the Desktop license, but web and apps need separate
+      licenses. Only an unlimited tier for larger companies is mentioned (from $10,000 per
+      style).
     evidence:
-      - claim: Three separate license types, each with its own pricing metric (computers,
-          visitors, developers) "Desktop licensing is calculated per computer the files are
-          installed on within a single organization. Get Web licensing to use our fonts on
-          your website with @font-face technology. Web licensing is calculated by the maximum
-          of unique monthly visitors to the website."
+      - claim: Three separate license types, each priced on a different metric "Purchase Desktop
+          licensing to use our fonts on your computer to create images and documents for print
+          and on screen. Desktop licensing is calculated per computer the files are installed
+          on within a single organization."
         source: https://www.grillitype.com/information
-      - claim: App licensing is priced by the number of developers "App licensing is calculated
-          by the numbers of developers working on your apps."
+      - claim: Web licensing is priced by traffic and is separate "Web licensing is calculated
+          by the maximum of unique monthly visitors to the website."
         source: https://www.grillitype.com/information
-      - claim: Logo use needs no special license beyond Desktop "No special license needed
-          to use our fonts for logos, as long as the computers used in creating the logo are
-          covered."
+      - claim: App licensing is priced by developer count and is separate "App licensing is
+          calculated by the numbers of developers working on your apps."
         source: https://www.grillitype.com/information
-      - claim: Web pricing is based on visitor numbers "This license pricing is based off
-          the projected number of unique monthly visitors you will have."
+      - claim: Logo use is covered by the Desktop license with no extra license "No special
+          license needed to use our fonts for logos, as long as the computers used in creating
+          the logo are covered."
         source: https://www.grillitype.com/information
-      - claim: A separate unlimited tier exists for large companies "The cost for unlimited-tier
-          licensing starts at $10,000 per style. Please email us for more information."
+      - claim: An unlimited tier exists for larger companies, but it is not priced by headcount
+          "We offer a licensing tier specifically created for the needs and requirements of
+          larger companies. The cost for unlimited-tier licensing starts at $10,000 per style."
         source: https://www.grillitype.com/information
     verified:
       date: '2026-10-30'
@@ -2278,6 +2279,8 @@ foundries:
       checked: '2026-10-30'
       content_hash: 8461de86f07dcd8f
       changed_since_last_check: false
+    todo: Check whether the unlimited/corporate tier bundles web, app and desktop use, and
+      whether its price depends on company size.
 
   - name: Commercial Type
     website: https://commercialtype.com
@@ -2288,9 +2291,9 @@ foundries:
     logo: unknown
     all_media: unknown
     qualifies: unknown
-    summary: Both provided pages (the FAQ and the EULA for Commercial Type) came through as
-      unreadable binary data. No licensing or pricing information could be extracted, so nothing
-      can be said about company-size pricing, logo use, media coverage or web use.
+    summary: Both pages for Commercial Type (the FAQs and the EULA) came through as unreadable
+      binary data. No licensing or pricing text could be read, so nothing can be said about
+      company-size pricing, logo use, media coverage or web use.
     evidence: []
     verified:
       date: '2026-10-30'
@@ -2306,9 +2309,9 @@ foundries:
       checked: '2026-10-30'
       content_hash: 4c858b4a2235ed83
       changed_since_last_check: true
-    todo: Re-fetch https://commercialtype.com/faqs and https://commercialtype.com/eula as
-      decoded text (the content appears to be compressed and was not decoded), then check
-      whether pricing scales with employee count and whether web, logo and all media are included.
+    todo: Re-fetch the FAQs and EULA pages as readable text (the content appears to be compressed
+      or encoded), or fetch the licensing/pricing pages, and review them for employee-count
+      pricing and for logo, web and media coverage.
     info: {}
 
   - name: Sharp Type
@@ -2343,27 +2346,27 @@ foundries:
     website: https://fonts.studiofeixen.ch
     license_urls:
       - https://fonts.studiofeixen.ch/wiki/
-    pricing_metric: traffic
+    pricing_metric: seats
     logo: included
     all_media: partial
     qualifies: 'no'
-    summary: Studio Feixen Fonts prices licenses by the number of computers (desktop) and
-      monthly visitors (web), bundled as a package. Employee count or company size is not
-      a price input. Logo creation is covered by the desktop license, but web use is tied
-      to traffic tiers.
+    summary: Studio Feixen Fonts prices its licenses by number of computers (desktop) and
+      monthly visitors (web), not by company size or employee count. The two are sold only
+      as a package, and the web part is traffic-based. Logo creation is covered by the desktop
+      license.
     evidence:
-      - claim: 'Pricing is based on computers and monthly visitors, not company size "Our
-          licenses are based on two variables: The number of computers on which the font software
-          will be installed and used, and the number of monthly visitors"'
+      - claim: 'Licenses scale with computers and monthly visitors, not headcount "Our licenses
+          are based on two variables: The number of computers on which the font software will
+          be installed and used, and the number of monthly visitors"'
         source: https://fonts.studiofeixen.ch/wiki/
-      - claim: Desktop license covers logos/trademarks "Create logos/trademarks, design and
-          print documents, as well as static images (.jpeg, .tiff, .png)."
-        source: https://fonts.studiofeixen.ch/wiki/
-      - claim: Web license is tiered by monthly visitors "Level 1 1-5 Computers 50K Monthly
-          Visitors"
+      - claim: Web use is priced by monthly visitors "Web License (Monthly Visitors)"
         source: https://fonts.studiofeixen.ch/wiki/
       - claim: Desktop and web are sold only as a package "Our licenses are available only
-          as a package, which includes both Desktop and Web licenses at the same time."
+          as a package, which includes both Desktop and Web licenses at the same time. The
+          two licenses cannot be purchased separately."
+        source: https://fonts.studiofeixen.ch/wiki/
+      - claim: Desktop license allows logo/trademark creation "Create logos/trademarks, design
+          and print documents, as well as static images (.jpeg, .tiff, .png)."
         source: https://fonts.studiofeixen.ch/wiki/
     verified:
       date: '2026-10-30'
@@ -2395,8 +2398,8 @@ foundries:
       checked: '2026-10-30'
       content_hash: a71cee60c63e9d7a
       changed_since_last_check: false
-    todo: Check the EULA for details on logo use, and for media such as video or broadcast
-      that the license pages do not cover.
+    todo: Enterprise license terms (unlimited) require a quote; the EULA was not available
+      to confirm logo and media details.
 
   - name: Colophon Foundry
     website: https://colophon-foundry.org
@@ -2406,14 +2409,12 @@ foundries:
     logo: unknown
     all_media: unknown
     qualifies: unknown
-    summary: The only page text is a generic Colophon Foundry profile (a MyFonts-style foundry
-      description). It says nothing about licensing, pricing, company size, logo use, media
-      or web use.
+    summary: The only page text is a generic Colophon Foundry profile, apparently from MyFonts.
+      It has no information on license types, pricing, company size, logo use, media or web
+      use.
     evidence:
-      - claim: The page text is only a foundry description with no license or pricing terms
-          "Colophon is an award-winning international type foundry based in London. Colophon
-          is recognized for its custom typeface designs, library, creative team, and font
-          technology tools."
+      - claim: The page is a general foundry description with no licensing terms "Colophon
+          is an award-winning international type foundry based in London."
         source: https://colophon-foundry.org/licensing
     verified:
       date: '2026-10-30'
@@ -2422,8 +2423,8 @@ foundries:
       checked: '2026-10-30'
       content_hash: null
       changed_since_last_check: false
-    todo: Find Colophon's actual license/EULA and pricing pages. Check whether price scales
-      with employee count, and whether web, logo and all-media use are included.
+    todo: Find the foundry's actual licensing or EULA page and check whether pricing is by
+      company size (employee count), and whether web, logo and all media are included.
     info: {}
 
   - name: Peregrin Studio
@@ -3225,36 +3226,6 @@ foundries:
       description: Premium typefaces designed by Kontrapunkt. Professional fonts for desktop,
         web, and app use.
 
-  - name: Moontype Foundry
-    website: ''
-    pricing:
-      note: No website found, so no prices; the EULA PDF has none.
-      source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
-    license_urls:
-      - https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
-    pricing_metric: company_size
-    logo: unknown
-    all_media: 'yes'
-    qualifies: likely
-    summary: EULA (2026) prices licenses by the total employees of the licensee and calls
-      them media-independent, naming websites, mobile apps and e-books as covered without
-      additional fees. Logo use is not mentioned. The foundry's own website was not found,
-      so only the EULA PDF was read.
-    evidence:
-      - claim: '"The license is based on the total number of employees in the Licensee''s
-          company, not the number of devices or designers using the Font."'
-        source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
-      - claim: '"Our licenses are media-independent, meaning you can use the Fonts across
-          all platforms—from print materials to digital media such as websites, mobile apps,
-          eBooks, and more—without incurring additional fees."'
-        source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
-    todo: Re-read the EULA 2026-10-30 - it has no logo, wordmark, trademark or brand clause.
-      Searches found no foundry website, store or contact page; find the official site and
-      ask whether logo/wordmark use is included.
-    verified:
-      date: '2026-10-30'
-      method: page-read (EULA PDF only; no foundry site found)
-
   - name: Taylor Penton
     website: https://taylorpenton.com
     pricing:
@@ -3495,17 +3466,37 @@ foundries:
     website: https://kontour.com
     license_urls:
       - https://kontour.com/licenses
-    pricing_metric: unknown
+    pricing_metric: traffic
     logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: Could not be read. kontour.com resets connections from both a script and the
-      browser pane, so no license terms were verified.
-    todo: Retry later or read the license page from another network.
-    evidence: []
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Kontour sells separate Desktop, Web and App licenses. Desktop is priced by number
+      of computers, Web by domains and monthly page views, and App by number of apps. Nothing
+      on the page prices by company size or employee count, and logo use is not mentioned.
+      Enterprise unlimited use is only available by contacting Kontour.
+    todo: Logo use is not stated. The page does not say whether the enterprise unlimited option
+      is priced by company size. The app license mentions a 'Licensee Size' in the order invoice,
+      but the page does not define it.
+    evidence:
+      - claim: Desktop license is priced by computers and locations "Choose the appropriate
+          number of licenses based on the number of computers (CPUs) and locations the fonts
+          will be installed on."
+        source: https://kontour.com/licenses
+      - claim: Web fonts are a separate license priced by domains and traffic "Web fonts are
+          priced by the number of domains owned by one entity, and expected unique visitors
+          of monthly (cumulative) page views."
+        source: https://kontour.com/licenses
+      - claim: App fonts need their own license, with extra apps costing more "If you (or
+          the app developer) wish to use the fonts in additional apps, you are required to
+          upgrade your license for an additional fee."
+        source: https://kontour.com/licenses
+      - claim: Enterprise unlimited use is only available on request "Please contact Kontour
+          for information about font licensing options not listed above, including server
+          use, enterprise unlimited use, broadcast, eBook embedding, and more."
+        source: https://kontour.com/licenses
     verified:
       date: '2026-10-30'
-      method: unreachable
+      method: auto-reviewed (claude, quotes checked)
     auto:
       checked: '2026-10-30'
       content_hash: null
@@ -5445,23 +5436,19 @@ foundries:
     pricing_metric: unknown
     logo: unknown
     all_media: unknown
-    qualifies: 'no'
-    summary: The supplied page is the terms and conditions of Believe in, a brand and graphic
-      design studio. It covers design services billed by job cost and hourly rates, not font
-      licensing. Nothing in it mentions fonts sold under a license priced by company size.
+    qualifies: unknown
+    summary: The only page provided is the terms and conditions of a brand and design studio,
+      covering bespoke design services billed by job cost and hourly rate. It contains no
+      font licensing information, so company-size pricing cannot be assessed.
     evidence:
-      - claim: Believe in is a design studio that charges by job cost or hourly rate, not
-          by company size "charges will be calculated mainly by reference to the time actually
-          spent by Believe in and its staff in carrying out the work."
+      - claim: Pricing is per job or by time spent, not by company size "charges will be calculated
+          mainly by reference to the time actually spent by Believe in and its staff in carrying
+          out the work."
         source: https://believein.net/terms-and-conditions
-      - claim: The only licence described is a royalty-free licence to use the delivered design
-          work as defined in the Brief "The Client shall have a royalty free licence, coming
+      - claim: The licence is a royalty-free licence limited to the uses defined in the project
+          Brief, not a font licence "The Client shall have a royalty free licence, coming
           into effect on payment of the relevant invoice, to use the Goods for the purposes,
           and in respect of the products or services defined in the Brief."
-        source: https://believein.net/terms-and-conditions
-      - claim: Typefaces are mentioned only as a project expense "All expenses related to
-          a production, for example couriers, DVDs, typefaces, stock, print-outs, scans and
-          overtime, will be invoiced by Believe in"
         source: https://believein.net/terms-and-conditions
     verified:
       date: '2026-10-30'
@@ -5498,9 +5485,10 @@ foundries:
       suggested_qualifies: partial
       web_hits: 3
       checked: '2026-10-30'
-    todo: The text supplied is a design-studio terms page, not a font foundry licence page.
-      A font licensing or EULA page would be needed to check whether Believe in sells fonts
-      at all.
+    todo: Find the foundry's actual font licensing or EULA page, if one exists, and check
+      whether pricing scales with company size and whether web, logo and all media are included.
+    info:
+      description: Believe in – graphic design and brand development
 
   - name: bertholdtypes.com
     website: https://www.bertholdtypes.com
@@ -5511,31 +5499,12 @@ foundries:
       - https://www.myfonts.com/a/font/legal/website-use-privacy-policy
     pricing_metric: unknown
     logo: unknown
-    all_media: 'no'
-    qualifies: unknown
-    summary: None of the supplied pages come from bertholdtypes.com or mention Berthold. They
-      are generic MyFonts FAQ, legal and privacy pages, so nothing here confirms how this
-      foundry prices its licenses. MyFonts does offer a headcount-tiered Company Desktop license,
-      but it excludes web and other media and is limited to 250 employees. MyFonts webfonts
-      are priced by pageviews.
-    evidence:
-      - claim: MyFonts Company Desktop is tiered by employee headcount "It covers your direct
-          employees, with the tier based on total employee headcount."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Company Desktop excludes webfont, app and digital ad use "Company Desktop does
-          not cover using the font as a webfont or embedding it in a mobile app or digital
-          ad. Those deployments need their own licenses."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Company Desktop is only offered up to 250 employees "MyFonts offers Company
-          Desktop for organizations with up to 250 employees."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Webfonts are priced by monthly pageviews, not company size "You get a total
-          number of pageviews that can be used per month."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Logo use depends on a Desktop license and the foundry's own EULA "Minimally
-          a Desktop license would be required to use a font in a logo, so that the font can
-          be installed onto a workstation"
-        source: https://www.myfonts.com/pages/faq
+    all_media: unknown
+    qualifies: 'no'
+    summary: Sold through MyFonts under Monotype's license terms (company desktop is priced
+      by headcount, but web and other uses are separate licenses). Not an independent company-size
+      license.
+    evidence: []
     verified:
       date: '2026-10-30'
       method: auto-reviewed (claude, quotes checked)
@@ -5594,9 +5563,9 @@ foundries:
       suggested_qualifies: partial
       web_hits: 75
       checked: '2026-10-30'
-    todo: Fetch bertholdtypes.com's own licensing or pricing pages, and the Berthold listing
-      and EULA on MyFonts, to see whether it has a single employee-count license covering
-      web, logo and all media.
+    todo: Review bertholdtypes.com's own licensing or EULA pages, or the Berthold Types listing
+      on MyFonts, to see whether a single company-size license exists and covers web, logo
+      and all media.
     info:
       image: https://cdn.shopify.com/s/files/1/0568/7164/9450/files/myfont-logo-duck-500.png
       description: 'Welcome to MyFonts, the #1 place to download great @font-face webfonts
@@ -5621,29 +5590,14 @@ foundries:
       - https://www.myfonts.com/a/font/legal
       - https://www.myfonts.com/a/font/legal/terms-of-use
       - https://www.myfonts.com/a/font/legal/website-use-privacy-policy
-    pricing_metric: mixed
+    pricing_metric: unknown
     logo: unknown
-    all_media: 'no'
-    qualifies: unknown
-    summary: The pages are generic MyFonts (Monotype) FAQ, legal and privacy pages, and none
-      of them describe fontfeed.com's own licensing. MyFonts' Company Desktop licence is tiered
-      by employee headcount, but it excludes webfont, app and digital-ad use. Its other licences
-      scale with users or pageviews. Nothing here shows whether fontfeed.com sells a company-size
-      licence covering web, logo and all media.
-    evidence:
-      - claim: MyFonts' Company Desktop licence is priced by employee headcount "It covers
-          your direct employees, with the tier based on total employee headcount."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Company Desktop excludes web, app and digital-ad use, which need separate licences
-          "Company Desktop does not cover using the font as a webfont or embedding it in a
-          mobile app or digital ad. Those deployments need their own licenses."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Standard Desktop licences are priced by number of users "Desktop licenses are
-          based on the number of users of the fonts."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Webfont licences are priced by monthly pageviews "You get a total number of
-          pageviews that can be used per month."
-        source: https://www.myfonts.com/pages/faq
+    all_media: unknown
+    qualifies: 'no'
+    summary: Sold through MyFonts under Monotype's license terms (company desktop is priced
+      by headcount, but web and other uses are separate licenses). Not an independent company-size
+      license.
+    evidence: []
     verified:
       date: '2026-10-30'
       method: auto-reviewed (claude, quotes checked)
@@ -5702,10 +5656,9 @@ foundries:
       suggested_qualifies: partial
       web_hits: 75
       checked: '2026-10-30'
-    todo: The supplied pages do not cover fontfeed.com. Fetch fontfeed.com's own licensing
-      or EULA pages to see whether it offers a company-size licence. Also confirm whether
-      logo use and web use are included, and whether the foundry has its own terms separate
-      from the MyFonts marketplace.
+    todo: Fetch the fontfeed.com licensing or FAQ page, or the foundry's own EULA. Then check
+      whether it sells a company-size-priced license and whether that license covers web,
+      logo and all media.
     info:
       image: https://cdn.shopify.com/s/files/1/0568/7164/9450/files/MyFonts_Logo.png?v=1717746124
       description: These are the top selling fonts released within the last 50 days. Updated
@@ -5724,26 +5677,11 @@ foundries:
     pricing_metric: unknown
     logo: unknown
     all_media: unknown
-    qualifies: unknown
-    summary: All the pages supplied are MyFonts marketplace, legal and privacy pages. None
-      of them describe Fontsmith's own licensing. MyFonts has a headcount-tiered Company Desktop
-      license, but it excludes web, app and ad use. Webfonts there are priced by pageviews.
-      That is MyFonts' general model, not evidence about Fontsmith.
-    evidence:
-      - claim: MyFonts' Company Desktop license is tiered by employee headcount (a MyFonts
-          product, not shown to be Fontsmith's) "It covers your direct employees, with the
-          tier based on total employee headcount."
-        source: https://www.myfonts.com/pages/faq
-      - claim: MyFonts' Company Desktop license excludes webfont, app and digital ad use "Company
-          Desktop does not cover using the font as a webfont or embedding it in a mobile app
-          or digital ad. Those deployments need their own licenses."
-        source: https://www.myfonts.com/pages/faq
-      - claim: MyFonts webfont licenses are usually priced by pageviews "You get a total number
-          of pageviews that can be used per month."
-        source: https://www.myfonts.com/pages/faq
-      - claim: On MyFonts, each foundry's own EULA governs logo use "Please be sure to review
-          the listing foundry’s Desktop EULA as some restrictions may apply."
-        source: https://www.myfonts.com/pages/faq
+    qualifies: 'no'
+    summary: Sold through MyFonts under Monotype's license terms (company desktop is priced
+      by headcount, but web and other uses are separate licenses). Not an independent company-size
+      license.
+    evidence: []
     verified:
       date: '2026-10-30'
       method: auto-reviewed (claude, quotes checked)
@@ -5802,9 +5740,9 @@ foundries:
       suggested_qualifies: partial
       web_hits: 75
       checked: '2026-10-30'
-    todo: Fetch Fontsmith's own licensing or pricing pages (fontsmith.com). Check whether
-      it offers a company-size-based license. Check whether that license covers web, logo
-      and all media.
+    todo: Fetch the Fontsmith site (fontsmith.com) licensing or EULA pages. Check whether
+      Fontsmith offers a company-size license that includes web, logo and all media. Also
+      check whether the MyFonts Company Desktop license applies to Fontsmith fonts.
     info:
       image: https://cdn.shopify.com/s/files/1/0568/7164/9450/files/myfont-logo-duck-500.png
       description: 'Welcome to MyFonts, the #1 place to download great @font-face webfonts
@@ -5818,28 +5756,14 @@ foundries:
       - https://www.myfonts.com/a/font/legal
       - https://www.myfonts.com/a/font/legal/terms-of-use
       - https://www.myfonts.com/a/font/legal/website-use-privacy-policy
-    pricing_metric: mixed
+    pricing_metric: unknown
     logo: unknown
-    all_media: 'no'
-    qualifies: unknown
-    summary: The pages are generic MyFonts/Monotype pages and say nothing about milieugrotesque.com's
-      own licensing. MyFonts does offer a 'Company Desktop' license tiered by employee headcount,
-      but it excludes webfont, app and digital ad use. Its other licenses are priced by users,
-      pageviews, servers or publications.
-    evidence:
-      - claim: MyFonts' Company Desktop license is tiered by employee headcount "It covers
-          your direct employees, with the tier based on total employee headcount."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Company Desktop excludes web, app and digital ad use "Company Desktop does
-          not cover using the font as a webfont or embedding it in a mobile app or digital
-          ad. Those deployments need their own licenses."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Standard Desktop licenses are priced by number of users "Desktop licenses are
-          based on the number of users of the fonts."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Webfonts are priced by monthly pageviews "You get a total number of pageviews
-          that can be used per month."
-        source: https://www.myfonts.com/pages/faq
+    all_media: unknown
+    qualifies: 'no'
+    summary: Sold through MyFonts under Monotype's license terms (company desktop is priced
+      by headcount, but web and other uses are separate licenses). Not an independent company-size
+      license.
+    evidence: []
     verified:
       date: '2026-10-30'
       method: auto-reviewed (claude, quotes checked)
@@ -5898,9 +5822,9 @@ foundries:
       suggested_qualifies: partial
       web_hits: 75
       checked: '2026-10-30'
-    todo: Check milieugrotesque.com's own licensing or EULA pages. Confirm whether the foundry
-      sells a company-size license at all, and whether it covers web, logo and all media.
-      The Company Desktop EULA is needed to confirm whether logo use is allowed.
+    todo: Review the foundry's own site (milieugrotesque.com) or its font page and EULA on
+      MyFonts. Check whether it sells a company-size license, and whether that license covers
+      web, logo and all media.
     info:
       image: https://cdn.shopify.com/s/files/1/0568/7164/9450/files/myfont-logo-duck-500.png
       description: 'Welcome to MyFonts, the #1 place to download great @font-face webfonts
@@ -5917,26 +5841,11 @@ foundries:
     pricing_metric: unknown
     logo: unknown
     all_media: unknown
-    qualifies: unknown
-    summary: The pages provided are MyFonts' generic FAQ and legal pages, with nothing specific
-      to urwpp.de. MyFonts does sell a Company Desktop license tiered by employee headcount,
-      but it excludes webfont use and is a design license. Nothing shows that URW++ offers
-      a single company-size license covering web, logo and all media.
-    evidence:
-      - claim: MyFonts offers a Company Desktop license tiered by employee headcount (generic
-          MyFonts product, not shown to be URW++) "It covers your direct employees, with the
-          tier based on total employee headcount."
-        source: https://www.myfonts.com/pages/faq
-      - claim: The Company Desktop license does not cover web use, apps or digital ads "Company
-          Desktop does not cover using the font as a webfont or embedding it in a mobile app
-          or digital ad. Those deployments need their own licenses."
-        source: https://www.myfonts.com/pages/faq
-      - claim: MyFonts webfonts are generally priced by pageviews "You get a total number
-          of pageviews that can be used per month."
-        source: https://www.myfonts.com/pages/faq
-      - claim: Logo use needs at least a Desktop license, and the foundry's own EULA may restrict
-          it "Minimally a Desktop license would be required to use a font in a logo"
-        source: https://www.myfonts.com/pages/faq
+    qualifies: 'no'
+    summary: Sold through MyFonts under Monotype's license terms (company desktop is priced
+      by headcount, but web and other uses are separate licenses). Not an independent company-size
+      license.
+    evidence: []
     verified:
       date: '2026-10-30'
       method: auto-reviewed (claude, quotes checked)
@@ -5995,11 +5904,278 @@ foundries:
       suggested_qualifies: partial
       web_hits: 75
       checked: '2026-10-30'
-    todo: Fetch urwpp.de's own pricing and licensing pages to see whether URW++ sells a company-size
-      license and what it covers (web, logo, all media). The pages reviewed concern MyFonts
-      only.
+    todo: Review the urwpp.de site and its own license or EULA pages. Check whether URW++
+      sells a company-size license covering web, logo and all media. The MyFonts pages describe
+      only MyFonts' own license types.
     info:
       image: https://cdn.shopify.com/s/files/1/0568/7164/9450/files/myfont-logo-duck-500.png
       description: 'Welcome to MyFonts, the #1 place to download great @font-face webfonts
         and desktop fonts: classics (Baskerville, Futura, Garamond) alongside hot new fonts
         (TT Fellows, Hernandez Bros,Phonk Sans).'
+
+  - name: alannamunro.com
+    website: https://alannamunro.com
+    license_urls:
+      - https://www.arcanetype.com/licensing
+    pricing_metric: company_size
+    logo: included
+    all_media: partial
+    qualifies: partial
+    summary: Arcane Type Foundry (the page for alannamunro.com's successor) prices every license
+      by number of employees, and Core Coverage includes desktop use (print, logos, social
+      media) and self-hosted web. App/software embedding, hardware embedding and streaming/TV/movie
+      need the pricier Extended Coverage, so one license does not cover all media.
+    evidence:
+      - claim: 'Price is tiered only by employee count "Every license is tiered by one metric:
+          the number of employees at your company. You don’t have to predict users, pageviews,
+          or downloads."'
+        source: https://www.arcanetype.com/licensing
+      - claim: 'Core Coverage includes logos and self-hosted web "✦ Desktop (print, logos,
+          social media)
+
+          ✦ Web (self-hosted)"'
+        source: https://www.arcanetype.com/licensing
+      - claim: 'App, hardware and streaming/TV/movie use need Extended Coverage "Everything
+          in Core Coverage plus:
+
+          ✦ App & Software Embedding
+
+          ✦ Hardware Embedding
+
+          ✦ Streaming/TV/Movie"'
+        source: https://www.arcanetype.com/licensing
+      - claim: Basic coverage allows unlimited websites "You may also use the Font on any
+          number of websites using CSS @font-face in only WOFF, WOFF2, and SVG formats (OTF
+          format is not permitted for web use)."
+        source: https://www.arcanetype.com/licensing
+    verified:
+      date: '2026-10-30'
+      method: auto-reviewed (claude, quotes checked)
+    auto:
+      all_media_hits: 0
+      evidence:
+        logo:included:
+          - You are allowed to convert text set in the Font into outlined vector files and
+            modify the outlines to create logos and artwork but you may not use these outlines
+            to create any font, typeface, or font software.
+          - Desktop use includes (but is not limited to) the design of printed materials,
+            logos, and static images including for use in social media.
+        metric:company_size:
+          - Two coverage options and a license size based on the number of employees at your
+            company.
+          - We adjust prices by company size & location, offer discounts to social enterprises,
+            and give students a free license.
+          - ✦ Company Size ✦
+          - 'Every license is tiered by one metric: the number of employees at your company.'
+        metric:traffic:
+          - You don’t have to predict users, pageviews, or downloads.
+          - You may also embed the Font in any number of apps, digital products, or ePubs,
+            with no limit on number of downloads.
+      logo_scores:
+        included: 4
+      metric_scores:
+        company_size: 14
+        traffic: 4
+      suggested_logo: included
+      suggested_metric: company_size
+      suggested_qualifies: partial
+      web_hits: 8
+      checked: '2026-10-30'
+    todo: Confirm whether Extended Coverage costs extra over Core, and what it costs. The
+      text gives no prices, so the size of the upcharge is unknown.
+    info:
+      image: https://alannamunro.com/images/SocialShare.jpg
+      description: High-Quality Fonts For Letter Nerds looking for hand-crafted fonts that
+        prioritize technical precision.
+
+  - name: blast-foundry.com
+    website: https://blast-foundry.com
+    license_urls:
+      - https://blast-foundry.com/licensing
+    pricing_metric: seats
+    logo: unknown
+    all_media: partial
+    qualifies: 'no'
+    summary: Blast Foundry prices its Basic (desktop) licence by the number of users. Web
+      use needs a separate Web Licence priced by page views per month, and app and broadcast
+      use need further licences. A Brand Licence for larger companies covers all media without
+      metrics, but no price or company-size basis is stated.
+    evidence:
+      - claim: The Basic licence is priced by number of users, not company size "The Basic
+          licence covers you for installing fonts on your multiple workstations and is based
+          on the number of users that will ultimately have access to the font."
+        source: https://blast-foundry.com/licensing
+      - claim: Web use is a separate licence priced by page views "The only metric is page
+          views/month, which you'll have to keep track of."
+        source: https://blast-foundry.com/licensing
+      - claim: TV and broadcast, website and app embedding need additional licensing "You’ll
+          need to purchase additional licensing to get permission to publish the material
+          in a TV commercial, and to embed the font on your website or in an app."
+        source: https://blast-foundry.com/licensing
+      - claim: A Brand Licence covers all media for larger companies, but no pricing basis
+          is given "A Brand Licence is tailored for larger companies and gives you unlimited
+          permission to use the fonts cross-media (desktop, web, app, broadcast, social media,
+          etc)."
+        source: https://blast-foundry.com/licensing
+    verified:
+      date: '2026-10-30'
+      method: auto-reviewed (claude, quotes checked)
+    auto:
+      all_media_hits: 1
+      evidence:
+        all_media:
+          - A Brand Licence is tailored for larger companies and gives you unlimited permission
+            to use the fonts cross-media (desktop, web, app, broadcast, social media, etc).
+        logo:included:
+          - You hereby grant to us the right and permission to (a) reference the relationship
+            between us and you, (b) your use of the Font Software (including reference to
+            your business name, trade mark, and/or service mark), and (c) display screenshots,
+            photographs and captures of your use of the Font Software (and you hereby agree
+            to promptly, within a reasonable period, supply copies of materials as reasonably
+            requested by us to display the same).
+        metric:company_size:
+          - Where the Scope of Licence grants use in respect of .pdf creation and external
+            distribution of the resulting .pdf documents to end users for the purpose of those
+            end users to download/access the document, you and all Sublicensees (whether acting
+            by themselves or by their employees, officers, suppliers, contractors and/or agents,
+            as the case may be) may embed the Font Software (or any of part thereof) within
+            a file intended for consumption by that end user, in accordance with the restrictions
+            set out in the Scope of Licence.
+          - You will use all reasonable endeavours to ensure that the Font Software is not
+            distributed as, or within, an executable or installable file, nor that the Font
+            Software is installed on or within any end user’s hardware operation system, by
+            you, the Sublicensees or their employees, suppliers, contractors or agents.
+          - Where the Scope of Licence grants use in respect of webpages, you and any Sublicensees
+            (by themselves or by their employees, suppliers, contractors and/or agents) may
+            only put online and/or link (excluding hotlinking) to the .WOFF, and .WOFF2, and/or
+            Web-Only .TTF file formats of the Font Software (or any part thereof), provided
+            the same is within the Scope of Licence.
+          - You will ensure that you, Sublicensees, and their employees, suppliers, contractors
+            and agents will not put online and/or link to any other file format, including,
+            but not limited to, TrueType or OpenType.
+        metric:seats:
+          - covers you for installing fonts on your multiple workstations and is based on
+            the number of users that will ultimately have access to the font.
+        metric:traffic:
+          - page views/month,
+      logo_scores:
+        included: 1
+      metric_scores:
+        company_size: 7
+        seats: 1
+        traffic: 1
+      suggested_logo: included
+      suggested_metric: company_size
+      suggested_qualifies: likely
+      web_hits: 15
+      checked: '2026-10-30'
+    todo: Logo use is not mentioned. The Brand Licence price basis (company size or not) is
+      not stated; it is only available on request.
+
+  - name: IGEPA (not a foundry)
+    website: http://www.igepagroup.com
+    license_urls:
+      - https://www.igepa.de/international/
+    pricing_metric: unknown
+    logo: unknown
+    all_media: unknown
+    qualifies: 'no'
+    summary: A paper and packaging wholesaler, not a type foundry.
+    evidence: []
+    verified:
+      date: '2026-10-30'
+      method: auto-reviewed (claude, quotes checked)
+    auto:
+      all_media_hits: 0
+      evidence:
+        metric:company_size:
+          - The sustainable development of our group is based on around 3,300 employees at
+            home and abroad, state-of-the-art logistics structures, and a growing international
+            alliance.
+          - employees, shareholders, customers, banks, suppliers, and associations
+      logo_scores: {}
+      metric_scores:
+        company_size: 6
+      suggested_logo: unknown
+      suggested_metric: company_size
+      suggested_qualifies: partial
+      web_hits: 0
+      checked: '2026-10-30'
+    todo: No font licensing pages were provided. Check whether igepagroup.com is a type foundry
+      at all. It is probably a wrong match for this foundry, so find the correct foundry domain
+      and its license page.
+
+  - name: Moontype Foundry
+    website: https://moontype.de
+    license_urls:
+      - https://moontype.de/licensing
+      - https://moontype.de/eula
+      - https://moontype.de/faq
+      - https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
+    pricing_metric: company_size
+    logo: unknown
+    all_media: 'yes'
+    qualifies: likely
+    summary: Moontype Foundry prices its licenses by the total number of employees in the
+      licensee's company, not by users or devices. The licenses are media-independent and
+      cover print, websites, apps and eBooks with no additional fees. The pages never mention
+      logo use, so that point is unconfirmed.
+    evidence:
+      - claim: Price is based on employee count, not users or devices "The license is based
+          on the total number of employees in the Licensee’s company, not the number of devices
+          or designers using the Font."
+        source: https://moontype.de/licensing
+      - claim: License tier is chosen by company size "License fees are determined by the
+          size of the Licensee’s company. Please select the appropriate license tier based
+          on the total number of employees in the Licensee’s company, not the number of people
+          actually using the Fonts."
+        source: https://moontype.de/licensing
+      - claim: All media, including web and apps, is covered without extra fees "Our licenses
+          are media-independent, meaning you can use the Fonts across all platforms—from print
+          materials to digital media such as websites, mobile apps, eBooks, and more—without
+          incurring additional fees."
+        source: https://moontype.de/licensing
+      - claim: FAQ confirms web and other media are included "Yes, all licenses are media-independent.
+          Fonts may be used across print, digital, web, apps, and other media without additional
+          fees."
+        source: https://moontype.de/faq
+    verified:
+      date: '2026-10-30'
+      method: auto-reviewed (claude, quotes checked)
+    auto:
+      all_media_hits: 4
+      evidence:
+        all_media:
+          - Our licenses are media-independent, meaning you can use the Fonts across all platforms—from
+            print materials to digital media such as websites, mobile apps, eBooks, and more—without
+            incurring additional fees.
+          - Can I use the Fonts across all media?
+          - Fonts may be used across print, digital, web, apps, and other media without additional
+            fees.
+        metric:company_size:
+          - The license is based on the total number of employees in the Licensee’s company,
+            not the number of devices or designers using the Font.
+          - Please select the appropriate license tier based on the total number of employees
+            in the Licensee’s company, not the number of people actually using the Fonts.
+          - If the company size significantly increases, the Licensee must update their license
+            accordingly.
+          - If purchasing Fonts for a client project, please select the appropriate license
+            tier based on the client’s company size.
+        metric:seats:
+          - The license is based on the total number of employees in the Licensee’s company,
+            not the number of devices or designers using the Font.
+      logo_scores: {}
+      metric_scores:
+        company_size: 12
+        seats: 2
+      suggested_logo: unknown
+      suggested_metric: company_size
+      suggested_qualifies: partial
+      web_hits: 3
+      checked: '2026-10-30'
+    todo: Logo use is not mentioned on the licensing, EULA or FAQ pages. Check whether logos
+      or trademarks are covered or excluded, for example in the Terms and Conditions.
+    info:
+      image: https://freight.cargo.site/w/1000/i/E2791683191504101081645001793824/screenshot-2228790706.jpg
+      description: Moontype is a type foundry based in Hamburg and Stockholm, run by Pia Schröer
+        and Julia Flomm.
