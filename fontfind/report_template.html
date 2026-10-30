@@ -24,7 +24,7 @@ h1 { margin:0; font-size:clamp(30px, 4.6vw, 46px); letter-spacing:-.01em; line-h
 .bar button[aria-pressed="true"]::before { background:var(--on-strong); }
 .bar input { margin-left:auto; min-width:200px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:20px; }
-.card { border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; background:var(--card); display:flex; flex-direction:column; text-align:left; padding:0; color:inherit; font:inherit; }
+.card { height:100%; border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; background:var(--card); display:flex; flex-direction:column; text-align:left; padding:0; color:inherit; font:inherit; }
 .card:hover, .card:focus-visible { border-color:var(--accent); outline:none; box-shadow:0 0 0 1px var(--accent); }
 .cover { aspect-ratio:16/10; background:var(--tile); display:grid; place-items:center; overflow:hidden; position:relative; }
 .cover img { width:100%; height:100%; object-fit:cover; display:block; }
@@ -34,18 +34,18 @@ h1 { margin:0; font-size:clamp(30px, 4.6vw, 46px); letter-spacing:-.01em; line-h
 .pill { color:var(--on-strong); }
 .pill.q-yes { background:var(--yes); } .pill.q-likely { background:var(--likely); }
 .pill.q-partial { background:var(--partial); } .pill.q-unknown { background:var(--unknown); }
-.body { padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }
+.body { padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; flex:1; }
 .title { display:flex; justify-content:space-between; gap:8px; align-items:baseline; }
-.title b { font-size:17px; letter-spacing:-.01em; }
+.title b { font-size:17px; letter-spacing:-.01em; overflow-wrap:anywhere; }
 .sub { color:var(--muted); font-size:12px; white-space:nowrap; }
-.lic { display:grid; grid-template-columns:1fr auto; gap:6px 12px; align-items:center; padding-top:10px; border-top:1px solid var(--line); font-size:13px; }
-.price { font-weight:700; font-size:15px; }
+.lic { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px 12px; align-items:center; margin-top:auto; padding-top:10px; border-top:1px solid var(--line); font-size:13px; }
+.price { font-weight:700; font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
 .price small { font-weight:400; color:var(--muted); font-size:12px; }
 .marks { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }
 .mark { font-size:11px; border:1px solid var(--line); border-radius:3px; padding:2px 7px; color:var(--muted); }
 .mark.ok { color:var(--yes); background:var(--yes-bg); border-color:transparent; }
 .mark.warn { color:var(--partial); background:var(--partial-bg); border-color:transparent; }
-.faces { color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.faces { color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-height:1.4em; }
 dialog { border:1px solid var(--line); border-radius:8px; padding:0; width:min(680px, 94vw); background:var(--bg); color:var(--fg); max-height:88vh; }
 dialog::backdrop { background:rgba(0,0,0,.55); }
 .dlg { padding:24px; overflow:auto; max-height:88vh; }

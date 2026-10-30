@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 
 from fontfind import crawl, db
 
@@ -31,12 +32,14 @@ TEMPLATE = db.ROOT / "fontfind" / "report_template.html"
 
 
 def price_from(pricing: dict | None) -> str:
-    """Smallest published tier as a short label, e.g. 'EUR 327 · solo'."""
+    """Short card label for the smallest published tier, e.g. 'from USD 528'. Full wording lives in the detail panel."""
     tiers = [t for t in (pricing or {}).get("tiers") or [] if any(ch.isdigit() for ch in str(t.get("price", "")))]
     if not tiers:
         return ""
-    first = tiers[0]
-    return f"{pricing.get('currency', '')} {first.get('price', '')}".strip() + f" · {first.get('employees', '')}"
+    price = str(tiers[0]["price"])
+    number = re.search(r"\d[\d.,' ]*\d|\d", price)
+    currency = str(pricing.get("currency", "")).strip() or (re.match(r"[A-Za-z$€£]+", price) or [""])[0]
+    return f"from {currency} {number.group(0).strip() if number else price}".replace("  ", " ").strip()[:24]
 
 
 def build() -> str:

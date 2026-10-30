@@ -55,7 +55,7 @@ def parse_foundry_page(html: str) -> str | None:
     """The foundry's own website: the 'Official Site' link."""
     soup = BeautifulSoup(html, "html.parser")
     for a in soup.find_all("a", href=True):
-        if a["href"].startswith("http") and "official site" in a.get_text(" ", strip=True).lower():
+        if a["href"].startswith("http") and re.match(r"(?i)\s*(official site|visit\b|website\b)", a.get_text(" ", strip=True)):
             return a["href"]
     return None
 

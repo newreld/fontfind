@@ -13,6 +13,7 @@ class CrawlParsingTests(unittest.TestCase):
     def test_official_site(self):
         html = '<a href="https://typo.social/@x">Mastodon</a><a href="http://alias.uk.com/">Official Site (offline)</a>'
         self.assertEqual(crawl.parse_foundry_page(html), "http://alias.uk.com/")
+        self.assertEqual(crawl.parse_foundry_page('<a href="http://a.test/press">MT press release</a><a href="http://dstype.com/">Visit DSType</a>'), "http://dstype.com/")
         self.assertIsNone(crawl.parse_foundry_page("<a href='/x'>x</a>"))
 
     def test_host(self):
