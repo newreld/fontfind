@@ -31,6 +31,22 @@ LABELS = {
 TEMPLATE = db.ROOT / "fontfind" / "report_template.html"
 
 
+METHOD_LABELS = {
+    "browser-reviewed": "Reviewed by Claude in a browser",
+    "auto-reviewed": "Reviewed automatically by Claude",
+    "search-snippet": "Search results only, not read on the page",
+    "review failed": "License pages could not be read",
+    "auto-screened": "Candidate, not reviewed yet",
+}
+
+
+def method_label(method: str) -> str:
+    for key, label in METHOD_LABELS.items():
+        if method.startswith(key):
+            return label
+    return method or "?"
+
+
 def price_from(pricing: dict | None) -> str:
     """Short card label for the smallest published tier, e.g. 'from USD 528'. Full wording lives in the detail panel."""
     tiers = [t for t in (pricing or {}).get("tiers") or [] if any(ch.isdigit() for ch in str(t.get("price", "")))]
@@ -65,7 +81,7 @@ def build() -> str:
             "price": price_from(f.get("pricing")),
             "evidence": f.get("evidence") or [],
             "license_urls": f.get("license_urls") or [],
-            "verified": f"{v.get('date', '?')} ({v.get('method', '?')})",
+            "verified": f"{method_label(str(v.get('method', '')))}, {v.get('date', '?')}",
             "image": info.get("image", ""),
             "description": info.get("description", ""),
             "typefaces": info.get("typefaces") or [],

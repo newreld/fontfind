@@ -15,7 +15,7 @@ class PendingTests(unittest.TestCase):
         self.assertTrue(review.needs_review(entry("search-snippet")))
 
     def test_hand_and_auto_reviewed_are_not_pending(self):
-        self.assertFalse(review.needs_review(entry("page-read")))
+        self.assertFalse(review.needs_review(entry("browser-reviewed")))
         self.assertFalse(review.needs_review(entry(review.METHOD)))
 
     def test_failed_waits_a_week_then_retries(self):

@@ -60,5 +60,7 @@ python3 -m unittest                                # tests
 | `docs/index.html` | The report |
 | `fontfind/` | The code. `pipeline.py` is the `update` command |
 
-Entries marked `page-read` were read by a person (or by Claude working with one); `update` never
-overwrites them. Always read the current license before buying.
+Nothing in the list has been verified by a person. Entries marked `browser-reviewed` were read by
+Claude in a browser (price selectors and full text), which is more thorough than the automatic
+review; `update` never overwrites them. Entries marked `auto-reviewed` come from the `review`
+command alone and are a shortlist to confirm. Always read the current license before buying.

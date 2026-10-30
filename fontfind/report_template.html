@@ -124,7 +124,7 @@ function detail(d) {
     <h3>Evidence</h3><ul>
       ${d.evidence.map(e => `<li>${esc(e.claim)} — <a href="${esc(e.source)}" target="_blank" rel="noopener">source</a></li>`).join("")}
       ${d.license_urls.map(u => `<li>License page: <a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a></li>`).join("")}
-    </ul><p class="sub" style="white-space:normal">Verified ${esc(d.verified)}</p></div>`;
+    </ul><p class="sub" style="white-space:normal">${esc(d.verified)}</p></div>`;
 }
 function render() {
   const bar = document.getElementById("bar");
