@@ -6,7 +6,9 @@ import collections
 
 import yaml
 
-from fontfind import crawl, db, info, report, review
+import sys
+
+from fontfind import crawl, db, info, report, review, status
 
 SOURCES_PATH = db.ROOT / "data" / "sources.yaml"
 STEPS = ["discover", "screen", "promote", "review", "info", "report"]
@@ -24,9 +26,40 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) 
     steps = steps or STEPS
     before = _tally()
     src = _sources()
+    st = status.Status(steps)
+    real_stdout = sys.stdout
+    sys.stdout = status.Tee(st, real_stdout, echo=not real_stdout.isatty())
+    live = None
+    if real_stdout.isatty():
+        from rich.live import Live
+
+        live = Live(status.terminal_view(st), refresh_per_second=8, redirect_stdout=False, redirect_stderr=False)
+        live.start()
+        st.view = live
+    st.write(force=True)
+    try:
+        _run(steps, limit, deep, src, st)
+    finally:
+        sys.stdout = real_stdout
+        st.finish()
+        if live:
+            live.update(status.terminal_view(st))
+            live.stop()
+
+    after = _tally()
+    print("\nSummary (before -> after)")
+    for q in ("yes", "likely", "partial", "unknown", "no"):
+        print(f"  {q:8} {before[q]:3} -> {after[q]:3}")
+    pending = review.pending_count()
+    if pending:
+        print(f"  {pending} candidates still waiting for review: run update again")
+    return 0
+
+
+def _run(steps: list[str], limit: int, deep: bool, src: dict, st: "status.Status") -> None:
 
     if "discover" in steps:
-        print("\n== Discover ==", flush=True)
+        st.start("discover")
         crawl.add_seed_sites(src.get("seeds") or [])
         crawl.add_roundup_pages(src.get("roundups") or [])
         crawl.add_searched_sites(src.get("searches") or [])
@@ -34,26 +67,17 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) 
         if deep:
             crawl.sources()
     if "screen" in steps:
-        print("\n== Screen ==", flush=True)
+        st.start("screen")
         crawl.screen()
     if "promote" in steps:
-        print("\n== Promote candidates ==", flush=True)
+        st.start("promote")
         crawl.promote()
     if "review" in steps:
-        print(f"\n== Review (up to {limit}) ==", flush=True)
+        st.start("review")
         review.review(limit=limit)
     if "info" in steps:
-        print("\n== Foundry info ==", flush=True)
+        st.start("info")
         info.collect()
     if "report" in steps:
-        print("\n== Report ==", flush=True)
+        st.start("report")
         print(report.build())
-
-    after = _tally()
-    print("\nSummary (before -> after)")
-    for q in ("yes", "likely", "partial", "unknown", "no"):
-        print(f"  {q:8} {before[q]:3} -> {after[q]:3}")
-    pending = sum(1 for f in db.load() if "not reviewed" in (f.get("verified") or {}).get("method", ""))
-    if pending:
-        print(f"  {pending} candidates still waiting for review: run update again")
-    return 0

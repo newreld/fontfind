@@ -5,3 +5,4 @@ data/snapshots/
 data/crawl-*.log
 data/*.tmp
 *.swp
+data/status.html

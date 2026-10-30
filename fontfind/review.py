@@ -134,6 +134,15 @@ def review_one(foundry: dict) -> bool:
     return True
 
 
+def needs_review(f: dict) -> bool:
+    method = (f.get("verified") or {}).get("method", "")
+    return "not reviewed" in method or method == "search-snippet"
+
+
+def pending_count() -> int:
+    return sum(1 for f in db.load() if needs_review(f))
+
+
 def review(only: list[str] | None = None, force: bool = False, limit: int | None = None, dry_run: bool = False) -> int:
     foundries = db.load()
     wanted = {db.slugify(n) for n in only or []}
