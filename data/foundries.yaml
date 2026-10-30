@@ -1774,8 +1774,8 @@ foundries:
           does not reflect how fonts are used.
         source: https://facetype-foundry.fontdue.com/licensing-information
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: '2026-10-30'
+      method: review failed (license pages unreadable)
     auto:
       checked: '2026-10-30'
       content_hash: null
@@ -1783,6 +1783,8 @@ foundries:
       errors:
         - 'https://facetype-foundry.fontdue.com/licensing-information: HTTP 404'
     info: {}
+    todo: 'License pages could not be read: HTTP 404. Retried automatically after 7 days,
+      or run `review --force`.'
 
   - name: AlfaType
     website: https://www.alfatypefonts.com
@@ -2325,8 +2327,8 @@ foundries:
           visitors per month.
         source: https://www.sharptype.co/faq
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: '2026-10-30'
+      method: review failed (license pages unreadable)
     auto:
       checked: '2026-10-30'
       content_hash: null
@@ -2334,6 +2336,8 @@ foundries:
       errors:
         - 'https://www.sharptype.co/licensing: HTTP 429'
         - 'https://www.sharptype.co/faq: HTTP 429'
+    todo: 'License pages could not be read: HTTP 429. Retried automatically after 7 days,
+      or run `review --force`.'
 
   - name: Studio Feixen Fonts
     website: https://fonts.studiofeixen.ch
@@ -2396,23 +2400,31 @@ foundries:
 
   - name: Colophon Foundry
     website: https://colophon-foundry.org
-    license_urls: []
-    pricing_metric: mixed
-    logo: restricted
-    all_media: 'no'
-    qualifies: 'no'
-    summary: Company Desktop by employees; web by pageviews; logo/trademark use may be restricted
-      per typeface.
+    license_urls:
+      - https://colophon-foundry.org/licensing
+    pricing_metric: unknown
+    logo: unknown
+    all_media: unknown
+    qualifies: unknown
+    summary: The only page text is a generic Colophon Foundry profile (a MyFonts-style foundry
+      description). It says nothing about licensing, pricing, company size, logo use, media
+      or web use.
     evidence:
-      - claim: Some restrictions may apply, such as use in logos/trademarks.
-        source: https://colophon-foundry.org/typefaces/transcript/variable
+      - claim: The page text is only a foundry description with no license or pricing terms
+          "Colophon is an award-winning international type foundry based in London. Colophon
+          is recognized for its custom typeface designs, library, creative team, and font
+          technology tools."
+        source: https://colophon-foundry.org/licensing
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: '2026-10-30'
+      method: auto-reviewed (claude, quotes checked)
     auto:
       checked: '2026-10-30'
       content_hash: null
       changed_since_last_check: false
+    todo: Find Colophon's actual license/EULA and pricing pages. Check whether price scales
+      with employee count, and whether web, logo and all-media use are included.
+    info: {}
 
   - name: Peregrin Studio
     website: https://peregrinstudio.com

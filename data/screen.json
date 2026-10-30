@@ -2164,6 +2164,46 @@
   ],
   "website": "http://www.dirkwachowiak.de"
  },
+ "djr.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "I offer a single license that allows you to use my fonts in a wide variety of ways."
+    ],
+    "metric:company_size": [
+     "If you prefer to use a different licensing metric, such as number of employees, please"
+    ],
+    "metric:seats": [
+     "workstations for print/desktop use",
+     "This license allows you to simultaneously install and use the font on a limited number of workstations belonging to you or a third party doing work on your behalf.",
+     "You may install the font on an internal server as long as you do not exceed the total number of workstations defined in your order summary.",
+     "If “Worldwide broadcasting rights” appears in your order summary or your license limitations include at least 25 desktop workstations, you are granted worldwide broadcasting rights to graphics made with the font on all broadcast media, including film and television."
+    ],
+    "metric:traffic": [
+     "Web traffic is measured by monthly unique visitors, or if your website does not record those, by monthly pageviews."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 1,
+    "seats": 8,
+    "traffic": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 15
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://djr.com/license",
+   "https://djr.com/license/testing",
+   "https://djr.com/license/student",
+   "https://djr.com/license/discounted"
+  ],
+  "website": "https://djr.com"
+ },
  "dograytype.com": {
   "auto": {
    "all_media_hits": 0,
@@ -7618,6 +7658,14 @@
   ],
   "license_urls": [],
   "website": "https://www.stonetypefoundry.com"
+ },
+ "store.jamieclarketype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://store.jamieclarketype.com"
  },
  "stormtype.com": {
   "auto": {
