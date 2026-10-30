@@ -67,7 +67,7 @@ def cmd_update(args) -> int:
 
 
 def cmd_review(args) -> int:
-    return review.review(only=args.only, force=args.force, limit=args.limit, dry_run=args.dry_run)
+    return review.review(only=args.only, force=args.force, limit=args.limit, dry_run=args.dry_run, workers=args.workers)
 
 
 def cmd_info(args) -> int:
@@ -125,6 +125,7 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--force", action="store_true", help="also re-review entries that were auto-reviewed")
     s.add_argument("--limit", type=int, help="review at most this many foundries")
     s.add_argument("--dry-run", action="store_true", help="print results without saving")
+    s.add_argument("--workers", type=int, default=4, help="foundries reviewed at the same time")
     s.set_defaults(func=cmd_review)
 
     s = sub.add_parser("info", help="fetch preview image, description and typeface names for each foundry")

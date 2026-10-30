@@ -12,6 +12,7 @@ import os
 import re
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -104,13 +105,16 @@ def verified_evidence(items: list[dict], pages: dict[str, str]) -> list[dict]:
     return kept
 
 
-def review_one(foundry: dict) -> bool:
+def assess(foundry: dict) -> tuple[dict, dict[str, str]] | None:
+    """Fetch the pages and ask Claude. No shared state is touched, so it is safe to run in threads."""
     pages = gather(foundry)
     if not pages:
-        print("    no readable license pages")
-        return False
+        return None
     body = "\n\n".join(f"=== PAGE {url} ===\n{text}" for url, text in pages.items())
-    verdict = ask_claude(PROMPT.format(name=foundry["name"], pages=body))
+    return ask_claude(PROMPT.format(name=foundry["name"], pages=body)), pages
+
+
+def apply(foundry: dict, verdict: dict, pages: dict[str, str]) -> str:
     evidence = verified_evidence(verdict.get("evidence"), pages)
     qualifies = verdict.get("qualifies", "unknown")
     if qualifies == "yes" and (len(evidence) < 2 or verdict.get("web") != "yes"):
@@ -130,7 +134,15 @@ def review_one(foundry: dict) -> bool:
         foundry["todo"] = verdict["todo"]
     else:
         foundry.pop("todo", None)
-    print(f"    -> {qualifies} ({len(evidence)} quotes verified)")
+    return f"{qualifies} ({len(evidence)} quotes verified)"
+
+
+def review_one(foundry: dict) -> bool:
+    result = assess(foundry)
+    if not result:
+        print("    no readable license pages")
+        return False
+    print(f"    -> {apply(foundry, *result)}")
     return True
 
 
@@ -143,28 +155,34 @@ def pending_count() -> int:
     return sum(1 for f in db.load() if needs_review(f))
 
 
-def review(only: list[str] | None = None, force: bool = False, limit: int | None = None, dry_run: bool = False) -> int:
+def review(only: list[str] | None = None, force: bool = False, limit: int | None = None, dry_run: bool = False, workers: int = 4) -> int:
     foundries = db.load()
     wanted = {db.slugify(n) for n in only or []}
 
-    def needs_review(f: dict) -> bool:
+    def wanted_now(f: dict) -> bool:
         method = (f.get("verified") or {}).get("method", "")
         if wanted:
             return db.slugify(f["name"]) in wanted
-        return "not reviewed" in method or method == "search-snippet" or (force and not method.startswith(PROTECTED))
+        return needs_review(f) or (force and not method.startswith(PROTECTED))
 
-    targets = [f for f in foundries if needs_review(f)][:limit]
-    print(f"reviewing {len(targets)} foundries", flush=True)
-    for f in targets:
-        print(f"• {f['name']}", flush=True)
-        try:
-            review_one(f)
-        except Exception as e:  # keep going; one bad foundry should not stop the batch
-            print(f"    error: {e}", file=sys.stderr)
-        if dry_run:
-            print(f"    summary: {f.get('summary', '')}")
-            for e in f.get("evidence", []):
-                print(f"    - {e['claim'][:200]} [{e['source']}]")
-            continue
-        db.save(foundries)
+    targets = [f for f in foundries if wanted_now(f)][:limit]
+    print(f"reviewing {len(targets)} foundries ({workers} at a time)", flush=True)
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(assess, f): f for f in targets}
+        for fut in as_completed(futures):
+            f = futures[fut]
+            print(f"• {f['name']}", flush=True)
+            try:
+                result = fut.result()
+            except Exception as e:  # keep going; one bad foundry should not stop the batch
+                print(f"    error: {e}", file=sys.stderr, flush=True)
+                continue
+            if not result:
+                print("    no readable license pages", flush=True)
+                continue
+            print(f"    -> {apply(f, *result)}", flush=True)
+            if dry_run:
+                print(f"    summary: {f.get('summary', '')}")
+                continue
+            db.save(foundries)
     return 0
