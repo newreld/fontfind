@@ -21,7 +21,8 @@ def _clock(seconds: float) -> str:
 
 
 class Status:
-    def __init__(self, steps: list[str]):
+    def __init__(self, steps: list[str], title: str = "Update"):
+        self.title = title
         self.view = None
         self.steps = {s: "pending" for s in steps}
         self.totals: dict[str, int] = {}
@@ -153,9 +154,9 @@ def terminal_view(status: Status):
     if status.aborted:
         title, border = "[bold yellow]Stopped[/]  progress is saved, run update again to continue", "yellow"
     elif status.finished:
-        title, border = "[bold green]Update finished[/]", "green"
+        title, border = f"[bold green]{status.title} finished[/]", "green"
     else:
-        title, border = "[bold]Update running[/]  Ctrl-C stops safely", "cyan"
+        title, border = f"[bold]{status.title} running[/]  Ctrl-C stops safely", "cyan"
     return Panel(
         Group(overall, Text(""), steps, Text(""), stats, Text(""), recent),
         title=title, subtitle=f"{_clock(elapsed)} elapsed", border_style=border, padding=(1, 2),

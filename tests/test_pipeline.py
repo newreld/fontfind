@@ -31,3 +31,10 @@ class PipelineTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PhaseTests(unittest.TestCase):
+    def test_find_and_evaluate_cover_all_steps(self):
+        both = pipeline.expand(["find", "evaluate"], False)
+        self.assertEqual(both, pipeline.STEPS)
+        self.assertFalse(set(pipeline.PHASES["find"]) & set(pipeline.PHASES["evaluate"]))

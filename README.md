@@ -9,7 +9,9 @@ Open `docs/index.html` in a browser to see the result.
 
 ```sh
 pip3 install -r requirements.txt     # once
-python3 -m fontfind update           # find, review, rebuild the report
+python3 -m fontfind update           # find, then evaluate (does everything)
+python3 -m fontfind find             # only look for new foundries and pick candidates
+python3 -m fontfind evaluate         # only review candidates with Claude and rebuild the report
 ```
 
 `update` needs Claude: either run `claude` once and log in with `/login`, or set `ANTHROPIC_API_KEY`.

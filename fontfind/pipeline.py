@@ -12,7 +12,11 @@ from fontfind import crawl, db, info, progress, report, review, status
 
 SOURCES_PATH = db.ROOT / "data" / "sources.yaml"
 STEPS = ["roundups", "searches", "peers", "screen", "promote", "review", "info", "report"]
-ALIASES = {"discover": ["roundups", "searches", "peers"]}
+PHASES = {
+    "find": ["roundups", "searches", "peers", "screen", "promote"],
+    "evaluate": ["review", "info", "report"],
+}
+ALIASES = {"discover": ["roundups", "searches", "peers"], **PHASES}
 
 
 def _sources() -> dict:
@@ -32,13 +36,13 @@ def expand(names: list[str] | None, deep: bool) -> list[str]:
     return [s for s in dict.fromkeys(steps)]
 
 
-def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) -> int:
+def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, title: str = "Update") -> int:
     steps = expand(steps, deep)
     before = _tally()
     src = _sources()
     shutil.copy2(db.DB_PATH, db.DB_PATH.with_name("foundries.yaml.bak"))
 
-    st = status.Status(steps)
+    st = status.Status(steps, title)
     progress.attach(st)
     real_stdout = sys.stdout
     sys.stdout = status.Tee(st, real_stdout, echo=not real_stdout.isatty())
@@ -74,6 +78,10 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) 
     if pending:
         print(f"  {pending} candidates still waiting for review: run update again")
     return 130 if aborted else 0
+
+
+def run_phase(phase: str, limit: int = 25, deep: bool = False) -> int:
+    return update(PHASES[phase], limit=limit, deep=deep, title=phase.capitalize())
 
 
 def _run(steps: list[str], limit: int, src: dict, st: "status.Status") -> None:

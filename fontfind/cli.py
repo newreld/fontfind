@@ -66,6 +66,10 @@ def cmd_update(args) -> int:
     return pipeline.update(steps=args.steps.split(",") if args.steps else None, limit=args.limit, deep=args.deep)
 
 
+def cmd_phase(args) -> int:
+    return pipeline.run_phase(args.command, limit=getattr(args, "limit", 25), deep=getattr(args, "deep", False))
+
+
 def cmd_review(args) -> int:
     return review.review(only=args.only, force=args.force, limit=args.limit, dry_run=args.dry_run, workers=args.workers)
 
@@ -114,7 +118,15 @@ def main(argv: list[str] | None = None) -> int:
     s = sub.add_parser("report", help="write docs/index.html")
     s.set_defaults(func=cmd_report)
 
-    s = sub.add_parser("update", help="find new foundries, review them, rebuild the report (does everything)")
+    s = sub.add_parser("find", help="find new foundries and pick candidates (no Claude review)")
+    s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
+    s.set_defaults(func=cmd_phase)
+
+    s = sub.add_parser("evaluate", help="review candidates with Claude, collect info, rebuild the report")
+    s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
+    s.set_defaults(func=cmd_phase)
+
+    s = sub.add_parser("update", help="find, then evaluate (does everything)")
     s.add_argument("--steps", help=f"comma list from: discover,{','.join(pipeline.STEPS)}")
     s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
     s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
