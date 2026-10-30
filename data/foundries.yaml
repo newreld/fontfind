@@ -28,6 +28,16 @@
 foundries:
   - name: Newlyn
     website: https://newlyn.com
+    pricing:
+      currency: USD
+      note: 'New Hero full family (ten weights). The product page shows "Buy Family from
+        $360.00" (tier not stated). For a small business with a website and Instagram
+        account the cost page states Annual $528 per year and Perpetual $2,376. Per-tier
+        price table not published as text.'
+      tiers:
+        - employees: small business (headcount not stated)
+          price: 528 per year, or 2376 perpetual
+      source: https://newlyn.com/licensing/font-licensing-cost
     license_urls:
       - https://newlyn.com/licensing
       - https://newlyn.com/licensing/newlyn-license-agreement
@@ -86,6 +96,20 @@ foundries:
 
   - name: Element Type
     website: https://elementtype.co
+    pricing:
+      note: 'Tier labels published (Small up to 3, Medium up to 15, Large up to 50 employees;
+        X-Large above 50 employees or 500,000 USD revenue on request). Prices appear only
+        in the checkout, not in the page text.'
+      tiers:
+        - employees: up to 3
+          price: not in page text
+        - employees: up to 15
+          price: not in page text
+        - employees: up to 50
+          price: not in page text
+        - employees: more than 50
+          price: on request
+      source: https://elementtype.co/fonts/
     license_urls:
       - https://elementtype.co/license/
       - https://elementtype.co/faq/
@@ -157,6 +181,9 @@ foundries:
 
   - name: Swiss Typefaces
     website: https://www.swisstypefaces.com
+    pricing:
+      note: Prices are shown only in the shop checkout; none found in the page text read.
+      source: https://www.swisstypefaces.com/support/license/
     license_urls:
       - https://www.swisstypefaces.com/licensing/
       - https://www.swisstypefaces.com/support/license/
@@ -227,6 +254,14 @@ foundries:
 
   - name: Yep! Type
     website: https://yeptype.com
+    pricing:
+      currency: EUR
+      note: 'Font pages list "from €10 per style" (smallest tier). Per-tier prices are
+        shown only in the checkout.'
+      tiers:
+        - employees: smallest tier
+          price: 10 per style
+      source: https://yeptype.com/fonts/unifora
     license_urls:
       - https://www.yeptype.com/eula
       - https://yeptype.com/licenses/commercial
@@ -284,6 +319,10 @@ foundries:
 
   - name: O'Plérou Studio (foundry)
     website: https://oplerou.studio
+    pricing:
+      note: Tier labels XS (1) to Ultra (251-500) published; prices vary by country (PPP)
+        and are shown only at checkout, none in the page text read. 500+ on request.
+      source: https://oplerou.studio/licensing
     license_urls:
       - https://oplerou.studio/licensing
     pricing_metric: company_size
@@ -321,6 +360,10 @@ foundries:
 
   - name: Mass-Driver
     website: https://mass-driver.com
+    pricing:
+      note: Self-serve by employee count up to 300, quote above. Prices are shown only
+        in the font checkout, none in the page text read.
+      source: https://mass-driver.com/licensing
     license_urls:
       - https://mass-driver.com/licensing
       - https://mass-driver.com/static/document/Mass_Driver-EULA-2_1.pdf
@@ -381,6 +424,13 @@ foundries:
 
   - name: Workhorse Type Foundry
     website: https://workhorse.studio
+    pricing:
+      currency: USD
+      note: 'Not found. The collection page text shows only a Desktop License priced by
+        computers (for example $40 for 1-3 computers up to $1,560 for 501-1000), which
+        is not the company-size All-Purpose license. All-Purpose prices were not in the
+        page text read.'
+      source: https://workhorse.studio/collections/all
     license_urls:
       - https://workhorse.studio/pages/licenses
       - https://workhorse.studio/pages/license-all-purpose
@@ -710,6 +760,10 @@ foundries:
 
   - name: JulyType
     website: https://www.julytype.com
+    pricing:
+      note: Company-size price table is not available as text (the comparison is an
+        image); none found.
+      source: https://www.julytype.com/typefaces
     license_urls:
       - https://julytype.com/licensing
     pricing_metric: company_size
@@ -735,7 +789,9 @@ foundries:
     verified:
       date: 2026-10-30
       method: page-read
-    todo: Does the Extended License include logo/wordmark?
+    todo: Re-read 2026-10-30 (EULA PDF and julytype.com/about/licensing) - neither mentions logos
+      or wordmarks; the EULA only scopes use "for a single brand". Ask July Type whether the
+      Extended License includes logo/wordmark.
     auto:
       suggested_metric: company_size
       suggested_logo: unknown
@@ -760,6 +816,14 @@ foundries:
 
   - name: Typejockeys
     website: https://www.typejockeys.com
+    pricing:
+      currency: EUR
+      note: 'The fonts page lists "from 40 EUR", "from 70 EUR" and "from 90 EUR" per
+        font (smallest tier). Per-tier prices not published as text.'
+      tiers:
+        - employees: smallest tier
+          price: from 40 to from 90, depending on the font
+      source: https://www.typejockeys.com/en/fonts
     license_urls:
       - https://www.typejockeys.com/en/licensing
     pricing_metric: company_size
@@ -2031,6 +2095,9 @@ foundries:
 
   - name: Sogari Design
     website: https://enricosogari.com
+    pricing:
+      note: Prices are shown only in the shop (Gumroad), none in the license page text.
+      source: https://enricosogari.com/license-agreement
     license_urls:
       - https://enricosogari.com/license-agreement
     pricing_metric: company_size
@@ -2138,6 +2205,19 @@ foundries:
 
   - name: Pyte Foundry
     website: https://thepytefoundry.net
+    pricing:
+      note: 'Employee tiers published on typeface pages (up to 2, 5, 10, 25, 50, 100,
+        250, 500 employees) but prices are not in the page text; shown only in the checkout.'
+      tiers:
+        - employees: up to 2
+          price: not in page text
+        - employees: up to 10
+          price: not in page text
+        - employees: up to 50
+          price: not in page text
+        - employees: up to 500
+          price: not in page text
+      source: https://thepytefoundry.net/typefaces/acrylic
     license_urls:
       - https://thepytefoundry.net/eula
       - https://thepytefoundry.net/faq
@@ -2371,8 +2451,9 @@ foundries:
       - claim: Clause 8.6 Logo License covers "a logo or wordmark for one brand. ... For an
           additional brand, an additional License must be purchased."
         source: https://a.storyblok.com/f/167503/x/d7d2110316/kimera-eula-v2-00.pdf
-    todo: The kimeracorp.eu domain comes from the EULA contact address; confirm it is the
-      foundry shop.
+    todo: kimeracorp.eu is confirmed as the foundry site - press articles on the Waldenburg
+      typeface (abduzeedo.com, itsnicethat.com) link to it, with typeface pages such as
+      kimeracorp.eu/typefaces/apparat. Its own license page was not read; the EULA PDF was.
     verified:
       date: '2026-10-30'
       method: page-read
@@ -2391,8 +2472,9 @@ foundries:
     summary: Could not verify. The site and the license URL a search result showed
       (/licenses/commercial) both return 404.
     evidence: []
-    todo: Find the current license page. A search snippet claimed six employee-count tiers
-      covering all uses, but no page was readable.
+    todo: Find the current license page. Re-tried 2026-10-30 - the storefront and
+      /licenses/commercial still return 404, and bigfog.xyz is a parked domain. A search
+      snippet claimed employee tiers up to 100 employees, but no page was readable.
     verified:
       date: '2026-10-30'
       method: page-read (404, nothing to read)
@@ -2405,6 +2487,9 @@ foundries:
 
   - name: Slant
     website: https://slant-type.fontdue.com
+    pricing:
+      note: No prices in the page text read; shown only in the checkout.
+      source: https://slant-type.fontdue.com/licenses
     license_urls:
       - https://slant-type.fontdue.com/licenses
       - https://www.slant-type.co/pdfs/61e54fe3d631cfa6478c943c7878b689703a730e
@@ -2449,6 +2534,9 @@ foundries:
 
   - name: Cape Arcona Type Foundry
     website: https://www.cape-arcona.com
+    pricing:
+      note: No prices in the page text read; shown only in the checkout.
+      source: https://www.cape-arcona.com/typefaces/
     license_urls:
       - https://www.cape-arcona.com/end-user-license-agreement-eula/
       - https://www.cape-arcona.com/order-information/
@@ -2557,6 +2645,9 @@ foundries:
 
   - name: Kontrapunkt Type
     website: https://type.kontrapunkt.com
+    pricing:
+      note: The site returned no price text to a script request; not read.
+      source: https://type.kontrapunkt.com/
     license_urls:
       - https://type.kontrapunkt.com/en/end-user-license-agreement
     pricing_metric: company_size
@@ -2572,8 +2663,9 @@ foundries:
         source: https://type.kontrapunkt.com/en/end-user-license-agreement
       - claim: '"the Customer may use the Products to create and distribute outputs (e.g., designs, documents, images, video, websites, applications, games, branding materials) incorporating the Font(s)"'
         source: https://type.kontrapunkt.com/en/end-user-license-agreement
-    todo: Confirm logo and wordmark use ("branding materials" is the only hint) and what
-      the checkout page adds to the stated rights of use.
+    todo: Re-read the full EULA 2026-10-30 - no logo, wordmark or trademark-registration clause
+      ("branding materials" is the only hint). Ask Kontrapunkt whether logo/wordmark use
+      is included, and check what the checkout page adds to the stated rights of use.
     verified:
       date: '2026-10-30'
       method: page-read
@@ -2584,6 +2676,9 @@ foundries:
 
   - name: Moontype Foundry
     website: ''
+    pricing:
+      note: No website found, so no prices; the EULA PDF has none.
+      source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
     license_urls:
       - https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
     pricing_metric: company_size
@@ -2599,14 +2694,26 @@ foundries:
         source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
       - claim: '"Our licenses are media-independent, meaning you can use the Fonts across all platforms—from print materials to digital media such as websites, mobile apps, eBooks, and more—without incurring additional fees."'
         source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
-    todo: Find the official website and confirm logo and wordmark use. The EULA does not
-      mention logos.
+    todo: Re-read the EULA 2026-10-30 - it has no logo, wordmark, trademark or brand clause.
+      Searches found no foundry website, store or contact page; find the official site and
+      ask whether logo/wordmark use is included.
     verified:
       date: '2026-10-30'
       method: page-read (EULA PDF only; no foundry site found)
 
   - name: Taylor Penton
     website: https://taylorpenton.com
+    pricing:
+      currency: USD
+      note: 'Collection page lists $25 per style (e.g. Magic Oyster), Booster Pack $100
+        and Big Typeface Collection $320, with "50+ employees? Reach out for an extended
+        license." Extended price not public.'
+      tiers:
+        - employees: under 50
+          price: 25 per style, 100 booster pack, 320 big collection
+        - employees: 50 or more
+          price: on request
+      source: https://taylorpenton.com/collections/all-fonts
     license_urls:
       - https://taylorpenton.com/policies/terms-of-service
       - https://taylorpenton.com/products/lennon

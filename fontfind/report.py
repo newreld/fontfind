@@ -98,6 +98,9 @@ function render() {{
           <div><dt>Logo</dt><dd>${{esc(d.logo)}}</dd></div>
           <div><dt>All media in one license</dt><dd>${{esc(d.all_media)}}</dd></div></dl>
       <p class="summary">${{esc(d.summary)}}</p>
+      ${{d.pricing ? `<p class="meta">Prices${{d.pricing.currency ? " (" + esc(d.pricing.currency) + ")" : ""}}: ${{
+        (d.pricing.tiers || []).map(t => `${{esc(t.employees)}} staff: ${{esc(t.price)}}`).join(" · ") || esc(d.pricing.note)
+      }}${{d.pricing.tiers && d.pricing.note ? ` — ${{esc(d.pricing.note)}}` : ""}}${{d.pricing.source ? ` (<a href="${{esc(d.pricing.source)}}" target="_blank" rel="noopener">source</a>)` : ""}}</p>` : ""}}
       ${{d.todo ? `<p class="meta">To confirm: ${{esc(d.todo)}}</p>` : ""}}
       <details><summary>Evidence &amp; sources</summary><ul>
         ${{d.evidence.map(e => `<li>${{esc(e.claim)}} — <a href="${{esc(e.source)}}" target="_blank" rel="noopener">${{esc(e.source)}}</a></li>`).join("")}}
@@ -137,6 +140,7 @@ def build() -> str:
             "all_media": LABELS["all_media"].get(f.get("all_media", "unknown"), "?"),
             "summary": " ".join(str(f.get("summary", "")).split()),
             "todo": f.get("todo", ""),
+            "pricing": f.get("pricing"),
             "evidence": f.get("evidence") or [],
             "license_urls": f.get("license_urls") or [],
             "verified": f"{v.get('date', '?')} ({v.get('method', '?')})",
