@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 
-from fontfind import crawl, db, discover, fetch, report, scrape
+from fontfind import crawl, db, discover, fetch, info, report, review, scrape
 
 
 def cmd_list(args) -> int:
@@ -62,6 +62,14 @@ def cmd_report(args) -> int:
     return 0
 
 
+def cmd_review(args) -> int:
+    return review.review(only=args.only, force=args.force)
+
+
+def cmd_info(args) -> int:
+    return info.collect(only=args.only, force=args.force)
+
+
 def cmd_crawl(args) -> int:
     if args.stage == "sources":
         return crawl.sources(limit=args.limit)
@@ -75,7 +83,7 @@ def cmd_crawl(args) -> int:
         return crawl.seed(args.file)
     if args.stage == "promote":
         return crawl.promote()
-    for stage in (lambda: crawl.sources(limit=args.limit), lambda: crawl.screen(limit=args.limit, workers=args.workers), crawl.promote):
+    for stage in (lambda: crawl.sources(limit=args.limit), lambda: crawl.screen(limit=args.limit, workers=args.workers), crawl.promote, review.review):
         stage()
     return 0
 
@@ -101,6 +109,16 @@ def main(argv: list[str] | None = None) -> int:
 
     s = sub.add_parser("report", help="write docs/index.html")
     s.set_defaults(func=cmd_report)
+
+    s = sub.add_parser("review", help="let Claude read license pages and fill in the verdict (quotes are verified)")
+    s.add_argument("only", nargs="*", help="foundry names (default: all 'not reviewed')")
+    s.add_argument("--force", action="store_true", help="also re-review entries that were auto-reviewed")
+    s.set_defaults(func=cmd_review)
+
+    s = sub.add_parser("info", help="fetch preview image, description and typeface names for each foundry")
+    s.add_argument("only", nargs="*", help="foundry names (default: all without info)")
+    s.add_argument("--force", action="store_true", help="refetch even if info exists")
+    s.set_defaults(func=cmd_info)
 
     s = sub.add_parser("crawl", help="build the full foundry directory and screen it automatically")
     s.add_argument("stage", nargs="?", default="all", choices=["all", "sources", "screen", "promote", "seed", "peers", "roundups"])

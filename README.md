@@ -67,3 +67,17 @@ with each foundry's status below the curated results.
 To feed in another list of foundries, put one website per line (optionally `Name, https://site`) in a
 text file and run `python -m fontfind crawl seed list.txt`. Don't run `seed` while `sources` is running:
 both write `data/directory.json`.
+
+
+## Automatic review
+
+`python3 -m fontfind review` replaces the manual reading step. For every foundry marked
+`not reviewed` it fetches the license pages, asks Claude to judge them against the match rule
+(company-size pricing that covers web, logo included, all media in one license), and writes
+the verdict, summary and evidence. Every evidence quote must appear word for word on a fetched
+page, otherwise it is dropped, and a `yes` with fewer than two verified quotes or without
+confirmed web use is capped at `likely`. Results are marked `auto-reviewed (claude, quotes checked)`;
+entries a person marked `page-read` are never overwritten.
+
+It needs either `ANTHROPIC_API_KEY` in the environment, or a logged-in `claude` command-line tool.
+`python3 -m fontfind crawl` (all stages) now ends with this step.

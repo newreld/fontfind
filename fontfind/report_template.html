@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FontFind Licenses</title>
+<style>
+:root { --bg:#fbfaf8; --card:#fff; --fg:#14181f; --muted:#5f6672; --line:#e3e1dc; --tile:#efede8; --accent:#1c3557; --on-accent:#fff;
+  --yes:#1d6b4f; --yes-bg:#e4f1ea; --likely:#245c7a; --likely-bg:#e1eef4; --partial:#8a5a14; --partial-bg:#f6ecd9; --unknown:#5f6672; --unknown-bg:#ebeae6; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0f1319; --card:#151b23; --fg:#eceef2; --muted:#9aa3b0; --line:#262d38; --tile:#1b222c; --accent:#9db8dc; --on-accent:#0f1a2b;
+  --yes:#7fd0ac; --yes-bg:#173428; --likely:#86c1dd; --likely-bg:#173040; --partial:#e2b564; --partial-bg:#3a2d12; --unknown:#9aa3b0; --unknown-bg:#242b35; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 system-ui, -apple-system, "Helvetica Neue", sans-serif; }
+main { max-width:1240px; margin:0 auto; padding:40px 20px 80px; }
+h1, .dlg h2 { font-family:"Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight:600; }
+h1 { margin:0; font-size:clamp(30px, 4.6vw, 46px); letter-spacing:-.01em; line-height:1.1; }
+.lede { color:var(--muted); margin:12px 0 28px; max-width:620px; }
+.bar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:24px; }
+.bar button, .bar input { border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:4px; padding:6px 14px; font:inherit; }
+.bar button { cursor:pointer; }
+.bar button[aria-pressed="true"] { background:var(--accent); color:var(--on-accent); border-color:var(--accent); }
+.bar input { margin-left:auto; min-width:200px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:20px; }
+.card { border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; background:var(--card); display:flex; flex-direction:column; text-align:left; padding:0; color:inherit; font:inherit; }
+.card:hover, .card:focus-visible { border-color:var(--accent); outline:none; box-shadow:0 0 0 1px var(--accent); }
+.cover { aspect-ratio:16/10; background:var(--tile); display:grid; place-items:center; overflow:hidden; position:relative; }
+.cover img { width:100%; height:100%; object-fit:cover; display:block; }
+.cover img.contain { object-fit:contain; padding:14%; }
+.cover .word { font-size:clamp(26px, 3.4vw, 40px); font-weight:700; letter-spacing:-.03em; padding:0 16px; text-align:center; line-height:1.05; }
+.pill { position:absolute; top:10px; left:10px; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.07em; padding:4px 9px; border-radius:3px; }
+.pill.q-yes { background:var(--yes-bg); color:var(--yes); } .pill.q-likely { background:var(--likely-bg); color:var(--likely); }
+.pill.q-partial { background:var(--partial-bg); color:var(--partial); } .pill.q-unknown { background:var(--unknown-bg); color:var(--unknown); }
+.body { padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }
+.title { display:flex; justify-content:space-between; gap:8px; align-items:baseline; }
+.title b { font-size:17px; letter-spacing:-.01em; }
+.sub { color:var(--muted); font-size:12px; white-space:nowrap; }
+.lic { display:grid; grid-template-columns:1fr auto; gap:6px 12px; align-items:center; padding-top:10px; border-top:1px solid var(--line); font-size:13px; }
+.price { font-weight:700; font-size:15px; }
+.price small { font-weight:400; color:var(--muted); font-size:12px; }
+.marks { display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }
+.mark { font-size:11px; border:1px solid var(--line); border-radius:3px; padding:2px 7px; color:var(--muted); }
+.mark.ok { color:var(--yes); background:var(--yes-bg); border-color:transparent; }
+.mark.warn { color:var(--partial); background:var(--partial-bg); border-color:transparent; }
+.faces { color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+dialog { border:1px solid var(--line); border-radius:8px; padding:0; width:min(680px, 94vw); background:var(--bg); color:var(--fg); max-height:88vh; }
+dialog::backdrop { background:rgba(0,0,0,.55); }
+.dlg { padding:24px; overflow:auto; max-height:88vh; }
+.dlg h2 { margin:0 0 4px; font-size:26px; letter-spacing:-.02em; }
+.dlg .cover { border-radius:4px; margin:14px 0; aspect-ratio:16/7; }
+.dlg h3 { font-size:12px; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin:20px 0 6px; }
+.dlg p { margin:6px 0; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; }
+.chips span { border:1px solid var(--line); border-radius:3px; padding:2px 10px; font-size:13px; }
+.dlg ul { padding-left:18px; margin:6px 0; color:var(--muted); font-size:13px; }
+.dlg a { color:inherit; }
+.close { float:right; border:1px solid var(--line); background:transparent; color:var(--fg); border-radius:4px; padding:4px 12px; cursor:pointer; font:inherit; }
+.dirhead { margin-top:64px; font-size:20px; }
+#dirq { width:100%; max-width:360px; padding:6px 12px; margin-bottom:12px; font:inherit; background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:4px; }
+.row { display:flex; gap:12px; border-top:1px solid var(--line); padding:5px 0; font-size:13px; }
+.row a { flex:1; color:inherit; overflow:hidden; text-overflow:ellipsis; } .row span { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Fonts licensed by company size</h1>
+<p class="lede">__COUNT__ foundries priced by headcount, not seats or pageviews. Match means web, logo and all media sit in one company-size license. Always read the current license before buying.</p>
+<div class="bar" id="bar"></div>
+<div class="grid" id="grid"></div>
+<dialog id="dlg"></dialog>
+<h2 class="dirhead">Directory: __DIRCOUNT__ foundries found</h2>
+<p class="lede">Every foundry collected automatically and how far it got. "Candidate" means the license text mentions company-size pricing and awaits review.</p>
+<input id="dirq" type="search" placeholder="Search foundries" aria-label="Search directory">
+<div id="dir"></div>
+</main>
+<script>
+const DATA = __DATA__;
+const DIR = __DIRECTORY__;
+const QL = __QLABELS__;
+const ORDER = ["yes","likely","partial","unknown"];
+let active = new Set(["yes","likely","partial"]);
+let query = "";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mark = (label, state) => `<span class="mark ${state}">${esc(label)}</span>`;
+function marks(d) {
+  const logo = d.logo_raw === "included" ? ["Logo", "ok"] : d.logo_raw === "unknown" ? ["Logo ?", ""] : ["Logo extra", "warn"];
+  const media = d.media_raw === "yes" ? ["All media", "ok"] : d.media_raw === "unknown" ? ["Media ?", ""] : ["Media split", "warn"];
+  return mark(...logo) + mark(...media);
+}
+function cover(d, big) {
+  const word = `<div class="word">${esc(d.name)}</div>`;
+  const img = d.image ? `<img src="${esc(d.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'word',textContent:'${esc(d.name).replace(/'/g, "\\'")}'}))">` : word;
+  return `<div class="cover">${img}${big ? "" : `<span class="pill q-${d.qualifies}">${esc(QL[d.qualifies])}</span>`}</div>`;
+}
+function card(d, i) {
+  const sub = [d.country, d.founded].filter(Boolean).join(" · ");
+  return `<button class="card" data-i="${i}">
+    ${cover(d)}
+    <div class="body">
+      <div class="title"><b>${esc(d.name)}</b><span class="sub">${esc(sub)}</span></div>
+      ${d.typefaces.length ? `<div class="faces">${esc(d.typefaces.slice(0, 5).join(" · "))}</div>` : ""}
+      <div class="lic">
+        <div class="price">${d.price ? esc(d.price) : '<small>Price on request</small>'}</div>
+        <div class="marks">${marks(d)}</div>
+      </div>
+    </div></button>`;
+}
+function detail(d) {
+  const sub = [d.country, d.founded && "since " + d.founded].filter(Boolean).join(" · ");
+  return `<div class="dlg"><button class="close" onclick="document.getElementById('dlg').close()">Close</button>
+    <h2>${esc(d.name)}</h2><div class="sub">${[sub ? esc(sub) : "", d.website ? `<a href="${esc(d.website)}" target="_blank" rel="noopener">website</a>` : ""].filter(Boolean).join(" · ")}</div>
+    ${cover(d, true)}
+    ${d.description ? `<p>${esc(d.description)}</p>` : ""}
+    <h3>License</h3><p>${esc(d.summary)}</p>
+    <div class="chips"><span>${esc(QL[d.qualifies])}</span><span>Priced by ${esc(d.metric)}</span><span>Logo: ${esc(d.logo)}</span><span>All media: ${esc(d.all_media)}</span></div>
+    ${d.pricing ? `<h3>Pricing</h3><p>${(d.pricing.tiers || []).map(t => `${esc(t.employees)} staff: ${esc(t.price)}`).join(" · ") || esc(d.pricing.note)}${d.pricing.currency ? ` (${esc(d.pricing.currency)})` : ""}</p>${d.pricing.tiers && d.pricing.note ? `<p class="sub" style="white-space:normal">${esc(d.pricing.note)}</p>` : ""}` : ""}
+    ${d.typefaces.length ? `<h3>Typefaces</h3><div class="chips">${d.typefaces.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
+    ${d.todo ? `<h3>To confirm</h3><p>${esc(d.todo)}</p>` : ""}
+    <h3>Evidence</h3><ul>
+      ${d.evidence.map(e => `<li>${esc(e.claim)} — <a href="${esc(e.source)}" target="_blank" rel="noopener">source</a></li>`).join("")}
+      ${d.license_urls.map(u => `<li>License page: <a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a></li>`).join("")}
+    </ul><p class="sub" style="white-space:normal">Verified ${esc(d.verified)}</p></div>`;
+}
+function render() {
+  const bar = document.getElementById("bar");
+  bar.innerHTML = ORDER.map(q => `<button data-q="${q}" aria-pressed="${active.has(q)}">${QL[q]} ${DATA.filter(d => d.qualifies === q).length}</button>`).join("") +
+    `<input id="q" type="search" placeholder="Search" value="${esc(query)}">`;
+  bar.querySelectorAll("button").forEach(b => b.onclick = () => { const q = b.dataset.q; active.has(q) ? active.delete(q) : active.add(q); render(); });
+  const q = document.getElementById("q");
+  q.oninput = () => { query = q.value; renderGrid(); };
+  renderGrid();
+}
+function renderGrid() {
+  const needle = query.toLowerCase();
+  const list = DATA.map((d, i) => [d, i]).filter(([d]) => active.has(d.qualifies) &&
+    (!needle || [d.name, d.country, d.typefaces.join(" ")].join(" ").toLowerCase().includes(needle)));
+  document.getElementById("grid").innerHTML = list.map(([d, i]) => card(d, i)).join("");
+  document.querySelectorAll(".card").forEach(c => c.onclick = () => {
+    const dlg = document.getElementById("dlg");
+    dlg.innerHTML = detail(DATA[c.dataset.i]);
+    dlg.showModal();
+  });
+}
+document.getElementById("dlg").addEventListener("click", e => { if (e.target.id === "dlg") e.target.close(); });
+function renderDir() {
+  const q = document.getElementById("dirq").value.toLowerCase();
+  const rows = DIR.filter(d => !q || d.name.toLowerCase().includes(q) || d.website.toLowerCase().includes(q)).slice(0, 400);
+  document.getElementById("dir").innerHTML = rows.map(d =>
+    `<div class="row"><a href="${esc(d.website || "#")}" target="_blank" rel="noopener">${esc(d.name)}</a><span>${esc(d.status)}</span></div>`).join("");
+}
+document.getElementById("dirq").oninput = renderDir;
+render();
+renderDir();
+</script>
+</body>
+</html>
