@@ -61,19 +61,21 @@ def gather(foundry: dict) -> dict[str, str]:
     return pages
 
 
-def _complete(prompt: str) -> str:
+def _complete(prompt: str, tools: str = "") -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if key:
         resp = requests.post(
             "https://api.anthropic.com/v1/messages",
             headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-            json={"model": MODEL, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}]},
+            json={"model": MODEL, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}],
+                  **({"tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5}]} if tools else {})},
             timeout=300,
         )
         if not resp.ok:
             raise RuntimeError(f"API {resp.status_code}: {resp.text[:200]}")
         return "".join(b.get("text", "") for b in resp.json().get("content", []))
-    proc = subprocess.run(["claude", "-p", "--output-format", "json"], input=prompt, capture_output=True, text=True, timeout=600)
+    cmd = ["claude", "-p", "--output-format", "json"] + (["--allowedTools", tools] if tools else [])
+    proc = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=600)
     data = json.loads(proc.stdout or "{}")
     if proc.returncode != 0 or data.get("is_error"):
         raise RuntimeError(data.get("result") or proc.stderr.strip() or "claude failed (set ANTHROPIC_API_KEY or run `claude` to log in)")
@@ -140,7 +142,7 @@ def review(only: list[str] | None = None, force: bool = False, limit: int | None
         method = (f.get("verified") or {}).get("method", "")
         if wanted:
             return db.slugify(f["name"]) in wanted
-        return "not reviewed" in method or (force and not method.startswith(PROTECTED))
+        return "not reviewed" in method or method == "search-snippet" or (force and not method.startswith(PROTECTED))
 
     targets = [f for f in foundries if needs_review(f)][:limit]
     print(f"reviewing {len(targets)} foundries", flush=True)

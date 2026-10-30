@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 
-from fontfind import crawl, db, discover, fetch, info, report, review, scrape
+from fontfind import crawl, db, discover, fetch, info, pipeline, report, review, scrape
 
 
 def cmd_list(args) -> int:
@@ -62,6 +62,10 @@ def cmd_report(args) -> int:
     return 0
 
 
+def cmd_update(args) -> int:
+    return pipeline.update(steps=args.steps.split(",") if args.steps else None, limit=args.limit, deep=args.deep)
+
+
 def cmd_review(args) -> int:
     return review.review(only=args.only, force=args.force, limit=args.limit, dry_run=args.dry_run)
 
@@ -109,6 +113,12 @@ def main(argv: list[str] | None = None) -> int:
 
     s = sub.add_parser("report", help="write docs/index.html")
     s.set_defaults(func=cmd_report)
+
+    s = sub.add_parser("update", help="find new foundries, review them, rebuild the report (does everything)")
+    s.add_argument("--steps", help=f"comma list from: {','.join(pipeline.STEPS)}")
+    s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
+    s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
+    s.set_defaults(func=cmd_update)
 
     s = sub.add_parser("review", help="let Claude read license pages and fill in the verdict (quotes are verified)")
     s.add_argument("only", nargs="*", help="foundry names (default: all 'not reviewed')")

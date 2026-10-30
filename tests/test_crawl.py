@@ -19,8 +19,11 @@ class CrawlParsingTests(unittest.TestCase):
         self.assertEqual(crawl.host_of("https://www.Example.com/a"), "example.com")
 
     def test_candidate(self):
-        self.assertTrue(crawl.is_candidate({"auto": {"suggested_metric": "company_size"}}))
-        self.assertFalse(crawl.is_candidate({"auto": {"suggested_metric": "seats"}}))
+        strong = {"auto": {"metric_scores": {"company_size": 10, "seats": 2}}}
+        self.assertTrue(crawl.is_candidate(strong))
+        self.assertFalse(crawl.is_candidate({"auto": {"metric_scores": {"company_size": 10, "seats": 8, "traffic": 6}}}))
+        self.assertFalse(crawl.is_candidate({"auto": {"metric_scores": {"company_size": 2}}}))
+        self.assertFalse(crawl.is_candidate(strong, "someuniversity.edu"))
         self.assertFalse(crawl.is_candidate({}))
 
 

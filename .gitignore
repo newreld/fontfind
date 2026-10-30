@@ -4,3 +4,4 @@ __pycache__/
 data/snapshots/
 data/crawl-*.log
 data/*.tmp
+*.swp

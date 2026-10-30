@@ -87,11 +87,16 @@ def sources(limit: int | None = None) -> int:
 
 
 def seed(path: str) -> int:
-    """Add foundries from a text file: one website per line, optionally 'Name, https://site'."""
+    add_seed_sites(open(path, encoding="utf-8").read().splitlines())
+    return 0
+
+
+def add_seed_sites(lines: list[str]) -> int:
+    """Add foundries from lines of 'https://site' or 'Name, https://site'."""
     directory = _read(DIRECTORY_PATH)
-    have = {host_of(d["website"]) for d in directory.values() if d.get("website")}
+    have = known_hosts(directory)
     added = 0
-    for line in open(path, encoding="utf-8"):
+    for line in lines:
         line = line.strip()
         if not line or line.startswith("#"):
             continue
@@ -105,8 +110,8 @@ def seed(path: str) -> int:
         directory[f"seed:{host_of(site)}"] = {"name": name.strip() or host_of(site), "source": "seed", "website": site}
         added += 1
     _write(DIRECTORY_PATH, directory)
-    print(f"added {added} foundries from {path}")
-    return 0
+    print(f"added {added} seed foundries")
+    return added
 
 
 IGNORED_HOSTS = re.compile(
@@ -158,16 +163,17 @@ def peers() -> int:
     return 0
 
 
-def roundups(path: str) -> int:
-    """Extract foundry links from article/directory pages listed in a file and add them to the directory."""
+def known_hosts(directory: dict) -> set[str]:
+    hosts = {host_of(d["website"]) for d in directory.values() if d.get("website")}
+    return hosts | {host_of(f["website"]) for f in db.load() if f.get("website")}
+
+
+def add_roundup_pages(pages: list[str]) -> int:
+    """Extract foundry links from article/directory pages and add the new ones to the directory."""
     directory = _read(DIRECTORY_PATH)
-    have = {host_of(d["website"]) for d in directory.values() if d.get("website")}
-    have |= {host_of(f["website"]) for f in db.load() if f.get("website")}
+    have = known_hosts(directory)
     added = 0
-    for line in open(path, encoding="utf-8"):
-        page = line.strip()
-        if not page.startswith("http"):
-            continue
+    for page in pages:
         try:
             links = external_links(fetch.get(page).text, page)
         except fetch.FetchError as e:
@@ -180,9 +186,47 @@ def roundups(path: str) -> int:
         added += len(new)
         print(f"  {len(links)} links, {len(new)} new: {page}", flush=True)
     _write(DIRECTORY_PATH, directory)
-    print(f"added {added} sites")
+    print(f"added {added} sites from roundup pages")
+    return added
+
+
+def roundups(path: str) -> int:
+    add_roundup_pages([l.strip() for l in open(path, encoding="utf-8") if l.strip().startswith("http")])
     return 0
 
+
+SEARCH_PROMPT = """Use web search to find independent type foundries or font studios that sell font licenses priced by company size or employee count.
+Search focus: {query}
+Reply with ONLY a JSON list (max 15) of objects {{"name": ..., "website": ...}} giving each foundry's OWN official website seen in the search results. Exclude marketplaces (MyFonts, Fonts.com, Adobe, Google Fonts, Creative Market), articles and social media. Never guess a URL."""
+
+
+def add_searched_sites(queries: list[str]) -> int:
+    """Ask Claude (with web search) for foundries per query and add the new ones to the directory."""
+    import json as _json
+    from fontfind import review
+
+    directory = _read(DIRECTORY_PATH)
+    have = known_hosts(directory)
+    added = 0
+    for query in queries:
+        try:
+            reply = review._complete(SEARCH_PROMPT.format(query=query), tools="WebSearch")
+            found = _json.loads(re.search(r"\[.*\]", reply, re.S).group(0))
+        except Exception as e:
+            print(f"  search failed ({query[:40]}...): {e}")
+            continue
+        new = 0
+        for item in found:
+            site = str(item.get("website", "")).strip()
+            if not site.startswith("http") or host_of(site) in have or IGNORED_HOSTS.search(host_of(site)):
+                continue
+            have.add(host_of(site))
+            directory[f"search:{host_of(site)}"] = {"name": item.get("name") or host_of(site), "source": f"search: {query[:60]}", "website": site}
+            new += 1
+        added += new
+        print(f"  {new} new from search: {query[:60]}", flush=True)
+    _write(DIRECTORY_PATH, directory)
+    return added
 
 def screen_site(website: str) -> dict:
     urls = discover.discover(website)[:SCREEN_PAGES]
@@ -234,9 +278,19 @@ def screen(limit: int | None = None, workers: int = 8) -> int:
     return 0
 
 
-def is_candidate(res: dict) -> bool:
-    auto = res.get("auto") or {}
-    return auto.get("suggested_metric") in ("company_size", "mixed")
+NOT_FOUNDRY_HOSTS = re.compile(
+    r"(\.ca$|college|university|\.edu|bit\.ly|luma\.com|typeform|jotform|wordpress|ghost\.org|craftcms|semplice|"
+    r"gestalten|dielineawards|appliedarts|eventbrite|medium\.com)", re.I,
+)
+
+
+def is_candidate(res: dict, host: str = "") -> bool:
+    """Company size clearly outweighs seats and traffic in the license text."""
+    if host and NOT_FOUNDRY_HOSTS.search(host):
+        return False
+    scores = (res.get("auto") or {}).get("metric_scores") or {}
+    company = scores.get("company_size", 0)
+    return company >= 3 and company >= scores.get("seats", 0) + scores.get("traffic", 0)
 
 
 def display_name(host: str, directory: dict) -> str:
@@ -253,7 +307,7 @@ def promote() -> int:
     known = {host_of(f["website"]) for f in foundries if f.get("website")}
     added = 0
     for host, res in sorted(screened.items()):
-        if host in known or not is_candidate(res):
+        if host in known or not is_candidate(res, host):
             continue
         name = display_name(host, directory)
         if db.find(foundries, name):
@@ -291,7 +345,7 @@ def directory_rows() -> list[dict]:
             status = "curated:" + str(curated[host].get("qualifies", "unknown"))
         elif host in screened:
             res = screened[host]
-            status = "candidate" if is_candidate(res) else ("no-license-page" if res.get("errors") and "auto" not in res else "not-company-size")
+            status = "candidate" if is_candidate(res, host) else ("no-license-page" if res.get("errors") and "auto" not in res else "not-company-size")
         else:
             status = "no-site" if not site else "unscreened"
         rows.append({"name": d["name"], "website": site, "status": status})
