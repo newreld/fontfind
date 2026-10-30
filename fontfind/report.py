@@ -81,7 +81,7 @@ text mentions company-size pricing and is waiting for review.</p>
 <script>
 const DATA = {data};
 const DIR = {directory};
-const ORDER = ["yes","likely","partial","unknown","no"];
+const ORDER = ["yes","likely","partial","unknown"];
 const QL = {qlabels};
 let active = new Set(["yes","likely","partial"]);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}}[c]));
@@ -125,7 +125,7 @@ renderDir();
 
 
 def build() -> str:
-    foundries = db.load()
+    foundries = [f for f in db.load() if f.get("qualifies") != "no"]
     rank = {q: i for i, q in enumerate(db.QUALIFIES_ORDER)}
     foundries.sort(key=lambda f: (rank.get(f.get("qualifies", "unknown"), 99), f["name"].lower()))
     rows = []
@@ -145,7 +145,8 @@ def build() -> str:
             "license_urls": f.get("license_urls") or [],
             "verified": f"{v.get('date', '?')} ({v.get('method', '?')})",
         })
-    dir_rows = crawl.directory_rows()
+    ruled_out = {"curated:no", "not-company-size", "no-license-page"}
+    dir_rows = [r for r in crawl.directory_rows() if r["status"] not in ruled_out]
     data = json.dumps(rows, ensure_ascii=False, default=str).replace("</", "<\\/")
     page = PAGE.format(
         count=len(rows),

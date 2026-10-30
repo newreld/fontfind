@@ -158,6 +158,32 @@ def peers() -> int:
     return 0
 
 
+def roundups(path: str) -> int:
+    """Extract foundry links from article/directory pages listed in a file and add them to the directory."""
+    directory = _read(DIRECTORY_PATH)
+    have = {host_of(d["website"]) for d in directory.values() if d.get("website")}
+    have |= {host_of(f["website"]) for f in db.load() if f.get("website")}
+    added = 0
+    for line in open(path, encoding="utf-8"):
+        page = line.strip()
+        if not page.startswith("http"):
+            continue
+        try:
+            links = external_links(fetch.get(page).text, page)
+        except fetch.FetchError as e:
+            print(f"  skipped {page}: {e}")
+            continue
+        new = {h: u for h, u in links.items() if h not in have}
+        for host, site in new.items():
+            have.add(host)
+            directory[f"roundup:{host}"] = {"name": host, "source": f"linked from {page}", "website": site}
+        added += len(new)
+        print(f"  {len(links)} links, {len(new)} new: {page}", flush=True)
+    _write(DIRECTORY_PATH, directory)
+    print(f"added {added} sites")
+    return 0
+
+
 def screen_site(website: str) -> dict:
     urls = discover.discover(website)[:SCREEN_PAGES]
     texts, errors = [], []
