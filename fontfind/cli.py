@@ -63,7 +63,7 @@ def cmd_report(args) -> int:
 
 
 def cmd_review(args) -> int:
-    return review.review(only=args.only, force=args.force)
+    return review.review(only=args.only, force=args.force, limit=args.limit, dry_run=args.dry_run)
 
 
 def cmd_info(args) -> int:
@@ -113,6 +113,8 @@ def main(argv: list[str] | None = None) -> int:
     s = sub.add_parser("review", help="let Claude read license pages and fill in the verdict (quotes are verified)")
     s.add_argument("only", nargs="*", help="foundry names (default: all 'not reviewed')")
     s.add_argument("--force", action="store_true", help="also re-review entries that were auto-reviewed")
+    s.add_argument("--limit", type=int, help="review at most this many foundries")
+    s.add_argument("--dry-run", action="store_true", help="print results without saving")
     s.set_defaults(func=cmd_review)
 
     s = sub.add_parser("info", help="fetch preview image, description and typeface names for each foundry")

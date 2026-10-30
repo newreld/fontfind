@@ -132,7 +132,7 @@ def review_one(foundry: dict) -> bool:
     return True
 
 
-def review(only: list[str] | None = None, force: bool = False) -> int:
+def review(only: list[str] | None = None, force: bool = False, limit: int | None = None, dry_run: bool = False) -> int:
     foundries = db.load()
     wanted = {db.slugify(n) for n in only or []}
 
@@ -142,7 +142,7 @@ def review(only: list[str] | None = None, force: bool = False) -> int:
             return db.slugify(f["name"]) in wanted
         return "not reviewed" in method or (force and not method.startswith(PROTECTED))
 
-    targets = [f for f in foundries if needs_review(f)]
+    targets = [f for f in foundries if needs_review(f)][:limit]
     print(f"reviewing {len(targets)} foundries", flush=True)
     for f in targets:
         print(f"• {f['name']}", flush=True)
@@ -150,5 +150,10 @@ def review(only: list[str] | None = None, force: bool = False) -> int:
             review_one(f)
         except Exception as e:  # keep going; one bad foundry should not stop the batch
             print(f"    error: {e}", file=sys.stderr)
+        if dry_run:
+            print(f"    summary: {f.get('summary', '')}")
+            for e in f.get("evidence", []):
+                print(f"    - {e['claim'][:200]} [{e['source']}]")
+            continue
         db.save(foundries)
     return 0

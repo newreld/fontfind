@@ -93,6 +93,21 @@ foundries:
       checked: '2026-10-30'
       content_hash: 083fc4a745dbedcc
       changed_since_last_check: false
+    info:
+      country: United Kingdom
+      founded: 2004
+      image: https://newlyn.com/img/asset/dXBsb2Fkcy9uZXdseW4taG9tZS10ZXN0LTAxLnBuZw/newlyn-home-test-01.png?w=1200&h=628&s=77fea36e5f92fa9fdd8f37f7ffdd33f8
+      description: Newlyn is an independent type foundry by Miles Newlyn, designing commercial
+        fonts, custom typefaces, logos and brand typography for businesses.
+      typefaces:
+        - New Atlas
+        - New Spirit
+        - New Herman
+        - New Science
+        - New Kansas
+        - New Astro
+        - New Farm
+        - New Rubrik
 
   - name: Element Type
     website: https://elementtype.co
@@ -178,6 +193,10 @@ foundries:
       checked: '2026-10-30'
       content_hash: a6c4ec82c6bb6a68
       changed_since_last_check: false
+    info:
+      image: https://elementtype.co/wp-content/uploads/2025/10/element_type_co.png
+      description: Element Type Foundry is a digital type design foundry producing retail
+        fonts and type related design products.
 
   - name: Swiss Typefaces
     website: https://www.swisstypefaces.com
@@ -256,6 +275,24 @@ foundries:
       checked: '2026-10-30'
       content_hash: a999d9700217d0f8
       changed_since_last_check: false
+    info:
+      country: Switzerland
+      description: Our typefaces are made by designers, for designers. They are graphical
+        machines, engineered to capture the vibes of the now, and capable of generating vanguard
+        visuals.
+      typefaces:
+        - Suisse
+        - Euclid
+        - Newparis
+        - Sangbleu
+        - Thew
+        - Riviera
+        - NewPanam
+        - Simplon
+        - Venom
+        - Black Mamba
+        - MakeR
+        - Only
 
   - name: Yep! Type
     website: https://yeptype.com
@@ -321,6 +358,15 @@ foundries:
       checked: '2026-10-30'
       content_hash: 9b077f6b25c539e4
       changed_since_last_check: false
+    info:
+      country: Portugal
+      image: https://yeptype.com/og/default.png
+      description: Lisbon-based type foundry making practical, screen-first typefaces — Innovator
+        Grotesk and the Unifora uniwidth superfamily. Buy once, use forever, from €10 per
+        style.
+      typefaces:
+        - Innovator Grotesk
+        - Unifora
 
   - name: O'Plérou Studio (foundry)
     website: https://oplerou.studio
@@ -363,6 +409,19 @@ foundries:
       checked: '2026-10-30'
       content_hash: 99af6606ff9d6cd5
       changed_since_last_check: false
+    info:
+      image: https://oplerou.studio/og-default.jpg
+      description: Independent type foundry and cultural design studio founded by O’Plérou.
+        Explore and license contemporary retail fonts, display typefaces, and digital…
+      typefaces:
+        - OS Daloa
+        - OS Fresco
+        - OS Gagnoa Core
+        - OS Gagnoa Grand
+        - OS Kolia Biama
+        - OS Korhogo Forgeron
+        - OS Korhogo Tisserand
+        - OS Nadrey Cacao
 
   - name: Mass-Driver
     website: https://mass-driver.com
@@ -427,6 +486,21 @@ foundries:
       checked: '2026-10-30'
       content_hash: c7ede1cb73ea45d9
       changed_since_last_check: false
+    info:
+      image: https://mass-driver.com/static/seo/md-opengraph-misc.png
+      description: Typeface design and font production studio. Mass-Driver works across disciplines
+        to create high quality original fonts.
+      country: Netherlands
+      founded: 2020
+      typefaces:
+        - MD Nichrome
+        - MD Lórien
+        - MD Thermochrome
+        - MD IO
+        - MD UI
+        - MD System
+        - MD Primer
+        - MD Polychrome
 
   - name: Workhorse Type Foundry
     website: https://workhorse.studio
@@ -500,6 +574,10 @@ foundries:
       checked: '2026-10-30'
       content_hash: f3ebae485f04bf96
       changed_since_last_check: false
+    info:
+      country: United States
+      image: http://workhorse.studio/cdn/shop/files/Sharing.png?v=1728400116
+      description: A small type foundry based in backwoods Pennsylvania with a stencil obsession.
 
   - name: Displaay
     website: https://displaay.net
@@ -551,6 +629,25 @@ foundries:
       checked: '2026-10-30'
       content_hash: 85c8e95f8fa1cebf
       changed_since_last_check: false
+    info:
+      image: https://displaay.net/images/og-default.png
+      description: Displaay is an independent type-foundry that focuses on developing retail
+        and custom typefaces.
+      country: Czech Republic
+      founded: 2014
+      typefaces:
+        - Avantt
+        - Azeret
+        - Bagoss
+        - Booton
+        - Cassette
+        - Dazzed
+        - Denim
+        - Fellix
+        - Gellix
+        - Greed
+        - Haffer
+        - Hellix
 
   - name: Dinamo
     website: https://abcdinamo.com
@@ -643,6 +740,20 @@ foundries:
       checked: '2026-10-30'
       content_hash: 7748bc69f2677eae
       changed_since_last_check: false
+    info:
+      description: Dinamo is a Berlin-based type design studio offering retail and bespoke
+        typefaces, design software, research, and consultancy.
+      country: Germany
+      typefaces:
+        - Marfa
+        - Camera
+        - Publisher
+        - Honeymoon
+        - Stefan
+        - Maxi
+        - Arizona
+        - Schengen
+        - Ikarus
 
   - name: APK Type
     website: https://apk-type.com
@@ -711,6 +822,27 @@ foundries:
       checked: '2026-10-30'
       content_hash: 9f426467e0d0121b
       changed_since_last_check: false
+    info:
+      image: https://apk-type.com/wp-content/uploads/2026/06/APKStockholm_radhuset_slide3-scaled.png
+      description: APK TypeAPK Type is the independent type foundry founded by Dutch design
+        studio Autograph Peter Korsman. We design and offer distinctive typefaces and font
+        families (retail and custom) for use in print and the digital realm. Believe The TypeType
+        as a vehicle for ideas, identity and expression. We be
+      country: Netherlands
+      founded: 2023
+      typefaces:
+        - APK Narrative
+        - APK Protocol
+        - APK Galeria
+        - APK Stockholm
+        - APK Futural
+        - APK TheNewRomantic
+        - APK TL25
+        - APK Sveriga City
+        - APK Sveriga Lake
+        - APK Praktikal
+        - APK Rigimono
+        - APK SystemaAPK Avionica ← →
 
   - name: Regular Lines
     website: https://www.regularlines.com
@@ -762,6 +894,8 @@ foundries:
       checked: '2026-10-30'
       content_hash: 52d4c47af02aabb9
       changed_since_last_check: false
+    info:
+      country: Czech Republic
 
   - name: JulyType
     website: https://www.julytype.com
@@ -818,6 +952,13 @@ foundries:
       checked: '2026-10-30'
       content_hash: b8a7dda1196fdcdb
       changed_since_last_check: false
+    info:
+      country: Netherlands
+      founded: 2024
+      description: July Type is a type design studio founded by Edward Dżułaj in 2024 in The
+        Hague. The Studio specializes in providing users with high-quality retail and custom
+        typefaces, combining historical knowledge with contemporary letter design craft for
+        a global audience. Language support is essential to us, a
 
   - name: Typejockeys
     website: https://www.typejockeys.com
@@ -878,6 +1019,30 @@ foundries:
       checked: '2026-10-30'
       content_hash: 3cf88f9ed76a07a1
       changed_since_last_check: false
+    info:
+      country: Austria
+      founded: 2008
+      image: https://www.typejockeys.com/media/pages/home/2e8c925a9b-1756806538/marie-teaser-og.png
+      description: 'Unique typographic solutions with Viennese charm: From fonts to lettering
+        for logos and branding. We offer high quality typographic work and type design.'
+      typefaces:
+        - Birkengold
+        - Wiener Städtische
+        - Corsage
+        - LASK
+        - Drei
+        - Post Sans
+        - JOYN
+        - Zillertal Bier
+        - eww
+        - Harkamp
+        - Piatnik
+        - Espresso Kultur
+        - Austrian Lager
+        - PEZ
+        - Brandnertal
+        - Less is More
+        - Türkis
 
   - name: Typefaces.pizza
     website: https://typefaces.pizza
@@ -943,6 +1108,10 @@ foundries:
       checked: '2026-10-30'
       content_hash: 9683ce68605266b1
       changed_since_last_check: false
+    info:
+      country: France
+      image: https://typefaces.pizza/src/images/logo.png
+      description: Pizza Typefaces - Eat them all!
 
   - name: Type Department
     website: https://type-department.com
@@ -1016,6 +1185,22 @@ foundries:
       checked: '2026-10-30'
       content_hash: bcb32ecc1aa28d9f
       changed_since_last_check: false
+    info:
+      country: United Kingdom
+      description: A font and mockup marketplace for creatives.
+      typefaces:
+        - Grotta
+        - Formant Display
+        - Tenebras
+        - T1 Korium
+        - Faust
+        - Brier
+        - Longinus
+        - Belle de Mai
+        - Non Natural Grotesk
+        - Alfredino Semimono
+        - Lay Grotesk
+        - Substitute
 
   - name: T1 Foundry
     website: https://t1-foundry.com
@@ -1087,6 +1272,11 @@ foundries:
       checked: '2026-10-30'
       content_hash: 71014c7a59cd076d
       changed_since_last_check: false
+    info:
+      founded: 2021
+      image: http://t1-foundry.com/cdn/shop/files/Screenshot_2022-10-26_at_11.01.56.png?v=1666778581
+      description: The official type foundry of TYPE01. Producing contemporary, high-quality
+        fonts and championing typographic creativity worldwide.
 
   - name: Shaped Fonts
     website: https://shapedfonts.com
@@ -1142,6 +1332,24 @@ foundries:
       checked: '2026-10-30'
       content_hash: c6ca18c2a3c9b120
       changed_since_last_check: false
+    info:
+      country: Germany
+      founded: 2016
+      description: We offer free fonts and custom fonts for your company and projects. Download
+        all of our fonts for free or buy a license to use them in a commercial project.
+      typefaces:
+        - Zepter Pro
+        - Noordwijk aan Zee
+        - Urzeit
+        - Altona Sans
+        - Mind the Caps
+        - Lightbulb
+        - Boarding
+        - Rough Owl
+        - IceBear
+        - Sweet Chili
+        - Patron
+        - Argio
 
   - name: Overtype Foundry
     website: https://www.overtypefoundry.com
@@ -1202,6 +1410,17 @@ foundries:
       checked: '2026-10-30'
       content_hash: ec66570b539f232b
       changed_since_last_check: false
+    info:
+      country: France
+      image: https://cdn.sanity.io/images/ltdaocfm/production/ccf3fdcde5f7d3e85435c42795c52521a0006a85-3360x1806.png
+      description: Independent French type foundry creating high-quality contemporary typefaces
+        and fonts, including serif, sans serif, display, and variable fonts for branding,
+        editorial design, digital design, packaging, and visual identities.
+      typefaces:
+        - Press
+        - Demorny
+        - Last
+        - Miro
 
   - name: Faire Type
     website: https://www.fairetype.com
@@ -1254,6 +1473,22 @@ foundries:
       checked: '2026-10-30'
       content_hash: e771200517779956
       changed_since_last_check: false
+    info:
+      image: https://assets.fairetype.com/media/mediaitem/336/attachment/medium-63b4c8314d6745c80419dccbbfae4235.jpeg
+      description: We are a Brooklyn-based type foundry creating dynamic retail fonts that
+        fit the moment and bespoke custom fonts and logotypes for brands.
+      country: United States
+      founded: 2023
+      typefaces:
+        - Octave
+        - Octave Sans
+        - Octave Display
+        - Print Sans
+        - Print Script
+        - Print Text
+        - Print Slab
+        - Sprig
+        - Sprig Sans
 
   - name: Fontwerk
     website: https://fontwerk.com
@@ -1346,6 +1581,24 @@ foundries:
       checked: '2026-10-30'
       content_hash: cd5e564f86a541bc
       changed_since_last_check: false
+    info:
+      image: https://fontwerk.com/media/pages/home/6b796a61fe-1733824515/fontwerk_home_social_media_preview.png
+      description: We are a boutique type foundry helping brands and people to stand out.
+        Our precision-crafted fonts are easy to license in our award-winning library.
+      country: Germany
+      typefaces:
+        - Sukoon
+        - Neue DIN
+        - Tausend
+        - Hamster
+        - Nikolai
+        - Nice
+        - Ika
+        - Pangea
+        - Case
+        - Push
+        - Change
+        - McQueen
 
   - name: F37
     website: https://f37.com
@@ -1411,6 +1664,22 @@ foundries:
       checked: '2026-10-30'
       content_hash: 081ec2d1667ff3cd
       changed_since_last_check: false
+    info:
+      image: https://www.datocms-assets.com/39504/1658335000-f37_instagram_icon_2022-03.png?auto=format&fit=max&w=1200
+      description: F37® Foundry is an award-winning type foundry that creates fonts and logotypes
+        to help businesses stand apart.
+      typefaces:
+        - F37 Analog
+        - F37 Aria
+        - F37 Atlantic
+        - F37 Attila
+        - F37 August
+        - F37 Beckett
+        - F37 Bella
+        - F37 Bergman
+        - F37 Blanka
+        - F37 Bobby
+        - F37 Bolton
 
   - name: W Type Foundry
     website: https://wtypefoundry.com
@@ -1484,6 +1753,12 @@ foundries:
       checked: '2026-10-30'
       content_hash: 6036b1bccb72f63a
       changed_since_last_check: false
+    info:
+      country: Chile
+      description: Retail, Custom, and Free Fonts W ia a digital type foundry based in Santiago,
+        London, and Barcelona — Welcome to WTF
+      typefaces:
+        - Wtf Hammer
 
   - name: Facetype
     website: https://facetype-foundry.fontdue.com
@@ -1507,6 +1782,7 @@ foundries:
       changed_since_last_check: false
       errors:
         - 'https://facetype-foundry.fontdue.com/licensing-information: HTTP 404'
+    info: {}
 
   - name: AlfaType
     website: https://www.alfatypefonts.com
@@ -1597,6 +1873,11 @@ foundries:
       checked: '2026-10-30'
       content_hash: a0ddb488efd61199
       changed_since_last_check: false
+    info:
+      image: https://www.alfatypefonts.com/img/alfatype_fb_share.png
+      description: An independent type foundry established in 2006 by Joseph Miceli. Developing
+        original and commissioned typefaces for print and screen.
+      founded: 2006
 
   - name: Pangram Pangram
     website: https://pangrampangram.com
@@ -2097,6 +2378,10 @@ foundries:
       checked: '2026-10-30'
       content_hash: d1563a0fc160d4a2
       changed_since_last_check: false
+    info:
+      image: https://peregrinstudio.com/wp-content/uploads/2021/10/Header-about2.png
+      description: Peregrin is a Type Foundry / Studio, designing a range of fonts for licensing
+        & offering bespoke type services.
 
   - name: Sogari Design
     website: https://enricosogari.com
@@ -2173,6 +2458,17 @@ foundries:
       checked: '2026-10-30'
       content_hash: 4d9a271a077d66df
       changed_since_last_check: false
+    info:
+      country: Portugal
+      image: https://enricosogari.com/wp-content/uploads/Logo-ESD-TransBG-FFF.png
+      description: Passion for the human craft
+      typefaces:
+        - Basika
+        - Automata
+        - MUMI
+        - Turin
+        - Kronos
+        - Peek
 
   - name: Production Type
     website: https://www.productiontype.com
@@ -2218,6 +2514,17 @@ foundries:
       checked: '2026-10-30'
       content_hash: 8453bf24d7ba2965
       changed_since_last_check: false
+    info:
+      country: France
+      description: Production Type is a digital type design agency. Our activities span from
+        the exclusive online distribution of retail type for design professionals, to the
+        creation of custom typefaces for the industrial, luxury, and media sectors.
+      typefaces:
+        - PVC
+        - Image Future
+        - Cardinal
+        - Wigrum
+        - Kessler
 
   - name: Pyte Foundry
     website: https://thepytefoundry.net
@@ -2307,6 +2614,19 @@ foundries:
       checked: '2026-10-30'
       content_hash: 305b6f8b70597e30
       changed_since_last_check: false
+    info:
+      country: Norway
+      image: https://thepytefoundry.net/assets/preview.png
+      description: The Best of Everything for your Pytographic Needs!
+      typefaces:
+        - Acrylic
+        - Anamorphe
+        - Compagnie
+        - Kinckq
+        - Manoeuvre
+        - Pyte Legacy
+        - Shandy
+        - Triptych
 
   - name: Blaze Type
     website: https://blazetype.eu
@@ -2421,6 +2741,25 @@ foundries:
       checked: '2026-10-30'
       content_hash: d97b03d0aa555548
       changed_since_last_check: false
+    info:
+      image: https://blazetype.eu/img/og/home-new/blzt-home.f4242b0d.jpg
+      description: We are a Type Design foundry focused on making Variable Fonts with the
+        easiest Font Licensing around. Our fonts are up to trend and will fit your daily design
+        needs.
+      country: France
+      typefaces:
+        - Guirnalda
+        - Medieval
+        - Massilia
+        - Yowza
+        - Balete
+        - Oroban
+        - Area
+        - Apoc
+        - Sigurd
+        - Surt
+        - Solae
+        - Rules
 
   - name: Bauer Types
     website: https://bauertypes.com
@@ -2477,6 +2816,14 @@ foundries:
         - 'https://bauertypes.com: HTTPSConnectionPool(host=''bauertypes.com'', port=443):
           Max retries exceeded with url: / (Caused by SSLError(SSLError(1, ''[SSL: TLSV1_ALERT_PROTOCOL_VERSION]
           tlsv1 alert protocol version (_ssl.c:1129)'')))'
+    info:
+      image: https://a.storyblok.com/f/167503/1366x768/6f7db3ddee/kimera_website_share_image_015.jpg
+      description: Kimera is a type foundry, offering retail and bespoke typefaces for international
+        clients. Kimera is a design studio, providing art direction in the fields of culture,
+        art and lifestyle. Kimera is a store for various products. Kimera is Unity in Multiplicity.
+      country: Germany
+      typefaces:
+        - Apparat
 
   - name: Big Fog Foundry
     website: https://big-fog-foundry.fontdue.com
@@ -2500,6 +2847,7 @@ foundries:
       changed_since_last_check: false
       errors:
         - 'https://big-fog-foundry.fontdue.com: HTTP 404'
+    info: {}
 
   - name: Slant
     website: https://slant-type.fontdue.com
@@ -2571,6 +2919,10 @@ foundries:
       checked: '2026-10-30'
       content_hash: fa3842b2975561c3
       changed_since_last_check: false
+    info:
+      country: France
+      description: Slant is a french digital type foundry focused on producing quality retail
+        typefaces for print and digital uses.
 
   - name: Cape Arcona Type Foundry
     website: https://www.cape-arcona.com
@@ -2652,6 +3004,12 @@ foundries:
       checked: '2026-10-30'
       content_hash: 86d5406a6f152596
       changed_since_last_check: false
+    info:
+      image: https://www.cape-arcona.com/capearcona-profile.png
+      description: Germany-based Cape Arcona Type Foundry creates bespoke and retail fonts,
+        offering custom typefaces and high-quality handmade fonts.
+      country: Germany
+      founded: 2002
 
   - name: Dtype (Duong Tran)
     website: https://dtype.fontdue.com
@@ -2679,6 +3037,7 @@ foundries:
       changed_since_last_check: false
       errors:
         - robots.txt disallows https://dtype.fontdue.com
+    info: {}
 
   - name: U.S. Graphics
     website: https://usgraphics.com
@@ -2738,6 +3097,9 @@ foundries:
       checked: '2026-10-30'
       content_hash: null
       changed_since_last_check: false
+    info:
+      description: Premium typefaces designed by Kontrapunkt. Professional fonts for desktop,
+        web, and app use.
 
   - name: Moontype Foundry
     website: ''
@@ -2831,6 +3193,13 @@ foundries:
       checked: '2026-10-30'
       content_hash: 810b10ca8ac1ec5a
       changed_since_last_check: false
+    info:
+      description: I create brand identities that feel authentic, honest, and entirely your
+        own. Clean systems, strong logos, and custom typefaces built from scratch.
+      typefaces:
+        - Jelly Habit
+        - Birdie
+        - Crumb
 
   - name: NaN
     website: https://www.nan.xyz
@@ -2895,6 +3264,24 @@ foundries:
       checked: '2026-10-30'
       content_hash: 9d5c4985ad6b914e
       changed_since_last_check: false
+    info:
+      country: Germany
+      image: https://www.nan.xyz/wp-content/uploads/Screenshot-2023-06-19-at-16.53.03-1.png
+      description: NaN is an exploratory and service-driven type design practice, creating
+        for (and collaborating with) the weird, the wise and the wonderful ☻
+      typefaces:
+        - Nan Gothic
+        - Nan Holo
+        - NaN Metrify
+        - NaN Hyena
+        - NaN Fiasco
+        - NaN Drum
+        - NaN Index
+        - NaN Future
+        - NaN Bronzo
+        - NaN Trek
+        - NaN Hawk
+        - NaN Archy
 
   - name: Frost
     website: https://www.frostype.xyz
@@ -3002,6 +3389,16 @@ foundries:
       errors:
         - 'https://kontour.com: (''Connection aborted.'', ConnectionResetError(54, ''Connection
           reset by peer''))'
+    info:
+      image: https://kontour.com/media/site/51c3c1f35a-1730918617/meta-kontour-1200x630-crop-q80.jpg
+      description: Kontour, original typefaces for professional use designed by Sibylle Hagmann
+      typefaces:
+        - Riant
+        - Riant Mono
+        - Riant Display
+        - Datei Grotesk
+        - Utile Display
+        - Marlide Display
 
   - name: Lettermatic
     website: https://lettermatic.basement.studio
@@ -3051,6 +3448,13 @@ foundries:
       checked: '2026-10-30'
       content_hash: 6f7cde432f7d00a3
       changed_since_last_check: false
+    info:
+      image: https://images.unsplash.com/photo-1502006025672-cbfacb752806?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80
+      description: We've designed a catalog of typefaces intended to make your design work
+        easier, and more enjoyable. We made this for you.
+      typefaces:
+        - Really Sans
+        - Parclo Serif
 
   - name: AllCaps
     website: https://www.allcapstype.com
@@ -3115,6 +3519,21 @@ foundries:
       suggested_qualifies: partial
       web_hits: 18
       checked: '2026-10-30'
+    info:
+      image: https://cdn.allcapstype.com/media/meta_tag_cover.png
+      description: AllCaps is a design practice dedicated to publishing typefaces.
+      country: Czech Republic
+      typefaces:
+        - Logistik
+        - Plastik
+        - Society
+        - Affix
+        - Visual
+        - Bandit
+        - Rhetorik Sans
+        - Rhetorik Serif
+        - Modern Gothic
+        - Youth
 
   - name: ALT.tf
     website: https://alt-tf.com
@@ -3215,6 +3634,22 @@ foundries:
       suggested_qualifies: likely
       web_hits: 15
       checked: '2026-10-30'
+    info:
+      image: http://alt-tf.com/cdn/shop/files/Logo_7401df6f-0f23-4e64-a268-a462175daa3c.gif?height=628&pad_color=ffffff&v=1739464661&width=1200
+      description: Established to present typefaces from creatives under-represented in the
+        type design scene.
+      typefaces:
+        - ALT Erogenous
+        - ALT Gumbo
+        - ALT Junction
+        - ALT Klarinet
+        - ALT Maria Clara
+        - ALT Nadrey
+        - ALT Picaro
+        - ALT Ricalco
+        - ALT Rigatoni
+        - ALT Riviera
+        - ALT Systema
 
   - name: Arillatype Studio
     website: https://arillatype.studio
@@ -3282,6 +3717,24 @@ foundries:
       suggested_qualifies: partial
       web_hits: 16
       checked: '2026-10-30'
+    info:
+      image: https://arillatype.studio/social.jpg
+      description: We offer an exclusive collection of typefaces developed in the intersection
+        of creativity, craft and technology.
+      country: Spain
+      typefaces:
+        - At Aero
+        - At Chrome
+        - At Gambit
+        - At Geodesic
+        - At Haüss
+        - At King
+        - At Magmæ
+        - At Quark
+        - At Queen
+        - At Roca
+        - At Textual
+        - At Umami
 
   - name: BN Type Foundry
     website: https://www.bnicks.com
@@ -3405,6 +3858,12 @@ foundries:
       suggested_qualifies: likely
       web_hits: 10
       checked: '2026-10-30'
+    info:
+      country: Switzerland
+      founded: 2012
+      typefaces:
+        - States
+        - Beausite
 
   - name: Inhouse Type
     website: https://www.inhousetype.com
@@ -3540,6 +3999,25 @@ foundries:
       suggested_qualifies: partial
       web_hits: 35
       checked: '2026-10-30'
+    info:
+      image: http://www.lift-type.fr/cdn/shop/files/cover.png?v=1764584507
+      description: Founded in 2014 by Romain Oudin, Lift Type offering retail or custom fonts,
+        and sometimes free limited edition typefaces for specific events.
+      country: France
+      founded: 2014
+      typefaces:
+        - Ace
+        - Aerobik
+        - Baste
+        - Bouuuuuh Villain
+        - Dwight
+        - Ginka
+        - Gustavo
+        - Kaio
+        - Melun
+        - Mint Display
+        - Mint Grotesk
+        - Ocalie
 
   - name: Nodo Type Foundry
     website: https://nodotypefoundry.com
@@ -3827,6 +4305,18 @@ foundries:
       suggested_qualifies: partial
       web_hits: 15
       checked: '2026-10-30'
+    info:
+      country: Estonia
+      founded: 2022
+      image: https://www.typokompanii.com/og-image.jpg
+      description: Tüpokompanii is a type design studio based in Tallinn, Estonia. We’re constantly
+        seeking unexpected qualities within letterforms.
+      typefaces:
+        - Vee
+        - Juunior
+        - Vitamiin
+        - Ladna
+        - Trafarett
 
   - name: VJ Type
     website: https://vj-type.com
@@ -3885,6 +4375,26 @@ foundries:
       suggested_qualifies: partial
       web_hits: 91
       checked: '2026-10-30'
+    info:
+      country: France
+      image: http://vj-type.com/cdn/shop/files/VJ_vignette.jpg?v=1773759221
+      description: VJ-Type is an independent type foundry based in Paris, born from Violaine
+        & Jérémy’s creative studio.
+      typefaces:
+        - Canopée
+        - Cako
+        - Category
+        - Dahlia
+        - Dida
+        - Eros
+        - Jäger
+        - Kobe
+        - Love
+        - Nord
+        - Pilote
+        - Sud
+        - Traviata
+        - Voyage
 
   - name: Apex Type Foundry
     website: https://apextypefoundry.com
@@ -3901,9 +4411,9 @@ foundries:
       - claim: '"the price of a license is determined by the Company Size of the License Owner—not
           by the number of designers using the Fonts".'
         source: https://apextypefoundry.com/eula
-      - claim: 'Web "Permits the use of the Fonts on one web domain ... A separate web license must
-          be purchased for each additional domain." Logo + Wordmark "for one company ... A separate
-          Logo + Wordmark license is required for each additional company."'
+      - claim: Web "Permits the use of the Fonts on one web domain ... A separate web license
+          must be purchased for each additional domain." Logo + Wordmark "for one company
+          ... A separate Logo + Wordmark license is required for each additional company."
         source: https://apextypefoundry.com/eula
     verified:
       date: '2026-10-30'
@@ -3949,6 +4459,22 @@ foundries:
       suggested_qualifies: partial
       web_hits: 20
       checked: '2026-10-30'
+    info:
+      image: https://apextypefoundry.com/assets/images/opengraph.jpg
+      description: Apex is a Paris-based independent type design studio, founded and run by
+        Alex Chavot. We offer retail typefaces and bespoke typographic solutions.
+      country: France
+      typefaces:
+        - Rifugio
+        - Nicéphore
+        - Practical Grotesk
+        - Granit Display
+        - Kellar
+        - Marsel
+        - Pyros
+        - Almeria
+        - Smithee
+        - Hazel Display
 
   - name: Believe in (design studio)
     website: https://believein.net
@@ -3958,7 +4484,8 @@ foundries:
     logo: unknown
     all_media: unknown
     qualifies: 'no'
-    summary: A brand and graphic design studio, not a type foundry. Its terms cover client work, not font licensing.
+    summary: A brand and graphic design studio, not a type foundry. Its terms cover client
+      work, not font licensing.
     evidence:
       - claim: Terms refer to a "Client", "Brief" and "Goods" for design services.
         source: https://believein.net/terms-and-conditions
@@ -4006,18 +4533,18 @@ foundries:
     logo: included
     all_media: 'yes'
     qualifies: likely
-    todo: The EULA defines Organisation Size as the number of employees, subcontractors and temporary
-      staff, but the price list was not read. Confirm that the Basic and Extended prices depend on
-      organisation size only.
+    todo: The EULA defines Organisation Size as the number of employees, subcontractors and
+      temporary staff, but the price list was not read. Confirm that the Basic and Extended
+      prices depend on organisation size only.
     summary: Two licenses. Basic covers desktop and web. Extended adds apps, ebooks, broadcast/film/video,
-      games and logos/wordmarks, so Extended is the all-in-one license. Organisation Size is the
-      number of employees.
+      games and logos/wordmarks, so Extended is the all-in-one license. Organisation Size
+      is the number of employees.
     evidence:
       - claim: '"Organisation Size" means the total number of the Licensee''s employees, subcontractors
           and temporary staff at the date of purchase.'
         source: https://www.dograytype.com/eula
-      - claim: '"The Extended Licence grants all rights under the Basic Licence plus use in software
-          applications ..., Ebooks, broadcast/film/video, video games, and logos/wordmarks".'
+      - claim: '"The Extended Licence grants all rights under the Basic Licence plus use in
+          software applications ..., Ebooks, broadcast/film/video, video games, and logos/wordmarks".'
         source: https://www.dograytype.com/eula
     verified:
       date: '2026-10-30'
@@ -4059,6 +4586,17 @@ foundries:
       suggested_qualifies: partial
       web_hits: 16
       checked: '2026-10-30'
+    info:
+      image: https://cdn.prod.website-files.com/67695549939aafd2d1999e70/68d4279590b20d7726b7c612_Dogray_home_1600_.png
+      description: London-based type foundry led by Sahar Afshar & José Solé, specialising
+        in Arabic & Latin type design. Explore our fonts Sets Grotesk, Mazhik, Setar, and
+        Kohl.
+      country: United Kingdom
+      typefaces:
+        - Sets Grotesk
+        - Mazhik
+        - Setar
+        - Kohl
 
   - name: Double B Type
     website: https://doublebtype.xyz
@@ -4071,10 +4609,12 @@ foundries:
     summary: Separate license types bought individually, and logo design is excluded. No company-size
       pricing found in the license text.
     evidence:
-      - claim: '"the scope of licenses enumerated as ''License types'' in the Addenda are independent
-          of one another, and the Licensee may opt to purchase multiple types of licenses."'
+      - claim: '"the scope of licenses enumerated as ''License types'' in the Addenda are
+          independent of one another, and the Licensee may opt to purchase multiple types
+          of licenses."'
         source: https://doublebtype.xyz/font-license/
-      - claim: Merchandising restriction lists "goods intended for sale, logo design, retail packaging".
+      - claim: Merchandising restriction lists "goods intended for sale, logo design, retail
+          packaging".
         source: https://doublebtype.xyz/font-license/
     verified:
       date: '2026-10-30'
@@ -4143,21 +4683,21 @@ foundries:
     logo: included_small_only
     all_media: partial
     qualifies: partial
-    summary: Priced by headcount only. Companies up to 25 people get one Unlimited license covering desktop,
-      web, app, brand (logo), broadcast and OEM. Companies of 26 or more choose license types separately
-      (Desktop, Web, App, Brand, Broadcast, OEM).
+    summary: Priced by headcount only. Companies up to 25 people get one Unlimited license
+      covering desktop, web, app, brand (logo), broadcast and OEM. Companies of 26 or more
+      choose license types separately (Desktop, Web, App, Brand, Broadcast, OEM).
     evidence:
-      - claim: '"Organisations and businesses with up to 25 employees are granted the ''Unlimited'' licence,
-          which covers all available licence types ... For organisations and businesses with 26 or more
-          employees, only specific licence types are available".'
+      - claim: '"Organisations and businesses with up to 25 employees are granted the ''Unlimited''
+          licence, which covers all available licence types ... For organisations and businesses
+          with 26 or more employees, only specific licence types are available".'
         source: https://dreamtype.xyz/legal/licence-agreement
-      - claim: '"Pricing ... instead of looking at monthly page visitors, number of work stations, or
-          configuring complicated licence types, we look at the people count in a company."'
+      - claim: '"Pricing ... instead of looking at monthly page visitors, number of work stations,
+          or configuring complicated licence types, we look at the people count in a company."'
         source: https://dreamtype.xyz/pricing
     pricing:
       currency: EUR
-      note: Pay Once, excl. VAT, per font collection, for any plan up to 25 people (Unlimited). Larger
-        plans are custom.
+      note: Pay Once, excl. VAT, per font collection, for any plan up to 25 people (Unlimited).
+        Larger plans are custom.
       tiers:
         - employees: up to 25
           price: Single style 80, Bundle 100, Complete (variable + all static) 400
@@ -4206,6 +4746,14 @@ foundries:
       suggested_qualifies: likely
       web_hits: 14
       checked: '2026-10-30'
+    info:
+      image: https://maas.nbg1.your-objectstorage.com/251113-dreamtype-maskot-nodes-1200x630.jpg
+      description: The new type foundry by Magic as a Service™ offers sophisticated fonts
+        based on simple terms and transparent pricing for teams of any size.
+      country: Germany
+      typefaces:
+        - Mirage
+        - Brick
 
   - name: Formula Type
     website: https://formulatype.com
@@ -4217,16 +4765,16 @@ foundries:
     qualifies: 'yes'
     todo: The EULA itself was not read; the claims below come from the licensing FAQ page.
     summary: All-in-one licenses priced by the company's total number of employees. Each license
-      includes print, logotype design, website, social media, stream/TV/movie, app/games, e-books,
-      hardware embedding and server/cloud use.
+      includes print, logotype design, website, social media, stream/TV/movie, app/games,
+      e-books, hardware embedding and server/cloud use.
     evidence:
-      - claim: '"Our licences are ''All in one''. This means that each license includes use for Print,
-          Logotype design, Website, Social Media, Stream/TV/Movie, App/Games, e-Books, Hardware embedding,
-          Server/Cloud."'
+      - claim: '"Our licences are ''All in one''. This means that each license includes use
+          for Print, Logotype design, Website, Social Media, Stream/TV/Movie, App/Games, e-Books,
+          Hardware embedding, Server/Cloud."'
         source: https://formulatype.com/information
-      - claim: '"Size refers to the company using the font, based on the total number of employees. It
-          doesn''t relate to how many people will use the font or how many computers it will be installed
-          on."'
+      - claim: '"Size refers to the company using the font, based on the total number of employees.
+          It doesn''t relate to how many people will use the font or how many computers it
+          will be installed on."'
         source: https://formulatype.com/information
     verified:
       date: '2026-10-30'
@@ -4261,6 +4809,8 @@ foundries:
       suggested_qualifies: likely
       web_hits: 4
       checked: '2026-10-30'
+    info:
+      description: Formula Type
 
   - name: Gallery Type
     website: https://www.gallerytype.com
@@ -4271,15 +4821,16 @@ foundries:
     all_media: partial
     qualifies: partial
     todo: Check whether the Standard+Logo add-on price depends on company size.
-    summary: One perpetual All-In-One Standard license priced by employee count (plus a country price
-      adjustment) covers print, one web domain, social media, apps, hardware and film/broadcast. Logo
-      use costs extra ("Standard+Logo").
+    summary: One perpetual All-In-One Standard license priced by employee count (plus a country
+      price adjustment) covers print, one web domain, social media, apps, hardware and film/broadcast.
+      Logo use costs extra ("Standard+Logo").
     evidence:
-      - claim: '"Our model calculates licensing fees based on just two metrics: the total number of
-          employees of the end-user ... the location of the licensee."'
+      - claim: '"Our model calculates licensing fees based on just two metrics: the total
+          number of employees of the end-user ... the location of the licensee."'
         source: https://www.gallerytype.com/about/
-      - claim: '"For an additional fee (Standard+Logo), Gallery Type grants the Licensee the right to
-          use the Font(s) for the realization of any logotype for and within the licensee company."'
+      - claim: '"For an additional fee (Standard+Logo), Gallery Type grants the Licensee the
+          right to use the Font(s) for the realization of any logotype for and within the
+          licensee company."'
         source: https://www.gallerytype.com/about/
     verified:
       date: '2026-10-30'
@@ -4332,6 +4883,14 @@ foundries:
       suggested_qualifies: partial
       web_hits: 36
       checked: '2026-10-30'
+    info:
+      image: https://www.gallerytype.com/media/site/5effbe9cd4-1782738804/glry_favicon_05-1200x630-crop.webp
+      description: Gallery Type is a type foundry by designers for designers, based in Berlin
+        (Germany). We create fonts for brands with a radically simple licensing model.
+      country: Germany
+      typefaces:
+        - Golt
+        - Maurizio
 
   - name: La Bolde Vita
     website: https://www.laboldevita.com
@@ -4341,17 +4900,17 @@ foundries:
     logo: included
     all_media: 'yes'
     qualifies: likely
-    todo: The Extended package covers only one app, and extra apps need additional licenses. Price
-      tiers and whether Extended also scales only with employee count were not checked.
-    summary: Price depends on employee count. The Basic package covers print, web and social media
-      without limits. The Extended package adds logos/wordmarks, one app, one server, retail products
-      and film/streaming.
+    todo: The Extended package covers only one app, and extra apps need additional licenses.
+      Price tiers and whether Extended also scales only with employee count were not checked.
+    summary: Price depends on employee count. The Basic package covers print, web and social
+      media without limits. The Extended package adds logos/wordmarks, one app, one server,
+      retail products and film/streaming.
     evidence:
-      - claim: '"The price depends on how many employees the company has ... Fonts can be used on unlimited
-          company devices, websites and documents."'
+      - claim: '"The price depends on how many employees the company has ... Fonts can be
+          used on unlimited company devices, websites and documents."'
         source: https://www.laboldevita.com/eula
-      - claim: '"The Extended package covers all usage permitted in the Basic package and also allows use
-          for logos/wordmarks, applications, server, retail products and movies/streaming."'
+      - claim: '"The Extended package covers all usage permitted in the Basic package and
+          also allows use for logos/wordmarks, applications, server, retail products and movies/streaming."'
         source: https://www.laboldevita.com/eula
     verified:
       date: '2026-10-30'
@@ -4398,6 +4957,23 @@ foundries:
       suggested_qualifies: partial
       web_hits: 13
       checked: '2026-10-30'
+    info:
+      image: https://framerusercontent.com/images/Ttd6Nn6vqZ10row8gbdqkhCumM0.webp
+      description: Bold, eccentric and conceptual fonts for sophisticated designers. Custom
+        typefaces and typographic services are offered on request.
+      typefaces:
+        - Timez
+        - Residenz Grotesk
+        - Residenz Serif
+        - Airo
+        - Neptun
+        - Zimula
+        - Grotunda
+        - Unzyale
+        - Kanton Gothic
+        - BHV
+        - Reversa
+        - Samzara
 
   - name: Nikolas Type
     website: https://www.nikolastype.com
@@ -4407,17 +4983,19 @@ foundries:
     logo: included
     all_media: 'yes'
     qualifies: likely
-    todo: The licensing FAQ lists logos, websites, social media, packaging, video and streaming but does
-      not name apps. Read the license terms to confirm app embedding.
-    summary: License tiers are based on organization size, not on views or users. Desktop and web are
-      always included, as are logos, branding, social media, packaging, motion graphics and streaming.
+    todo: The licensing FAQ lists logos, websites, social media, packaging, video and streaming
+      but does not name apps. Read the license terms to confirm app embedding.
+    summary: License tiers are based on organization size, not on views or users. Desktop
+      and web are always included, as are logos, branding, social media, packaging, motion
+      graphics and streaming.
     evidence:
-      - claim: '"Desktop and Web usage are always included. Use the fonts across logos, websites, branding
-          systems, social media, marketing materials, packaging, presentations, editorial projects, and
-          interactive content such as videos, motion graphics, streaming content, and more."'
+      - claim: '"Desktop and Web usage are always included. Use the fonts across logos, websites,
+          branding systems, social media, marketing materials, packaging, presentations, editorial
+          projects, and interactive content such as videos, motion graphics, streaming content,
+          and more."'
         source: https://www.nikolastype.com/information/
-      - claim: '"Instead of charging based on views, impressions or unpredictable metrics, our licenses
-          are tied to the size of the organization using the fonts."'
+      - claim: '"Instead of charging based on views, impressions or unpredictable metrics,
+          our licenses are tied to the size of the organization using the fonts."'
         source: https://www.nikolastype.com/information/
     verified:
       date: '2026-10-30'
@@ -4448,6 +5026,16 @@ foundries:
       suggested_qualifies: partial
       web_hits: 5
       checked: '2026-10-30'
+    info:
+      image: https://images.prismic.io/nikolas-type/b8fe09bc-57a4-4295-a6d0-d01198ec10f0_full_test.jpg?auto=compress,format&rect=0,101,1920,1080&w=1600&h=900
+      description: Nikolas Type is the independent type foundry of Nikolas Wrobel, creating
+        retail and bespoke typefaces for analog and digital media. Explore and shop Grand
+        Slang, Solare, Cosi Times and Cosi Azure now.
+      typefaces:
+        - Solare
+        - Grand Slang
+        - Cosi Azure
+        - Cosi Times
 
   - name: Pathfinders
     website: https://pathfinders.rocks
@@ -4457,17 +5045,18 @@ foundries:
     logo: included
     all_media: 'yes'
     qualifies: 'yes'
-    todo: The Corporate tier prices were not read. The foundry also sells cheaper Desktop, Webfont, Software
-      and Broadcast licenses separately.
-    summary: The Corporate license is issued by total employee count and covers print, digital, web
-      (any number of owned sites, no visitor limits), software, broadcast, logos and brand identities
-      with no separate licenses.
+    todo: The Corporate tier prices were not read. The foundry also sells cheaper Desktop,
+      Webfont, Software and Broadcast licenses separately.
+    summary: The Corporate license is issued by total employee count and covers print, digital,
+      web (any number of owned sites, no visitor limits), software, broadcast, logos and brand
+      identities with no separate licenses.
     evidence:
-      - claim: '"The corporate license allows unlimited use of the licensed Fonts across all media and
-          outputs — including print, digital, web, software, broadcast, and internal materials".'
+      - claim: '"The corporate license allows unlimited use of the licensed Fonts across all
+          media and outputs — including print, digital, web, software, broadcast, and internal
+          materials".'
         source: https://pathfinders.rocks/eula/
-      - claim: '"Corporate licenses are issued based on the total number of employees in the organization."
-          "You are permitted to use the Fonts to create logos or brand identities."'
+      - claim: '"Corporate licenses are issued based on the total number of employees in the
+          organization." "You are permitted to use the Fonts to create logos or brand identities."'
         source: https://pathfinders.rocks/eula/
     verified:
       date: '2026-10-30'
@@ -4532,6 +5121,10 @@ foundries:
       suggested_qualifies: likely
       web_hits: 52
       checked: '2026-10-30'
+    info:
+      country: Spain
+      typefaces:
+        - Tiphares
 
   - name: Petra D
     website: https://petra-d.com
@@ -4541,12 +5134,12 @@ foundries:
     logo: separate
     all_media: 'no'
     qualifies: 'no'
-    summary: Separate Desktop, Web and App licenses. Desktop is limited by users or installations and web
-      by traffic, with logos covered by a separate license.
+    summary: Separate Desktop, Web and App licenses. Desktop is limited by users or installations
+      and web by traffic, with logos covered by a separate license.
     evidence:
-      - claim: 'License is "subject to the type of License acquired (Desktop, Web, or App) and the number
-          of users ... or installations allowed". Web use is "on one website domain ... with specified
-          traffic".'
+      - claim: License is "subject to the type of License acquired (Desktop, Web, or App)
+          and the number of users ... or installations allowed". Web use is "on one website
+          domain ... with specified traffic".
         source: https://petra-d.com/eula/
     verified:
       date: '2026-10-30'
@@ -4637,12 +5230,13 @@ foundries:
     logo: separate
     all_media: 'no'
     qualifies: partial
-    summary: The order asks for company size (total workforce, up to 100 people online), but desktop, web
-      and logo uses are separate licenses, and apps, merchandise and film need custom licenses.
+    summary: The order asks for company size (total workforce, up to 100 people online), but
+      desktop, web and logo uses are separate licenses, and apps, merchandise and film need
+      custom licenses.
     evidence:
-      - claim: 'The order must "specify the Company Size, which is the total workforce of the company".
-          "Embedding the Font Software into web pages is not permitted and requires a Web Licence."
-          "A separate Logo Licence is required".'
+      - claim: The order must "specify the Company Size, which is the total workforce of the
+          company". "Embedding the Font Software into web pages is not permitted and requires
+          a Web Licence." "A separate Logo Licence is required".
         source: https://typefaces.best/eula
     verified:
       date: '2026-10-30'
@@ -4711,3 +5305,11 @@ foundries:
       suggested_qualifies: partial
       web_hits: 30
       checked: '2026-10-30'
+    info:
+      country: United Kingdom
+      founded: 2025
+      typefaces:
+        - Best Round
+        - Best Grotesk
+        - Best Single
+        - Best Bits
