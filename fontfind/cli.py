@@ -66,12 +66,14 @@ def cmd_update(args) -> int:
     return pipeline.update(steps=args.steps.split(",") if args.steps else None, limit=args.limit, deep=args.deep)
 
 
-def cmd_phase(args) -> int:
-    return pipeline.run_phase(args.command, limit=getattr(args, "limit", 25), deep=getattr(args, "deep", False))
+def cmd_discover(args) -> int:
+    return pipeline.run_phase("discover", deep=args.deep)
 
 
 def cmd_review(args) -> int:
-    return review.review(only=args.only, force=args.force, limit=args.limit, dry_run=args.dry_run, workers=args.workers)
+    return pipeline.run_phase(
+        "review", limit=args.limit, only=args.only, force=args.force, dry_run=args.dry_run, workers=args.workers
+    )
 
 
 def cmd_info(args) -> int:
@@ -118,24 +120,20 @@ def main(argv: list[str] | None = None) -> int:
     s = sub.add_parser("report", help="write docs/index.html")
     s.set_defaults(func=cmd_report)
 
-    s = sub.add_parser("find", help="find new foundries and pick candidates (no Claude review)")
+    s = sub.add_parser("discover", help="find new foundries and pick candidates")
     s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
-    s.set_defaults(func=cmd_phase)
+    s.set_defaults(func=cmd_discover)
 
-    s = sub.add_parser("evaluate", help="review candidates with Claude, collect info, rebuild the report")
-    s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
-    s.set_defaults(func=cmd_phase)
-
-    s = sub.add_parser("update", help="find, then evaluate (does everything)")
-    s.add_argument("--steps", help=f"comma list from: discover,{','.join(pipeline.STEPS)}")
+    s = sub.add_parser("update", help="discover, then review (does everything)")
+    s.add_argument("--steps", help=f"comma list from: {','.join(pipeline.STEPS)}")
     s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
     s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
     s.set_defaults(func=cmd_update)
 
-    s = sub.add_parser("review", help="let Claude read license pages and fill in the verdict (quotes are verified)")
-    s.add_argument("only", nargs="*", help="foundry names (default: all 'not reviewed')")
+    s = sub.add_parser("review", help="review candidates with Claude, collect info, rebuild the report")
+    s.add_argument("only", nargs="*", help="foundry names (default: all waiting for review)")
     s.add_argument("--force", action="store_true", help="also re-review entries that were auto-reviewed")
-    s.add_argument("--limit", type=int, help="review at most this many foundries")
+    s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
     s.add_argument("--dry-run", action="store_true", help="print results without saving")
     s.add_argument("--workers", type=int, default=4, help="foundries reviewed at the same time")
     s.set_defaults(func=cmd_review)

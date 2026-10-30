@@ -24319,6 +24319,11 @@
   "source": "search: type foundry EULA \"Business Size\" employees contractors logo",
   "website": "https://dev.rosettatype.com"
  },
+ "search:djr.com": {
+  "name": "Dinamo Rodrigues (DJR)",
+  "source": "search: typeface license \"number of employees\" self-hosted webfonts ",
+  "website": "https://djr.com"
+ },
  "search:foundry.oplerou.studio": {
   "name": "Opler Ou Studio",
   "source": "search: font license priced by number of employees one license cover",
@@ -24333,6 +24338,11 @@
   "name": "Resistenza Type",
   "source": "search: typeface license \"number of employees\" self-hosted webfonts ",
   "website": "https://resistenzatype.fontdue.com"
+ },
+ "search:store.jamieclarketype.com": {
+  "name": "Jamie Clarke Type",
+  "source": "search: typeface license \"number of employees\" self-hosted webfonts ",
+  "website": "https://store.jamieclarketype.com"
  },
  "search:strapi-julytype-1zhv.onrender.com": {
   "name": "July Type",

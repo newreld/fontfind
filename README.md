@@ -9,18 +9,18 @@ Open `docs/index.html` in a browser to see the result.
 
 ```sh
 pip3 install -r requirements.txt     # once
-python3 -m fontfind update           # find, then evaluate (does everything)
-python3 -m fontfind find             # only look for new foundries and pick candidates
-python3 -m fontfind evaluate         # only review candidates with Claude and rebuild the report
+python3 -m fontfind update           # discover, then review (does everything)
+python3 -m fontfind discover         # only look for new foundries and pick candidates
+python3 -m fontfind review           # only review candidates with Claude and rebuild the report
 ```
 
 `update` needs Claude: either run `claude` once and log in with `/login`, or set `ANTHROPIC_API_KEY`.
 
 What `update` does, in order:
 
-1. **Discover**: collects foundry websites from `data/sources.yaml` (roundup articles, web searches Claude runs, your own seeds) plus links from foundries already matched.
+1. **Discover** (`discover`): collects foundry websites from `data/sources.yaml` (roundup articles, web searches Claude runs, your own seeds) plus links from foundries already matched.
 2. **Screen**: reads each site's license pages and keeps those whose text points to company-size pricing.
-3. **Review**: Claude reads the real license pages and sets the verdict. Every evidence quote must appear word for word on the page, otherwise it is dropped, and a `yes` needs two verified quotes and confirmed web use.
+3. **Review** (`review`): Claude reads the real license pages and sets the verdict. Every evidence quote must appear word for word on the page, otherwise it is dropped, and a `yes` needs two verified quotes and confirmed web use.
 4. **Info**: preview image and typeface names.
 5. **Report**: rebuilds `docs/index.html`.
 

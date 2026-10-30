@@ -6,11 +6,11 @@ from fontfind import db, pipeline, status
 
 
 class PipelineTests(unittest.TestCase):
-    def test_discover_alias_expands(self):
-        self.assertEqual(pipeline.expand(["discover", "review"], False), ["roundups", "searches", "peers", "review"])
+    def test_discover_phase_expands(self):
+        self.assertEqual(pipeline.expand(["discover", "judge"], False), ["roundups", "searches", "peers", "screen", "promote", "judge"])
 
     def test_deep_adds_sources_first(self):
-        self.assertEqual(pipeline.expand(["review"], True), ["sources", "review"])
+        self.assertEqual(pipeline.expand(["judge"], True), ["sources", "judge"])
 
     def test_default_steps(self):
         self.assertEqual(pipeline.expand(None, False), pipeline.STEPS)
@@ -35,6 +35,6 @@ if __name__ == "__main__":
 
 class PhaseTests(unittest.TestCase):
     def test_find_and_evaluate_cover_all_steps(self):
-        both = pipeline.expand(["find", "evaluate"], False)
+        both = pipeline.expand(["discover", "review"], False)
         self.assertEqual(both, pipeline.STEPS)
-        self.assertFalse(set(pipeline.PHASES["find"]) & set(pipeline.PHASES["evaluate"]))
+        self.assertFalse(set(pipeline.PHASES["discover"]) & set(pipeline.PHASES["review"]))

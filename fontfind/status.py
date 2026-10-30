@@ -11,7 +11,7 @@ from fontfind import crawl, db, review
 LABELS = {
     "sources": "Read Fonts In Use", "roundups": "Read roundup articles", "searches": "Search the web with Claude",
     "peers": "Follow links from matches", "screen": "Screen license pages", "promote": "Pick candidates",
-    "review": "Review with Claude", "info": "Images and typefaces", "report": "Build report",
+    "judge": "Review with Claude", "info": "Images and typefaces", "report": "Build report",
 }
 
 

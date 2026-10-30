@@ -11,12 +11,12 @@ import yaml
 from fontfind import crawl, db, info, progress, report, review, status
 
 SOURCES_PATH = db.ROOT / "data" / "sources.yaml"
-STEPS = ["roundups", "searches", "peers", "screen", "promote", "review", "info", "report"]
+STEPS = ["roundups", "searches", "peers", "screen", "promote", "judge", "info", "report"]
 PHASES = {
-    "find": ["roundups", "searches", "peers", "screen", "promote"],
-    "evaluate": ["review", "info", "report"],
+    "discover": ["roundups", "searches", "peers", "screen", "promote"],
+    "review": ["judge", "info", "report"],
 }
-ALIASES = {"discover": ["roundups", "searches", "peers"], **PHASES}
+ALIASES = dict(PHASES)
 
 
 def _sources() -> dict:
@@ -36,7 +36,7 @@ def expand(names: list[str] | None, deep: bool) -> list[str]:
     return [s for s in dict.fromkeys(steps)]
 
 
-def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, title: str = "Update") -> int:
+def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, title: str = "Update", review_opts: dict | None = None) -> int:
     steps = expand(steps, deep)
     before = _tally()
     src = _sources()
@@ -56,7 +56,7 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, 
         st.view = live
     aborted = False
     try:
-        _run(steps, limit, src, st)
+        _run(steps, limit, src, st, review_opts or {})
     except KeyboardInterrupt:
         aborted = True
         review.kill_children()
@@ -76,15 +76,18 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, 
         print(f"  {q:8} {before[q]:3} -> {after[q]:3}")
     pending = review.pending_count()
     if pending:
-        print(f"  {pending} candidates still waiting for review: run update again")
+        print(f"  {pending} candidates still waiting for review: run `review` again")
     return 130 if aborted else 0
 
 
-def run_phase(phase: str, limit: int = 25, deep: bool = False) -> int:
-    return update(PHASES[phase], limit=limit, deep=deep, title=phase.capitalize())
+def run_phase(phase: str, limit: int = 25, deep: bool = False, **review_opts) -> int:
+    steps = PHASES[phase]
+    if review_opts.get("dry_run"):
+        steps = [s for s in steps if s == "judge"]
+    return update(steps, limit=limit, deep=deep, title=phase.capitalize(), review_opts=review_opts)
 
 
-def _run(steps: list[str], limit: int, src: dict, st: "status.Status") -> None:
+def _run(steps: list[str], limit: int, src: dict, st: "status.Status", review_opts: dict) -> None:
     actions = {
         "sources": lambda: crawl.sources(),
         "roundups": lambda: (crawl.add_seed_sites(src.get("seeds") or []), crawl.add_roundup_pages(src.get("roundups") or [])),
@@ -92,7 +95,7 @@ def _run(steps: list[str], limit: int, src: dict, st: "status.Status") -> None:
         "peers": lambda: crawl.peers(),
         "screen": lambda: crawl.screen(),
         "promote": lambda: (progress.total(1), crawl.promote(), progress.tick("done")),
-        "review": lambda: review.review(limit=limit),
+        "judge": lambda: review.review(limit=limit, **review_opts),
         "info": lambda: info.collect(),
         "report": lambda: (progress.total(1), print(report.build()), progress.tick("done")),
     }
