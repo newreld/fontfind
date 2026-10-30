@@ -36,3 +36,25 @@ def license_links(html: str, base_url: str) -> list[str]:
 def discover(website: str) -> list[str]:
     resp = fetch.get(website)
     return license_links(resp.text, resp.url)
+
+
+COMMON_PATHS = ["/licensing", "/license", "/licenses", "/licence", "/eula", "/faq", "/info", "/pages/licensing", "/pages/licenses", "/terms"]
+FALLBACK_MAX = 3
+
+
+def fallback(website: str) -> list[str]:
+    """Common license addresses that answer with a real page, for sites whose homepage links none."""
+    base = website.rstrip("/")
+    found = []
+    for path in COMMON_PATHS:
+        try:
+            resp = fetch.get(base + path)
+        except fetch.FetchError as e:
+            if "429" in str(e):
+                break
+            continue
+        if len(resp.text) > 500:
+            found.append(resp.url)
+        if len(found) >= FALLBACK_MAX:
+            break
+    return found

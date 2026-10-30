@@ -49,9 +49,6 @@ def _norm(text: str) -> str:
     return re.sub(r"\s+", " ", text.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')).strip().lower()
 
 
-COMMON_PATHS = ["/licensing", "/license", "/licenses", "/licence", "/eula", "/faq", "/info", "/pages/licensing", "/pages/licenses"]
-
-
 def _read_pages(urls: list[str]) -> tuple[dict[str, str], list[str]]:
     pages, errors = {}, []
     for url in urls[:6]:
@@ -73,15 +70,8 @@ def gather(foundry: dict) -> tuple[dict[str, str], list[str]]:
         except fetch.FetchError as e:
             errors.append(str(e))
     if not pages and site:
-        base = site.rstrip("/")
-        for path in COMMON_PATHS:
-            found, more = _read_pages([base + path])
-            if found:
-                pages = found
-                break
-            errors += more
-            if any("429" in m for m in more):
-                break
+        pages, more = _read_pages(discover.fallback(site))
+        errors += more
     return pages, errors
 
 

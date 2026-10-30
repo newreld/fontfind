@@ -263,7 +263,7 @@ def add_searched_sites(queries: list[str]) -> int:
 
 
 def screen_site(website: str) -> dict:
-    urls = discover.discover(website)[:SCREEN_PAGES]
+    urls = discover.discover(website)[:SCREEN_PAGES] or discover.fallback(website)
     texts, errors = [], []
     for u in urls:
         try:
