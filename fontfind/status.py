@@ -144,11 +144,19 @@ def terminal_view(status: Status):
             steps.add_row(Text("○", style="dim"), Text(label, style="dim"), Text(""), Text(""), Text(""), Text(""))
 
     counts = status.counts()
+    divider_at = 3  # first three counts are work in progress, the rest are results
     stats = Table.grid(padding=(0, 3))
-    for _ in counts:
+    top, bottom = [], []
+    for i, (label, n, color) in enumerate(counts):
+        if i == divider_at:
+            stats.add_column(justify="center", width=1)
+            top.append(Text("│", style="dim"))
+            bottom.append(Text("│", style="dim"))
         stats.add_column(justify="center")
-    stats.add_row(*[Text(str(n), style=f"bold {color}") for _, n, color in counts])
-    stats.add_row(*[Text(label, style="dim") for label, _, _ in counts])
+        top.append(Text(str(n), style=f"bold {color}"))
+        bottom.append(Text(label, style="dim"))
+    stats.add_row(*top)
+    stats.add_row(*bottom)
 
     recent = Text("\n".join(list(status.log)[-5:]) or " ", style="dim", no_wrap=True, overflow="ellipsis")
     if status.aborted:

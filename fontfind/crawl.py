@@ -169,18 +169,22 @@ def peers() -> int:
     return 0
 
 
-def brand(host: str) -> str:
-    """First label of a host, e.g. 'foundry.oplerou.studio' -> 'oplerou'."""
-    parts = host.split(".")
-    return parts[-2] if len(parts) >= 2 and parts[-2] not in ("co", "com", "org", "ac") else parts[0]
+GENERIC_LABELS = {"www", "foundry", "foundries", "type", "types", "fonts", "font", "studio", "design", "typefaces", "co", "com", "org", "net", "shop", "store", "help"}
+
+
+def brands(host: str) -> set[str]:
+    """Name-like labels of a host: 'lettermatic.basement.studio' -> {'lettermatic', 'basement'}."""
+    labels = host.split(".")[:-1] or host.split(".")
+    return {l for l in labels if len(l) >= 3 and l not in GENERIC_LABELS}
 
 
 def seen(host: str, have: set[str]) -> bool:
     """Exact host match, or the same brand under another domain (arillatype.com vs arillatype.studio)."""
     if host in have:
         return True
-    b = brand(host)
-    return len(b) >= 3 and any(len(o) >= 3 and (b.startswith(o) or o.startswith(b)) for o in map(brand, have))
+    mine = brands(host)
+    others = set().union(*(brands(o) for o in have)) if have else set()
+    return any(m == o or m.startswith(o) or o.startswith(m) for m in mine for o in others)
 
 
 def known_hosts(directory: dict) -> set[str]:
