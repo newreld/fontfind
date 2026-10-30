@@ -182,8 +182,13 @@ foundries:
   - name: Swiss Typefaces
     website: https://www.swisstypefaces.com
     pricing:
-      note: Prices are shown only in the shop checkout; none found in the page text read.
-      source: https://www.swisstypefaces.com/support/license/
+      currency: CHF
+      note: 'Euclid family page lists "Single styles from 50 CHF" and "Complete subfamily
+        from 200 CHF"; the licensing page says the entry price covers up to 25 employees.
+        Company tiers in the purchase panel are 0-25, 26-100, 101-300, 301-750, 751-1500,
+        1501-2500 and 2501+ employees, but per-tier prices only appear after styles are
+        chosen, so they were not read. One-time purchase, all uses including web and logo.'
+      source: https://www.swisstypefaces.com/fonts/euclid/
     license_urls:
       - https://www.swisstypefaces.com/licensing/
       - https://www.swisstypefaces.com/support/license/
@@ -321,7 +326,9 @@ foundries:
     website: https://oplerou.studio
     pricing:
       note: Tier labels XS (1) to Ultra (251-500) published; prices vary by country (PPP)
-        and are shown only at checkout, none in the page text read. 500+ on request.
+        and are shown only at checkout, none in the page text read. The store pages
+        (oplerou.studio/collection/...) returned a server error when checked on 2026-10-30.
+        500+ on request.
       source: https://oplerou.studio/licensing
     license_urls:
       - https://oplerou.studio/licensing
@@ -361,8 +368,8 @@ foundries:
   - name: Mass-Driver
     website: https://mass-driver.com
     pricing:
-      note: Self-serve by employee count up to 300, quote above. Prices are shown only
-        in the font checkout, none in the page text read.
+      note: Self-serve by employee count up to 300, quote above. Prices appear only inside
+        the order flow, whose Buy button adds items to a cart, so they were not read.
       source: https://mass-driver.com/licensing
     license_urls:
       - https://mass-driver.com/licensing
@@ -2096,8 +2103,19 @@ foundries:
   - name: Sogari Design
     website: https://enricosogari.com
     pricing:
-      note: Prices are shown only in the shop (Gumroad), none in the license page text.
-      source: https://enricosogari.com/license-agreement
+      currency: USD
+      note: Automata, Unlimited Perpetual license (covers web, apps, social, logo), one-time
+        payment. Larger company sizes on request.
+      tiers:
+        - employees: up to 5
+          price: '483'
+        - employees: up to 10
+          price: '966'
+        - employees: up to 25
+          price: '1,932'
+        - employees: up to 50
+          price: '3,864'
+      source: https://sogari.gumroad.com/l/qnbicu
     license_urls:
       - https://enricosogari.com/license-agreement
     pricing_metric: company_size
@@ -2488,8 +2506,25 @@ foundries:
   - name: Slant
     website: https://slant-type.fontdue.com
     pricing:
-      note: No prices in the page text read; shown only in the checkout.
-      source: https://slant-type.fontdue.com/licenses
+      currency: EUR
+      note: Affine family (7 styles), Basic License, perpetual all-in-one, read from the
+        buying-options selector on the store. The page says "License price is based on
+        how many people work at your company". Single styles are 72 EUR for Solo, 108 for
+        2-5 people. VAT treatment not stated on the page.
+      tiers:
+        - employees: Solo
+          price: '327'
+        - employees: 2-5
+          price: '490.50'
+        - employees: 6-10
+          price: '654'
+        - employees: 11-25
+          price: '1,144.50'
+        - employees: 26-50
+          price: '1,798.50'
+        - employees: 51-100
+          price: '2,616'
+      source: https://slant-type.fontdue.com/
     license_urls:
       - https://slant-type.fontdue.com/licenses
       - https://www.slant-type.co/pdfs/61e54fe3d631cfa6478c943c7878b689703a730e
@@ -2535,8 +2570,22 @@ foundries:
   - name: Cape Arcona Type Foundry
     website: https://www.cape-arcona.com
     pricing:
-      note: No prices in the page text read; shown only in the checkout.
-      source: https://www.cape-arcona.com/typefaces/
+      currency: EUR
+      note: 'CA Aircona Family, CAPE Standard License, one-time fee for perpetual use,
+        prices include VAT. Price is the base price (40 EUR) times a company-size multiplier
+        published in the order form: <2 x1, <5 x2.5, <8 x4, <15 x7, <25 x9, <50 x15,
+        <100 x22, <200 x35, <400 x50, <750 x68, <1000 x70, <1500 x75, <2000 x85, <5000 x175,
+        <10000 x300. The <15 total (280 EUR) was confirmed in the order form.'
+      tiers:
+        - employees: <2
+          price: '40'
+        - employees: <15
+          price: '280'
+        - employees: <50
+          price: '600'
+        - employees: <10000
+          price: '12,000'
+      source: https://www.cape-arcona.com/typefaces/aircona/
     license_urls:
       - https://www.cape-arcona.com/end-user-license-agreement-eula/
       - https://www.cape-arcona.com/order-information/
