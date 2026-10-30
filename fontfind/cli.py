@@ -50,7 +50,7 @@ def main(argv: list[str] | None = None) -> int:
     sub = p.add_subparsers(dest="command", title="commands")
 
     s = sub.add_parser("find", help="look for new foundry websites")
-    s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
+    s.add_argument("--deep", action="store_true", help="instead, crawl the whole Fonts In Use directory for websites (hours, resumable)")
     s.set_defaults(func=cmd_find)
 
     s = sub.add_parser("screen", help="read their license pages and keep the ones that look like company-size pricing")

@@ -82,7 +82,7 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, 
 
 
 def run_phase(phase: str, limit: int = 25, deep: bool = False, **review_opts) -> int:
-    steps = PHASES[phase]
+    steps = ["sources"] if (phase == "find" and deep) else PHASES[phase]
     if review_opts.get("dry_run"):
         steps = [s for s in steps if s == "judge"]
     return update(steps, limit=limit, deep=deep, title=phase.capitalize(), review_opts=review_opts)

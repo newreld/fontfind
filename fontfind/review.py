@@ -21,7 +21,7 @@ from fontfind import browser, db, discover, fetch, progress
 MAX_PAGE_CHARS = 30000
 MODEL = os.environ.get("FONTFIND_MODEL", "claude-sonnet-5-5")
 METHOD = "auto-reviewed (rendered page, second check)"
-PROTECTED = ("browser-reviewed",)
+PROTECTED = ("browser-reviewed", "excluded")
 
 PROMPT = """You are reviewing the font license of one type foundry. Use ONLY the page texts below. Never use outside knowledge.
 
