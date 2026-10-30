@@ -245,6 +245,14 @@
   ],
   "website": "https://www.adc.de"
  },
+ "admin.formulatype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://admin.formulatype.com"
+ },
  "adrienmidzic.fr": {
   "checked": "2026-10-30",
   "errors": [
@@ -965,6 +973,31 @@
   "license_urls": [],
   "website": "http://betatype.com"
  },
+ "bibliotheques-specialisees.paris.fr": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://bibliotheques-specialisees.paris.fr"
+ },
+ "billetweb.fr": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.billetweb.fr/fr-fr/mentions-legales"
+  ],
+  "website": "https://www.billetweb.fr"
+ },
  "binnenland.ch": {
   "checked": "2026-10-30",
   "errors": [
@@ -1061,6 +1094,13 @@
    "https://blast-foundry.com: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
   ],
   "website": "https://blast-foundry.com"
+ },
+ "blazetype.eu,": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://blazetype.eu,: HTTPSConnectionPool(host='blazetype.eu,', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='blazetype.eu,', port=443): Failed to resolve 'blazetype.eu,' ([Errno 8] nodename nor servname provided, or not known)\"))"
+  ],
+  "website": "https://blazetype.eu,"
  },
  "blkbktyp.com": {
   "auto": {
@@ -1351,6 +1391,13 @@
   "license_urls": [],
   "website": "https://www.canadorecollege.ca"
  },
+ "capearconatypefoundry.tumblr.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://capearconatypefoundry.tumblr.com: HTTP 403"
+  ],
+  "website": "https://capearconatypefoundry.tumblr.com"
+ },
  "capilanou.ca": {
   "auto": {
    "all_media_hits": 0,
@@ -1401,6 +1448,14 @@
   ],
   "license_urls": [],
   "website": "http://www.ccgraphicdesign.ca"
+ },
+ "cdn.sanity.io": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://cdn.sanity.io"
  },
  "centennialcollege.ca": {
   "auto": {
@@ -1799,6 +1854,20 @@
   ],
   "website": "https://creativeboom.typeform.com"
  },
+ "creativemarket.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://creativemarket.com: HTTP 403"
+  ],
+  "website": "https://creativemarket.com"
+ },
+ "csr.productiontype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://csr.productiontype.com: HTTP 525"
+  ],
+  "website": "https://csr.productiontype.com"
+ },
  "customer-portal.paddle.com": {
   "checked": "2026-10-30",
   "errors": [
@@ -1965,6 +2034,57 @@
   ],
   "license_urls": [],
   "website": "http://designwest.eu"
+ },
+ "dev.rosettatype.com": {
+  "auto": {
+   "all_media_hits": 3,
+   "evidence": {
+    "all_media": [
+     "The Client may use the Fonts exclusively for the following purposes in accordance with their purchase preferences: Testing, Desktop Projects, Document Embedding, Web Projects, and/or App Projects.",
+     "The Client may use the Fonts exclusively for the following purposes in accordance with their purchase preferences: Testing, Desktop Projects, Document Embedding, Web Projects, App Projects, Automated Processing and Research, and/or Merchandising.",
+     "All tiers now permit the use in desktop, web, and apps!"
+    ],
+    "logo:included": [
+     "This includes the design of videos, logos, and logotypes and broadcasting of the content created via television or the internet (for example web, streaming services, social networks and other third-party platforms).",
+     "All use of the trademark associated with the Fonts inures solely to the trademark owner."
+    ],
+    "metric:company_size": [
+     "from up to 3 employees",
+     "This licence does not permit the temporary use of the Fonts by temporary employees, freelancers, or independent contractors in excess of the number of Authorised Users.",
+     ": adapted to pricing based on tiers derived from company size, added clarifications regarding machine learning, clarified and simplified the licence definitions.",
+     "The basic tier corresponds to our previous offer while the larger tiers (already available from our web shop) are based on the comany size (the total number of employees) and set limits for the use on the web and in apps."
+    ],
+    "metric:seats": [
+     "Number of devices where you can install the fonts",
+     "up to 3 per user"
+    ],
+    "metric:traffic": [
+     "Web traffic (pageviews/month)",
+     "The Client may use the Fonts with a purchased (a) number of Authorised Users for Desktop Projects, (b) traffic limit for Web Projects expressed in monthly pageviews, and/or (c) audience limit for the use in App Projects expressed as a total number of all app users.",
+     "The Client may use the Fonts with a purchased (a) number of Authorised Users for Desktop Projects, (b) traffic limit for Web Projects expressed in monthly pageviews, (c) audience limit for the use in App Projects expressed as a total number of all app users, (d) limit regarding the use in Automated Processing and Research, and/or (e) number of Merchandising items.",
+     "): to reflect lower prices, we reduced the number of authorised users and web pageviews (to 30K) permitted for the Standard licence."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 4,
+    "seats": 2,
+    "traffic": 6
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 32
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://dev.rosettatype.com/licence/",
+   "https://dev.rosettatype.com/articles/2024-04-01-larger-licence-tiers-and-new-online-reseller",
+   "https://dev.rosettatype.com/terms/"
+  ],
+  "website": "https://dev.rosettatype.com"
  },
  "diedruckerei.de": {
   "auto": {
@@ -2451,6 +2571,25 @@
   ],
   "website": "https://en.morisawa.co.jp"
  },
+ "en.sandollcloud.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 14
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://en.sandollcloud.com/license/licensecombine",
+   "https://en.sandollcloud.com/support/faq",
+   "https://en.sandollcloud.com/policyTermsUser"
+  ],
+  "website": "https://en.sandollcloud.com"
+ },
  "en.typofest.bg": {
   "checked": "2026-10-30",
   "errors": [
@@ -2794,6 +2933,31 @@
   "license_urls": [],
   "website": "https://www.fhnw.ch"
  },
+ "figma.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:seats": [
+     "Retrieve daily AI credit consumption per user across your organization."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "seats": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "seats",
+   "suggested_qualifies": "no",
+   "web_hits": 4
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.figma.com/legal/",
+   "https://www.figma.com/pricing/",
+   "https://www.figma.com/legal/impressum/"
+  ],
+  "website": "https://figma.com"
+ },
  "filipmatejicek.info": {
   "checked": "2026-10-30",
   "errors": [
@@ -2877,6 +3041,35 @@
   "license_urls": [],
   "website": "http://www.fontbureau.com"
  },
+ "fontdue.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Customer hereby grants Fontdue a perpetual, worldwide, royalty-free, non-exclusive right and license to use any version of the Customer and any portion of it (including names, trademarks and logos appearing in the Customer Website) in Fontdue’s advertising materials."
+    ],
+    "metric:company_size": [
+     "“Personnel” means a party’s employees and independent contractors.",
+     "Fontdue will indemnify, defend and hold harmless (collectively “indemnify” or “indemnification”) Customer and Customer’s officers, directors and employees (“Customer Indemnitees”) from and against any third party claims, demands, actions and proceedings, and any resulting liabilities, damages, costs and expenses (including reasonable legal fees and expenses), brought against any Customer Indemnitee, alleging that the Service infringes any patent, trademark or copyright of any third parties."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 13
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.fontdue.com/terms-of-service"
+  ],
+  "website": "https://www.fontdue.com"
+ },
  "fontfeed.com": {
   "auto": {
    "all_media_hits": 2,
@@ -2942,6 +3135,39 @@
    "http://www.fontfont.com: HTTP 404"
   ],
   "website": "http://www.fontfont.com"
+ },
+ "fonts.xyz": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "Be it through font designs, font names, specimen text or imagery, font descriptions, comments, user names… We reserve the right to delete aforementioned content and give the Users a warning if it where to fall in one of these categories."
+    ],
+    "logo:included": [
+     "Fonts.xyz grants the Licensee the right to use the Font for the realization of any logotype for and within the licensee company."
+    ],
+    "metric:company_size": [
+     "The Company Size means how many people work for the Licensee’s company and all its subsidiaries (employees and sub-contractors included).",
+     "As such, the Licensee should include the number of said Subcontractors in the total of their employees to choose their license tiers at the moment of purchase."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "likely",
+   "web_hits": 8
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.fonts.xyz/eula/",
+   "https://www.fonts.xyz/tos/"
+  ],
+  "website": "https://www.fonts.xyz"
  },
  "fontsmith.com": {
   "auto": {
@@ -3146,6 +3372,41 @@
   ],
   "website": "https://fortfoundry.com"
  },
+ "foundry.oplerou.studio": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "Your perpetual license includes: print materials, websites, apps, ebooks, social media, videos, logos, PDFs."
+    ],
+    "logo:included": [
+     "Your perpetual license includes: print materials, websites, apps, ebooks, social media, videos, logos, PDFs."
+    ],
+    "metric:company_size": [
+     "The license is bound to the end user (the licensee) and to the company size selected at purchase.",
+     "Company Size & Pricing",
+     "How is company size calculated?",
+     "Total people working for or with your organization: employees, contractors, consultants, freelancers, temporary staff."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 4
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "likely",
+   "web_hits": 5
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://oplerou.studio/terms",
+   "https://oplerou.studio/faq"
+  ],
+  "website": "https://foundry.oplerou.studio"
+ },
  "foundrytypes.co.uk": {
   "auto": {
    "all_media_hits": 7,
@@ -3214,6 +3475,40 @@
   ],
   "license_urls": [],
   "website": "https://www.foznt.com"
+ },
+ "framerusercontent.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:company_size": [
+     "All other services are only available on the internal network, and accessible by employees using a VPN or single sign-on proxy.",
+     "All employees are required to attend annual security awareness training.",
+     "Framer support and customer employees are only granted access after explicit approval of the respective customer.",
+     "All Framer employees have signed a non-disclosure agreement."
+    ],
+    "metric:seats": [
+     "The maximum number of users with edit access",
+     "Editors are billed per seat and can be added to your workspace or projects at any time."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 11,
+    "seats": 3
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 17
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.framer.com/pricing",
+   "https://www.framer.com/developers/faq",
+   "https://www.framer.com/legal/security",
+   "https://www.framer.com/legal/community-terms"
+  ],
+  "website": "https://framerusercontent.com"
  },
  "freiburg.social": {
   "checked": "2026-10-30",
@@ -3444,6 +3739,13 @@
   ],
   "website": "https://ghost.org"
  },
+ "global.productiontype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://global.productiontype.com: HTTP 525"
+  ],
+  "website": "https://global.productiontype.com"
+ },
  "graefe-druck.de": {
   "checked": "2026-10-30",
   "errors": [
@@ -3587,6 +3889,49 @@
    "https://hanken.co/pages/app-fonts-eula"
   ],
   "website": "https://hanken.co"
+ },
+ "help.productiontype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Production Type reserves the right to use the User’s name and logo in its list of representative clients."
+    ],
+    "metric:company_size": [
+     "(For example, if the User fails to respect the Agreement’s “User Group” limitation, Production Type may require, as a condition of continued use, that the User expands the User Group to “unlimited employees” so there will be no need for future oversight on this issue.)",
+     "In addition, upon at least twenty days’ advance notice, Production Type may, either through its employees or a third-party designated by Production Type, inspect the User’s records and equipment to verify compliance with the terms of this Agreement.",
+     "If the User is an entity, the User Group must all be employees of the entity.",
+     "The Addendum fee is based on the total number of employees specified in the Invoice (across all geographical sites, measured over one year)."
+    ],
+    "metric:seats": [
+     "The User is authorized to install the Font for a defined number of users as described in the Invoice (“User Group”).",
+     "The User may install the Font on a local file server, such as a network font manager, for use on a local area network (LAN), solely in the case where use of the Font is expressly limited to the total number of users (User Group) that may install the Font under this Agreement, corresponding to the total number of persons that may have access to the Font at any moment."
+    ],
+    "metric:traffic": [
+     "The fee is based upon the cumulated number of downloads on the specified platforms in the Invoice for all Apps that display the Font."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 7,
+    "seats": 3,
+    "traffic": 1
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 34
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://help.productiontype.com/docs/EULA/",
+   "https://help.productiontype.com/docs/manage_my_order/invoice",
+   "https://help.productiontype.com/docs/licensing/what_is_a_license",
+   "https://help.productiontype.com/docs/terms_conditions/sales_terms"
+  ],
+  "website": "https://help.productiontype.com"
  },
  "hessendesign-routes.de": {
   "checked": "2026-10-30",
@@ -3817,6 +4162,14 @@
   "license_urls": [],
   "website": "https://www.iggesund.com"
  },
+ "iliketoplay.dk": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://iliketoplay.dk"
+ },
  "indienations.de": {
   "checked": "2026-10-30",
   "errors": [
@@ -3916,6 +4269,14 @@
    "https://www.inhousetype.com/faqs"
   ],
   "website": "https://www.inhousetype.com"
+ },
+ "instantschavires.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.instantschavires.com"
  },
  "invisioncommunity.com": {
   "checked": "2026-10-30",
@@ -4038,6 +4399,14 @@
    "https://jfoundry.com/info/terms-of-use/"
   ],
   "website": "https://jfoundry.com"
+ },
+ "jingqi.work": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://jingqi.work"
  },
  "johnabbott.qc.ca": {
   "auto": {
@@ -4170,6 +4539,14 @@
   ],
   "license_urls": [],
   "website": "http://komma-mannheim.de"
+ },
+ "kontrapunkt.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://kontrapunkt.com"
  },
  "laboldevita.com": {
   "auto": {
@@ -4342,6 +4719,23 @@
   ],
   "website": "https://www.lazydogs.de"
  },
+ "lechappee.org": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.lechappee.org/lettre-info-inscription"
+  ],
+  "website": "https://www.lechappee.org"
+ },
  "letterjazz.com": {
   "auto": {
    "all_media_hits": 0,
@@ -4424,6 +4818,13 @@
    "https://lettersfromsweden.se/license/"
   ],
   "website": "https://lettersfromsweden.se"
+ },
+ "licensing.productiontype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://licensing.productiontype.com: HTTP 525"
+  ],
+  "website": "https://licensing.productiontype.com"
  },
  "lift-type.fr": {
   "auto": {
@@ -4717,6 +5118,13 @@
   ],
   "license_urls": [],
   "website": "https://mangrove-web.com"
+ },
+ "maps.app.goo.gl": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://maps.app.goo.gl: HTTP 400"
+  ],
+  "website": "https://maps.app.goo.gl"
  },
  "marketingagency.sg": {
   "auto": {
@@ -5545,6 +5953,23 @@
    "https://www.nts.live/terms-and-conditions"
   ],
   "website": "https://www.nts.live"
+ },
+ "numbered.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 4
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://numbered.com/legals"
+  ],
+  "website": "https://numbered.com"
  },
  "nvayrk.com": {
   "checked": "2026-10-30",
@@ -6622,6 +7047,52 @@
   ],
   "website": "http://www.resistenza.es"
  },
+ "resistenzatype.fontdue.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Installation on your designers' machines to produce print and static digital work, including logos and identity.",
+     "Can I use one of your fonts for a logo?"
+    ],
+    "metric:company_size": [
+     "The licence comes into being when we agree in writing the entities covered, the use types included, the size of the organisation, the territory, the term and the fee.",
+     "You may distribute the Font Software to employees of the named entities through an internal deployment system, install it on internal servers and intranets, and embed it in templates and internal tools, provided access is limited to those employees and is revoked when they leave.",
+     "Your tier is determined by the Annual Revenue of your own Group, as the invoiced entity, and not by the size of the organisations you work for."
+    ],
+    "metric:seats": [
+     "— Use occurs when the Font Software is installed, loaded into memory, or otherwise made available on a Workstation, device or server in such a way that a person or a process can issue commands that the Font Software executes.",
+     "We grant you a non-exclusive, non-transferable license for one (1) named individual to install the Font Software on up to two (2) Workstations under that individual's exclusive control, and to Use it there to produce Permitted Output.",
+     "The Font Software may be installed only on a personal Workstation, and may be Used only in applications running on that Workstation.",
+     "We grant you a non-exclusive, non-transferable license for the number of Licensed Users stated in your Licence Data to install the Font Software on up to two (2) Workstations per Licensed User, being that user's primary machine and one portable machine, and to Use it to produce Permitted Output."
+    ],
+    "metric:traffic": [
+     "What you buy is a scope: a number of designers, a volume of pageviews, one app, one production.",
+     "Serving webfont files from your own infrastructure to render text on named domains, metered by monthly pageviews.",
+     "Registered domains and monthly pageviews",
+     "web applications and intranets behind authentication where pageviews cannot be metered ("
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 3,
+    "seats": 12,
+    "traffic": 16
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 42
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://resistenzatype.fontdue.com/licenses",
+   "https://resistenzatype.fontdue.com/frequently-asked-questions"
+  ],
+  "website": "https://resistenzatype.fontdue.com"
+ },
  "roemerturm.de": {
   "checked": "2026-10-30",
   "errors": [
@@ -6864,6 +7335,45 @@
   ],
   "website": "https://www.semplice.com"
  },
+ "sendpulse.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:company_size": [
+     "Only authorized employees have access to view Mailing Lists.",
+     "All personal information is subject to SendPulse Terms of Service and Privacy Policy and can be used by employees of the Service to contact the user according to the Privacy Policy.",
+     "Employees of the Service have the right to demand that the client confirm his/her personal information in order to determine its validity.",
+     "Moderation consists of a check of emails carried out by Service employees to ensure that the subscriber base is real (should it be suspected that the recipients did not agree to receive mailings) and that the content of the emails corresponds to all rules and regulations of the Anti-Spam Policy."
+    ],
+    "metric:seats": [
+     "3 users per account",
+     "10 users per account",
+     "Unlimited number of users"
+    ],
+    "metric:traffic": [
+     "To the maximum extent permitted by law, you assume full responsibility for any loss that results from your use of the Service, including any downloads from the Service."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 7,
+    "seats": 9,
+    "traffic": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 102
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://sendpulse.com/pricing",
+   "https://sendpulse.com/legal/pp",
+   "https://sendpulse.com/legal/terms",
+   "https://sendpulse.com/legal/cookies"
+  ],
+  "website": "https://sendpulse.com"
+ },
  "serpentype.com": {
   "auto": {
    "all_media_hits": 0,
@@ -6918,6 +7428,33 @@
   ],
   "license_urls": [],
   "website": "https://shop.grafik.net"
+ },
+ "slant-type.co": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "Slant offers a Basic License which covers most commercial standard uses such as desktop, print, advertising, web, apps, e-books, products, apparel, logos, and broadcast."
+    ],
+    "metric:company_size": [
+     "The price of the license is based on “Company Size” which is the total number of people (including temporary staff) working in your company."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 2
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.slant-type.co/licenses",
+   "https://www.slant-type.co/legal-information"
+  ],
+  "website": "https://www.slant-type.co"
  },
  "social.coop": {
   "checked": "2026-10-30",
@@ -7134,6 +7671,14 @@
    "https://www.stormtype.com/tags/information%20system"
   ],
   "website": "https://www.stormtype.com"
+ },
+ "strapi-julytype-1zhv.onrender.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://strapi-julytype-1zhv.onrender.com"
  },
  "studiofeixen.ch": {
   "checked": "2026-10-30",
@@ -7482,6 +8027,14 @@
    "https://trashtype.com/legal"
   ],
   "website": "https://trashtype.com"
+ },
+ "twitch.tv": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.twitch.tv"
  },
  "type-01.com": {
   "auto": {
@@ -7956,6 +8509,52 @@
   "license_urls": [],
   "website": "http://typetrust.com"
  },
+ "typetype.org": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "It also allows you to use the font to create a logo.",
+     "Can a Desktop license be used to create a logo?"
+    ],
+    "logo:separate": [
+     "The Logo license is ideal for those who use the font in a logo in public spaces.",
+     "Important: This license does not allow you to use the font in a logo in public spaces (you must purchase a Logo license for this).",
+     "To use the font in a logo in public spaces, a separate license (a Logo license) is required."
+    ],
+    "metric:seats": [
+     "The cost depends on the number of workstations (computers) where the font is installed.",
+     "For a Desktop license, the cost depends on the number of computers the font is installed on.",
+     "The numbers in the desktop license indicate the number of computers on which the purchased font will be installed.",
+     "If these are 2 computers, then 2, and so on."
+    ],
+    "metric:traffic": [
+     "The cost depends on the number of monthly pageviews your websites receive and the selected license duration.",
+     "The cost depends on the number of ad impressions.",
+     "Once the impression limit is reached or the license expires, new impressions are prohibited.",
+     "For a Webfont license, the price depends on the number of website pageviews, and for App licenses, it depends on the number of apps."
+    ]
+   },
+   "logo_scores": {
+    "included": 2,
+    "separate": 3
+   },
+   "metric_scores": {
+    "seats": 4,
+    "traffic": 4
+   },
+   "suggested_logo": "separate",
+   "suggested_metric": "seats",
+   "suggested_qualifies": "no",
+   "web_hits": 30
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://typetype.org/licensing/",
+   "https://typetype.org/typography-terms/"
+  ],
+  "website": "https://typetype.org"
+ },
  "typo-stgallen.ch": {
   "checked": "2026-10-30",
   "errors": [
@@ -8096,6 +8695,14 @@
    "https://typographer.com/terms/"
   ],
   "website": "https://typographer.com"
+ },
+ "typographica.org": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://typographica.org"
  },
  "typographicdesign.de": {
   "auto": {
@@ -8791,6 +9398,54 @@
   ],
   "website": "https://web.hs-niederrhein.de"
  },
+ "webflow.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "By accepting these Terms and using the Service, please understand you are also agreeing to the terms of our Acceptable Use Policy, Intellectual Property Policy, Trademark Usage Policy and, if applicable, the Product Specific Terms, Marketplace Creator Agreement, Developer Terms of Platform, Data Processing Addendum, and Beta Program Terms and Conditions.",
+     "Notwithstanding the above, in our discretion, Webflow may choose to feature your Website Content and/or your name, trade names, trademarks, logos, and other similarly identifying indicia included on your Website Content (collectively, “",
+     "”), the Platform itself, and all Intellectual Property Rights contained therein or related thereto, including text, graphics, user and visual interfaces, photographs, trademarks, logos, sounds, music, artwork, applications, computer code and associated documentation (collectively, “"
+    ],
+    "metric:company_size": [
+     "Unless otherwise specified, Webflow, its successors, assigns, employees, agents, directors, officers, and stockholders (i) do not undertake or assume any duty to monitor the Platform for inappropriate or unlawful content and (ii) assume and shall have no responsibility or liability which may arise from your or any other user’s Website Content, including, but not limited to, third-party claims for defamation, libel, slander, infringement, invasion of privacy and publicity rights, obscenity, pornography, profanity, fraud, or misrepresentation.",
+     "Sometimes ownership of an Account, workspace, Website Content, or website is disputed between parties, such as a business and its employees, or a web designer and a client.",
+     "The Recipient will not disclose the Discloser’s Confidential Information to parties other than the Recipient’s employees, contractors, affiliates, agents, or professional advisors (“",
+     "IN NO EVENT SHALL WE OR OUR AFFILIATES, SUBSIDIARIES, OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, LICENSORS, OR SERVICE PROVIDERS BE LIABLE FOR ANY DAMAGES, INCLUDING, WITHOUT LIMITATION, INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR PUNITIVE DAMAGES, RESULTING FROM THE USE OR INABILITY TO USE THE PLATFORM, MARKETPLACE, MARKETPLACE PRODUCTS, OR THE WEBFLOW IP, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT WE OR OUR AFFILIATES ARE ADVISED ON THE POSSIBILITY OF SUCH DAMAGES."
+    ],
+    "metric:seats": [
+     "Assign a default role per user to control what they can do on each site.",
+     "per seat, billed"
+    ],
+    "metric:traffic": [
+     "based on # of page views",
+     "Auto-captured page views, sessions, and visitors",
+     "1M+ page views/year",
+     "1 million+ page views/year"
+    ]
+   },
+   "logo_scores": {
+    "included": 3
+   },
+   "metric_scores": {
+    "company_size": 6,
+    "seats": 4,
+    "traffic": 8
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 151
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://webflow.com/pricing",
+   "https://webflow.com/legal/terms",
+   "https://webflow.com/legal/privacy",
+   "https://webflow.com/legal/cookie-policy"
+  ],
+  "website": "https://webflow.com"
+ },
  "webmention.io": {
   "checked": "2026-10-30",
   "errors": [
@@ -8832,6 +9487,13 @@
   ],
   "license_urls": [],
   "website": "https://wenzeldaniel.com"
+ },
+ "wizard.productiontype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://wizard.productiontype.com: HTTP 525"
+  ],
+  "website": "https://wizard.productiontype.com"
  },
  "wordpress.com": {
   "auto": {
@@ -9027,6 +9689,13 @@
    "https://www.yorku.ca/about/privacy-legal/"
   ],
   "website": "https://www.yorku.ca"
+ },
+ "youworkforthem.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://www.youworkforthem.com: HTTP 403"
+  ],
+  "website": "https://www.youworkforthem.com"
  },
  "zhdk.ch": {
   "auto": {

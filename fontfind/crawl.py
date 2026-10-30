@@ -104,7 +104,7 @@ def add_seed_sites(lines: list[str]) -> int:
         site = site.strip()
         if not site.startswith("http"):
             site = "https://" + site
-        if host_of(site) in have:
+        if seen(host_of(site), have):
             continue
         have.add(host_of(site))
         directory[f"seed:{host_of(site)}"] = {"name": name.strip() or host_of(site), "source": "seed", "website": site}
@@ -117,7 +117,7 @@ def add_seed_sites(lines: list[str]) -> int:
 IGNORED_HOSTS = re.compile(
     r"(instagram|facebook|twitter|x\.com|linkedin|youtube|vimeo|tiktok|threads\.net|pinterest|behance|dribbble|"
     r"github|gumroad|myfonts|fonts\.com|fontspring|adobe|google|apple|mailchimp|shopify|cloudflare|paypal|stripe|"
-    r"wikipedia|fontsinuse|typewolf|substack|medium\.com|are\.na|notion|vercel|netlify|wixsite|squarespace|"
+    r"framerusercontent|cloudfront|amazonaws|googleusercontent|wixstatic|webflow\.io|squarespace-cdn|wikipedia|fontsinuse|typewolf|substack|medium\.com|are\.na|notion|vercel|netlify|wixsite|squarespace|"
     r"cargo\.site|fontsource|fontshare|typekit|bsky|mastodon|typo\.social|whatsapp|t\.me|spotify|soundcloud)",
     re.I,
 )
@@ -153,7 +153,7 @@ def peers() -> int:
             except fetch.FetchError:
                 continue
             for host, site in links.items():
-                if host in known:
+                if seen(host, known):
                     continue
                 known.add(host)
                 directory[f"peer:{host}"] = {"name": host, "source": f"linked from {f['name']}", "website": site}
@@ -161,6 +161,20 @@ def peers() -> int:
     _write(DIRECTORY_PATH, directory)
     print(f"added {added} linked sites to the directory")
     return 0
+
+
+def brand(host: str) -> str:
+    """First label of a host, e.g. 'foundry.oplerou.studio' -> 'oplerou'."""
+    parts = host.split(".")
+    return parts[-2] if len(parts) >= 2 and parts[-2] not in ("co", "com", "org", "ac") else parts[0]
+
+
+def seen(host: str, have: set[str]) -> bool:
+    """Exact host match, or the same brand under another domain (arillatype.com vs arillatype.studio)."""
+    if host in have:
+        return True
+    b = brand(host)
+    return len(b) >= 3 and any(len(o) >= 3 and (b.startswith(o) or o.startswith(b)) for o in map(brand, have))
 
 
 def known_hosts(directory: dict) -> set[str]:
@@ -218,7 +232,7 @@ def add_searched_sites(queries: list[str]) -> int:
         new = 0
         for item in found:
             site = str(item.get("website", "")).strip()
-            if not site.startswith("http") or host_of(site) in have or IGNORED_HOSTS.search(host_of(site)):
+            if not site.startswith("http") or seen(host_of(site), have) or IGNORED_HOSTS.search(host_of(site)):
                 continue
             have.add(host_of(site))
             directory[f"search:{host_of(site)}"] = {"name": item.get("name") or host_of(site), "source": f"search: {query[:60]}", "website": site}
@@ -254,7 +268,7 @@ def screen(limit: int | None = None, workers: int = 8) -> int:
     todo = {}
     for d in directory.values():
         site = d.get("website")
-        if site and host_of(site) not in screened and host_of(site) not in known:
+        if site and host_of(site) not in screened and not seen(host_of(site), known):
             todo.setdefault(host_of(site), site)
     sites = list(todo.items())[:limit]
     print(f"screening {len(sites)} sites ({len(screened)} done already)", flush=True)
@@ -307,7 +321,7 @@ def promote() -> int:
     known = {host_of(f["website"]) for f in foundries if f.get("website")}
     added = 0
     for host, res in sorted(screened.items()):
-        if host in known or not is_candidate(res, host):
+        if seen(host, known) or not is_candidate(res, host):
             continue
         name = display_name(host, directory)
         if db.find(foundries, name):
