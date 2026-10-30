@@ -518,8 +518,8 @@ foundries:
           app/game and video for one brand.
         source: https://abcdinamo.com/licenses
       - claim: 'Web fails the one-license rule outside Unlimited: "§ 8.5 Web license — you
-          can use the fonts in WOFF2 format on one web domain"; a desktop/print license
-          does not cover web.'
+          can use the fonts in WOFF2 format on one web domain"; a desktop/print license does
+          not cover web.'
         source: https://abcdinamo.com/licenses
     verified:
       date: 2026-10-30
@@ -727,10 +727,10 @@ foundries:
         source: https://julytype.com/licensing
       - claim: '"Company Size is the sole metric used to calculate license fees."'
         source: https://strapi-julytype-1zhv.onrender.com/uploads/July_Type_End_User_License_Agreement_EULA_2026_598aab3cdc.pdf
-      - claim: 'Extended License covers "websites, social media content, video and motion
-          graphics, broadcasting, streaming, and digital advertising" and "WOFF and WOFF2
-          formats through the @font-face CSS method for a single web domain ... no restrictions
-          on web traffic". No clause on logos or wordmarks.'
+      - claim: Extended License covers "websites, social media content, video and motion graphics,
+          broadcasting, streaming, and digital advertising" and "WOFF and WOFF2 formats through
+          the @font-face CSS method for a single web domain ... no restrictions on web traffic".
+          No clause on logos or wordmarks.
         source: https://strapi-julytype-1zhv.onrender.com/uploads/July_Type_End_User_License_Agreement_EULA_2026_598aab3cdc.pdf
     verified:
       date: 2026-10-30
@@ -1149,8 +1149,8 @@ foundries:
           for Your Company.
         source: https://www.fairetype.com/licensing
       - claim: 'Web fails the one-license rule: "If You would like to use the Font on Your
-          Website or server, You must purchase the appropriate Website License"; Desktop
-          Fonts may not be hosted on web servers.'
+          Website or server, You must purchase the appropriate Website License"; Desktop Fonts
+          may not be hosted on web servers.'
         source: https://www.fairetype.com/licensing
     verified:
       date: 2026-10-30
@@ -1203,8 +1203,8 @@ foundries:
           permanent and freelance).
         source: https://fontwerk.com/en/licensing
       - claim: 'Web fails: the Base License covers "Desktop (1 user), Web (10,000 pageviews
-          per month) and Social Media (10,000 followers)", with App and Logo as add-ons;
-          only the logo scope is sized by employees.'
+          per month) and Social Media (10,000 followers)", with App and Logo as add-ons; only
+          the logo scope is sized by employees.'
         source: https://fontwerk.com/en/licensing
     verified:
       date: 2026-10-30
@@ -1294,8 +1294,8 @@ foundries:
           workers) in your business group.
         source: https://f37.com/information
       - claim: 'Web fails: "How much does a F37 Foundry Webfont Licence cost? Quite simply,
-          it''s based on page views per month (or PVPM)." Web, social media and app are
-          separate licences.'
+          it''s based on page views per month (or PVPM)." Web, social media and app are separate
+          licences.'
         source: https://f37.com/information
     verified:
       date: 2026-10-30
@@ -2100,8 +2100,8 @@ foundries:
     all_media: unknown
     qualifies: partial
     summary: Licenses are priced by total company employees (1 to 400,000 tiers), but social
-      media use is tiered by follower count and apps by download count. Web and logo
-      terms were not found on the pages read, so they are unconfirmed.
+      media use is tiered by follower count and apps by download count. Web and logo terms
+      were not found on the pages read, so they are unconfirmed.
     todo: Read the EULA at licensing.productiontype.com for web and logo terms.
     evidence:
       - claim: '"Production Type licenses are issued according to a total number of employees
@@ -2147,19 +2147,19 @@ foundries:
     logo: included
     all_media: 'yes'
     qualifies: 'yes'
-    summary: Price depends on usage tier and total employee count (tiers up to 10,000).
-      The Extended license covers print, web pages, social media, apps, software, e-publications,
-      logotypes, broadcast and streaming, merchandise and hardware. The Basic license
-      excludes apps and logotypes.
+    summary: Price depends on usage tier and total employee count (tiers up to 10,000). The
+      Extended license covers print, web pages, social media, apps, software, e-publications,
+      logotypes, broadcast and streaming, merchandise and hardware. The Basic license excludes
+      apps and logotypes.
     evidence:
       - claim: 'The scope and price of the license is determined by two factors: intended
-          usage and "the total number of employees (not only font users) working for the
-          license owner at the time of purchase."'
+          usage and "the total number of employees (not only font users) working for the license
+          owner at the time of purchase."'
         source: https://thepytefoundry.net/information
-      - claim: 'The EXTENDED license "covers all the usage of the BASIC license PLUS embedding
+      - claim: The EXTENDED license "covers all the usage of the BASIC license PLUS embedding
           into apps, software and e-publications, the creation of logotypes, broadcasting
-          or streaming content, production of merchandise articles and embedding into
-          hardware devices." BASIC covers "printed matter, webpages and social media content."'
+          or streaming content, production of merchandise articles and embedding into hardware
+          devices." BASIC covers "printed matter, webpages and social media content."
         source: https://thepytefoundry.net/information
       - claim: Using fonts for a logotype "requires an EXTENDED license"; headcount growth
           needs no license update.
@@ -2224,18 +2224,18 @@ foundries:
     logo: included
     all_media: 'no'
     qualifies: partial
-    summary: Tiers by client company size (up to 5, 30, or 200 employees; above that a
-      custom quote). Web and logo/brand mark are included, but social media is capped by
-      follower count, apps by active users, and broadcast and trademark registration
-      need a separate permanent licence.
+    summary: Tiers by client company size (up to 5, 30, or 200 employees; above that a custom
+      quote). Web and logo/brand mark are included, but social media is capped by follower
+      count, apps by active users, and broadcast and trademark registration need a separate
+      permanent licence.
     evidence:
       - claim: Company tiers listed as "Clients up to 5 employees", "up to 30 employees",
-          "up to 200 employees", with social media up to 10K / 100K / 500K followers and
-          app/game up to 5K / 50K active users.
+          "up to 200 employees", with social media up to 10K / 100K / 500K followers and app/game
+          up to 5K / 50K active users.
         source: https://blazetype.eu/license
-      - claim: Logo use covers "part of a logo, wordmark, or brand identity system" but
-          does not include trademark registration. Broadcast and Trademark are separate
-          permanent licences.
+      - claim: Logo use covers "part of a logo, wordmark, or brand identity system" but does
+          not include trademark registration. Broadcast and Trademark are separate permanent
+          licences.
         source: https://blazetype.eu/license
     verified:
       date: '2026-10-30'
@@ -2334,10 +2334,10 @@ foundries:
     logo: separate
     all_media: 'no'
     qualifies: 'no'
-    summary: Sells separate licenses per use (Desktop, Webfont, App, Ebook, Digital Ads,
-      TV and Broadcasting, Server, OEM, Logo, Corporate, Merchandising, Social Media),
-      so one company-size license does not cover everything. The pricing metric itself
-      was not verified on the page read.
+    summary: Sells separate licenses per use (Desktop, Webfont, App, Ebook, Digital Ads, TV
+      and Broadcasting, Server, OEM, Logo, Corporate, Merchandising, Social Media), so one
+      company-size license does not cover everything. The pricing metric itself was not verified
+      on the page read.
     todo: Confirm the pricing metric per license type; page text only lists the license types.
     evidence:
       - claim: 'License types are listed separately: DESKTOP, WEBFONT, APP, EBOOK, DIGITAL
@@ -2360,16 +2360,16 @@ foundries:
     logo: separate
     all_media: 'no'
     qualifies: partial
-    summary: Fees depend on the licensee's total employees, but each use is a separate
-      License Type (Desktop, Web, App, Social Media, Logo). Web covers one domain, the Logo
-      License covers one brand, and Social Media requires a Desktop License first.
+    summary: Fees depend on the licensee's total employees, but each use is a separate License
+      Type (Desktop, Web, App, Social Media, Logo). Web covers one domain, the Logo License
+      covers one brand, and Social Media requires a Desktop License first.
     evidence:
-      - claim: 'Company Size is "The total number of employees working for the Licensee as
-          a single legal entity", and License Type is "The specific use-case purchased
-          (e.g. Desktop, Web, App)."'
+      - claim: Company Size is "The total number of employees working for the Licensee as
+          a single legal entity", and License Type is "The specific use-case purchased (e.g.
+          Desktop, Web, App)."
         source: https://a.storyblok.com/f/167503/x/d7d2110316/kimera-eula-v2-00.pdf
-      - claim: 'Clause 8.6 Logo License covers "a logo or wordmark for one brand. ... For
-          an additional brand, an additional License must be purchased."'
+      - claim: Clause 8.6 Logo License covers "a logo or wordmark for one brand. ... For an
+          additional brand, an additional License must be purchased."
         source: https://a.storyblok.com/f/167503/x/d7d2110316/kimera-eula-v2-00.pdf
     todo: The kimeracorp.eu domain comes from the EULA contact address; confirm it is the
       foundry shop.
@@ -2380,3 +2380,273 @@ foundries:
         - 'https://bauertypes.com: HTTPSConnectionPool(host=''bauertypes.com'', port=443):
           Max retries exceeded with url: / (Caused by SSLError(SSLError(1, ''[SSL: TLSV1_ALERT_PROTOCOL_VERSION]
           tlsv1 alert protocol version (_ssl.c:1129)'')))'
+
+  - name: Big Fog Foundry
+    website: https://big-fog-foundry.fontdue.com
+    license_urls: []
+    pricing_metric: unknown
+    logo: unknown
+    all_media: unknown
+    qualifies: unknown
+    summary: Could not verify. The site and the license URL a search result showed
+      (/licenses/commercial) both return 404.
+    evidence: []
+    todo: Find the current license page. A search snippet claimed six employee-count tiers
+      covering all uses, but no page was readable.
+    verified:
+      date: '2026-10-30'
+      method: page-read (404, nothing to read)
+    auto:
+      checked: '2026-10-30'
+      content_hash: null
+      changed_since_last_check: false
+      errors:
+        - 'https://big-fog-foundry.fontdue.com: HTTP 404'
+
+  - name: Slant
+    website: https://slant-type.fontdue.com
+    license_urls:
+      - https://slant-type.fontdue.com/licenses
+      - https://www.slant-type.co/pdfs/61e54fe3d631cfa6478c943c7878b689703a730e
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: One perpetual Basic License priced by company size (all people including
+      temporary staff). Covers desktop, print, web (any number of owned websites, no
+      traffic limit mentioned), apps, e-books, products, logos and broadcast. No tier
+      upgrade needed if the company grows after purchase.
+    evidence:
+      - claim: '"Slant offers a Basic License which covers most commercial standard uses such as desktop, print, advertising, web, apps, e-books, products, apparel, logos, and broadcast. The price of the license is based on Company Size which is the total number of people (including temporary staff) working in your company."'
+        source: https://slant-type.fontdue.com/licenses
+      - claim: 'EULA: "Use the fonts to create static images such as logos, business cards, books, magazines, product packaging" and "Use the fonts on any number of websites owned and controlled by your organization."'
+        source: https://www.slant-type.co/pdfs/61e54fe3d631cfa6478c943c7878b689703a730e
+      - claim: 'EULA: "The price of the license is based on the company size of the license owner. This license remains valid even if the company size of the license owner increases... You don''t need to upgrade your license tier."'
+        source: https://www.slant-type.co/pdfs/61e54fe3d631cfa6478c943c7878b689703a730e
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      suggested_metric: company_size
+      suggested_logo: unknown
+      suggested_qualifies: partial
+      metric_scores:
+        company_size: 1
+      logo_scores: {}
+      all_media_hits: 1
+      web_hits: 2
+      evidence:
+        all_media:
+          - Slant offers a Basic License which covers most commercial standard uses such as
+            desktop, print, advertising, web, apps, e-books, products, apparel, logos, and
+            broadcast.
+        metric:company_size:
+          - The price of the license is based on “Company Size” which is the total number
+            of people (including temporary staff) working in your company.
+      checked: '2026-10-30'
+      content_hash: fa3842b2975561c3
+      changed_since_last_check: false
+
+  - name: Cape Arcona Type Foundry
+    website: https://www.cape-arcona.com
+    license_urls:
+      - https://www.cape-arcona.com/end-user-license-agreement-eula/
+      - https://www.cape-arcona.com/order-information/
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: One perpetual license per company, priced by company size (employees plus
+      subcontractors; contact for over 10k). Covers print, web (unlimited domains, no
+      pageview limit), social media, logos, apps, games, e-books, merchandise and broadcast.
+      The license must be updated if the company grows.
+    evidence:
+      - claim: '"One license. Every use case. No subscriptions, no surprise upgrades – just buy once and use everywhere, from print to web to apps." "Pricing scales with the number of people working for the licensee, including employees and sub-contractors."'
+        source: https://www.cape-arcona.com/order-information/
+      - claim: 'EULA: "You may use the Font on unlimited web domains and their subdomains per license... No limitations to pageviews." "You may use the Font on any social media accounts." "You may use the Font to create logos."'
+        source: https://www.cape-arcona.com/end-user-license-agreement-eula/
+      - claim: 'EULA also allows unlimited apps, video games and e-books, merchandise, and broadcast/video use.'
+        source: https://www.cape-arcona.com/end-user-license-agreement-eula/
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      suggested_metric: company_size
+      suggested_logo: included
+      suggested_qualifies: likely
+      metric_scores:
+        traffic: 1
+        company_size: 7
+      logo_scores:
+        included: 2
+      all_media_hits: 1
+      web_hits: 9
+      evidence:
+        metric:traffic:
+          - No limitations to pageviews.
+        logo:included:
+          - You may use the Font to create logos.
+          - From the moment the use of a license is made in any way public by you, CAPE is
+            entitled to use your company’s name, as well as other trademarks and images and
+            videos of the use, for marketing reasons only.
+        metric:company_size:
+          - Company size refers to the total number of people working for the Licensee company,
+            including both employees and subcontractors.
+          - If the person buying the license fails to fill the Licensee name and company size
+            fields properly or purposely provides false information, the license will be considered
+            null and won’t be refunded.
+          - You must make sure that your license always matches your current company size
+            – if your company grows, you need to update your license accordingly.
+          - CAPE can ask you at any time to show proof that your license matches your company
+            size – you must reply within 30 days.
+        all_media:
+          - No subscriptions, no surprise upgrades – just buy once and use everywhere, from
+            print to web to apps.
+      checked: '2026-10-30'
+      content_hash: 86d5406a6f152596
+      changed_since_last_check: false
+
+  - name: Dtype (Duong Tran)
+    website: https://dtype.fontdue.com
+    license_urls:
+      - https://dtype.fontdue.com/licenses/desktop
+    pricing_metric: company_size
+    logo: restricted
+    all_media: 'no'
+    qualifies: partial
+    summary: Only a Desktop license is offered, with tiers set by the licence holder's
+      employee count. It does not cover apps, trademarks or broadcast, and it lists no
+      web use.
+    evidence:
+      - claim: '"the licence tiers are determined by employees the licence holder has, (not just the number of people using the font)." "This license does not cover the usages of the fonts for apps, trademarks, or broadcast content (TV, Film or streaming services)."'
+        source: https://dtype.fontdue.com/licenses/desktop
+    todo: The page lists only a Desktop license, so web use is not covered by any license
+      shown. The full EULA was not read.
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      checked: '2026-10-30'
+      content_hash: null
+      changed_since_last_check: false
+      errors:
+        - robots.txt disallows https://dtype.fontdue.com
+
+  - name: U.S. Graphics
+    website: https://usgraphics.com
+    license_urls:
+      - https://usgraphics.com/static/legal/licenses/commercial-license.90c5ad9f125a.pdf
+    pricing_metric: seats
+    logo: unknown
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Commercial EULA limits the grant to a number of users and a company-size
+      tier, and sells web use as a separate module (MX).
+    evidence:
+      - claim: '"License Grant is limited to the number of Users purchased... and to the company size (based on number of full-time employees) associated with the tier." "Web Font Use license is granted if the appropriate MX module is purchased with the typeface."'
+        source: https://usgraphics.com/static/legal/licenses/commercial-license.90c5ad9f125a.pdf
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      checked: '2026-10-30'
+      content_hash: null
+      changed_since_last_check: false
+      errors:
+        - 'https://usgraphics.com: HTTP 403'
+
+  - name: Kontrapunkt Type
+    website: https://type.kontrapunkt.com
+    license_urls:
+      - https://type.kontrapunkt.com/en/end-user-license-agreement
+    pricing_metric: company_size
+    logo: unknown
+    all_media: 'yes'
+    qualifies: likely
+    summary: Perpetual or subscription licenses priced by the customer's employee count.
+      The EULA allows outputs including websites, applications, games, video and branding
+      materials with no separate media modules named. Logo use is not stated explicitly,
+      and rights of use may be restated at checkout.
+    evidence:
+      - claim: '"The scope and pricing of the license are determined by the number of employees employed by the Customer."'
+        source: https://type.kontrapunkt.com/en/end-user-license-agreement
+      - claim: '"the Customer may use the Products to create and distribute outputs (e.g., designs, documents, images, video, websites, applications, games, branding materials) incorporating the Font(s)"'
+        source: https://type.kontrapunkt.com/en/end-user-license-agreement
+    todo: Confirm logo and wordmark use ("branding materials" is the only hint) and what
+      the checkout page adds to the stated rights of use.
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      checked: '2026-10-30'
+      content_hash: null
+      changed_since_last_check: false
+
+  - name: Moontype Foundry
+    website: ''
+    license_urls:
+      - https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
+    pricing_metric: company_size
+    logo: unknown
+    all_media: 'yes'
+    qualifies: likely
+    summary: EULA (2026) prices licenses by the total employees of the licensee and
+      calls them media-independent, naming websites, mobile apps and e-books as covered
+      without additional fees. Logo use is not mentioned. The foundry's own website was
+      not found, so only the EULA PDF was read.
+    evidence:
+      - claim: '"The license is based on the total number of employees in the Licensee''s company, not the number of devices or designers using the Font."'
+        source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
+      - claim: '"Our licenses are media-independent, meaning you can use the Fonts across all platforms—from print materials to digital media such as websites, mobile apps, eBooks, and more—without incurring additional fees."'
+        source: https://freight.cargo.site/m/E2704264947983410131435799240992/Moontype_Foundry_EULA_2026.pdf
+    todo: Find the official website and confirm logo and wordmark use. The EULA does not
+      mention logos.
+    verified:
+      date: '2026-10-30'
+      method: page-read (EULA PDF only; no foundry site found)
+
+  - name: Taylor Penton
+    website: https://taylorpenton.com
+    license_urls:
+      - https://taylorpenton.com/policies/terms-of-service
+      - https://taylorpenton.com/products/lennon
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: Two tiers by employee count. The Standard license (under 50 employees) and
+      the Extended license (50 or more) both cover desktop, webfonts with unlimited
+      pageviews, apps, games, broadcast, logos and branding, and products for sale. Only
+      one size threshold, and the Extended price is not published.
+    evidence:
+      - claim: '"Two tiers: Standard License: individuals and organizations with fewer than 50 total employees. Extended License: organizations with 50 or more employees. Both ... allow full commercial and personal use: unlimited desktop installs within your organization, webfonts with unlimited pageviews, embedding in apps and games, broadcast, logos and branding, client work, and products for sale."'
+        source: https://taylorpenton.com/policies/terms-of-service
+      - claim: '"No seats to count. No web traffic caps. Just a single commercial license for individuals, small businesses, and teams under 50 employees. Covers logos, packaging, websites, client work, apps, broadcast, and products for sale."'
+        source: https://taylorpenton.com/products/lennon
+    todo: Extended license price and terms for 50+ employees are only available by contact.
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      suggested_metric: company_size
+      suggested_logo: unknown
+      suggested_qualifies: partial
+      metric_scores:
+        company_size: 3
+        traffic: 1
+      logo_scores: {}
+      all_media_hits: 0
+      web_hits: 1
+      evidence:
+        metric:company_size:
+          - ': individuals and organizations with fewer than 50 total employees.'
+          - ': organizations with 50 or more employees.'
+          - If your team grows past 50 employees on a Standard License, an upgrade to Extended
+            is required.
+        metric:traffic:
+          - 'Both allow full commercial and personal use: unlimited desktop installs within
+            your organization, webfonts with unlimited pageviews, embedding in apps and games,
+            broadcast, logos and branding, client work, and products for sale.'
+      checked: '2026-10-30'
+      content_hash: 810b10ca8ac1ec5a
+      changed_since_last_check: false
