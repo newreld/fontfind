@@ -6184,15 +6184,16 @@ foundries:
     website: https://arrowtype.com/
     license_urls:
       - https://www.arrowtype.com/licensing
+      - https://www.arrowtype.com/licensing/commercial
     pricing_metric: company_size
     logo: included
     all_media: partial
-    qualifies: likely
-    summary: Arrow Type prices its standard license by company size and says there is no metering
-      of usage. It covers desktop use (branding and print), collaborative web design, web
-      fonts with no page-view limits, and app/game embedding. Broadcast (e.g. TV advertising
-      by a company of more than 5 people) needs special licensing. The page doesn't mention
-      logo use explicitly.
+    qualifies: partial
+    summary: Arrow Type prices one standard license by company size (employees plus contractors)
+      and does not meter usage, web traffic or views. Logos, desktop and print, self-hosted
+      web fonts with no page-view limits, and app/game embedding are all included. Broadcast
+      and streaming video needs a separate license once the company has more than 5 people,
+      so media are not fully in one license.
     evidence:
       - claim: Price is based on company size "With ArrowType, you pay for licensing based
           on the size of the company the fonts are being used for, because larger companies
@@ -6214,9 +6215,24 @@ foundries:
           more rare or complex, such as broadcast (e.g. TV advertising by a company of more
           than 5 people)."
         source: https://www.arrowtype.com/licensing
+      - claim: Logos are named as a permitted desktop use "Permitted desktop uses of the Fonts
+          include, but are not limited to, the design of printed materials, PDFs, static images,
+          motion graphics, logos, wayfinding signage, Ebooks, and print advertising."
+        source: https://www.arrowtype.com/licensing/commercial
+      - claim: Company size replaces usage and traffic metering "As an added benefit to you,
+          charging by Company Size removes the need for measuring or metering based on usage,
+          web traffic, views, etc."
+        source: https://www.arrowtype.com/licensing/commercial
+      - claim: Web embedding is included "You may embed the Fonts on websites with CSS @font-face."
+        source: https://www.arrowtype.com/licensing/commercial
+      - claim: Video broadcast and streaming need a separate license "A separate license is
+          required for use of the Fonts in video content broadcast such as free TV, cable TV,
+          cinema, streaming services such as Netflix, web video platforms such as YouTube,
+          etc."
+        source: https://www.arrowtype.com/licensing/commercial
     verified:
       date: '2026-10-30'
-      method: auto-reviewed (claude, quotes checked)
+      method: page-read
     auto:
       all_media_hits: 0
       evidence:
@@ -6243,8 +6259,9 @@ foundries:
       suggested_qualifies: partial
       web_hits: 1
       checked: '2026-10-30'
-    todo: Confirm in the ArrowType Commercial License that logo use is included, and check
-      the exact company-size tiers and the full list of exceptions (broadcast and others).
+    todo: Broadcast and streaming video needs a separate license for companies of more than
+      5 people (logo-only broadcast appearances are exempt). The exact company-size tiers and
+      prices were not checked.
     info:
       image: https://www.arrowtype.com/arrowtype-thumbnail.png
 
@@ -6845,9 +6862,13 @@ foundries:
       - claim: Organisations over 500 get custom pricing "If your organisation is larger than
           500 you’ll have to email us at mail@counter-forms.com for a custom price."
         source: https://counter-forms.com/information
+      - claim: Price is adjusted by country and quantity, not by usage "We then use Purchasing
+          Power Parity data from the World Bank and daily exchange rates to ensure the price
+          is relative to the cost of living in your country."
+        source: https://counter-forms.com/information
     verified:
       date: '2026-10-30'
-      method: auto-reviewed (claude, quotes checked)
+      method: page-read
     auto:
       all_media_hits: 1
       evidence:
@@ -6887,8 +6908,9 @@ foundries:
       suggested_qualifies: likely
       web_hits: 11
       checked: '2026-10-30'
-    todo: Print/social media use is not explicitly named, though no media restrictions are
-      stated; organisations over 500 people need a custom quote.
+    todo: The EULA names workstations, websites and mobile apps but does not list print, social
+      media or broadcast; it states no media restrictions. Organisations over 500 people need
+      a custom quote, and prices vary by country (purchasing power parity) and quantity.
     info:
       description: Counter Forms is a new typographic venture that seeks to champion young,
         discursive, Antipodean type designers.
@@ -7298,13 +7320,18 @@ foundries:
       - https://www.gunesmuhittin.com/faq
     pricing_metric: company_size
     logo: included
-    all_media: 'yes'
-    qualifies: 'yes'
+    all_media: partial
+    qualifies: partial
     summary: Studio Muhittin Güneş sells one perpetual commercial license priced by the licensee's
-      company size (number of employees). The FAQ states it covers print, web, social media,
-      logos, apps, videos and similar uses, with no recurring fees if the company grows. Only
-      broadcasting, film, TV and large-scale video productions need a custom license.
+      company size (number of employees). The purchase page says pricing is based only on
+      company size and the license covers all commercial use; the FAQ lists print, web, social
+      media, logos, apps and videos. Broadcasting, film, TV and large-scale video productions
+      need a custom license, and the EULA says an upgrade may be needed for more traffic, new
+      domains or more platforms.
     evidence:
+      - claim: Purchase page states the pricing basis "Buy any typeface with a simple license
+          that covers all commercial use. Pricing is based only on company size."
+        source: https://www.gunesmuhittin.com/buy/antra
       - claim: One commercial license covers print, web, social, logos and apps "One commercial
           license covers most common use cases, including print, web, social media, logos,
           apps, and similar commercial projects. The price is based on the company size at
@@ -7319,9 +7346,16 @@ foundries:
           television, or large-scale video productions, please contact us for a custom license
           agreement."
         source: https://www.gunesmuhittin.com/eula
+      - claim: The EULA allows later upgrades for traffic, domains or platforms "However, you
+          may be required to upgrade your license if your use exceeds the original scope—such
+          as increased website traffic, new domains, or additional distribution platforms."
+        source: https://www.gunesmuhittin.com/eula
+      - claim: The FAQ says nothing is needed if the company grows "Nothing. The license is
+          based on your company size at the time of purchase."
+        source: https://www.gunesmuhittin.com/faq
     verified:
       date: '2026-10-30'
-      method: auto-reviewed (claude, quotes checked)
+      method: page-read
     auto:
       all_media_hits: 2
       evidence:
@@ -7353,10 +7387,11 @@ foundries:
       suggested_qualifies: likely
       web_hits: 11
       checked: '2026-10-30'
-    todo: The EULA says an upgrade may be needed if use exceeds the original scope, such as
-      increased website traffic, new domains or additional platforms. The FAQ says nothing
-      is required if the company grows. Broadcast, film and TV use needs a custom license.
-      The exact price tiers are not shown in the text.
+    todo: The EULA says an upgrade may be needed for increased website traffic, new domains or
+      additional platforms, and that a larger team must upgrade; the FAQ says nothing is
+      needed if the company grows. Ask which applies. Broadcast, film and TV need a custom
+      license. Prices are tiered by company size (1 person up to 4,000) and shown only in the
+      purchase flow.
     info:
       image: https://framerusercontent.com/images/SzwdzYDTUW5Hz3RTVcdKZLsj2nM.png
       description: Independent type foundry based in Istanbul, focused on retail fonts and
@@ -7847,19 +7882,21 @@ foundries:
     logo: unknown
     all_media: 'yes'
     qualifies: likely
-    summary: Manic Type sells a single perpetual Commercial licence priced by total organization
-      headcount. It covers desktop, self-hosted web, apps, print, social, eBooks and broadcast
-      with no pageview pricing. Logo use is not mentioned explicitly.
+    summary: Manic Type sells a single perpetual Commercial licence whose cost is based on the
+      Licensee Size (people working for the organization) and country. It covers desktop,
+      websites the licensee owns, apps, digital products, static documents and broadcast,
+      with no pageview or traffic pricing, and no upgrade needed if the organization grows.
+      Logo use is not mentioned in the licence or on the font pages.
     evidence:
-      - claim: Price is based on total organization headcount "We base our pricing on your
-          total organization headcount. Just let us know your size when you purchase—no need
-          to update if your team grows."
+      - claim: Font pages state the pricing basis and coverage "Our Commercial Licence covers
+          desktop, web, apps, and broadcast. Pricing reflects your organization’s employee
+          count and country."
+        source: https://www.manictype.com/fonts/franke
+      - claim: Licensee Size is a headcount "Licensee Size - The total number of people (full-time,
+          part-time, or temporary) working for your organization."
         source: https://www.manictype.com/licensing
-      - claim: One licence covers print, web, apps, social and more "Use the fonts across
-          your entire organization—for print, web, apps, social, eBooks, broadcast, and more."
-        source: https://www.manictype.com/licensing
-      - claim: Web self-hosting is unlimited under the Commercial licence, with no traffic
-          limits "Web (self-hosted) Unlimited"
+      - claim: Growth does not require an upgrade "If your organization grows, your licence
+          remains valid provided the Licensee Size was accurately stated at purchase."
         source: https://www.manictype.com/licensing
       - claim: Licence cost depends on Licensee Size (headcount) "The licence cost is based
           on Licensee Size."
@@ -7870,7 +7907,7 @@ foundries:
         source: https://www.manictype.com/licensing
     verified:
       date: '2026-10-30'
-      method: auto-reviewed (claude, quotes checked)
+      method: page-read
     auto:
       all_media_hits: 1
       evidence:
@@ -7899,7 +7936,8 @@ foundries:
       suggested_qualifies: partial
       web_hits: 9
       checked: '2026-10-30'
-    todo: Confirm that logo use is covered. The page neither includes nor excludes logos explicitly.
+    todo: Confirm that logo use is covered. The licence (V4.0) and font pages neither include
+      nor exclude logos explicitly, and price is also tied to country.
     info:
       description: Founded in 2022, Manic Type is an independent type design studio based
         in Toronto, Canada. Led by Jamie Chang, a type designer with an MA in Type Design
@@ -8076,15 +8114,36 @@ foundries:
       - https://monokrom.no/information
       - https://monokrom.no/information/about-us
       - https://monokrom.no/information/colophon
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: separate
+    all_media: partial
+    qualifies: partial
+    summary: Monokrom's licensing tier is determined by number of Employees (headcount, including
+      subcontractors). Web is included in both the Basic and Extended licenses, but logotype
+      use, app, ePub and broadcasting are only in the Extended license, so one license does
+      not cover everything at the lowest tier.
+    evidence:
+      - claim: Licensing tier is set by employee count "The Licensing Tier is determined by
+          number of Employees, as defined above. Failure to acquire the correct Licensing
+          Tier constitutes a breach of the License."
+        source: https://monokrom.no/information/licensing
+      - claim: 'Basic license includes web but not logotype, app or broadcasting "The Basic
+          License grants the License Holder and its Subcontractors rights to use the Font
+          Software for the production and unlimited distribution of the following Design Products:
+          Printed Graphics, Digital Graphics, Web, and Social Media."'
+        source: https://monokrom.no/information/licensing
+      - claim: 'Extended license adds logotype, app, ePub, broadcasting and embedding "The
+          Extended License grants the License Holder and its Subcontractors rights to use
+          the Font Software for the production and unlimited distribution of the following
+          Design Products: Printed Graphics, Digital Graphics, Web, Social Media, App, ePub,
+          Logotype, Broadcasting, Server Embedding, and Hardware Embedding."'
+        source: https://monokrom.no/information/licensing
+      - claim: Web use is unlimited, with no pageview pricing mentioned "Embedding, and unlimited
+          distribution, of the Font Software in digital websites."
+        source: https://monokrom.no/information/licensing
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 4
       evidence:
@@ -8137,6 +8196,9 @@ foundries:
         - Eskaleut
         - Indo-European
         - Uralic
+    todo: Confirm actual prices per employee tier on the shop pages. Check whether the Extended
+      license (which includes logotype and all media) is priced by employee tier, and whether
+      it counts as the single all-media license.
 
   - name: MuccaTypo
     website: http://www.muccatypo.com/
@@ -8144,13 +8206,24 @@ foundries:
       - https://www.muccatypo.com/licenses
     pricing_metric: unknown
     logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    all_media: 'no'
+    qualifies: 'no'
+    summary: The page contains only the Desktop, Web and Mobile EULAs and no pricing information.
+      Web use needs a separate Webfont License for an additional fee, tied to one domain.
+      Desktop use is limited by the number of devices bought, and app use also needs a separate
+      license. Nothing suggests pricing by company size.
+    evidence:
+      - claim: Web use requires a separate license with an additional fee, limited to one
+          domain "Enabling use of the Web Font Software is subject to a license fee in addition
+          to any fee paid for Font Software."
+        source: https://www.muccatypo.com/licenses
+      - claim: Desktop license scales by number of devices purchased "You may download and
+          install the font software on up to a number of Authorized Devices you purchase through
+          muccaTypo"
+        source: https://www.muccatypo.com/licenses
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 0
       evidence:
@@ -8210,21 +8283,42 @@ foundries:
         - Charlock Variable Charlock New
         - Seminario Variable Seminario New
         - SPORTIVO Variable SPORTIVO
+    todo: Check the pricing and checkout pages to see whether any bundle or company-size license
+      exists. Logo use is not addressed in the text provided.
 
   - name: nice to type
     website: https://nicetotype.jp/
     license_urls:
       - https://nicetotype.jp/licensing/
       - https://nicetotype.jp/footer/terms-of-service/
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: nice to type sells a single standard licence priced by company size (≤10, ≤150,
+      ≤500 employees) that covers logos, apps, e-books, web and more. Web fonts are self-hosted
+      with no pageview limits, and the EULA allows analogue and digital media.
+    evidence:
+      - claim: 'One licence for all uses including logos and web, priced by company size "One
+          licence for all uses: logos, apps, e-books, web and more"'
+        source: https://nicetotype.jp/licensing/
+      - claim: 'Price tiers are by employee count "Priced by company size: ≤10 / ≤150 / ≤500
+          employees"'
+        source: https://nicetotype.jp/licensing/
+      - claim: Web self-hosting with no pageview limits "Self-host your web fonts, no pageview
+          limits"
+        source: https://nicetotype.jp/licensing/
+      - claim: EULA tiers Small/Medium/Large by employees "The “Small licence” allows use
+          by an individual or a company with 1 - 10 employees. The “Medium licence” allows
+          use by a company with 11 - 150 employees."
+        source: https://nicetotype.jp/footer/terms-of-service/
+      - claim: Licence covers analogue and digital media, and logo glyph modification is allowed
+          "The licence permits the download, installation and use of the fonts for the design
+          and creation of analogue and/or digital media."
+        source: https://nicetotype.jp/footer/terms-of-service/
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 1
       evidence:
@@ -8258,6 +8352,8 @@ foundries:
       description: nice to type (formerly übertype) is an independent type foundry based in
         Germany and Japan. nice to type designs and publishes high-quality typefaces for text
         and display, like Massimo Grafia and Crack Grotesk.
+    todo: Companies over 500 employees need a custom quote; actual prices per tier were not
+      in the provided text.
 
   - name: phospho
     website: http://www.phospho.at/
@@ -8265,15 +8361,39 @@ foundries:
       - https://www.phospho.at/phospho_EULA.html
       - https://www.phospho.at/type/faqs
       - https://www.phospho.at/phospho_AGB.pdf
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: partial
+    qualifies: partial
+    summary: phospho's Desktop License is priced by company size (number of people working
+      for the client) and covers print, packaging, signage, static graphics, social media
+      images and logos (as outlines). Web font embedding, app embedding and cloud/SaaS use
+      each require a separate license listed on the invoice, so it is not a single all-media,
+      web-inclusive license.
+    evidence:
+      - claim: Desktop license is priced by company size, counting employees and long-term
+          contractors "A Desktop License is based on Company Size. Company Size refers exclusively
+          to the number of people working for the Client company, including employees and
+          long-term contractors, as shown on the invoice."
+        source: https://www.phospho.at/phospho_EULA.html
+      - claim: Logos are included in the Desktop License when converted to outlines "creation
+          of logos and wordmarks, provided that the Font Software is converted to vector outlines
+          prior to distribution or deployment"
+        source: https://www.phospho.at/phospho_EULA.html
+      - claim: Web font embedding needs a separate Web License "The Desktop License does not
+          permit embedding the Font Software in websites or converting it to web-font formats
+          unless a Web License is licensed on the invoice."
+        source: https://www.phospho.at/phospho_EULA.html
+      - claim: App embedding needs a separate App/Embedded License "The Desktop License does
+          not permit embedding the Font Software in applications, software, games, or other
+          non-desktop environments unless an App / Embedded License is licensed on the invoice."
+        source: https://www.phospho.at/phospho_EULA.html
+      - claim: Only the Desktop license is stated to be based on company size; no usage limits
+          "The Desktop license is based on company size; no license has usage-based limits."
+        source: https://www.phospho.at/type/faqs
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 2
       evidence:
@@ -8315,21 +8435,42 @@ foundries:
       image: https://images.prismic.io/phospho/Zn0ZmZbWFbowe7ts_Meta-2024-06-27-um-09.25.09-type-home.jpg?auto=format%2Ccompress&rect=2%2C0%2C1196%2C628&w=2400&h=1260
       description: Design studio in Vienna • Independent type foundry • Custom Type • Vienna
         Fonts
+    todo: Check whether the Web, App and Cloud licenses are also priced by company size and
+      what they cost on top of the Desktop license; no price list was in the supplied pages.
 
   - name: Lucas Descroix
     website: https://plain-form.com/
     license_urls:
       - https://plain-form.com/licensing
       - https://plain-form.com/legal-terms
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: separate
+    all_media: 'yes'
+    qualifies: partial
+    summary: Plain Form prices its license on the total number of employees at the licensee
+      organisation. The base license covers print, web, apps and ebooks. Logo use and TV/broadcast
+      cost extra as add-ons, so logo is not included.
+    evidence:
+      - claim: 'Price is based on a single company-size metric "Our licenses are based on
+          a single metric: the number of people in the company or brand using the fonts —
+          including employees, freelancers, and collaborators."'
+        source: https://plain-form.com/licensing
+      - claim: License cost determined by employee count "The cost of a license is determined
+          by the total number of employees (including temporary staff) at the Licensee’s organisation."
+        source: https://plain-form.com/licensing
+      - claim: Base license covers print, web, apps and ebooks; logo and broadcast are add-ons
+          "Licenses cover standard use across print, web, apps, and ebooks. Logo use and broadcasting
+          are available as optional add-ons."
+        source: https://plain-form.com/licensing
+      - claim: Web use on any number of websites is included, with no pageview pricing "Use
+          the Fonts on any number of websites owned and controlled by your organisation;"
+        source: https://plain-form.com/licensing
+      - claim: Logo use needs a separate extension "Logo or logotype use requires a specific
+          license extension. You can add it during purchase or later — just get in touch."
+        source: https://plain-form.com/licensing
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 1
       evidence:
@@ -8378,20 +8519,44 @@ foundries:
         - Petit Frère
         - Grandmaster
         - Keyframe
+    todo: Check whether the logo add-on price depends on company size. The pages don't give
+      its price. Broadcast on terrestrial TV or subscription VOD also needs an add-on.
 
   - name: Sharkshock
     website: https://www.sharkshock.net/fontpage.html
     license_urls:
       - https://www.sharkshock.net/license.html
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: separate
+    all_media: 'no'
+    qualifies: partial
+    summary: Sharkshock prices licenses by the end client's company size (five tiers from
+      1 person to 501+ employees). However, usage types are sold separately (one-time desktop,
+      unlimited desktop, e-book, webfont, app, film/media, server), each with its own price.
+      Web use has no pageview limits but is a separate webfont license. Logo use falls under
+      the 'one time desktop' license.
+    evidence:
+      - claim: Price is set by use type and company size "Each license is determined by the
+          type of use requested and total company size of the licensee."
+        source: https://www.sharkshock.net/license.html
+      - claim: No pageview, user or seat pricing "Unlike most foundries we don't limit page
+          views on webfonts, calculate users or seats, or offer licenses that expire/have
+          to be renewed."
+        source: https://www.sharkshock.net/license.html
+      - claim: Logo use is covered by the one-time desktop license "The font will be installed
+          and used exactly once. Common examples of this are a company logo, sign, book cover,
+          or corporate poster."
+        source: https://www.sharkshock.net/license.html
+      - claim: Webfont is a separate license type with its own price "Font will be used on
+          a website using a technology such as CSS. Typekit can be provided on request There
+          are no limits on page views as usage is unlimited."
+        source: https://www.sharkshock.net/license.html
+      - claim: Multiple license types are bundled only at a discount, so they are not one
+          all-media license "Discounted bundles are available for multiple license types."
+        source: https://www.sharkshock.net/license.html
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 0
       evidence:
@@ -8426,6 +8591,8 @@ foundries:
         which I've created. More will be "resurrected" as time allows while some will be retired.
         All of the files are free to download for personal use. Please contact me or visit
         the license section for information on commercial use.
+    todo: Confirm whether any bundle or custom license covers web, logo and all media in a
+      single license.
 
   - name: Store Norske Skriftkompani
     website: https://skriftkompani.no/
@@ -8434,15 +8601,37 @@ foundries:
       - https://skriftkompani.no/eula
       - https://skriftkompani.no/leif/
       - https://skriftkompani.no/nora/
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: separate_size_based
+    all_media: partial
+    qualifies: partial
+    summary: Prices scale with the License Owner's total employee-count tier. But the license
+      is split into types (Desktop, Social Media, Video, Web, App), so web and other media
+      are separate licenses. Logo use is included in the Desktop license only for owners with
+      fewer than 51 employees. Larger owners need a separate Logo / Wordmark License.
+    evidence:
+      - claim: Pricing is based on the employee-count tier "License pricing is based on the
+          total employee-count tier of the License Owner at the time of purchase and throughout
+          the period of continued use."
+        source: https://skriftkompani.no/eula
+      - claim: Employee count, not font users, is the price input "The number must reflect
+          the total number of employees, not the number of font users."
+        source: https://skriftkompani.no/ja/
+      - claim: Web is a separate license type that Desktop does not include "The Desktop License
+          does not include Web, App, Social Media, Video, ATL, Special Use, Enterprise, paid
+          advertising, trademark registration, or other reserved uses unless expressly stated."
+        source: https://skriftkompani.no/eula
+      - claim: Logo is included only for owners with fewer than 51 employees "If the License
+          Owner has fewer than fifty-one (51) employees at purchase, the Desktop License includes
+          use of the Font Software to create one logo or one wordmark for one Single Brand."
+        source: https://skriftkompani.no/eula
+      - claim: Larger owners need a separate Logo / Wordmark License "Where the License Owner
+          has fifty-one (51) or more employees, use of the Font Software in one logo or one
+          wordmark for one Single Brand requires a Logo / Wordmark License."
+        source: https://skriftkompani.no/eula
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 1
       evidence:
@@ -8525,6 +8714,9 @@ foundries:
         - SN Litteratur Mono
         - SN Litteratur Text
         - SN Litteratur Text Mono
+    todo: Prices are not shown in the page text (EUR 0.00 until a selection is made). Check
+      whether a bundled license covering all media exists. The EULA mentions bundled ATL licenses
+      and an Enterprise / Unlimited Media License, but the pages do not describe them.
 
   - name: ToSupply
     website: https://t-o.supply/typefaces/
@@ -8533,15 +8725,32 @@ foundries:
       - https://t-o.supply/index/faq/
       - https://t-o.supply/index/pricing/
       - https://t-o.supply/index/terms-and-conditions/
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: ToSupply prices licenses solely by the client's company size (total employees),
+      with a proportional tier table and an unlimited option by quote. Licenses are all-inclusive
+      for all media, including logo, web (no traffic limit), apps, video and social.
+    evidence:
+      - claim: Company size (employee count) is the only pricing metric "the total number
+          of employees in the company ( the company size ) is the only metric required in
+          order to calculate licenses prices. No information about desktop users, web traffic
+          of application download is required."
+        source: https://t-o.supply/index/pricing/
+      - claim: Licenses are all-inclusive across all media "Both license types ( limited and
+          unlimited ) are all-inclusive for every physical and digital media."
+        source: https://t-o.supply/index/pricing/
+      - claim: Web embedding is included with no traffic limit "To embed the Fonts in WOFF
+          and WOFF2 format with the @font-face CSS method on web domains of the License Owner.
+          There is no limit on the amount of web traffic."
+        source: https://t-o.supply/index/eula/
+      - claim: Price tiers by employee count, per cut "between 1-3 between 4-10 between 11-25
+          between 26-50 between 51-100 between 101-500 between 501-1000 more?"
+        source: https://t-o.supply/index/pricing/
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 3
       evidence:
@@ -8589,15 +8798,37 @@ foundries:
     website: http://www.terminaldesign.com/
     license_urls:
       - https://www.terminaldesign.com/licensing
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: seats
+    logo: separate
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Terminal Design licenses by usage type (desktop/apps/ePub, webfonts, and others),
+      not by company size. Desktop licenses scale with the number of users, webfonts with
+      domains and unique monthly visitors. Logo use and several media (broadcast/film, embedding)
+      need a separate upgrade.
+    evidence:
+      - claim: Desktop licensing is based on number of users "Desktop Uses are permitted for
+          the number of users identified in your receipt and other rights will be identified
+          on your Receipt."
+        source: https://www.terminaldesign.com/licensing
+      - claim: Web use requires a separate license and is not included in the desktop license
+          "No webfont use license is granted herein. Use of the Font Software as a webfont
+          and/or for the benefit of any third party requires the purchase of one or more special
+          licenses."
+        source: https://www.terminaldesign.com/licensing
+      - claim: Webfont pricing scales with domains and unique monthly visitors (traffic) "The
+          terms and price associated with this License are based upon the domain names, maximum
+          unique."
+        source: https://www.terminaldesign.com/licensing
+      - claim: Logo use needs a license upgrade "Use of the Font Software to create a Company
+          Logo is permitted only upon the purchase of a license upgrade."
+        source: https://www.terminaldesign.com/licensing
+      - claim: Broadcast/film and embedding require separate permission or upgrade "b) BROADCAST
+          or FILM;"
+        source: https://www.terminaldesign.com/licensing
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 0
       evidence:
@@ -8692,14 +8923,28 @@ foundries:
       - https://tipofili.com/support
       - https://tipofili.com/terms-and-conditions
     pricing_metric: unknown
-    logo: unknown
+    logo: separate
     all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    qualifies: 'no'
+    summary: The pages given show no company-size or headcount pricing. Licenses are split
+      into Desktop, Web, App and Test EULAs, and the FAQ says coverage grows with users, monthly
+      web traffic and apps. Logo use needs a special license when the font is the main design
+      element. The Desktop, Web and App license pages were not provided.
+    evidence:
+      - claim: Coverage scales with users, web traffic and apps, not company size "Additional
+          licensing is only needed when expanding the coverage (more users, monthly web traffic,
+          additional apps, etc.) of your original license."
+        source: https://tipofili.com/support
+      - claim: Logo use as a main design element needs a separate special license "Use of
+          the Fonts in a manner in which it serves as the sole design element or a substantial
+          part of a logo (as determined by Licensor in its sole discretion)."
+        source: https://tipofili.com/licensing/general
+      - claim: Webfont licenses are per domain "Each webfont license allows the fonts to be
+          used on one domain that is owned and controlled by the licensee."
+        source: https://tipofili.com/support
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 1
       evidence:
@@ -8755,6 +9000,8 @@ foundries:
         - Marseille
         - Montecatini Pro
         - Portofino
+    todo: Check the Desktop, Web and App EULA pages and the shop pricing to confirm what the
+      price scales with (users, traffic or something else).
 
   - name: TypeManufactur
     website: http://www.typemanufactur.com/
@@ -8763,15 +9010,43 @@ foundries:
       - https://typemanufactur.com/en/licensing
       - https://typemanufactur.com/en/terms
       - https://typemanufactur.com/en/faq/ordering
-    pricing_metric: unknown
+    pricing_metric: company_size
     logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    all_media: partial
+    qualifies: partial
+    summary: TypeManufactur prices its licenses by total company headcount (all employees,
+      not users or computers). However, it sells separate Desktop, Webfont, App and eBook
+      licenses. The Corporate license bundles these and adds digital ads and office/email
+      embedding, but the Web License is limited to a domain and a monthly pageview allowance,
+      and games, OEM, SaaS and other uses need separate agreements. Logo use is not mentioned.
+    evidence:
+      - claim: Prices are based on company size (employee count), not computers or users "The
+          prices of our fonts are based on the size of your company. The size of your company
+          means the number of employees and not the number of computers on which the fonts
+          will be installed."
+        source: https://typemanufactur.com/en/licensing
+      - claim: Corporate license combines desktop, web, app and eBook licenses plus digital
+          ads and office/email embedding "This license combines all other licenses with no
+          limit on the number of users, domains, apps, or eBook/PDF titles within a single
+          company worldwide. It also covers digital advertising and the embedding of the fonts
+          in office documents and emails/newsletters."
+        source: https://typemanufactur.com/en/licensing
+      - claim: Web license is limited by domain and monthly pageviews "you may use the Fonts
+          for the domain specified in your invoice or this Agreement, including its subdomains,
+          up to the number of monthly pageviews granted."
+        source: https://typemanufactur.com/en/licensing
+      - claim: Some uses are excluded from the Corporate license "Certain types of use, such
+          as use in games, embedded devices (OEM), software offered as a service (SaaS), or
+          making the Fonts available as a standalone service or download to third parties,
+          are not covered by the Corporate License and require a separate agreement."
+        source: https://typemanufactur.com/en/licensing
+      - claim: The older EULA says the Corporate license has no limit on websites "The corporate
+          license, allows the use of the fonts in unlimited workstations, apps (applications
+          and software), websites and eBooks within your organisation."
+        source: https://typemanufactur.com/en/eula
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 2
       evidence:
@@ -8816,21 +9091,45 @@ foundries:
       checked: '2026-10-30'
     info:
       description: We love type.
+    todo: Confirm whether the Corporate license is also subject to the pageview cap. Confirm
+      whether logo use is covered. Confirm whether broadcasting/TV and the other 'More...'
+      uses are excluded from the Corporate license. Find the Corporate price tiers by employee
+      count.
 
   - name: Typografische
     website: https://www.typografische.com/typefaces/
     license_urls:
       - https://www.typografische.com/licences
       - https://www.typografische.com/faqs
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: mixed
+    logo: separate_size_based
+    all_media: 'no'
+    qualifies: partial
+    summary: Typografische sells six separate license types (Desktop/Print, Web, App/Game,
+      Broadcasting, Social Media, Logo/Wordmark), each purchased separately. Company size
+      (employee count) is a price input, but the Web license is limited by monthly visitors/pageviews
+      and the logo license is separate and based on company size and revenue. It is not a
+      single all-media license.
+    evidence:
+      - claim: Licenses are separate by usage type "We offer six license types to cover different
+          usage needs. Each license must be purchased separately based on your intended use."
+        source: https://www.typografische.com/licences
+      - claim: 'Web license is traffic-limited "Restrictions: Limited to the number of monthly
+          visitors specified in Your license. Additional visitors require an upgrade."'
+        source: https://www.typografische.com/licences
+      - claim: Web license is typically pageview-based "Yes. You will need a Web License,
+          typically based on pageviews."
+        source: https://www.typografische.com/faqs
+      - claim: 'Logo license is separate and priced by company size and revenue "Revenue-Based
+          Pricing: Pricing is based on company size and revenue."'
+        source: https://www.typografische.com/licences
+      - claim: Company size means employee count "Company size refers to the total number
+          of employees within your organization. It helps determine pricing based on the scale
+          of usage."
+        source: https://www.typografische.com/faqs
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 3
       evidence:
@@ -8896,21 +9195,43 @@ foundries:
         - FH Paragraaf
         - FH Premier
         - FH Total
+    todo: Confirm actual price tables per license type in the shop to see exactly how company
+      size feeds into the Desktop, App, Broadcasting and Social prices.
 
   - name: Very Cool Studio
     website: https://www.verycoolstudio.com/
     license_urls:
       - https://verycoolstudio.com/terms
       - https://verycoolstudio.com/trial-terms
-    pricing_metric: unknown
+    pricing_metric: company_size
     logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    all_media: 'yes'
+    qualifies: likely
+    summary: Very Cool Studio's license is defined by 'Licensee Size', the total employee
+      count. It covers unlimited devices, websites and domains, digital products and apps,
+      and print, packaging, broadcast, exhibition and film. Logo use is not mentioned, so
+      the logo point is unconfirmed.
+    evidence:
+      - claim: Price tier is based on employee count "“Licensee Size” is the total number
+          of employees, including full-time, part-time, and contracted staff, working for
+          the Licensee at the time of licensing."
+        source: https://verycoolstudio.com/terms
+      - claim: Web use is included on unlimited sites and domains, with no pageview limit
+          "Installation permitted on unlimited devices, web sites, servers, and domains owned
+          or operated by Licensee"
+        source: https://verycoolstudio.com/terms
+      - claim: Digital, app and print/broadcast/film media are covered "Permitted in digital
+          products, applications, mobile computing devices"
+        source: https://verycoolstudio.com/terms
+      - claim: Print, packaging, broadcast, exhibition and film are covered "Authorized for
+          print, packaging, broadcast, exhibition, and film usage"
+        source: https://verycoolstudio.com/terms
+      - claim: The only usage cap is employee count "Licensee warrants that the total number
+          of employees will not exceed the purchased Licensee Size"
+        source: https://verycoolstudio.com/terms
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 0
       evidence:
@@ -8932,21 +9253,45 @@ foundries:
     info:
       image: https://verycoolstudio.com/assets/images/share-image.png
       description: Very Cool is a type foundry run by Kyle Benson in Oakland, California.
+    todo: Confirm that logo or trademark use is covered, since the terms do not mention it.
+      Check the pricing page for the size tiers and for any add-ons.
 
   - name: WiseType
     website: https://wisetype.nl/
     license_urls:
       - https://wisetype.nl/pages/licensing
       - https://wisetype.nl/@/file/SZ2fhD8Gy73XzSvp
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: likely
+    summary: WiseType prices its Commercial license by total employee count in four tiers
+      (S to XL, up to 70 employees). That single license covers print, websites, logos, wordmarks
+      and social media. Companies over 70 employees, and high-visibility artists, performers
+      or public figures, need a Custom License where logos, social media, film/TV and software/apps
+      require extensions, so the one-license model only holds up to 70 employees.
+    evidence:
+      - claim: Price is determined by company size (employee count) "This company size determines
+          the price of the font license."
+        source: https://wisetype.nl/pages/licensing
+      - claim: Tiers are based on total employees, up to 70 "License categories are determined
+          by your company’s total number of employees (including permanent, temporary, and
+          part-time staff)."
+        source: https://wisetype.nl/pages/licensing
+      - claim: Unified license covers print, web, logos and social media "The Commercial License
+          (up to 70 employee range) is a unified license, allowing a wide range of uses under
+          a single license. This allows you to use the fonts for print, websites, logos, wordmarks,
+          and social media."
+        source: https://wisetype.nl/pages/licensing
+      - claim: Web use is included on any number of websites, no pageview pricing "use the
+          Fonts on any number of websites owned and controlled by your organisation"
+        source: https://wisetype.nl/pages/licensing
+      - claim: Custom licenses need extensions for logos, social media, film/TV and software/apps
+          "Licensing extensions are required for the following uses:"
+        source: https://wisetype.nl/pages/licensing
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 1
       evidence:
@@ -8991,6 +9336,10 @@ foundries:
       description: WiseType is a small, independent type-focused studio offering both retail
         and custom fonts. Founded by Jacob Wise in 2019, it began as a way to distribute his
         own designs and has since evolved into a foundry in its own right.
+    todo: Confirm the price for companies over 70 employees and whether the custom license
+      adds logo, social media and app extensions. Also check that film/TV/broadcast use is
+      covered by the standard license, since only print, web, logos and social media are listed
+      explicitly.
 
   - name: Youssef Habchi
     website: http://youssef-habchi.com/
@@ -8999,15 +9348,53 @@ foundries:
       - https://youssef-habchi.com/license.html
       - https://youssef-habchi.com/FAQ
       - https://youssef-habchi.com/terms
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: mixed
+    logo: included
+    all_media: partial
+    qualifies: partial
+    summary: 'Youssef Habchi sells tiered commercial licenses based on employee count (≤20,
+      ≤50, ≤100, ≤500, unlimited). The tiers also differ by number of users. Logos are included,
+      but media coverage depends on the tier: webfont embedding is not in Standard, apps,
+      software and games start at Pro, broadcast is a separate license, and trademark-registered
+      logos need Unlimited. No single company-size license covers web, logo and all media.'
+    evidence:
+      - claim: 'Tiers are defined by employee count and also by user count "Extended
+
+          For growing teams and studios
+
+          (≤ 100 employees)
+
+          Up to 5 users"'
+        source: https://youssef-habchi.com/license
+      - claim: 'Standard excludes web embedding "The
+
+          Standard License
+
+          does not allow font file embedding."'
+        source: https://youssef-habchi.com/FAQ
+      - claim: 'Broadcast is a separate license, and apps and software are only in the Pro
+          and Unlimited tiers "Broadcast
+
+          For TV, cinema & video productions
+
+          (unlimited company size)
+
+          Up to 5 users"'
+        source: https://youssef-habchi.com/license
+      - claim: 'Trademark-registered logos require the Unlimited license "if the logo is intended
+          to be registered as a trademark, the
+
+          Unlimited License
+
+          is required."'
+        source: https://youssef-habchi.com/FAQ
+      - claim: 'Logos are included in the standard tiers "Logos, products, branding, advertising
+
+          Physical and digital products"'
+        source: https://youssef-habchi.com/license
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: auto-reviewed (claude, quotes checked)
     auto:
       all_media_hits: 0
       evidence:
@@ -9061,3 +9448,5 @@ foundries:
         - Reglisse
         - Eternate
         - Streamster
+    todo: Check whether the Unlimited tier (unlimited company size) is a single license that
+      covers all media. Its price and the per-font prices are not in the text.
