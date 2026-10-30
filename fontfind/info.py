@@ -8,7 +8,7 @@ from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
-from fontfind import db, fetch
+from fontfind import db, fetch, progress
 
 TYPEFACE_PATH = re.compile(r"/(?:typefaces?|fonts?|families|family|fontfamily|products?|collections?|projects?|shop|catalog(?:ue)?)/([^/?#]+)/?$", re.I)
 NOT_TYPEFACE = re.compile(
@@ -69,14 +69,14 @@ def collect(only: list[str] | None = None, force: bool = False) -> int:
         and (not only or db.slugify(f["name"]) in {db.slugify(n) for n in only})
         and (force or "info" not in f)
     ]
+    progress.total(len(targets))
     for f in targets:
-        print(f"• {f['name']}", flush=True)
+        progress.tick(f["name"])
         try:
             found = info_for(f["website"])
         except fetch.FetchError as e:
             print(f"    error: {e}", file=sys.stderr)
             found = {}
         f["info"] = found
-        print(f"    image={'y' if 'image' in found else '-'} typefaces={len(found.get('typefaces', []))}")
         db.save(foundries)
     return 0

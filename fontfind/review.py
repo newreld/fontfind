@@ -16,7 +16,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-from fontfind import db, discover, fetch
+from fontfind import db, discover, fetch, progress
 
 MAX_PAGE_CHARS = 30000
 MODEL = os.environ.get("FONTFIND_MODEL", "claude-sonnet-5-5")
@@ -62,6 +62,15 @@ def gather(foundry: dict) -> dict[str, str]:
     return pages
 
 
+_children: set = set()
+
+
+def kill_children() -> None:
+    """Stop any claude processes still running (used when the user aborts)."""
+    for proc in list(_children):
+        proc.kill()
+
+
 def _complete(prompt: str, tools: str = "") -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if key:
@@ -76,10 +85,15 @@ def _complete(prompt: str, tools: str = "") -> str:
             raise RuntimeError(f"API {resp.status_code}: {resp.text[:200]}")
         return "".join(b.get("text", "") for b in resp.json().get("content", []))
     cmd = ["claude", "-p", "--output-format", "json"] + (["--allowedTools", tools] if tools else [])
-    proc = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=600)
-    data = json.loads(proc.stdout or "{}")
+    proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    _children.add(proc)
+    try:
+        stdout, stderr = proc.communicate(prompt, timeout=600)
+    finally:
+        _children.discard(proc)
+    data = json.loads(stdout or "{}") if proc.returncode == 0 else {}
     if proc.returncode != 0 or data.get("is_error"):
-        raise RuntimeError(data.get("result") or proc.stderr.strip() or "claude failed (set ANTHROPIC_API_KEY or run `claude` to log in)")
+        raise RuntimeError(data.get("result") or (stderr or "").strip() or "claude failed (set ANTHROPIC_API_KEY or run `claude` to log in)")
     return data.get("result", "")
 
 
@@ -167,22 +181,24 @@ def review(only: list[str] | None = None, force: bool = False, limit: int | None
 
     targets = [f for f in foundries if wanted_now(f)][:limit]
     print(f"reviewing {len(targets)} foundries ({workers} at a time)", flush=True)
-    with ThreadPoolExecutor(max_workers=workers) as pool:
+    progress.total(len(targets))
+    pool = ThreadPoolExecutor(max_workers=workers)
+    try:
         futures = {pool.submit(assess, f): f for f in targets}
         for fut in as_completed(futures):
             f = futures[fut]
-            print(f"• {f['name']}", flush=True)
+            progress.tick(f["name"])
             try:
                 result = fut.result()
             except Exception as e:  # keep going; one bad foundry should not stop the batch
-                print(f"    error: {e}", file=sys.stderr, flush=True)
+                print(f"  {f['name']}: error: {e}", flush=True)
                 continue
             if not result:
-                print("    no readable license pages", flush=True)
+                print(f"  {f['name']}: no readable license pages", flush=True)
                 continue
-            print(f"    -> {apply(f, *result)}", flush=True)
-            if dry_run:
-                print(f"    summary: {f.get('summary', '')}")
-                continue
-            db.save(foundries)
+            print(f"  {f['name']}: {apply(f, *result)}", flush=True)
+            if not dry_run:
+                db.save(foundries)
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
     return 0

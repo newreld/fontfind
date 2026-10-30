@@ -1,4 +1,4 @@
-"""Live terminal display for `update`: steps, counts and recent activity, redrawn in place."""
+"""Live terminal display for `update`: per-step progress bars, an overall bar and recent activity."""
 
 from __future__ import annotations
 
@@ -9,73 +9,85 @@ import time
 from fontfind import crawl, db, review
 
 LABELS = {
-    "discover": "Find foundries", "screen": "Screen license pages", "promote": "Pick candidates",
+    "sources": "Read Fonts In Use", "roundups": "Read roundup articles", "searches": "Search the web with Claude",
+    "peers": "Follow links from matches", "screen": "Screen license pages", "promote": "Pick candidates",
     "review": "Review with Claude", "info": "Images and typefaces", "report": "Build report",
 }
 
 
-def terminal_view(status: "Status"):
-    """A rich renderable of the current state."""
-    from rich.console import Group
-    from rich.panel import Panel
-    from rich.spinner import Spinner
-    from rich.table import Table
-    from rich.text import Text
-
-    elapsed = int(time.time() - status.started)
-    steps = Table.grid(padding=(0, 2), expand=True)
-    steps.add_column(width=2)
-    steps.add_column(ratio=1, no_wrap=True)
-    steps.add_column(ratio=2, no_wrap=True, overflow="ellipsis")
-    for name, state in status.steps.items():
-        label = LABELS.get(name, name)
-        if state == "done":
-            steps.add_row(Text("✓", style="green"), Text(label, style="green"), Text(""))
-        elif state == "running":
-            steps.add_row(Spinner("dots", style="cyan"), Text(label, style="bold cyan"), Text(status.detail.get(name, ""), style="dim"))
-        else:
-            steps.add_row(Text("○", style="dim"), Text(label, style="dim"), Text(""))
-    counts = status.counts()
-    stats = Table.grid(padding=(0, 3))
-    for _ in counts:
-        stats.add_column(justify="center")
-    stats.add_row(*[Text(str(n), style=f"bold {color}") for _, n, color in counts])
-    stats.add_row(*[Text(label, style="dim") for label, _, _ in counts])
-    recent = Text("\n".join(list(status.log)[-6:]), style="dim", no_wrap=True, overflow="ellipsis")
-    title = "[bold green]Update finished[/]" if status.finished else "[bold]Update running[/]"
-    return Panel(Group(steps, Text(""), stats, Text(""), recent), title=title, subtitle=f"{elapsed // 60}m {elapsed % 60:02d}s", padding=(1, 2))
+def _clock(seconds: float) -> str:
+    seconds = int(max(seconds, 0))
+    return f"{seconds // 3600}h {seconds % 3600 // 60:02d}m" if seconds >= 3600 else f"{seconds // 60}m {seconds % 60:02d}s"
 
 
 class Status:
     def __init__(self, steps: list[str]):
         self.view = None
         self.steps = {s: "pending" for s in steps}
+        self.totals: dict[str, int] = {}
+        self.done: dict[str, int] = collections.defaultdict(int)
         self.detail: dict[str, str] = {}
+        self.step_started: dict[str, float] = {}
         self.log: collections.deque[str] = collections.deque(maxlen=40)
         self.started = time.time()
         self.finished = False
+        self.aborted = False
         self._counts: list[tuple[str, int, str]] = []
         self._counts_at = 0.0
+
+    @property
+    def current(self) -> str | None:
+        return next((s for s, st in self.steps.items() if st == "running"), None)
 
     def start(self, step: str) -> None:
         for s, state in self.steps.items():
             if state == "running":
                 self.steps[s] = "done"
         self.steps[step] = "running"
+        self.step_started[step] = time.time()
         self.refresh()
+
+    def plan(self, total: int) -> None:
+        if self.current:
+            self.totals[self.current] = total
+            self.refresh()
+
+    def tick(self, label: str = "", n: int = 1) -> None:
+        if self.current:
+            self.done[self.current] += n
+            self.detail[self.current] = label
+            self.refresh()
 
     def line(self, text: str) -> None:
-        self.log.append(text)
-        running = next((s for s, st in self.steps.items() if st == "running"), None)
-        if running and text.strip():
-            self.detail[running] = text.strip()[:90]
+        self.log.append(text.strip())
         self.refresh()
 
-    def finish(self) -> None:
-        for s in self.steps:
-            self.steps[s] = "done"
+    def finish(self, aborted: bool = False) -> None:
+        self.aborted = aborted
+        if not aborted:
+            for s in self.steps:
+                self.steps[s] = "done"
         self.finished = True
         self.refresh()
+
+    def fraction(self, step: str) -> float:
+        state = self.steps[step]
+        if state == "done":
+            return 1.0
+        total = self.totals.get(step)
+        if state == "running" and total:
+            return min(self.done[step] / total, 1.0)
+        return 0.0
+
+    def overall(self) -> float:
+        return sum(self.fraction(s) for s in self.steps) / max(len(self.steps), 1)
+
+    def eta(self, step: str) -> str:
+        total, done = self.totals.get(step, 0), self.done[step]
+        if not total or not done or self.steps[step] != "running":
+            return ""
+        per_item = (time.time() - self.step_started[step]) / done
+        return f"~{_clock(per_item * (total - done))} left"
 
     def counts(self) -> list[tuple[str, int, str]]:
         if self._counts and time.time() - self._counts_at < 8:
@@ -83,7 +95,7 @@ class Status:
         people = collections.Counter(f.get("qualifies", "unknown") for f in db.load())
         self._counts = [
             ("Match", people["yes"], "green"), ("Likely", people["likely"], "blue"), ("Partial", people["partial"], "yellow"),
-            ("To review", review.pending_count(), "white"), ("Screened", len(crawl._read(crawl.SCREEN_PATH)), "white"),
+            ("To review", review.pending_count(), "magenta"), ("Screened", len(crawl._read(crawl.SCREEN_PATH)), "white"),
             ("Known", len(crawl._read(crawl.DIRECTORY_PATH)), "white"),
         ]
         self._counts_at = time.time()
@@ -92,6 +104,62 @@ class Status:
     def refresh(self) -> None:
         if self.view is not None:
             self.view.update(terminal_view(self))
+
+
+def terminal_view(status: Status):
+    from rich.console import Group
+    from rich.panel import Panel
+    from rich.progress_bar import ProgressBar
+    from rich.spinner import Spinner
+    from rich.table import Table
+    from rich.text import Text
+
+    elapsed = time.time() - status.started
+    percent = status.overall() * 100
+
+    overall = Table.grid(padding=(0, 2), expand=True)
+    overall.add_column(ratio=1)
+    overall.add_column(width=5, justify="right")
+    overall.add_row(ProgressBar(total=100, completed=percent, width=None, complete_style="cyan", finished_style="green"), Text(f"{percent:.0f}%", style="bold"))
+
+    steps = Table.grid(padding=(0, 2), expand=True)
+    steps.add_column(width=2)
+    steps.add_column(width=28, no_wrap=True)
+    steps.add_column(width=22)
+    steps.add_column(width=9, justify="right", no_wrap=True)
+    steps.add_column(width=15, no_wrap=True)
+    steps.add_column(ratio=1, no_wrap=True, overflow="ellipsis")
+    for name, state in status.steps.items():
+        label = LABELS.get(name, name)
+        total, done = status.totals.get(name), status.done[name]
+        count = f"{done}/{total}" if total else ""
+        if state == "done":
+            note = "nothing to do" if total == 0 else ""
+            steps.add_row(Text("✓", style="green"), Text(label, style="green"), ProgressBar(total=1, completed=1, width=22, finished_style="green") if total != 0 else Text(""), Text(count, style="green"), Text(""), Text(note, style="dim"))
+        elif state == "running":
+            bar = ProgressBar(total=total or 1, completed=done if total else 0, width=22, complete_style="cyan", pulse=not total)
+            steps.add_row(Spinner("dots", style="cyan"), Text(label, style="bold cyan"), bar, Text(count, style="bold"), Text(status.eta(name), style="yellow"), Text(status.detail.get(name, ""), style="dim"))
+        else:
+            steps.add_row(Text("○", style="dim"), Text(label, style="dim"), Text(""), Text(""), Text(""), Text(""))
+
+    counts = status.counts()
+    stats = Table.grid(padding=(0, 3))
+    for _ in counts:
+        stats.add_column(justify="center")
+    stats.add_row(*[Text(str(n), style=f"bold {color}") for _, n, color in counts])
+    stats.add_row(*[Text(label, style="dim") for label, _, _ in counts])
+
+    recent = Text("\n".join(list(status.log)[-5:]) or " ", style="dim", no_wrap=True, overflow="ellipsis")
+    if status.aborted:
+        title, border = "[bold yellow]Stopped[/]  progress is saved, run update again to continue", "yellow"
+    elif status.finished:
+        title, border = "[bold green]Update finished[/]", "green"
+    else:
+        title, border = "[bold]Update running[/]  Ctrl-C stops safely", "cyan"
+    return Panel(
+        Group(overall, Text(""), steps, Text(""), stats, Text(""), recent),
+        title=title, subtitle=f"{_clock(elapsed)} elapsed", border_style=border, padding=(1, 2),
+    )
 
 
 class Tee(io.TextIOBase):

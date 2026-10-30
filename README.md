@@ -22,6 +22,8 @@ What `update` does, in order:
 4. **Info**: preview image and typeface names.
 5. **Report**: rebuilds `docs/index.html`.
 
+`update` shows live progress with a bar and time estimate for each step. Press Ctrl-C any time: everything finished so far is saved, files are written atomically, and a backup of the foundry list is kept in `data/foundries.yaml.bak`. Run `update` again to continue.
+
 Review does at most 25 foundries per run (`--limit N`); run `update` again for more.
 To find more foundries, add lines to `data/sources.yaml`.
 

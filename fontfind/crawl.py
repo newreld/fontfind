@@ -17,7 +17,7 @@ from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
-from fontfind import classify, db, discover, fetch
+from fontfind import classify, db, discover, fetch, progress
 
 DIRECTORY_PATH = db.ROOT / "data" / "directory.json"
 SCREEN_PATH = db.ROOT / "data" / "screen.json"
@@ -72,17 +72,20 @@ def sources(limit: int | None = None) -> int:
     _write(DIRECTORY_PATH, directory)
     todo = [u for u, d in directory.items() if "website" not in d and d.get("tries", 0) < 2]
     print(f"{len(directory)} foundries listed, {len(todo)} still need a website", flush=True)
-    for i, url in enumerate(todo[:limit], 1):
-        d = directory[url]
-        try:
-            d["website"] = parse_foundry_page(fetch.get(url).text) or ""
-        except fetch.FetchError as e:
-            d["tries"] = d.get("tries", 0) + 1
-            print(f"  {d['name']}: {e}", flush=True)
-        if i % SAVE_EVERY == 0:
-            _write(DIRECTORY_PATH, directory)
-            print(f"  {i}/{min(len(todo), limit or len(todo))}", flush=True)
-    _write(DIRECTORY_PATH, directory)
+    progress.total(len(todo[:limit]))
+    try:
+        for i, url in enumerate(todo[:limit], 1):
+            d = directory[url]
+            progress.tick(d["name"])
+            try:
+                d["website"] = parse_foundry_page(fetch.get(url).text) or ""
+            except fetch.FetchError as e:
+                d["tries"] = d.get("tries", 0) + 1
+                print(f"  {d['name']}: {e}", flush=True)
+            if i % SAVE_EVERY == 0:
+                _write(DIRECTORY_PATH, directory)
+    finally:
+        _write(DIRECTORY_PATH, directory)
     return 0
 
 
@@ -144,21 +147,24 @@ def peers() -> int:
     known = {host_of(d["website"]) for d in directory.values() if d.get("website")}
     known |= {host_of(f["website"]) for f in db.load() if f.get("website")}
     added = 0
-    for f in db.load():
-        if f.get("qualifies") not in GOOD_QUALIFIES or not f.get("website"):
-            continue
-        for page in [f["website"], *(f.get("license_urls") or [])[:3]]:
-            try:
-                links = external_links(fetch.get(page).text, page)
-            except fetch.FetchError:
-                continue
-            for host, site in links.items():
-                if seen(host, known):
+    targets = [f for f in db.load() if f.get("qualifies") in GOOD_QUALIFIES and f.get("website")]
+    progress.total(len(targets))
+    try:
+        for f in targets:
+            progress.tick(f["name"])
+            for page in [f["website"], *(f.get("license_urls") or [])[:3]]:
+                try:
+                    links = external_links(fetch.get(page).text, page)
+                except fetch.FetchError:
                     continue
-                known.add(host)
-                directory[f"peer:{host}"] = {"name": host, "source": f"linked from {f['name']}", "website": site}
-                added += 1
-    _write(DIRECTORY_PATH, directory)
+                for host, site in links.items():
+                    if seen(host, known):
+                        continue
+                    known.add(host)
+                    directory[f"peer:{host}"] = {"name": host, "source": f"linked from {f['name']}", "website": site}
+                    added += 1
+    finally:
+        _write(DIRECTORY_PATH, directory)
     print(f"added {added} linked sites to the directory")
     return 0
 
@@ -187,19 +193,26 @@ def add_roundup_pages(pages: list[str]) -> int:
     directory = _read(DIRECTORY_PATH)
     have = known_hosts(directory)
     added = 0
-    for page in pages:
-        try:
-            links = external_links(fetch.get(page).text, page)
-        except fetch.FetchError as e:
-            print(f"  skipped {page}: {e}")
-            continue
-        new = {h: u for h, u in links.items() if h not in have}
-        for host, site in new.items():
-            have.add(host)
-            directory[f"roundup:{host}"] = {"name": host, "source": f"linked from {page}", "website": site}
-        added += len(new)
-        print(f"  {len(links)} links, {len(new)} new: {page}", flush=True)
-    _write(DIRECTORY_PATH, directory)
+    progress.total(len(pages))
+    try:
+        for page in pages:
+            progress.tick(host_of(page))
+            try:
+                links = external_links(fetch.get(page).text, page)
+            except fetch.FetchError as e:
+                print(f"  skipped {page}: {e}")
+                continue
+            new = {}
+            for h, u in links.items():
+                if not seen(h, have):
+                    have.add(h)
+                    new[h] = u
+            for host, site in new.items():
+                directory[f"roundup:{host}"] = {"name": host, "source": f"linked from {page}", "website": site}
+            added += len(new)
+            print(f"  {len(links)} links, {len(new)} new: {page}", flush=True)
+    finally:
+        _write(DIRECTORY_PATH, directory)
     print(f"added {added} sites from roundup pages")
     return added
 
@@ -222,25 +235,32 @@ def add_searched_sites(queries: list[str]) -> int:
     directory = _read(DIRECTORY_PATH)
     have = known_hosts(directory)
     added = 0
-    for query in queries:
-        try:
-            reply = review._complete(SEARCH_PROMPT.format(query=query), tools="WebSearch")
-            found = _json.loads(re.search(r"\[.*\]", reply, re.S).group(0))
-        except Exception as e:
-            print(f"  search failed ({query[:40]}...): {e}")
-            continue
-        new = 0
-        for item in found:
-            site = str(item.get("website", "")).strip()
-            if not site.startswith("http") or seen(host_of(site), have) or IGNORED_HOSTS.search(host_of(site)):
+    progress.total(len(queries))
+    try:
+        for query in queries:
+            progress.tick(query[:60])
+            try:
+                reply = review._complete(SEARCH_PROMPT.format(query=query), tools="WebSearch")
+                found = _json.loads(re.search(r"\[.*\]", reply, re.S).group(0))
+            except Exception as e:
+                print(f"  search failed ({query[:40]}...): {e}")
                 continue
-            have.add(host_of(site))
-            directory[f"search:{host_of(site)}"] = {"name": item.get("name") or host_of(site), "source": f"search: {query[:60]}", "website": site}
-            new += 1
-        added += new
-        print(f"  {new} new from search: {query[:60]}", flush=True)
-    _write(DIRECTORY_PATH, directory)
+            new = 0
+            for item in found:
+                site = str(item.get("website", "")).strip()
+                if not site.startswith("http") or seen(host_of(site), have) or IGNORED_HOSTS.search(host_of(site)):
+                    continue
+                have.add(host_of(site))
+                directory[f"search:{host_of(site)}"] = {"name": item.get("name") or host_of(site), "source": f"search: {query[:60]}", "website": site}
+                new += 1
+            added += new
+            print(f"  {new} new from search: {query[:60]}", flush=True)
+    finally:
+        _write(DIRECTORY_PATH, directory)
     return added
+
+
+
 
 def screen_site(website: str) -> dict:
     urls = discover.discover(website)[:SCREEN_PAGES]
@@ -280,15 +300,19 @@ def screen(limit: int | None = None, workers: int = 8) -> int:
         except fetch.FetchError as e:
             return host, {"website": site, "errors": [str(e)], "checked": dt.date.today().isoformat()}
 
-    with ThreadPoolExecutor(max_workers=workers) as pool:
+    progress.total(len(sites))
+    pool = ThreadPoolExecutor(max_workers=workers)
+    try:
         futures = [pool.submit(work, s) for s in sites]
         for i, fut in enumerate(as_completed(futures), 1):
             host, res = fut.result()
             screened[host] = res
+            progress.tick(host)
             if i % SAVE_EVERY == 0:
                 _write(SCREEN_PATH, screened)
-                print(f"  {i}/{len(sites)}", flush=True)
-    _write(SCREEN_PATH, screened)
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
+        _write(SCREEN_PATH, screened)
     return 0
 
 

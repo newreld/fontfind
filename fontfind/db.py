@@ -53,7 +53,9 @@ def save(foundries: list[dict], path: Path = DB_PATH) -> None:
         width=88,
     )
     body = body.replace("\n  - name:", "\n\n  - name:").replace("foundries:\n\n", "foundries:\n", 1)
-    path.write_text("\n".join(header) + ("\n" if header else "") + body, encoding="utf-8")
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text("\n".join(header) + ("\n" if header else "") + body, encoding="utf-8")
+    tmp.replace(path)
 
 
 def find(foundries: list[dict], name: str) -> dict | None:

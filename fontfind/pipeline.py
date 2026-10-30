@@ -3,15 +3,16 @@
 from __future__ import annotations
 
 import collections
+import shutil
+import sys
 
 import yaml
 
-import sys
-
-from fontfind import crawl, db, info, report, review, status
+from fontfind import crawl, db, info, progress, report, review, status
 
 SOURCES_PATH = db.ROOT / "data" / "sources.yaml"
-STEPS = ["discover", "screen", "promote", "review", "info", "report"]
+STEPS = ["roundups", "searches", "peers", "screen", "promote", "review", "info", "report"]
+ALIASES = {"discover": ["roundups", "searches", "peers"]}
 
 
 def _sources() -> dict:
@@ -22,11 +23,23 @@ def _tally() -> collections.Counter:
     return collections.Counter(f.get("qualifies", "unknown") for f in db.load())
 
 
+def expand(names: list[str] | None, deep: bool) -> list[str]:
+    steps = []
+    for name in names or STEPS:
+        steps.extend(ALIASES.get(name, [name]))
+    if deep and "sources" not in steps:
+        steps.insert(0, "sources")
+    return [s for s in dict.fromkeys(steps)]
+
+
 def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) -> int:
-    steps = steps or STEPS
+    steps = expand(steps, deep)
     before = _tally()
     src = _sources()
+    shutil.copy2(db.DB_PATH, db.DB_PATH.with_name("foundries.yaml.bak"))
+
     st = status.Status(steps)
+    progress.attach(st)
     real_stdout = sys.stdout
     sys.stdout = status.Tee(st, real_stdout, echo=not real_stdout.isatty())
     live = None
@@ -37,48 +50,44 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) 
         live = Live(status.terminal_view(st), console=Console(file=real_stdout), refresh_per_second=8, redirect_stdout=False, redirect_stderr=False)
         live.start()
         st.view = live
-    st.refresh()
+    aborted = False
     try:
-        _run(steps, limit, deep, src, st)
+        _run(steps, limit, src, st)
+    except KeyboardInterrupt:
+        aborted = True
+        review.kill_children()
     finally:
         sys.stdout = real_stdout
-        st.finish()
+        progress.attach(None)
+        st.finish(aborted=aborted)
         if live:
             live.update(status.terminal_view(st))
             live.stop()
 
     after = _tally()
+    if aborted:
+        print("\nStopped. Everything finished so far is saved. Run update again to continue where it left off.")
     print("\nSummary (before -> after)")
     for q in ("yes", "likely", "partial", "unknown", "no"):
         print(f"  {q:8} {before[q]:3} -> {after[q]:3}")
     pending = review.pending_count()
     if pending:
         print(f"  {pending} candidates still waiting for review: run update again")
-    return 0
+    return 130 if aborted else 0
 
 
-def _run(steps: list[str], limit: int, deep: bool, src: dict, st: "status.Status") -> None:
-
-    if "discover" in steps:
-        st.start("discover")
-        crawl.add_seed_sites(src.get("seeds") or [])
-        crawl.add_roundup_pages(src.get("roundups") or [])
-        crawl.add_searched_sites(src.get("searches") or [])
-        crawl.peers()
-        if deep:
-            crawl.sources()
-    if "screen" in steps:
-        st.start("screen")
-        crawl.screen()
-    if "promote" in steps:
-        st.start("promote")
-        crawl.promote()
-    if "review" in steps:
-        st.start("review")
-        review.review(limit=limit)
-    if "info" in steps:
-        st.start("info")
-        info.collect()
-    if "report" in steps:
-        st.start("report")
-        print(report.build())
+def _run(steps: list[str], limit: int, src: dict, st: "status.Status") -> None:
+    actions = {
+        "sources": lambda: crawl.sources(),
+        "roundups": lambda: (crawl.add_seed_sites(src.get("seeds") or []), crawl.add_roundup_pages(src.get("roundups") or [])),
+        "searches": lambda: crawl.add_searched_sites(src.get("searches") or []),
+        "peers": lambda: crawl.peers(),
+        "screen": lambda: crawl.screen(),
+        "promote": lambda: (progress.total(1), crawl.promote(), progress.tick("done")),
+        "review": lambda: review.review(limit=limit),
+        "info": lambda: info.collect(),
+        "report": lambda: (progress.total(1), print(report.build()), progress.tick("done")),
+    }
+    for step in steps:
+        st.start(step)
+        actions[step]()

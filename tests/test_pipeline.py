@@ -1,0 +1,33 @@
+import tempfile
+import unittest
+from pathlib import Path
+
+from fontfind import db, pipeline, status
+
+
+class PipelineTests(unittest.TestCase):
+    def test_discover_alias_expands(self):
+        self.assertEqual(pipeline.expand(["discover", "review"], False), ["roundups", "searches", "peers", "review"])
+
+    def test_deep_adds_sources_first(self):
+        self.assertEqual(pipeline.expand(["review"], True), ["sources", "review"])
+
+    def test_default_steps(self):
+        self.assertEqual(pipeline.expand(None, False), pipeline.STEPS)
+
+    def test_overall_progress(self):
+        st = status.Status(["a", "b"])
+        st.start("a"); st.plan(4); st.tick("x", 2)
+        self.assertAlmostEqual(st.overall(), 0.25)
+        st.start("b")
+        self.assertAlmostEqual(st.overall(), 0.5)
+
+    def test_save_leaves_no_temp_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "f.yaml"
+            db.save([{"name": "X", "website": "https://x.test"}], path)
+            self.assertEqual([p.name for p in Path(d).iterdir()], ["f.yaml"])
+
+
+if __name__ == "__main__":
+    unittest.main()

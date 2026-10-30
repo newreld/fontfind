@@ -115,7 +115,7 @@ def main(argv: list[str] | None = None) -> int:
     s.set_defaults(func=cmd_report)
 
     s = sub.add_parser("update", help="find new foundries, review them, rebuild the report (does everything)")
-    s.add_argument("--steps", help=f"comma list from: {','.join(pipeline.STEPS)}")
+    s.add_argument("--steps", help=f"comma list from: discover,{','.join(pipeline.STEPS)}")
     s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
     s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
     s.set_defaults(func=cmd_update)
