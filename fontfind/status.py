@@ -96,8 +96,8 @@ class Status:
         people = collections.Counter(f.get("qualifies", "unknown") for f in db.load())
         self._counts = [
             ("Match", people["yes"], "green"), ("Likely", people["likely"], "blue"), ("Partial", people["partial"], "yellow"),
-            ("To review", review.pending_count(), "magenta"), ("Screened", len(crawl._read(crawl.SCREEN_PATH)), "white"),
-            ("Known", len(crawl._read(crawl.DIRECTORY_PATH)), "white"),
+            ("To screen", len(crawl.screen_todo()), "magenta"), ("Screened", len(crawl._read(crawl.SCREEN_PATH)), "white"),
+            ("To review", review.pending_count(), "magenta"),
         ]
         self._counts_at = time.time()
         return self._counts

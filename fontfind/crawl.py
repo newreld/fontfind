@@ -281,15 +281,22 @@ def screen_site(website: str) -> dict:
     return out
 
 
-def screen(limit: int | None = None, workers: int = 8) -> int:
+def screen_todo() -> dict[str, str]:
+    """host -> website for known sites that are not screened yet and not already in the foundry list."""
     directory = _read(DIRECTORY_PATH)
     screened = _read(SCREEN_PATH)
     known = {host_of(f["website"]) for f in db.load() if f.get("website")}
-    todo = {}
+    todo: dict[str, str] = {}
     for d in directory.values():
         site = d.get("website")
         if site and host_of(site) not in screened and not seen(host_of(site), known):
             todo.setdefault(host_of(site), site)
+    return todo
+
+
+def screen(limit: int | None = None, workers: int = 8) -> int:
+    screened = _read(SCREEN_PATH)
+    todo = screen_todo()
     sites = list(todo.items())[:limit]
     print(f"screening {len(sites)} sites ({len(screened)} done already)", flush=True)
 
