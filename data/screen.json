@@ -1,4 +1,59 @@
 {
+ "205.tf": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.205.tf/eula",
+   "https://www.205.tf/faq",
+   "https://www.205.tf/legal",
+   "https://www.205.tf/terms-and-conditions-of-sale"
+  ],
+  "website": "https://www.205.tf"
+ },
+ "a2-type.co.uk": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "The right to use the Font in a company logo or namemark, magazine mastheads included.",
+     "You are allowed to share the Logo / Namemark you created on the condition that the letters have created outlines.",
+     "If you would like to create a bespoke logo, logotype, namemark or any kind of custom lettering from one of our fonts, then please get in contact, and we can work with you to achieve your goal."
+    ],
+    "logo:separate": [
+     "You are not permitted to use any of our fonts, individual letters or glyphs extracted from the font file(s) for logos, logotypes, namemarks or any kind of custom lettering unless you purchase a Logo / Namemark license."
+    ],
+    "metric:seats": [
+     "You are permitted to install the font(s) only on the number of computers you purchased a license for 2 users = 2 computers, and so forth."
+    ]
+   },
+   "logo_scores": {
+    "included": 4,
+    "separate": 2
+   },
+   "metric_scores": {
+    "seats": 1
+   },
+   "suggested_logo": "separate",
+   "suggested_metric": "seats",
+   "suggested_qualifies": "no",
+   "web_hits": 18
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://a2-type.co.uk/terms-conditions",
+   "https://a2-type.co.uk/terms-conditions?m=agree"
+  ],
+  "website": "https://www.a2-type.co.uk"
+ },
  "ahmedghazi.com": {
   "checked": "2026-10-30",
   "errors": [
@@ -22,12 +77,195 @@
   "license_urls": [],
   "website": "https://alistapart.com"
  },
+ "allcapstype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "The following uses require licence extensions: apps/epubs, trademarks, merchandise, and streaming/broadcasting.",
+     "All copies that the Licence Holder is permitted to produce under this Agreement must contain the same copyright, trademark, and other proprietary notices as those on or contained within the Font Software."
+    ],
+    "logo:separate": [
+     "Trademark Licence Extension",
+     "The Trademark Licence Extension grants the Licence Holder the right to register a logotype featuring the licensed Font Outlines included in the Font Software as a trademark."
+    ],
+    "metric:company_size": [
+     "The size of the Licence Holder is defined by the number of employees in its organisation, or by the special categories of students and Non-profit organisations.",
+     "This type of licence places no limit on the number of the Licence Holder’s employees and can fulfil special requirements that are not covered by the Trial Licence, OTF Desktop Licence, WOFF2 Web Licence or Licence Extensions.",
+     "If at any time the Licence Holder’s use of the Font Software exceeds the permitted scope of the purchased licence (including an increase in the number of employees beyond the licensed size category), the Licence Holder shall notify AllCaps without undue delay and purchase the appropriate licence.",
+     "The Licence Holder shall ensure that all employees using the Font Software do not commercialise, distribute, or disclose the contents of it to any third party, or use it in any manner other than in accordance with the terms of this Agreement."
+    ]
+   },
+   "logo_scores": {
+    "included": 2,
+    "separate": 3
+   },
+   "metric_scores": {
+    "company_size": 5
+   },
+   "suggested_logo": "separate",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 18
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.allcapstype.com/licencing",
+   "https://www.allcapstype.com/information"
+  ],
+  "website": "https://www.allcapstype.com"
+ },
+ "alt-tf.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "An unlimited license (also known as a corporate license) is a license that covers all types of media (i.e., desktop/print, logo/mark, social media, web, app, game and product sales) and has no limit on company size, number of locations the software is installed at, or things like web page views, commercial project total, and number of product units produced."
+    ],
+    "logo:included": [
+     "Our Logo / Mark License grants THE LICENSEE the right to use the font software as part of a design of a logo or an iconic mark that is representative of a one (1x) company, project, or person — and trademark it in an unlimited number of countries worldwide.",
+     "This license includes the use of the the font software in printed material, logomark, videos and images that are shared on Social Media, Broadcasting and Web use.",
+     "An unlimited license (also known as a corporate license) is a license that covers all types of media (i.e., desktop/print, logo/mark, social media, web, app, game and product sales) and has no limit on company size, number of locations the software is installed at, or things like web page views, commercial project total, and number of product units produced."
+    ],
+    "metric:company_size": [
+     "Here at ALT.tf, we follow a value-based licensing model based on the total number of people working for the client who we commonly refer to as THE LICENSEE.",
+     "With this in mind, we base our pricing on the client employee total, not the size of the design agency they hire, or the number of people in their design department, or the number of people who use the font.",
+     "Our EULA’s grants THE LICENSEE with the ability to share the font software with the same number of USERS or EMPLOYEES that has been selected at the checkout, and furthermore, what appears on the billing invoice after the purchase is complete.",
+     "Individuals should choose the 'YOURSELF' license option at the cart, and select the smallest license size (XS - 1-5 employees)."
+    ],
+    "metric:seats": [
+     "Our EULA’s grants THE LICENSEE with the ability to share the font software with the same number of USERS or EMPLOYEES that has been selected at the checkout, and furthermore, what appears on the billing invoice after the purchase is complete.",
+     "If THE LICENSEE is a business and wishes to license the font software to be installed at more than one (1x) location, or with no restrictions on the number of USERS or EMPLOYEES, or wishes to utilise the font software as a group of companies (operated under a holding company) a specific enterprise license must be purchased.",
+     "Simply select the ‘YOURSELF’ option in the cart, which covers you up to 1-5 users, and select the XS company size (1-5), and you'll be covered!"
+    ],
+    "metric:traffic": [
+     "Approved formats include JPEG, PNG, EPS, GIF, MP4 all of which can be uploaded and hosted on the listed social media platforms within this agreement, unlimited URL web pages / sites and used for digital ads with no restrictions on number of impressions, engagements, views or clicks in perpetuity.",
+     "Our broadcasting license allows THE LICENSEE to broadcast to an unlimited number if countries worldwide with no restrictions on collected engagements including views, likes, dislikes and impressions.",
+     "Our Application EULA, grants THE LICENSEE with the right to embed the font software under this agreement within other software, including, but is not limited to, application content (desktop or mobile or Dapps), user interfaces or other content for personal computers, mobile devices, gaming consoles, and smart televisions with no restrictions of downloads, viewers, impressions, clicks, users, and other engagements.",
+     "An unlimited license (also known as a corporate license) is a license that covers all types of media (i.e., desktop/print, logo/mark, social media, web, app, game and product sales) and has no limit on company size, number of locations the software is installed at, or things like web page views, commercial project total, and number of product units produced."
+    ]
+   },
+   "logo_scores": {
+    "included": 3
+   },
+   "metric_scores": {
+    "company_size": 10,
+    "seats": 3,
+    "traffic": 5
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "likely",
+   "web_hits": 15
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://alt-tf.com/pages/licensing",
+   "https://alt-tf.com/pages/corporate-font-systems",
+   "https://alt-tf.com/pages/f-a-q"
+  ],
+  "website": "https://alt-tf.com"
+ },
  "api.f37foundry.com": {
   "checked": "2026-10-30",
   "errors": [
    "https://api.f37foundry.com: HTTP 404"
   ],
   "website": "https://api.f37foundry.com"
+ },
+ "arillatype.com": {
+  "auto": {
+   "all_media_hits": 5,
+   "evidence": {
+    "all_media": [
+     "— Desktop, Web, App, Broadcast…",
+     "Unlimited internal use (desktop, web, app, broadcast...).",
+     "Multiple font file formats for use across all media.",
+     "This includes, but is not limited to desktop, web, app, game, or broadcast."
+    ],
+    "logo:included": [
+     "Can I use your fonts for logo design?"
+    ],
+    "metric:company_size": [
+     "— price depends on company size",
+     "The All-Inclusive End User Licence cost is based on the Licensee size (the number of employees, including temporary staff, working for the Licensee).",
+     "The licence price is based on the number of employees within the licensee’s organisation.",
+     "What does the concept of company size mean?"
+    ],
+    "metric:seats": [
+     "You may install the Fonts on any number of devices within your organisation.",
+     "The Only-designers End User Licence permits you to install the Fonts on any number of devices within your organisation.",
+     "All our licences allow font installation on an unlimited number of devices within your organisation.",
+     "This means you don’t need to worry about the number of devices on which the font will be installed or the specific usage details — it’s a straightforward process."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 7,
+    "seats": 4
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 16
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://arillatype.studio/licensing",
+   "https://arillatype.studio/licensing-all-inclusive",
+   "https://arillatype.studio/licensing-only-designers",
+   "https://arillatype.studio/faq"
+  ],
+  "website": "https://arillatype.com"
+ },
+ "arillatype.studio": {
+  "auto": {
+   "all_media_hits": 5,
+   "evidence": {
+    "all_media": [
+     "— Desktop, Web, App, Broadcast…",
+     "Unlimited internal use (desktop, web, app, broadcast...).",
+     "Multiple font file formats for use across all media.",
+     "This includes, but is not limited to desktop, web, app, game, or broadcast."
+    ],
+    "logo:included": [
+     "Can I use your fonts for logo design?"
+    ],
+    "metric:company_size": [
+     "— price depends on company size",
+     "The All-Inclusive End User Licence cost is based on the Licensee size (the number of employees, including temporary staff, working for the Licensee).",
+     "The licence price is based on the number of employees within the licensee’s organisation.",
+     "What does the concept of company size mean?"
+    ],
+    "metric:seats": [
+     "You may install the Fonts on any number of devices within your organisation.",
+     "The Only-designers End User Licence permits you to install the Fonts on any number of devices within your organisation.",
+     "All our licences allow font installation on an unlimited number of devices within your organisation.",
+     "This means you don’t need to worry about the number of devices on which the font will be installed or the specific usage details — it’s a straightforward process."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 7,
+    "seats": 4
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 16
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://arillatype.studio/licensing",
+   "https://arillatype.studio/licensing-all-inclusive",
+   "https://arillatype.studio/licensing-only-designers",
+   "https://arillatype.studio/faq"
+  ],
+  "website": "https://arillatype.studio"
  },
  "autograph.works": {
   "checked": "2026-10-30",
@@ -73,12 +311,214 @@
   ],
   "website": "https://bit.ly"
  },
+ "blast-foundry.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://blast-foundry.com: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  ],
+  "website": "https://blast-foundry.com"
+ },
+ "bnicks.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Every paid font or bundle includes a desktop license for up to 2 users, covering logos, print, packaging, merchandise, and static digital artwork.",
+     "Can I use your fonts for a logo?",
+     "Every paid font includes a Standard Desktop License, which allows you to create logos, wordmarks, and visual identities for commercial use.",
+     "Your Desktop License covers delivering finished artwork to clients, including logos, packaging, and static graphics."
+    ],
+    "metric:company_size": [
+     "Storing the Font Software in a system accessible by unlicensed employees, clients, contractors,"
+    ],
+    "metric:seats": [
+     "Every paid font or bundle includes a desktop license for up to 2 users, covering logos, print, packaging, merchandise, and static digital artwork.",
+     "Required when your team exceeds the number of users included with its font license.",
+     "Paid font purchases include up to 2 users.",
+     "Choose a tier covering your total number of users."
+    ]
+   },
+   "logo_scores": {
+    "included": 6
+   },
+   "metric_scores": {
+    "company_size": 1,
+    "seats": 10
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 17
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.bnicks.com/licensing",
+   "https://www.bnicks.com/shop/p/license-upgrade",
+   "https://www.bnicks.com/s/BN_Type_Foundry_EULA-1.pdf",
+   "https://www.bnicks.com/shop/p/bundle-license-upgrade"
+  ],
+  "website": "https://www.bnicks.com"
+ },
+ "cookiedatabase.org": {
+  "checked": "2026-10-30",
+  "errors": [
+   "robots.txt disallows https://cookiedatabase.org"
+  ],
+  "website": "https://cookiedatabase.org"
+ },
+ "creativeboom.typeform.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Create a library of logos, images, and media to use consistently across your organization."
+    ],
+    "metric:company_size": [
+     "Invite an unlimited number of people to your organization to view or share results."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 11
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.typeform.com/legal",
+   "https://www.typeform.com/pricing",
+   "https://www.typeform.com/pricing/talent",
+   "https://www.typeform.com/legal/cookie-policy"
+  ],
+  "website": "https://creativeboom.typeform.com"
+ },
  "customer-portal.paddle.com": {
   "checked": "2026-10-30",
   "errors": [
    "robots.txt disallows https://customer-portal.paddle.com"
   ],
   "website": "https://customer-portal.paddle.com"
+ },
+ "daltonmaag.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "While desktop, web, and app are the most common types of licence, more specialist licences are available under âView moreâ"
+    ],
+    "metric:seats": [
+     "Per user; pay once, use forever, upgrade at any time",
+     "Licences are priced by number of users, page impressions, downloads, etc.",
+     "Number of users, page impressions, downloads, etc."
+    ],
+    "metric:traffic": [
+     "Maximum page impressions per month; pay once, use forever, upgrade at any time",
+     "Licences are priced by number of users, page impressions, downloads, etc.",
+     "Number of users, page impressions, downloads, etc."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "seats": 3,
+    "traffic": 3
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "seats",
+   "suggested_qualifies": "no",
+   "web_hits": 13
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.daltonmaag.com/help/font-licences.html",
+   "https://www.daltonmaag.com/services/font-licensing.html",
+   "https://www.daltonmaag.com/help/buying-font-licences-online.html",
+   "https://www.daltonmaag.com/about/legal.html"
+  ],
+  "website": "https://www.daltonmaag.com"
+ },
+ "dariacohen.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.dariacohen.com"
+ },
+ "dielineawards.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:company_size": [
+     "Agencies, studios, in-house teams, and brands with more than five employees or revenue above $500K USD.",
+     "Solo designers, small studios, and brands with five or fewer employees or revenue of $500K USD or less.",
+     "To the maximum extent permitted by law, Dieline Media LLC, its officers, employees, and contractors shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Site, even if we have been advised of the possibility of such damages."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 3
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 5
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://dielineawards.com/faqs",
+   "https://dielineawards.com/terms",
+   "https://dielineawards.com/bulk-entry-pricing"
+  ],
+  "website": "https://www.dielineawards.com"
+ },
+ "dielineconference.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "robots.txt disallows https://dielineconference.com"
+  ],
+  "website": "https://dielineconference.com"
+ },
+ "dielineshop.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "robots.txt disallows https://www.dielineshop.com"
+  ],
+  "website": "https://www.dielineshop.com"
+ },
+ "dstype.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "When you download trial fonts, you can use them to mock up your print, web, or app designs for approval before committing to a full license."
+    ],
+    "metric:seats": [
+     "When you get a Desktop License, you’ll be able to install the fonts in up to 5 computers, but you can go up to thousands of users in our licensing model."
+    ],
+    "metric:traffic": [
+     "When you get a Web License, you’ll be able to perpetually use the fonts in one domain with a limit of 2.000.000 page views per month, but you can go up to 50 domains and request a quote to upgrade the page views per month."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "seats": 1,
+    "traffic": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "traffic",
+   "suggested_qualifies": "no",
+   "web_hits": 4
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.dstype.com/support/font-licensing"
+  ],
+  "website": "https://www.dstype.com"
  },
  "f37foundry.com": {
   "auto": {
@@ -124,6 +564,53 @@
   ],
   "website": "https://f37foundry.com"
  },
+ "fatimalazaro.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://fatimalazaro.com"
+ },
+ "fatype.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "Our new Branding option covers all-in-one, client and designers included."
+    ],
+    "logo:included": [
+     "This license covers most designers' needs, such as the creation of documents, images, PDFs, logotypes and printed matters.",
+     "You are allowed to modify the design of the glyphs, for logotypes or posters of course, but not the font in terms of software."
+    ],
+    "metric:company_size": [
+     "Priced by company size",
+     "Priced by the client's company size and initial metrics",
+     "A license only covers font use by the license owner (and its employees)."
+    ],
+    "metric:seats": [
+     "Schools can apply for an EDU license available at a discount rate, depending on the number of computers the fonts will be installed on."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 3,
+    "seats": 1
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "likely",
+   "web_hits": 10
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://fatype.com/eula",
+   "https://fatype.com/faq"
+  ],
+  "website": "https://www.fatype.com"
+ },
  "fontspace.com": {
   "auto": {
    "all_media_hits": 0,
@@ -149,6 +636,76 @@
   "license_urls": [],
   "website": "https://fontstand.com"
  },
+ "foznt.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.foznt.com"
+ },
+ "frenchtype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://frenchtype.com"
+ },
+ "gt-pressura.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://www.gt-pressura.com: HTTP 415"
+  ],
+  "website": "https://www.gt-pressura.com"
+ },
+ "href.li": {
+  "checked": "2026-10-30",
+  "errors": [
+   "robots.txt disallows https://href.li"
+  ],
+  "website": "https://href.li"
+ },
+ "hypertype.xyz": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://hypertype.xyz"
+ },
+ "inhousetype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "You hereby grant to us the right and permission to (a) reference the relationship between us and you, (b) your use of the Font(s) (including reference to your business name, trade mark, and/or service mark), and (c)display screenshots, photographs and captures of your use of the Font(s)(and you hereby agree to promptly, within a reasonable period, supply copies of materials as reasonably requested by us to display the same)."
+    ],
+    "metric:company_size": [
+     "Where the Permitted Uses expressly permit use in respect of .pdf creation and external distribution of the resulting .pdf documents to end users for the purpose of those end users to download/access the document, you and all Sublicensees (whether acting by themselves or by their employees, officers, suppliers, contractors and/or agents, as the case may be) may embed the Font(s) (or any of part thereof) within a file intended for consumption by that end user, in accordance with Permitted Uses.",
+     "You will use all reasonable endeavours to ensure that the Font(s) is not distributed as, or within, an executable or installable file, nor that the Font(s) is installed on or within any end user’s hardware operation system, by you, the Sublicensees or their employees, suppliers, contractors or agents.",
+     "c.Where the Permitted Uses allow use in respect of webpages, you and any Sublicensees (by themselves or by their employees, suppliers, contractors and/or agents) may only put online and/or link (excluding hotlinking) to the .WOFF, and .WOFF2, and/or Web-Only .TTF file formats of the Font(s) (or any part thereof), provided the same is within the scope of the Permitted Uses.",
+     "You will ensure that you, Sublicensees, and their employees, suppliers, contractors and agents will not put online and/or link to any other file format, including, but not limited to, TrueType or OpenType."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 6
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 7
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.inhousetype.com/eula",
+   "https://www.inhousetype.com/faqs"
+  ],
+  "website": "https://www.inhousetype.com"
+ },
  "ivo.berlin": {
   "checked": "2026-10-30",
   "errors": [
@@ -156,6 +713,216 @@
   ],
   "license_urls": [],
   "website": "https://ivo.berlin"
+ },
+ "justanotherfoundry.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://justanotherfoundry.com"
+ },
+ "lift-type.fr": {
+  "auto": {
+   "all_media_hits": 2,
+   "evidence": {
+    "all_media": [
+     "Unlimited usage across all media (print, web multi-domain, social media, apps, TV, video, broadcast, OOH/DOOH, packaging, printed products for sale, third parties).",
+     "A single license cannot be reused across multiple clients or projects."
+    ],
+    "logo:included": [
+     "❌ Excludes: any use in Logo, wordmark, multi-domain, app, broadcast...",
+     "❌ Excludes: any use in Logo,wordmark.",
+     "Graphic modification allowed only for the creation of the logo",
+     "Use the font or a single glyph as a logo or wordmark without the appropriate license."
+    ],
+    "logo:restricted": [
+     "Logo usage is prohibited under the BASIC License and also under the UNLIMITED License."
+    ],
+    "logo:separate": [
+     "Yes, but only with a LOGO License.",
+     "The only exception concerns the creation of a logo under a LOGO License."
+    ],
+    "metric:company_size": [
+     "Definition of company size",
+     "The price of the License is based on the size of the company using the Font (“Advertiser”):",
+     "The final Advertiser displaying the Font determines the company size, even if the License is purchased by an intermediary (agency, freelancer, printer).",
+     "Includes all employees, permanent or temporary, as well as subsidiaries and associated companies."
+    ],
+    "metric:seats": [
+     "You may install the font on your workstation, but you may use it strictly for that specific client and project only."
+    ],
+    "metric:traffic": [
+     "Webfont: up to 50K monthly page views on a single domain",
+     "Print/desktop use, web (50k monthly page views on one domain), social media (50k followers total across all platforms)."
+    ]
+   },
+   "logo_scores": {
+    "included": 9,
+    "restricted": 1,
+    "separate": 2
+   },
+   "metric_scores": {
+    "company_size": 7,
+    "seats": 1,
+    "traffic": 2
+   },
+   "suggested_logo": "separate",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 35
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.lift-type.fr/pages/licenses-and-terms",
+   "https://www.lift-type.fr/pages/faq",
+   "https://www.lift-type.fr/pages/terms-of-sales",
+   "https://www.lift-type.fr/pages/legal-citations"
+  ],
+  "website": "https://www.lift-type.fr"
+ },
+ "lineto.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 6
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://lineto.com/information"
+  ],
+  "website": "https://lineto.com"
+ },
+ "luma.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "All content and other materials available on our websites and presented as part of the Service, including, without limitation, trademarks, service marks, trade names, images, audio, text, software, and the “look and feel” of https://luma.com and its associated lower-level webpages (collectively, “Site Content”) are protected by copyright, trademark, and other intellectual property laws.",
+     "Such Site Content includes LUMA™ and related stylized “luma” designs, which are common law trademarks of Luma Labs, Inc."
+    ],
+    "metric:company_size": [
+     "NEITHER WE NOR OUR SUBSIDIARIES, OR AFFILIATES, AND RESPECTIVE OFFICERS, DIRECTORS, SHAREHOLDERS, EMPLOYEES, AGENTS, OR REPRESENTATIVES (OR THEIR RESPECTIVE SUCCESSORS AND ASSIGNS) SHALL BE LIABLE IN CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES RESULTING FROM THE SERVICE OR THE USE, ATTEMPTED USE OR INABILITY TO USE THE SERVICE, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOST REVENUE, LOSS OF DATA, OR OTHER INTANGIBLES EVEN IF FORESEEABLE OR IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+     "You agree to indemnify, hold harmless, and release us, our subsidiaries, our affiliates, and our respective officers, directors, shareholders, employees, agents, representatives (and their respective successors and assigns) from and against any and all claims, damages, costs and expenses, including, but not limited to, reasonable attorney’s fees, arising from or related to your access, use, attempted use, inability to use, or misuse of the Service or noncompliance with these Terms of Use."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 5
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://luma.com/terms",
+   "https://luma.com/pricing"
+  ],
+  "website": "https://luma.com"
+ },
+ "mailchi.mp": {
+  "checked": "2026-10-30",
+  "errors": [
+   "robots.txt disallows https://mailchi.mp"
+  ],
+  "website": "https://mailchi.mp"
+ },
+ "marksimonson.com": {
+  "auto": {
+   "all_media_hits": 3,
+   "evidence": {
+    "all_media": [
+     "A single license covers distribution",
+     "If your use goes beyond what our desktop, web and app licenses cover,",
+     "For standard desktop, web, or app licenses, the quickest and easiest way"
+    ],
+    "logo:included": [
+     "of your licensed users to create static assets like logos, social media images,",
+     "including copyright, trademark, privacy, personality or other personal or"
+    ],
+    "metric:company_size": [
+     "case shall The Type Founders LLC, our directors, officers, employees,",
+     "interns and employees, harmless from any claim or demand, including"
+    ],
+    "metric:seats": [
+     "on the number of users.",
+     "Number of users"
+    ],
+    "metric:traffic": [
+     "the fonts licensed and monthly page views.",
+     "Monthly pageviews"
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 2,
+    "seats": 2,
+    "traffic": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 59
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.marksimonson.com/licensing/",
+   "https://www.marksimonson.com/terms/"
+  ],
+  "website": "https://www.marksimonson.com"
+ },
+ "minjooham.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "http://minjooham.com"
+ },
+ "nodotypefoundry.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:company_size": [
+     "INSIDE YOUR ORGANIZATION means use within your company or organization, in all business locations, but does not include use by your customers or outsourced employees outside your business locations."
+    ],
+    "metric:seats": [
+     "It will depend on the number of computers (CPU) where they will be installed and which remain property of the buyer.",
+     "You are acquiring the right to use a specific number of licenses, in a specific number of devices INSIDE YOUR ORGANIZATION, as specified in this agreement.",
+     "The number of devices on which you can install the fonts will depend on the number of licenses purchased, according to the reference documentation of your purchase.",
+     "You can make file copies of the fonts for your own purposes, which will count towards the number of devices determined in your purchase documentation."
+    ],
+    "metric:traffic": [
+     "The web license allows the use of our typographies between a certain range of unique visitors per month (UVPM), its implementation is made through @font-face and css technology, never through direct availability on a personal server."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 1,
+    "seats": 5,
+    "traffic": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 7
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://nodotypefoundry.com/faqs/"
+  ],
+  "website": "https://nodotypefoundry.com"
  },
  "nts.live": {
   "auto": {
@@ -173,6 +940,59 @@
    "https://www.nts.live/terms-and-conditions"
   ],
   "website": "https://www.nts.live"
+ },
+ "nvayrk.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "http://nvayrk.com"
+ },
+ "off-type.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "This license lets you use the logo in any context.",
+     "The license coverage should reflect the total number of employees of the company using the logo."
+    ],
+    "logo:separate": [
+     "When do I need the Logo License?",
+     "The Logo license is needed for each company logo that features the font."
+    ],
+    "metric:company_size": [
+     "The license coverage should reflect the total number of employees of the company using the logo."
+    ],
+    "metric:seats": [
+     "For example if you need the font to be installed on 1 workstation and on 1 website with 10,000 pageviews per month, you will need, for every weight used, a desktop license for 1 workstation and a web license for up to 10k pageviews per month.",
+     "The license coverage should reflect the total amount of workstations that will have the font installed."
+    ],
+    "metric:traffic": [
+     "For example if you need the font to be installed on 1 workstation and on 1 website with 10,000 pageviews per month, you will need, for every weight used, a desktop license for 1 workstation and a web license for up to 10k pageviews per month.",
+     "You will need the license to reflect the anticipated total monthly pageviews of all domains, microsites and/or subdomains for this specific client or campaign.",
+     "You will need 1 license per app and/or software and the license coverage should reflect the anticipated total monthly active users of this specific app or software."
+    ]
+   },
+   "logo_scores": {
+    "included": 2,
+    "separate": 2
+   },
+   "metric_scores": {
+    "company_size": 1,
+    "seats": 2,
+    "traffic": 3
+   },
+   "suggested_logo": "separate",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 13
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://off-type.com/pages/faqs"
+  ],
+  "website": "https://off-type.com"
  },
  "offline.displaay.net": {
   "auto": {
@@ -203,12 +1023,68 @@
   ],
   "website": "https://offline.displaay.net"
  },
+ "ohnotype.co": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.ohnotype.co"
+ },
+ "okaytype.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Can I use an Okay Type font in a logo?",
+     "Yes, you can use Okay Type fonts in logos."
+    ],
+    "metric:seats": [
+     "This Addendum extends the End User License Agreement to allow you to install and use certain fonts on a specific number of computers within your organization, as detailed on your Order Confirmation.",
+     "The maximum number of computers you may install the fonts on (referred to as “users”) is listed in your Order Confirmation.",
+     "Also, the total number of computers within your organization that can install, activate, or otherwise access the fonts, regardless of whether or not they will be doing so simultaneously, must not exceed your maximum number of users.",
+     "The license options multiply these base prices by a factor determined by the number of users for desktop use and the number of monthly pageviews for web use."
+    ],
+    "metric:traffic": [
+     "This Addendum extends the End User License Agreement to allow you to use certain fonts on a single website using the CSS @font-face method, up to a maximum number of total pageviews per month, as detailed on your Order Confirmation.",
+     "You must monitor the total monthly pageviews the website receives.",
+     "If you exceed your licensed number of pageviews by 20% in any three consecutive months or any six months over the course of a year, you must upgrade your license to cover the increased number of pageviews.",
+     "Pick a “pageviews per month” number that covers your site’s monthly traffic."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "seats": 4,
+    "traffic": 10
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "traffic",
+   "suggested_qualifies": "no",
+   "web_hits": 44
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://okaytype.com/license",
+   "https://okaytype.com/faq"
+  ],
+  "website": "https://okaytype.com"
+ },
  "olympicstudio.fr": {
   "checked": "2026-10-30",
   "errors": [
    "https://www.olympicstudio.fr: HTTP 404"
   ],
   "website": "https://www.olympicstudio.fr"
+ },
+ "order.design": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://order.design"
  },
  "physical.swisstypefaces.com": {
   "auto": {
@@ -239,6 +1115,136 @@
   ],
   "website": "https://physical.swisstypefaces.com"
  },
+ "playtype.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://playtype.com"
+ },
+ "postdiplome.esad-amiens.fr": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "http://postdiplome.esad-amiens.fr"
+ },
+ "pressable.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:traffic": [
+     "Supports millions of pageviews"
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "traffic": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "traffic",
+   "suggested_qualifies": "no",
+   "web_hits": 17
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://pressable.com/",
+   "https://pressable.com/legal/",
+   "https://pressable.com/pricing/",
+   "https://pressable.com/legal/sla/"
+  ],
+  "website": "https://pressable.com"
+ },
+ "processtypefoundry.com": {
+  "auto": {
+   "all_media_hits": 3,
+   "evidence": {
+    "all_media": [
+     "A single license covers distribution",
+     "If your use goes beyond what our desktop, web and app licenses cover,",
+     "For standard desktop, web, or app licenses, the quickest and easiest way"
+    ],
+    "logo:included": [
+     "of your licensed users to create static assets like logos, social media images,",
+     "including copyright, trademark, privacy, personality or other personal or"
+    ],
+    "metric:company_size": [
+     "case shall The Type Founders LLC, our directors, officers, employees,",
+     "interns and employees, harmless from any claim or demand, including"
+    ],
+    "metric:seats": [
+     "on the number of users.",
+     "Number of users"
+    ],
+    "metric:traffic": [
+     "the fonts licensed and monthly page views.",
+     "Monthly pageviews"
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 2,
+    "seats": 2,
+    "traffic": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 59
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://processtypefoundry.com/licensing/",
+   "https://processtypefoundry.com/terms/"
+  ],
+  "website": "https://processtypefoundry.com"
+ },
+ "prototypo.io": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.prototypo.io"
+ },
+ "publictype.us": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.publictype.us/licenses"
+  ],
+  "website": "https://www.publictype.us"
+ },
+ "roxanegataud.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.roxanegataud.com/informations"
+  ],
+  "website": "http://www.roxanegataud.com"
+ },
  "sangbleu.com": {
   "checked": "2026-10-30",
   "errors": [
@@ -255,12 +1261,165 @@
   "license_urls": [],
   "website": "https://www.shapedagency.com"
  },
+ "studiofeixen.ch": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.studiofeixen.ch"
+ },
  "techdirt.com": {
   "checked": "2026-10-30",
   "errors": [
    "https://www.techdirt.com: HTTP 403"
   ],
   "website": "https://www.techdirt.com"
+ },
+ "thedesignersfoundry.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "With a Desktop License you can use our typefaces in logos, branding, publication design, t-shirt designs, rasterised images and more.",
+     "Content such as graphic designs, branding, advertising, artwork, book covers, clothing designs, business cards, logos, magazines, signage, packaging, posters or other printed designs.",
+     "“The Designers Foundry” is trademarked.",
+     "Illustrator, Photoshop and InDesign are registered trademarks of Adobe Systems, Inc., Microsoft Word is a registered trademark of Microsoft Corporation, Apple Safari, iOS are registered trademarks of Apple Inc., Google Chrome is a registered trademark of Google Inc."
+    ],
+    "metric:company_size": [
+     "Each party must indemnify and hold harmless the other, and their officers, directors, employees and agents, against any and all costs, expenses, liabilities, injuries, losses, damages, claims, demands and judgments that either party incurs as a consequence of either party’s breach of this Agreement.",
+     "Each party must indemnify and hold harmless the other, and their officers, directors, employees and agents, against any and all costs, expenses, liabilities, injuries, losses, damages, claims, demands and judgments that either party incurs as a consequence of either party’s breach of this Agreement.This indemnification obligation survives termination of this Agreement.",
+     "This license is scaled according to the number of people who will be using the font software."
+    ],
+    "metric:seats": [
+     "Grant of License and Number of Users",
+     "The Desktop License is licensed according to the number of computers You will install the Font Software on.",
+     "For example the “Up to 10 computers” option permits You to install the Font Software on up to 10 computers.",
+     "The Designers Foundry trusts You will respect our vision of empowering the whole industry with affordable typography and will order the correct License for the correct number of users."
+    ],
+    "metric:traffic": [
+     "The WebFont License is priced according to the expected number of monthly visitors your website will have.",
+     "You can decide how You distribute your WebFont License visitors between traditional website visitors and ad impressions, as long as You do not exceed the total number of your license scale."
+    ]
+   },
+   "logo_scores": {
+    "included": 8
+   },
+   "metric_scores": {
+    "company_size": 3,
+    "seats": 10,
+    "traffic": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 59
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.thedesignersfoundry.com/licenses",
+   "https://www.thedesignersfoundry.com/faq"
+  ],
+  "website": "https://www.thedesignersfoundry.com"
+ },
+ "threads.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "robots.txt disallows https://www.threads.com"
+  ],
+  "website": "https://www.threads.com"
+ },
+ "type-together.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 20
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.typetogether.com/licences",
+   "https://www.typetogether.com/faqs",
+   "https://www.typetogether.com/terms-conditions",
+   "https://www.typetogether.com/fonts/collections/information-design"
+  ],
+  "website": "https://www.type-together.com"
+ },
+ "type01studio.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "http://type01studio.com"
+ },
+ "typemates.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "It covers all media in unlimited usage."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 9
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.typemates.com/licences",
+   "https://www.typemates.com/impress",
+   "https://www.typemates.com/terms-of-service"
+  ],
+  "website": "https://www.typemates.com"
+ },
+ "typeoffeeling.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://typeoffeeling.com"
+ },
+ "typokompanii.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Any rights, including but not limited to copyrights and trademarks, remain with Tüpokompanii.",
+     "For marketing reasons only, Tüpokompanii shall be entitled to use the License Owner’s name, trademarks, videos, and imagery around use of the Fonts once made public by the License Owner."
+    ],
+    "metric:company_size": [
+     "License Owner & Company Size",
+     "License pricing is based on the total number of employees at the License Owner’s organization, not the number of people who use the Fonts.",
+     "When selecting a license, the License Owner’s total company size must be stated accurately and kept up to date if it changes.",
+     "Unlimited traffic: The Fonts may be used on a website with an unlimited number of visitors, provided the License Owner’s company size has been correctly licensed."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 5
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 15
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.typokompanii.com/licenses",
+   "https://www.typokompanii.com/terms-of-service"
+  ],
+  "website": "https://typokompanii.com"
  },
  "typostammtisch.berlin": {
   "checked": "2026-10-30",
@@ -277,5 +1436,101 @@
   ],
   "license_urls": [],
   "website": "https://us3.list-manage.com"
+ },
+ "velvetyne.fr": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://velvetyne.fr"
+ },
+ "vj-type.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "VJ Type reserves the right to use the User’s name and logo in its list of representative clients.",
+     "VJ TYPE reserves the right to use the User’s name and logo in its list of representative clients."
+    ],
+    "metric:company_size": [
+     "(For example, if the User fails to respect the Agreement’s “User Group” limitation, VJ Type may require, as a condition of continued use, that the User expands the User Group to “unlimited employees” so there will be no need for future oversight on this issue.)",
+     "In addition, upon at least twenty days’ advance notice, VJ Type may, either through its employees or a third-party designated by VJ Type, inspect the User’s records and equipment to verify compliance with the terms of this Agreement.",
+     "If the User is an entity, the User Group must all be employees of the entity.",
+     "The Addendum fee is based on the total number of employees specified in the Invoice (across all geographical sites, measured over one year)."
+    ],
+    "metric:seats": [
+     "The User is authorized to install the Font for a defined number of users as described in the Invoice (“User Group”).",
+     "The User may install the Font on a local file server, such as a network font manager, for use on a local area network (LAN), solely in the case where use of the Font is expressly limited to the total number of users (User Group) that may install the Font under this Agreement, corresponding to the total number of persons that may have access to the Font at any moment."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 8,
+    "seats": 3
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 91
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://vj-type.com/pages/font-licenses",
+   "https://vj-type.com/pages/terms-of-use"
+  ],
+  "website": "https://vj-type.com"
+ },
+ "vllg.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://vllg.com"
+ },
+ "web.archive.org": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://web.archive.org/web/20121030120825/http://www.faktor-i.de:80/: HTTP 429"
+  ],
+  "website": "https://web.archive.org/web/20121030120825/http://www.faktor-i.de:80/"
+ },
+ "wordpress.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Using our Services doesn’t grant you any right or license to reproduce or otherwise use any Automattic or third-party trademarks."
+    ],
+    "metric:company_size": [
+     "You and we agree that we and our affiliates’ total liability is limited to the greater of $50 or the amount paid by you to use our Services during the 12 months preceding the claim; To the extent that our liability is limited or excluded, the limitations or exclusions will also apply to the personal liability of our employees, legal representatives, and vicarious agents.",
+     "You agree to indemnify and hold harmless Automattic, its contractors, and its licensors, and their respective directors, officers, employees, and agents from and against any and all losses, liabilities, demands, damages, costs, claims, and expenses, including attorneys’ fees, arising out of or related to your use of our Services, including but not limited to your violation of the Agreement or any agreement with a provider of third-party services used in connection with the Services"
+    ],
+    "metric:traffic": [
+     "When you purchase Paid Services from WooCommerce.com, you’ll receive access to any necessary downloads along with updates and support (",
+     "When you purchase a Jetpack CRM Paid Service, you’ll receive access to any necessary downloads along with updates and support (for which this"
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 2,
+    "traffic": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 120
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://wordpress.com/tos/",
+   "https://wordpress.com/pricing/"
+  ],
+  "website": "https://wordpress.com"
  }
 }
