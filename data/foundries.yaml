@@ -3886,20 +3886,28 @@ foundries:
       web_hits: 91
       checked: '2026-10-30'
 
-  - name: apextypefoundry.com
-    website: http://www.apextypefoundry.com
+  - name: Apex Type Foundry
+    website: https://apextypefoundry.com
     license_urls:
       - https://apextypefoundry.com/eula
-      - https://apextypefoundry.com/about
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: separate
+    all_media: 'no'
+    qualifies: partial
+    summary: Price is set by company size, but each use is its own license (Desktop+Print+Social,
+      Web per domain, App+Game per product, Broadcast, Logo+Wordmark per company). An Unlimited
+      license that bundles them has no company-size limit and is quote only.
+    evidence:
+      - claim: '"the price of a license is determined by the Company Size of the License Owner—not
+          by the number of designers using the Fonts".'
+        source: https://apextypefoundry.com/eula
+      - claim: 'Web "Permits the use of the Fonts on one web domain ... A separate web license must
+          be purchased for each additional domain." Logo + Wordmark "for one company ... A separate
+          Logo + Wordmark license is required for each additional company."'
+        source: https://apextypefoundry.com/eula
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 4
       evidence:
@@ -3942,19 +3950,21 @@ foundries:
       web_hits: 20
       checked: '2026-10-30'
 
-  - name: believein.co.uk
-    website: http://www.believein.co.uk
+  - name: Believe in (design studio)
+    website: https://believein.net
     license_urls:
       - https://believein.net/terms-and-conditions
     pricing_metric: unknown
     logo: unknown
     all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    qualifies: 'no'
+    summary: A brand and graphic design studio, not a type foundry. Its terms cover client work, not font licensing.
+    evidence:
+      - claim: Terms refer to a "Client", "Brief" and "Goods" for design services.
+        source: https://believein.net/terms-and-conditions
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 0
       evidence:
@@ -3988,21 +3998,30 @@ foundries:
       web_hits: 3
       checked: '2026-10-30'
 
-  - name: dograytype.com
+  - name: Dogray Type Foundry
     website: https://www.dograytype.com
     license_urls:
       - https://www.dograytype.com/eula
-      - https://www.dograytype.com/faq
-      - https://www.dograytype.com/terms-conditions
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: likely
+    todo: The EULA defines Organisation Size as the number of employees, subcontractors and temporary
+      staff, but the price list was not read. Confirm that the Basic and Extended prices depend on
+      organisation size only.
+    summary: Two licenses. Basic covers desktop and web. Extended adds apps, ebooks, broadcast/film/video,
+      games and logos/wordmarks, so Extended is the all-in-one license. Organisation Size is the
+      number of employees.
+    evidence:
+      - claim: '"Organisation Size" means the total number of the Licensee''s employees, subcontractors
+          and temporary staff at the date of purchase.'
+        source: https://www.dograytype.com/eula
+      - claim: '"The Extended Licence grants all rights under the Basic Licence plus use in software
+          applications ..., Ebooks, broadcast/film/video, video games, and logos/wordmarks".'
+        source: https://www.dograytype.com/eula
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 0
       evidence:
@@ -4041,19 +4060,25 @@ foundries:
       web_hits: 16
       checked: '2026-10-30'
 
-  - name: doublebtype.xyz
+  - name: Double B Type
     website: https://doublebtype.xyz
     license_urls:
       - https://doublebtype.xyz/font-license/
     pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    logo: restricted
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Separate license types bought individually, and logo design is excluded. No company-size
+      pricing found in the license text.
+    evidence:
+      - claim: '"the scope of licenses enumerated as ''License types'' in the Addenda are independent
+          of one another, and the Licensee may opt to purchase multiple types of licenses."'
+        source: https://doublebtype.xyz/font-license/
+      - claim: Merchandising restriction lists "goods intended for sale, logo design, retail packaging".
+        source: https://doublebtype.xyz/font-license/
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 1
       evidence:
@@ -4108,22 +4133,38 @@ foundries:
       web_hits: 26
       checked: '2026-10-30'
 
-  - name: dreamtype.xyz
+  - name: Dreamtype
     website: https://dreamtype.xyz
     license_urls:
       - https://dreamtype.xyz/licensing
       - https://dreamtype.xyz/legal/licence-agreement
-      - https://dreamtype.xyz/posts/dreamtype-campus-licence
       - https://dreamtype.xyz/pricing
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included_small_only
+    all_media: partial
+    qualifies: partial
+    summary: Priced by headcount only. Companies up to 25 people get one Unlimited license covering desktop,
+      web, app, brand (logo), broadcast and OEM. Companies of 26 or more choose license types separately
+      (Desktop, Web, App, Brand, Broadcast, OEM).
+    evidence:
+      - claim: '"Organisations and businesses with up to 25 employees are granted the ''Unlimited'' licence,
+          which covers all available licence types ... For organisations and businesses with 26 or more
+          employees, only specific licence types are available".'
+        source: https://dreamtype.xyz/legal/licence-agreement
+      - claim: '"Pricing ... instead of looking at monthly page visitors, number of work stations, or
+          configuring complicated licence types, we look at the people count in a company."'
+        source: https://dreamtype.xyz/pricing
+    pricing:
+      currency: EUR
+      note: Pay Once, excl. VAT, per font collection, for any plan up to 25 people (Unlimited). Larger
+        plans are custom.
+      tiers:
+        - employees: up to 25
+          price: Single style 80, Bundle 100, Complete (variable + all static) 400
+      source: https://dreamtype.xyz/pricing
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 4
       evidence:
@@ -4166,19 +4207,30 @@ foundries:
       web_hits: 14
       checked: '2026-10-30'
 
-  - name: formulatype.com
-    website: http://formulatype.com
+  - name: Formula Type
+    website: https://formulatype.com
     license_urls:
       - https://formulatype.com/information
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    todo: The EULA itself was not read; the claims below come from the licensing FAQ page.
+    summary: All-in-one licenses priced by the company's total number of employees. Each license
+      includes print, logotype design, website, social media, stream/TV/movie, app/games, e-books,
+      hardware embedding and server/cloud use.
+    evidence:
+      - claim: '"Our licences are ''All in one''. This means that each license includes use for Print,
+          Logotype design, Website, Social Media, Stream/TV/Movie, App/Games, e-Books, Hardware embedding,
+          Server/Cloud."'
+        source: https://formulatype.com/information
+      - claim: '"Size refers to the company using the font, based on the total number of employees. It
+          doesn''t relate to how many people will use the font or how many computers it will be installed
+          on."'
+        source: https://formulatype.com/information
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 2
       evidence:
@@ -4210,20 +4262,28 @@ foundries:
       web_hits: 4
       checked: '2026-10-30'
 
-  - name: gallerytype.com
-    website: https://gallerytype.com
+  - name: Gallery Type
+    website: https://www.gallerytype.com
     license_urls:
       - https://www.gallerytype.com/about/
-      - https://gallerytype.com/@/file/fp3smag8ntb0f5qh
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: separate
+    all_media: partial
+    qualifies: partial
+    todo: Check whether the Standard+Logo add-on price depends on company size.
+    summary: One perpetual All-In-One Standard license priced by employee count (plus a country price
+      adjustment) covers print, one web domain, social media, apps, hardware and film/broadcast. Logo
+      use costs extra ("Standard+Logo").
+    evidence:
+      - claim: '"Our model calculates licensing fees based on just two metrics: the total number of
+          employees of the end-user ... the location of the licensee."'
+        source: https://www.gallerytype.com/about/
+      - claim: '"For an additional fee (Standard+Logo), Gallery Type grants the Licensee the right to
+          use the Font(s) for the realization of any logotype for and within the licensee company."'
+        source: https://www.gallerytype.com/about/
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 2
       evidence:
@@ -4273,21 +4333,29 @@ foundries:
       web_hits: 36
       checked: '2026-10-30'
 
-  - name: laboldevita.com
+  - name: La Bolde Vita
     website: https://www.laboldevita.com
     license_urls:
       - https://www.laboldevita.com/eula
-      - https://www.laboldevita.com/gtc
-      - https://www.laboldevita.com/help
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: likely
+    todo: The Extended package covers only one app, and extra apps need additional licenses. Price
+      tiers and whether Extended also scales only with employee count were not checked.
+    summary: Price depends on employee count. The Basic package covers print, web and social media
+      without limits. The Extended package adds logos/wordmarks, one app, one server, retail products
+      and film/streaming.
+    evidence:
+      - claim: '"The price depends on how many employees the company has ... Fonts can be used on unlimited
+          company devices, websites and documents."'
+        source: https://www.laboldevita.com/eula
+      - claim: '"The Extended package covers all usage permitted in the Basic package and also allows use
+          for logos/wordmarks, applications, server, retail products and movies/streaming."'
+        source: https://www.laboldevita.com/eula
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 0
       evidence:
@@ -4331,20 +4399,29 @@ foundries:
       web_hits: 13
       checked: '2026-10-30'
 
-  - name: nikolastype.com
+  - name: Nikolas Type
     website: https://www.nikolastype.com
     license_urls:
-      - https://www.nikolastype.com/legal/
       - https://www.nikolastype.com/information/
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: likely
+    todo: The licensing FAQ lists logos, websites, social media, packaging, video and streaming but does
+      not name apps. Read the license terms to confirm app embedding.
+    summary: License tiers are based on organization size, not on views or users. Desktop and web are
+      always included, as are logos, branding, social media, packaging, motion graphics and streaming.
+    evidence:
+      - claim: '"Desktop and Web usage are always included. Use the fonts across logos, websites, branding
+          systems, social media, marketing materials, packaging, presentations, editorial projects, and
+          interactive content such as videos, motion graphics, streaming content, and more."'
+        source: https://www.nikolastype.com/information/
+      - claim: '"Instead of charging based on views, impressions or unpredictable metrics, our licenses
+          are tied to the size of the organization using the fonts."'
+        source: https://www.nikolastype.com/information/
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 0
       evidence:
@@ -4372,22 +4449,29 @@ foundries:
       web_hits: 5
       checked: '2026-10-30'
 
-  - name: pathfinders.rocks
+  - name: Pathfinders
     website: https://pathfinders.rocks
     license_urls:
       - https://pathfinders.rocks/eula
-      - https://pathfinders.rocks/eula/
-      - https://pathfinders.rocks/legal-notice
-      - https://pathfinders.rocks/legal-notice/
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    todo: The Corporate tier prices were not read. The foundry also sells cheaper Desktop, Webfont, Software
+      and Broadcast licenses separately.
+    summary: The Corporate license is issued by total employee count and covers print, digital, web
+      (any number of owned sites, no visitor limits), software, broadcast, logos and brand identities
+      with no separate licenses.
+    evidence:
+      - claim: '"The corporate license allows unlimited use of the licensed Fonts across all media and
+          outputs — including print, digital, web, software, broadcast, and internal materials".'
+        source: https://pathfinders.rocks/eula/
+      - claim: '"Corporate licenses are issued based on the total number of employees in the organization."
+          "You are permitted to use the Fonts to create logos or brand identities."'
+        source: https://pathfinders.rocks/eula/
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 2
       evidence:
@@ -4449,20 +4533,24 @@ foundries:
       web_hits: 52
       checked: '2026-10-30'
 
-  - name: petra-d.com
+  - name: Petra D
     website: https://petra-d.com
     license_urls:
       - https://petra-d.com/eula/
-      - https://petra-d.com/terms-and-conditions/
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: seats
+    logo: separate
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Separate Desktop, Web and App licenses. Desktop is limited by users or installations and web
+      by traffic, with logos covered by a separate license.
+    evidence:
+      - claim: 'License is "subject to the type of License acquired (Desktop, Web, or App) and the number
+          of users ... or installations allowed". Web use is "on one website domain ... with specified
+          traffic".'
+        source: https://petra-d.com/eula/
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 3
       evidence:
@@ -4541,20 +4629,24 @@ foundries:
       web_hits: 36
       checked: '2026-10-30'
 
-  - name: typefaces.best
+  - name: Best Typefaces
     website: https://typefaces.best
     license_urls:
-      - https://typefaces.best/
       - https://typefaces.best/eula
-    pricing_metric: unknown
-    logo: unknown
-    all_media: unknown
-    qualifies: unknown
-    summary: ''
-    evidence: []
+    pricing_metric: company_size
+    logo: separate
+    all_media: 'no'
+    qualifies: partial
+    summary: The order asks for company size (total workforce, up to 100 people online), but desktop, web
+      and logo uses are separate licenses, and apps, merchandise and film need custom licenses.
+    evidence:
+      - claim: 'The order must "specify the Company Size, which is the total workforce of the company".
+          "Embedding the Font Software into web pages is not permitted and requires a Web Licence."
+          "A separate Logo Licence is required".'
+        source: https://typefaces.best/eula
     verified:
       date: '2026-10-30'
-      method: auto-screened, not reviewed
+      method: page-read
     auto:
       all_media_hits: 3
       evidence:
