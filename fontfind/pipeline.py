@@ -36,7 +36,7 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False) 
         live = Live(status.terminal_view(st), refresh_per_second=8, redirect_stdout=False, redirect_stderr=False)
         live.start()
         st.view = live
-    st.write(force=True)
+    st.refresh()
     try:
         _run(steps, limit, deep, src, st)
     finally:
