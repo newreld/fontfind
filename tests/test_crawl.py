@@ -26,3 +26,10 @@ class CrawlParsingTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PeerLinkTests(unittest.TestCase):
+    def test_external_links_skip_social_and_self(self):
+        html = ('<a href="https://other-foundry.com/x">o</a><a href="https://instagram.com/a">i</a>'
+                '<a href="/licensing">l</a><a href="https://www.me.com/y">me</a>')
+        self.assertEqual(crawl.external_links(html, "https://me.com"), {"other-foundry.com": "https://other-foundry.com"})

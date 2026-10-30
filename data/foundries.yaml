@@ -49,6 +49,9 @@ foundries:
       - claim: 'Subsidiaries/affiliates/brands: Not automatically included; we can add them
           via a quick add-on.'
         source: https://newlyn.com/licensing/procurement
+      - claim: 'Web is in the same license: "all media" use, "Self-hosting permitted (and
+          recommended)", pricing basis "Business size (employees + contractors)".'
+        source: https://newlyn.com/licensing/procurement
     verified:
       date: 2026-10-30
       method: page-read
@@ -464,6 +467,9 @@ foundries:
       - claim: '"For creating a custom logo, logotype, word-mark. Covers trademark registration
           with the logo." Priced by headcount on the invoice.'
         source: https://displaay.net/help/licenses
+      - claim: 'Web fails the one-license rule: Web (Websites, Web apps & Digital Advertising,
+          woff/woff2) is its own usage type, separate from Desktop+Print.'
+        source: https://displaay.net/help/licenses
     verified:
       date: 2026-10-30
       method: page-read
@@ -511,9 +517,13 @@ foundries:
       - claim: Unlimited/enterprise covers desktop/print, logo/wordmark, social media, web,
           app/game and video for one brand.
         source: https://abcdinamo.com/licenses
+      - claim: 'Web fails the one-license rule outside Unlimited: "§ 8.5 Web license — you
+          can use the fonts in WOFF2 format on one web domain"; a desktop/print license
+          does not cover web.'
+        source: https://abcdinamo.com/licenses
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: company_size
       suggested_logo: separate
@@ -596,9 +606,12 @@ foundries:
         source: https://apk-type.com/licences/
       - claim: Social media posts for a brand of 250+ employees need a Social media License.
         source: https://apk-type.com/licences/
+      - claim: 'Web fails the one-license rule: "Using the Fonts on a web domain requires
+          a Web License" (no traffic limit, but one domain per license).'
+        source: https://apk-type.com/licences/
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: company_size
       suggested_logo: restricted
@@ -650,17 +663,21 @@ foundries:
       - https://www.regularlines.com/eula/
     pricing_metric: mixed
     logo: included
-    all_media: unknown
+    all_media: 'no'
     qualifies: partial
     summary: Tiers by employee count (1-10, 11-50, 51-200, 201+), but each tier caps the number
-      of devices. Logos and branding are permitted uses.
+      of devices. Logos and branding are permitted uses. Web embedding is not allowed under
+      this license.
     evidence:
       - claim: Licenses categorized by total number of employees; each tier allows a limited
           number of devices.
         source: https://www.regularlines.com/eula/
+      - claim: 'Web fails: "Embedding the fonts on a website with @font-face is not allowed
+          under this license."'
+        source: https://www.regularlines.com/eula/
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     todo: EULA seen was dated January 2024; re-check.
     auto:
       suggested_metric: company_size
@@ -697,18 +714,27 @@ foundries:
       - https://julytype.com/licensing
     pricing_metric: company_size
     logo: unknown
-    all_media: partial
-    qualifies: partial
-    summary: 'One metric: total employees of the owning company (brackets up to 5,000). Standard
-      license = desktop + app; Extended = all media incl. web fonts. Product pages list Logo/Wordmark
-      as a usage option; which tier covers it is unconfirmed.'
+    all_media: 'yes'
+    qualifies: likely
+    summary: 'One metric: total employees of the owning company (brackets up to 5,000). Extended
+      License covers websites, social, video, broadcasting, streaming and ads plus webfonts
+      (one web domain, no traffic limit), all priced by company size. The 2026 EULA never
+      mentions logos or wordmarks; product pages list Logo/Wordmark as a usage option, so
+      logo coverage is unconfirmed.'
     evidence:
       - claim: 'Our licenses are based on one clear metric only: the size of the company that
           owns the license.'
         source: https://julytype.com/licensing
+      - claim: '"Company Size is the sole metric used to calculate license fees."'
+        source: https://strapi-julytype-1zhv.onrender.com/uploads/July_Type_End_User_License_Agreement_EULA_2026_598aab3cdc.pdf
+      - claim: 'Extended License covers "websites, social media content, video and motion
+          graphics, broadcasting, streaming, and digital advertising" and "WOFF and WOFF2
+          formats through the @font-face CSS method for a single web domain ... no restrictions
+          on web traffic". No clause on logos or wordmarks.'
+        source: https://strapi-julytype-1zhv.onrender.com/uploads/July_Type_End_User_License_Agreement_EULA_2026_598aab3cdc.pdf
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     todo: Does the Extended License include logo/wordmark?
     auto:
       suggested_metric: company_size
@@ -797,9 +823,13 @@ foundries:
     evidence:
       - claim: Total number of employees in your client's company, not posts or users.
         source: https://typefaces.pizza/licences/
+      - claim: 'Web fails the one-license rule: web is its own license type (one web domain
+          each, WOFF2 only); the Logo license "only covers the logo itself" and the website
+          needs its own license.'
+        source: https://typefaces.pizza/licences/
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: company_size
       suggested_logo: separate
@@ -860,9 +890,13 @@ foundries:
       - claim: Size tiers by employees; logo license allows trademark registration in unlimited
           countries.
         source: https://type-department.com/pages/licensing
+      - claim: 'Web is a separate license product: "Our Web License option is condensed into
+          a single license product, with no limits on the number of monthly web page views"
+          (one website domain).'
+        source: https://type-department.com/pages/licensing
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: mixed
       suggested_logo: separate
@@ -929,9 +963,13 @@ foundries:
       - claim: Unlimited (Corporate) License covers all media with no restrictions on company
           size, locations, projects, or distribution.
         source: https://t1-foundry.com/pages/licensing
+      - claim: 'Web fails the one-license rule: "Our Web License allows the Licensee to embed
+          the font software into the CSS of a single website domain"; static images of the
+          font on a website fall under Desktop, live web text needs the Web License.'
+        source: https://t1-foundry.com/pages/licensing
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: mixed
       suggested_logo: included
@@ -996,9 +1034,14 @@ foundries:
       - claim: License category determined by the size of the Licensee's organization ("10
           employee rule").
         source: https://shapedfonts.com/licensing/
+      - claim: 'Web fails for the Standard license: "if you wish to embed the font directly
+          into your website as a webfont, you''ll need to upgrade to a Multimedia License"
+          (only for entities with fewer than 10 people; larger ones need an Extended License
+          on request).'
+        source: https://shapedfonts.com/licensing/
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     todo: Terms page ~900 days old; confirm Extended includes logos.
     auto:
       suggested_metric: company_size
@@ -1045,9 +1088,13 @@ foundries:
       - claim: The only exception is logos/wordmarks, which are available as an optional add-on
           at checkout.
         source: https://www.overtypefoundry.com/faq
+      - claim: 'Web passes: "Our all-in-one license covers print, web, apps, social media,
+          packaging, broadcast…"; "We don''t charge by number of computers or page views."
+          Only the logo is extra.'
+        source: https://www.overtypefoundry.com/faq
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: company_size
       suggested_logo: separate
@@ -1101,9 +1148,13 @@ foundries:
       - claim: Fonts are licensed by the total number of people working full-time and part-time
           for Your Company.
         source: https://www.fairetype.com/licensing
+      - claim: 'Web fails the one-license rule: "If You would like to use the Font on Your
+          Website or server, You must purchase the appropriate Website License"; Desktop
+          Fonts may not be hosted on web servers.'
+        source: https://www.fairetype.com/licensing
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: company_size
       suggested_logo: included
@@ -1140,19 +1191,24 @@ foundries:
     license_urls:
       - https://fontwerk.com/en/licensing
       - https://fontwerk.com/en/faq
-    pricing_metric: unknown
+    pricing_metric: mixed
     logo: separate_size_based
     all_media: partial
     qualifies: partial
-    summary: Logo license per logo/brand, priced by the licensee's employees (permanent +
-      freelance), part of the "Extended" tier. Pricing of other modules not confirmed.
+    summary: Base License is desktop users + web pageviews (10,000/month) + social followers
+      (10,000), not company size. Logo license per logo/brand is priced by the licensee's
+      employees (permanent + freelance), part of the "Extended" tier.
     evidence:
       - claim: Logo scope determined per Logo based on the Licensee's company size (employees,
           permanent and freelance).
         source: https://fontwerk.com/en/licensing
+      - claim: 'Web fails: the Base License covers "Desktop (1 user), Web (10,000 pageviews
+          per month) and Social Media (10,000 followers)", with App and Logo as add-ons;
+          only the logo scope is sized by employees.'
+        source: https://fontwerk.com/en/licensing
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: mixed
       suggested_logo: separate
@@ -1237,9 +1293,13 @@ foundries:
       - claim: Logo licence level determined by number of Employees (incl. contractors and
           workers) in your business group.
         source: https://f37.com/information
+      - claim: 'Web fails: "How much does a F37 Foundry Webfont Licence cost? Quite simply,
+          it''s based on page views per month (or PVPM)." Web, social media and app are
+          separate licences.'
+        source: https://f37.com/information
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: mixed
       suggested_logo: separate
@@ -1298,9 +1358,12 @@ foundries:
           License is available for an additional fee, this will depend on the size of the
           company.
         source: https://wtypefoundry.com/licenses
+      - claim: 'Web fails: "The Web License is calculated based on the number of total visitors
+          the website may serve"; Print, Web and Social Media are separate licenses.'
+        source: https://wtypefoundry.com/licenses
     verified:
-      date: 2026-10-29
-      method: search-snippet
+      date: 2026-10-30
+      method: page-read
     auto:
       suggested_metric: mixed
       suggested_logo: separate
@@ -1402,6 +1465,9 @@ foundries:
         source: https://www.alfatypefonts.com/
       - claim: App license priced by downloads/MAU ("repriced based on actual download or
           usage figures"), not company size.
+        source: https://www.alfatypefonts.com/
+      - claim: 'Web fails the one-license rule: the Desktop License "does not cover use on
+          a website (see Web License)"; Web License is for self-hosted use on a single domain.'
         source: https://www.alfatypefonts.com/
     verified:
       date: 2026-10-30
@@ -1907,6 +1973,10 @@ foundries:
           Licence. However, if you want to register the lettering, logo or wordmark as a trademark,
           a separate Trademark License" is required.
         source: https://peregrinstudio.com/licenses
+      - claim: 'Web fails: "Web Fonts are a one time fee, which is determined by your websites
+          traffic and monthly page views"; the Desktop licence "does not cover ... live webfont
+          embedding".'
+        source: https://peregrinstudio.com/licenses
     verified:
       date: 2026-10-30
       method: page-read
@@ -1978,9 +2048,9 @@ foundries:
           and is priced based on your business size." Fees are calculated based on number
           of employees including consultants, contractors, freelancers, and temporary workers.'
         source: https://enricosogari.com/license-agreement
-      - claim: 'Unlimited [B] scope includes computer apps, web, print, social media, apps,
+      - claim: Unlimited [B] scope includes computer apps, web, print, social media, apps,
           electronic publications, film/TV/streaming, AND "logos, brand identities, product
-          packaging and trademarks owned and controlled by your Business."'
+          packaging and trademarks owned and controlled by your Business."
         source: https://enricosogari.com/license-agreement
     verified:
       date: '2026-10-30'
@@ -2020,3 +2090,293 @@ foundries:
       checked: '2026-10-30'
       content_hash: 4d9a271a077d66df
       changed_since_last_check: false
+
+  - name: Production Type
+    website: https://www.productiontype.com
+    license_urls:
+      - https://help.productiontype.com/docs/licensing/license_terms/company_size_tiers
+    pricing_metric: mixed
+    logo: unknown
+    all_media: unknown
+    qualifies: partial
+    summary: Licenses are priced by total company employees (1 to 400,000 tiers), but social
+      media use is tiered by follower count and apps by download count. Web and logo
+      terms were not found on the pages read, so they are unconfirmed.
+    todo: Read the EULA at licensing.productiontype.com for web and logo terms.
+    evidence:
+      - claim: '"Production Type licenses are issued according to a total number of employees
+          within a company." Separate tiers exist for total followers and total app downloads.'
+        source: https://help.productiontype.com/docs/licensing/license_terms/company_size_tiers
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      suggested_metric: mixed
+      suggested_logo: unknown
+      suggested_qualifies: partial
+      metric_scores:
+        company_size: 6
+        traffic: 4
+      logo_scores: {}
+      all_media_hits: 0
+      web_hits: 1
+      evidence:
+        metric:company_size:
+          - Company size tiers | Production Type help pages
+          - Company size tiers
+          - total number of employees
+          - Tiers based on total number of employees
+        metric:traffic:
+          - Tiers based on total number of app downloads
+          - Cumulated number of app downloads across store such as, but not limited to, Apple
+            App Store, Google Play Store, Tencent App Store, Baidu App Store, Xiaomi App Store,
+            Huawei App Store, and other channels.
+          - Number of downloads
+      checked: '2026-10-30'
+      content_hash: 8453bf24d7ba2965
+      changed_since_last_check: false
+
+  - name: Pyte Foundry
+    website: https://thepytefoundry.net
+    license_urls:
+      - https://thepytefoundry.net/eula
+      - https://thepytefoundry.net/faq
+      - https://thepytefoundry.net/legal
+      - https://thepytefoundry.net/information
+    pricing_metric: company_size
+    logo: included
+    all_media: 'yes'
+    qualifies: 'yes'
+    summary: Price depends on usage tier and total employee count (tiers up to 10,000).
+      The Extended license covers print, web pages, social media, apps, software, e-publications,
+      logotypes, broadcast and streaming, merchandise and hardware. The Basic license
+      excludes apps and logotypes.
+    evidence:
+      - claim: 'The scope and price of the license is determined by two factors: intended
+          usage and "the total number of employees (not only font users) working for the
+          license owner at the time of purchase."'
+        source: https://thepytefoundry.net/information
+      - claim: 'The EXTENDED license "covers all the usage of the BASIC license PLUS embedding
+          into apps, software and e-publications, the creation of logotypes, broadcasting
+          or streaming content, production of merchandise articles and embedding into
+          hardware devices." BASIC covers "printed matter, webpages and social media content."'
+        source: https://thepytefoundry.net/information
+      - claim: Using fonts for a logotype "requires an EXTENDED license"; headcount growth
+          needs no license update.
+        source: https://thepytefoundry.net/faq
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      suggested_metric: company_size
+      suggested_logo: included
+      suggested_qualifies: likely
+      metric_scores:
+        company_size: 5
+        seats: 1
+      logo_scores:
+        included: 6
+      all_media_hits: 2
+      web_hits: 17
+      evidence:
+        metric:company_size:
+          - The license tier specified during the checkout process must correspond to the
+            total number of employees working for the Licensee at the time of purchase, including
+            full-time, part-time and temporary staff engaged for 6 consecutive months or more.
+          - For license tiers beyond the offered maximum of 10 000 employees, please get in
+            contact to request a custom licensing quote.
+          - In case the organisation licensing the Fonts is growing regarding its number of
+            employees, no update to the license is required.
+          - In case the company or organisation licensing the fonts is growing regarding its
+            number of employees, no update to the license is required.
+        logo:included:
+          - to create any number of logotypes for the Licensee, both with modified or unmodified
+            outlines given that the logotypes are provided as vector files and not as font
+            software.
+          - This permits the use of the glyph shapes as unmodified or modified outlines, safe
+            that the logotype is provided as vector file and not as a font file.
+          - additional logotype, broadcasting or app usage) is not covered by the previously
+            obtained license.
+          - It does NOT cover the embedding into apps, software and e-publications, the creation
+            of logotypes, broadcasting or streaming content, production of merchandise articles
+            and embedding into hardware devices.
+        all_media:
+          - The Student license entitles to use the Fonts in any medium (print, web, app,
+            social media, logotype, video, etc.) for
+          - It covers all media (print, web, app, social media, logotype, video) for both
+            school assignments and personal projects.
+        metric:seats:
+          - The Trial Fonts may be installed on any number of devices within the Licensee's
+            organisation.
+      checked: '2026-10-30'
+      content_hash: 305b6f8b70597e30
+      changed_since_last_check: false
+
+  - name: Blaze Type
+    website: https://blazetype.eu
+    license_urls:
+      - https://blazetype.eu/eula
+      - https://blazetype.eu/license
+      - https://blazetype.eu/font-subscription
+      - https://blazetype.eu/faq
+      - https://blazetype.eu/legals
+    pricing_metric: mixed
+    logo: included
+    all_media: 'no'
+    qualifies: partial
+    summary: Tiers by client company size (up to 5, 30, or 200 employees; above that a
+      custom quote). Web and logo/brand mark are included, but social media is capped by
+      follower count, apps by active users, and broadcast and trademark registration
+      need a separate permanent licence.
+    evidence:
+      - claim: Company tiers listed as "Clients up to 5 employees", "up to 30 employees",
+          "up to 200 employees", with social media up to 10K / 100K / 500K followers and
+          app/game up to 5K / 50K active users.
+        source: https://blazetype.eu/license
+      - claim: Logo use covers "part of a logo, wordmark, or brand identity system" but
+          does not include trademark registration. Broadcast and Trademark are separate
+          permanent licences.
+        source: https://blazetype.eu/license
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      suggested_metric: company_size
+      suggested_logo: separate
+      suggested_qualifies: partial
+      metric_scores:
+        company_size: 40
+        seats: 11
+        traffic: 13
+      logo_scores:
+        included: 7
+        separate: 4
+      all_media_hits: 6
+      web_hits: 87
+      evidence:
+        metric:company_size:
+          - Company size (options) Up to 1 employee / Up to 5 employees / Up to 15 employees
+            / Up to 30 employees / Up to 50 employees / Up to 100 employees / Up to 150 employees
+            / Up to 250 employees / Up to 300 employees / Up to 500 employees
+          - Above 500 employees, the User shall contact Blaze Type at
+          - A professional use License is granted only to a single professional or a single
+            professional organization, which may include several employees authorized to use
+            the Font provided that the License was correctly selected based on company size.
+          - 'size of end client: 5 employees'
+        logo:included:
+          - 'Embed the Font: Yes / No Sharing with a Third Party: Yes / No Used in a brand
+            or logo: Yes / No'
+          - 'Options: Embed the Font: Yes / No Sharing with a Third Party: Yes / No Used in
+            a brand or logo: Yes / No Website: None / 1 to 10 websites Video: Yes / No Broadcast:
+            Local / National / Worldwide TV Productions Registered trademark: Yes / No Application/Game:
+            None / 1 to 5 applications/games Server: Internal automation / Public distribution
+            / High-volume / Dynamic image generation / SaaS or WebApp rendering / Unlimited
+            enterprise (Details are provided below in Section 3.3.7.)'
+          - 'Logo / Brand identity: not included in Freelance; included in Studio and Agency.'
+          - Where a Font is used to compose a logo or wordmark (a use reserved for the Studio
+            and Agency plans, see Article 3.2), only the final graphic output — the logo file
+            as delivered (vector, image) — is transferred to the end client, who may use and
+            exploit it freely as part of their brand identity.
+        metric:seats:
+          - '(d) Dynamic image generation server: this License allows use of the Font on a
+            server or an API that dynamically generates images, graphics or other visual elements
+            for any number of users, without distributing the Font.'
+          - '(d) Dynamic image generation server: use of the Font on a server or an API that
+            dynamically generates images, graphics or other visual elements for any number
+            of users, without distributing the Font.'
+          - The User may install the Products on only one (1) server and may use them only
+            on one (1) local area network (LAN), and only if access to the Products is limited
+            to workstations, printers and other hardware owned by the User and for the User’s
+            own use only.
+          - A Product may be embedded by the User in a website or a mobile application, regardless
+            of the number of users.
+        all_media:
+          - '(f) Unlimited enterprise server: this License allows unlimited use of the Font
+            across multiple servers, services and online environments within the User’s organization,
+            with unlimited output volume, provided that the Font file is never distributed.'
+          - '(f) Unlimited enterprise server: unlimited use of the Font across multiple servers,
+            services and online environments within the User’s organization, with unlimited
+            output volume, provided that the Font file is never distributed.'
+          - One license covers your entire web presence — no per-domain pricing, no pageview
+            caps.
+          - This license permits unlimited use of the Font across multiple servers, services,
+            and cloud environments within the Licensee’s organization, with unrestricted output
+            volume, provided that the Font file is never distributed.
+        logo:separate:
+          - Broadcast or Trademark licenses, which are subject to separate quotes and agreements.
+          - Filing the logo as a registered trademark remains subject to a separate Trademark
+            license, in accordance with Article 3.8, regardless of whether the end client
+            intends to use the Font beyond the logo.
+          - 'The right to use the Font itself is not transferred along with the logo: any
+            use of the Font beyond the logo (website, print, other media) requires a separate
+            license — either covered under your own subscription for deliverables you produce
+            yourself, or under a separate license obtained by the end client if they wish
+            to use the Font independently (Article 9.2).'
+          - Trademark registration requires a separate permanent licence regardless of your
+            plan.
+        metric:traffic:
+          - 'App / Video game: not included in Freelance; up to 5000 monthly active users
+            (MAU) in Studio; up to 50,000 MAU in Agency.'
+          - '(MAU: monthly active users, assessed at the time the product launches — see Article
+            3.9.)'
+          - 'Monthly active users (App / Game): this threshold is assessed once only, at the
+            time of launch of the product (app or game).'
+          - My app exceeds the MAU threshold after launch — do I need to upgrade?
+      checked: '2026-10-30'
+      content_hash: d97b03d0aa555548
+      changed_since_last_check: false
+
+  - name: Bauer Types
+    website: https://bauertypes.com
+    license_urls:
+      - https://bauertypes.com/font-licensing-faqs/
+    pricing_metric: unknown
+    logo: separate
+    all_media: 'no'
+    qualifies: 'no'
+    summary: Sells separate licenses per use (Desktop, Webfont, App, Ebook, Digital Ads,
+      TV and Broadcasting, Server, OEM, Logo, Corporate, Merchandising, Social Media),
+      so one company-size license does not cover everything. The pricing metric itself
+      was not verified on the page read.
+    todo: Confirm the pricing metric per license type; page text only lists the license types.
+    evidence:
+      - claim: 'License types are listed separately: DESKTOP, WEBFONT, APP, EBOOK, DIGITAL
+          ADS, TV & BROADCASTING, SERVER, OEM & VIDEOGAMES, LOGO, CORPORATIVE, MERCHANDISING,
+          SOCIAL MEDIA.'
+        source: https://bauertypes.com/font-licensing-faqs/
+    verified:
+      date: '2026-10-30'
+      method: page-read
+    auto:
+      checked: '2026-10-30'
+      content_hash: null
+      changed_since_last_check: false
+
+  - name: Kimera
+    website: https://kimeracorp.eu
+    license_urls:
+      - https://a.storyblok.com/f/167503/x/d7d2110316/kimera-eula-v2-00.pdf
+    pricing_metric: company_size
+    logo: separate
+    all_media: 'no'
+    qualifies: partial
+    summary: Fees depend on the licensee's total employees, but each use is a separate
+      License Type (Desktop, Web, App, Social Media, Logo). Web covers one domain, the Logo
+      License covers one brand, and Social Media requires a Desktop License first.
+    evidence:
+      - claim: 'Company Size is "The total number of employees working for the Licensee as
+          a single legal entity", and License Type is "The specific use-case purchased
+          (e.g. Desktop, Web, App)."'
+        source: https://a.storyblok.com/f/167503/x/d7d2110316/kimera-eula-v2-00.pdf
+      - claim: 'Clause 8.6 Logo License covers "a logo or wordmark for one brand. ... For
+          an additional brand, an additional License must be purchased."'
+        source: https://a.storyblok.com/f/167503/x/d7d2110316/kimera-eula-v2-00.pdf
+    todo: The kimeracorp.eu domain comes from the EULA contact address; confirm it is the
+      foundry shop.
+    verified:
+      date: '2026-10-30'
+      method: page-read
+      errors:
+        - 'https://bauertypes.com: HTTPSConnectionPool(host=''bauertypes.com'', port=443):
+          Max retries exceeded with url: / (Caused by SSLError(SSLError(1, ''[SSL: TLSV1_ALERT_PROTOCOL_VERSION]
+          tlsv1 alert protocol version (_ssl.c:1129)'')))'

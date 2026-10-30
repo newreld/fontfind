@@ -109,6 +109,55 @@ def seed(path: str) -> int:
     return 0
 
 
+IGNORED_HOSTS = re.compile(
+    r"(instagram|facebook|twitter|x\.com|linkedin|youtube|vimeo|tiktok|threads\.net|pinterest|behance|dribbble|"
+    r"github|gumroad|myfonts|fonts\.com|fontspring|adobe|google|apple|mailchimp|shopify|cloudflare|paypal|stripe|"
+    r"wikipedia|fontsinuse|typewolf|substack|medium\.com|are\.na|notion|vercel|netlify|wixsite|squarespace|"
+    r"cargo\.site|fontsource|fontshare|typekit|bsky|mastodon|typo\.social|whatsapp|t\.me|spotify|soundcloud)",
+    re.I,
+)
+GOOD_QUALIFIES = {"yes", "likely", "partial"}
+
+
+def external_links(html: str, base_url: str) -> dict[str, str]:
+    """host -> url for links that leave the site and are not social/marketplace hosts."""
+    soup = BeautifulSoup(html, "html.parser")
+    own = host_of(base_url)
+    out = {}
+    for a in soup.find_all("a", href=True):
+        url = urljoin(base_url, a["href"])
+        parts = urlparse(url)
+        host = host_of(url)
+        if parts.scheme in ("http", "https") and host and host != own and "." in host and not IGNORED_HOSTS.search(host):
+            out.setdefault(host, f"{parts.scheme}://{parts.netloc}")
+    return out
+
+
+def peers() -> int:
+    """Add sites linked from curated yes/likely/partial foundries to the directory."""
+    directory = _read(DIRECTORY_PATH)
+    known = {host_of(d["website"]) for d in directory.values() if d.get("website")}
+    known |= {host_of(f["website"]) for f in db.load() if f.get("website")}
+    added = 0
+    for f in db.load():
+        if f.get("qualifies") not in GOOD_QUALIFIES or not f.get("website"):
+            continue
+        for page in [f["website"], *(f.get("license_urls") or [])[:3]]:
+            try:
+                links = external_links(fetch.get(page).text, page)
+            except fetch.FetchError:
+                continue
+            for host, site in links.items():
+                if host in known:
+                    continue
+                known.add(host)
+                directory[f"peer:{host}"] = {"name": host, "source": f"linked from {f['name']}", "website": site}
+                added += 1
+    _write(DIRECTORY_PATH, directory)
+    print(f"added {added} linked sites to the directory")
+    return 0
+
+
 def screen_site(website: str) -> dict:
     urls = discover.discover(website)[:SCREEN_PAGES]
     texts, errors = [], []

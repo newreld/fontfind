@@ -67,6 +67,8 @@ def cmd_crawl(args) -> int:
         return crawl.sources(limit=args.limit)
     if args.stage == "screen":
         return crawl.screen(limit=args.limit, workers=args.workers)
+    if args.stage == "peers":
+        return crawl.peers()
     if args.stage == "seed":
         return crawl.seed(args.file)
     if args.stage == "promote":
@@ -99,7 +101,7 @@ def main(argv: list[str] | None = None) -> int:
     s.set_defaults(func=cmd_report)
 
     s = sub.add_parser("crawl", help="build the full foundry directory and screen it automatically")
-    s.add_argument("stage", nargs="?", default="all", choices=["all", "sources", "screen", "promote", "seed"])
+    s.add_argument("stage", nargs="?", default="all", choices=["all", "sources", "screen", "promote", "seed", "peers"])
     s.add_argument("file", nargs="?", help="seed: text file with one foundry website per line")
     s.add_argument("--limit", type=int, help="process at most this many foundries per stage")
     s.add_argument("--workers", type=int, default=8, help="parallel sites while screening")

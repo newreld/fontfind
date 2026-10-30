@@ -1,0 +1,281 @@
+{
+ "ahmedghazi.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://ahmedghazi.com"
+ },
+ "alias.uk.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "http://alias.uk.com/: HTTPConnectionPool(host='alias.uk.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPConnection(host='alias.uk.com', port=80): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+  ],
+  "website": "http://alias.uk.com/"
+ },
+ "alistapart.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://alistapart.com"
+ },
+ "api.f37foundry.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://api.f37foundry.com: HTTP 404"
+  ],
+  "website": "https://api.f37foundry.com"
+ },
+ "autograph.works": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "http://www.autograph.works"
+ },
+ "bit.ly": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "Create a page with or without a Bitly logo",
+     "You grant Bitly the right to use your name, trademarks and/or logos on its website, customer lists and/or in marketing, advertising or publicity materials to identify you as a customer that uses the Bitly Services."
+    ],
+    "metric:company_size": [
+     "If you are a corporate entity rather than an individual (A) only your employees and authorized contractors (“Personnel”) may use the Bitly Services; (B) you will require your Personnel to comply with all Laws (as defined below) and the use restrictions (including user seat restrictions) set out in the Agreement; (C) you will not share access credentials or exceed the user limitations of your service tier; and (D) you acknowledge that you will be fully responsible for any acts or omissions of your Personnel, whether authorized or unauthorized.",
+     "Bitly shall have no liability for any of your products, content or services (“Your Services”) accessed through or making use of the Bitly Services, or the use thereof by any end user or any of your or your affiliates’ customers, employees, officers, directors, agents, contractors, consultants, affiliates, or other representatives."
+    ],
+    "metric:traffic": [
+     "Access landing page data from clicks, downloads, and other actions",
+     "Landing Page Views"
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {
+    "company_size": 2,
+    "traffic": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 12
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://bitly.com/pages/pricing/",
+   "https://bitly.com/pages/terms-of-service/"
+  ],
+  "website": "https://bit.ly"
+ },
+ "customer-portal.paddle.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "robots.txt disallows https://customer-portal.paddle.com"
+  ],
+  "website": "https://customer-portal.paddle.com"
+ },
+ "f37foundry.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "You’ll also need permission for any modifications to our fonts for use as your logo."
+    ],
+    "logo:separate": [
+     "What is a F37® Foundry Logo Licence?",
+     "How much does a F37® Foundry Logo Licence cost?",
+     "Our Logo Licence allows you and your selected partners to create your logo using our fonts, which can then be used everywhere – on or within products, on merchandise, in advertising, and on all your websites and social media accounts used in connection with the brand.",
+     "You can create the logo in any colour or colour combination, but if you want more than one version of your logo, then you must purchase another logo licence."
+    ],
+    "metric:company_size": [
+     "The level which you select is determined by the number of Employees (which includes contractors and workers) you have in your business group.",
+     "Like page views with our Webfont Licence, the price is based on the number of people who will see your use of our fonts for your brand.",
+     "companies with 6 employees paying the same as those with 24 employees) - but it’s swings and roundabouts and things will even out in the end."
+    ],
+    "metric:traffic": [
+     "Quite simply, it's based on page views per month (or PVPM).",
+     "Like page views with our Webfont Licence, the price is based on the number of people who will see your use of our fonts for your brand.",
+     "The price which you pay is determined by the number of downloads which your App has (or how many you estimate you'll get).",
+     "If you have (or predict) more than 2.5million downloads of your App, you should get"
+    ]
+   },
+   "logo_scores": {
+    "included": 1,
+    "separate": 6
+   },
+   "metric_scores": {
+    "company_size": 4,
+    "traffic": 4
+   },
+   "suggested_logo": "separate",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 13
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://f37.com/information"
+  ],
+  "website": "https://f37foundry.com"
+ },
+ "fontspace.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 16
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.fontspace.com/about/terms"
+  ],
+  "website": "https://www.fontspace.com"
+ },
+ "fontstand.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://fontstand.com"
+ },
+ "ivo.berlin": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://ivo.berlin"
+ },
+ "nts.live": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://www.nts.live/terms-and-conditions"
+  ],
+  "website": "https://www.nts.live"
+ },
+ "offline.displaay.net": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other personal or proprietary right."
+    ],
+    "metric:company_size": [
+     "You agree to indemnify, defend and hold harmless Displaay and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, Service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law or the rights of a third-party."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 1
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 25
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://offline.displaay.net/policies/legal-notice",
+   "https://offline.displaay.net/policies/terms-of-service"
+  ],
+  "website": "https://offline.displaay.net"
+ },
+ "olympicstudio.fr": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://www.olympicstudio.fr: HTTP 404"
+  ],
+  "website": "https://www.olympicstudio.fr"
+ },
+ "physical.swisstypefaces.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other personal or proprietary right."
+    ],
+    "metric:company_size": [
+     "You agree to indemnify, defend and hold harmless Swiss Typefaces Physical and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, Service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law or the rights of a third-party."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "company_size": 1
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 23
+  },
+  "checked": "2026-10-30",
+  "license_urls": [
+   "https://physical.swisstypefaces.com/policies/terms-of-service",
+   "https://physical.swisstypefaces.com/policies/contact-information"
+  ],
+  "website": "https://physical.swisstypefaces.com"
+ },
+ "sangbleu.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://sangbleu.com"
+ },
+ "shapedagency.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.shapedagency.com"
+ },
+ "techdirt.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "https://www.techdirt.com: HTTP 403"
+  ],
+  "website": "https://www.techdirt.com"
+ },
+ "typostammtisch.berlin": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://typostammtisch.berlin"
+ },
+ "us3.list-manage.com": {
+  "checked": "2026-10-30",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://us3.list-manage.com"
+ }
+}
