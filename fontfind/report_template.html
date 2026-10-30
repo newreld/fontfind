@@ -6,9 +6,9 @@
 <title>FontFind Licenses</title>
 <style>
 :root { --bg:#fbfaf8; --card:#fff; --fg:#14181f; --muted:#5f6672; --line:#e3e1dc; --tile:#efede8; --accent:#1c3557; --on-accent:#fff;
-  --yes:#1d6b4f; --yes-bg:#e4f1ea; --likely:#245c7a; --likely-bg:#e1eef4; --partial:#8a5a14; --partial-bg:#f6ecd9; --unknown:#5f6672; --unknown-bg:#ebeae6; }
+  --on-strong:#fff; --yes:#1d6b4f; --yes-bg:#e4f1ea; --likely:#245c7a; --likely-bg:#e1eef4; --partial:#8a5a14; --partial-bg:#f6ecd9; --unknown:#5f6672; --unknown-bg:#ebeae6; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0f1319; --card:#151b23; --fg:#eceef2; --muted:#9aa3b0; --line:#262d38; --tile:#1b222c; --accent:#9db8dc; --on-accent:#0f1a2b;
-  --yes:#7fd0ac; --yes-bg:#173428; --likely:#86c1dd; --likely-bg:#173040; --partial:#e2b564; --partial-bg:#3a2d12; --unknown:#9aa3b0; --unknown-bg:#242b35; } }
+  --on-strong:#0f1319; --yes:#7fd0ac; --yes-bg:#173428; --likely:#86c1dd; --likely-bg:#173040; --partial:#e2b564; --partial-bg:#3a2d12; --unknown:#9aa3b0; --unknown-bg:#242b35; } }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 system-ui, -apple-system, "Helvetica Neue", sans-serif; }
 main { max-width:1240px; margin:0 auto; padding:40px 20px 80px; }
@@ -18,7 +18,10 @@ h1 { margin:0; font-size:clamp(30px, 4.6vw, 46px); letter-spacing:-.01em; line-h
 .bar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:24px; }
 .bar button, .bar input { border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:4px; padding:6px 14px; font:inherit; }
 .bar button { cursor:pointer; }
-.bar button[aria-pressed="true"] { background:var(--accent); color:var(--on-accent); border-color:var(--accent); }
+.bar button::before { content:""; display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:8px; background:var(--dot, var(--muted)); }
+.bar button.q-yes { --dot:var(--yes); } .bar button.q-likely { --dot:var(--likely); } .bar button.q-partial { --dot:var(--partial); } .bar button.q-unknown { --dot:var(--unknown); }
+.bar button[aria-pressed="true"] { background:var(--dot); color:var(--on-strong); border-color:var(--dot); }
+.bar button[aria-pressed="true"]::before { background:var(--on-strong); }
 .bar input { margin-left:auto; min-width:200px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:20px; }
 .card { border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; background:var(--card); display:flex; flex-direction:column; text-align:left; padding:0; color:inherit; font:inherit; }
@@ -28,8 +31,9 @@ h1 { margin:0; font-size:clamp(30px, 4.6vw, 46px); letter-spacing:-.01em; line-h
 .cover img.contain { object-fit:contain; padding:14%; }
 .cover .word { font-size:clamp(26px, 3.4vw, 40px); font-weight:700; letter-spacing:-.03em; padding:0 16px; text-align:center; line-height:1.05; }
 .pill { position:absolute; top:10px; left:10px; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.07em; padding:4px 9px; border-radius:3px; }
-.pill.q-yes { background:var(--yes-bg); color:var(--yes); } .pill.q-likely { background:var(--likely-bg); color:var(--likely); }
-.pill.q-partial { background:var(--partial-bg); color:var(--partial); } .pill.q-unknown { background:var(--unknown-bg); color:var(--unknown); }
+.pill { color:var(--on-strong); }
+.pill.q-yes { background:var(--yes); } .pill.q-likely { background:var(--likely); }
+.pill.q-partial { background:var(--partial); } .pill.q-unknown { background:var(--unknown); }
 .body { padding:14px 16px 16px; display:flex; flex-direction:column; gap:10px; }
 .title { display:flex; justify-content:space-between; gap:8px; align-items:baseline; }
 .title b { font-size:17px; letter-spacing:-.01em; }
@@ -50,6 +54,8 @@ dialog::backdrop { background:rgba(0,0,0,.55); }
 .dlg h3 { font-size:12px; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin:20px 0 6px; }
 .dlg p { margin:6px 0; }
 .chips { display:flex; flex-wrap:wrap; gap:6px; }
+.chips span.status { color:var(--on-strong); border-color:transparent; }
+.chips span.status.q-yes { background:var(--yes); } .chips span.status.q-likely { background:var(--likely); } .chips span.status.q-partial { background:var(--partial); } .chips span.status.q-unknown { background:var(--unknown); }
 .chips span { border:1px solid var(--line); border-radius:3px; padding:2px 10px; font-size:13px; }
 .dlg ul { padding-left:18px; margin:6px 0; color:var(--muted); font-size:13px; }
 .dlg a { color:inherit; }
@@ -111,7 +117,7 @@ function detail(d) {
     ${cover(d, true)}
     ${d.description ? `<p>${esc(d.description)}</p>` : ""}
     <h3>License</h3><p>${esc(d.summary)}</p>
-    <div class="chips"><span>${esc(QL[d.qualifies])}</span><span>Priced by ${esc(d.metric)}</span><span>Logo: ${esc(d.logo)}</span><span>All media: ${esc(d.all_media)}</span></div>
+    <div class="chips"><span class="status q-${d.qualifies}">${esc(QL[d.qualifies])}</span><span>Priced by ${esc(d.metric)}</span><span>Logo: ${esc(d.logo)}</span><span>All media: ${esc(d.all_media)}</span></div>
     ${d.pricing ? `<h3>Pricing</h3><p>${(d.pricing.tiers || []).map(t => `${esc(t.employees)} staff: ${esc(t.price)}`).join(" · ") || esc(d.pricing.note)}${d.pricing.currency ? ` (${esc(d.pricing.currency)})` : ""}</p>${d.pricing.tiers && d.pricing.note ? `<p class="sub" style="white-space:normal">${esc(d.pricing.note)}</p>` : ""}` : ""}
     ${d.typefaces.length ? `<h3>Typefaces</h3><div class="chips">${d.typefaces.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
     ${d.todo ? `<h3>To confirm</h3><p>${esc(d.todo)}</p>` : ""}
@@ -122,7 +128,7 @@ function detail(d) {
 }
 function render() {
   const bar = document.getElementById("bar");
-  bar.innerHTML = ORDER.map(q => `<button data-q="${q}" aria-pressed="${active.has(q)}">${QL[q]} ${DATA.filter(d => d.qualifies === q).length}</button>`).join("") +
+  bar.innerHTML = ORDER.map(q => `<button class="q-${q}" data-q="${q}" aria-pressed="${active.has(q)}">${QL[q]} ${DATA.filter(d => d.qualifies === q).length}</button>`).join("") +
     `<input id="q" type="search" placeholder="Search" value="${esc(query)}">`;
   bar.querySelectorAll("button").forEach(b => b.onclick = () => { const q = b.dataset.q; active.has(q) ? active.delete(q) : active.add(q); render(); });
   const q = document.getElementById("q");
