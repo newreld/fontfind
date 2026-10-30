@@ -6,8 +6,8 @@ from fontfind import db, pipeline, status
 
 
 class PipelineTests(unittest.TestCase):
-    def test_discover_phase_expands(self):
-        self.assertEqual(pipeline.expand(["discover", "judge"], False), ["roundups", "searches", "peers", "screen", "promote", "judge"])
+    def test_find_and_screen_phases_expand(self):
+        self.assertEqual(pipeline.expand(["find", "screen", "judge"], False), ["roundups", "searches", "peers", "screen", "promote", "judge"])
 
     def test_deep_adds_sources_first(self):
         self.assertEqual(pipeline.expand(["judge"], True), ["sources", "judge"])
@@ -35,6 +35,6 @@ if __name__ == "__main__":
 
 class PhaseTests(unittest.TestCase):
     def test_find_and_evaluate_cover_all_steps(self):
-        both = pipeline.expand(["discover", "review"], False)
+        both = pipeline.expand(["find", "screen", "review"], False)
         self.assertEqual(both, pipeline.STEPS)
-        self.assertFalse(set(pipeline.PHASES["discover"]) & set(pipeline.PHASES["review"]))
+        self.assertFalse(set(pipeline.PHASES["find"]) & set(pipeline.PHASES["review"]))

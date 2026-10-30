@@ -13,7 +13,8 @@ from fontfind import crawl, db, info, progress, report, review, status
 SOURCES_PATH = db.ROOT / "data" / "sources.yaml"
 STEPS = ["roundups", "searches", "peers", "screen", "promote", "judge", "info", "report"]
 PHASES = {
-    "discover": ["roundups", "searches", "peers", "screen", "promote"],
+    "find": ["roundups", "searches", "peers"],
+    "screen": ["screen", "promote"],
     "review": ["judge", "info", "report"],
 }
 ALIASES = dict(PHASES)
@@ -36,7 +37,7 @@ def expand(names: list[str] | None, deep: bool) -> list[str]:
     return [s for s in dict.fromkeys(steps)]
 
 
-def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, title: str = "Update", review_opts: dict | None = None) -> int:
+def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, title: str = "FontFind", review_opts: dict | None = None) -> int:
     steps = expand(steps, deep)
     before = _tally()
     src = _sources()

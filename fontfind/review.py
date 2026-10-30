@@ -16,11 +16,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-from fontfind import db, discover, fetch, progress
+from fontfind import browser, db, discover, fetch, progress
 
 MAX_PAGE_CHARS = 30000
 MODEL = os.environ.get("FONTFIND_MODEL", "claude-sonnet-5-5")
-METHOD = "auto-reviewed (claude, quotes checked)"
+METHOD = "auto-reviewed (rendered page, second check)"
 PROTECTED = ("browser-reviewed",)
 
 PROMPT = """You are reviewing the font license of one type foundry. Use ONLY the page texts below. Never use outside knowledge.
@@ -40,6 +40,9 @@ Fields:
 If a point is not stated in the text, use unknown. Reply with ONLY one JSON object with keys pricing_metric, logo, all_media, web, qualifies, summary, evidence, todo.
 
 Foundry: {name}
+
+BROWSER OBSERVATIONS (a real browser rendered one font page and listed every price control on it; if any control asks for users, computers, pageviews, visitors, followers, downloads, apps or domains, the price is NOT set by company size alone):
+{observations}
 
 {pages}
 """
@@ -73,6 +76,24 @@ def gather(foundry: dict) -> tuple[dict[str, str], list[str]]:
         pages, more = _read_pages(discover.fallback(site))
         errors += more
     return pages, errors
+
+
+SKEPTIC_PROMPT = """A reviewer concluded that this type foundry sells ONE license priced by company size (employee count) that covers web use, logo use and all media. Your only job is to try to DISPROVE that, using ONLY the texts below.
+
+Look for: other price inputs (users, computers, pageviews, visitors, followers, downloads, number of apps or domains, revenue); separate or extra licenses or fees for web, logo, trademark registration, social media, apps, broadcast, film, TV, video or other media; conditions that exclude web or logo; "contact us" or custom licenses for common uses.
+
+Do NOT object to these, they are normal scope limits and not extra licenses: web use being limited to one named domain or the licensee's own sites; subsidiaries, affiliates or agencies needing to be added; how headcount is counted; perpetual vs annual terms; prohibitions on redistributing or modifying the fonts. Small amounts shown on a page (like "$2") are not an objection unless the text says what they are for. An objection must be about a PRICE INPUT other than company size, or a separate paid license/fee for web, logo or a media type that the main license does not cover.
+
+Reviewer's verdict: {verdict}
+
+Reply with ONLY one JSON object: {{"objections": [{{"point": short statement, "quote": EXACT verbatim text copied from below, max 300 chars}}], "still_yes": true or false, "downgrade_to": "partial" (a known extra license or fee exists) or "likely" (something is unclear)}}.
+Use still_yes false only if a verified objection shows it is not a full match.
+
+BROWSER OBSERVATIONS:
+{observations}
+
+{pages}
+"""
 
 
 _children: set = set()
@@ -110,12 +131,28 @@ def _complete(prompt: str, tools: str = "") -> str:
     return data.get("result", "")
 
 
-def ask_claude(prompt: str) -> dict:
-    result = _complete(prompt)
-    match = re.search(r"\{.*\}", result, re.S)
-    if not match:
-        raise RuntimeError("no JSON in reply")
-    return json.loads(match.group(0))
+def _first_json_object(text: str) -> dict:
+    """The first complete JSON object in a reply, ignoring any prose or stray braces around it."""
+    decoder = json.JSONDecoder()
+    for i, ch in enumerate(text):
+        if ch == "{":
+            try:
+                obj, _ = decoder.raw_decode(text[i:])
+            except ValueError:
+                continue
+            if isinstance(obj, dict):
+                return obj
+    raise RuntimeError("no JSON object in the reply")
+
+
+def ask_claude(prompt: str, attempts: int = 2) -> dict:
+    last: Exception | None = None
+    for _ in range(attempts):
+        try:
+            return _first_json_object(_complete(prompt))
+        except RuntimeError as e:
+            last = e
+    raise last  # type: ignore[misc]
 
 
 def verified_evidence(items: list[dict], pages: dict[str, str]) -> list[dict]:
@@ -132,26 +169,46 @@ def verified_evidence(items: list[dict], pages: dict[str, str]) -> list[dict]:
     return kept
 
 
-def assess(foundry: dict) -> tuple[dict, dict[str, str]] | list[str]:
-    """Fetch the pages and ask Claude. Returns the list of errors when no page could be read.
-    No shared state is touched, so it is safe to run in threads."""
+def _page_block(pages: dict[str, str]) -> str:
+    return "\n\n".join(f"=== PAGE {url} ===\n{text}" for url, text in pages.items())
+
+
+def assess(foundry: dict) -> tuple[dict, dict[str, str], dict] | list[str]:
+    """Read the pages, look at a rendered font page, ask Claude, then let a second call try to disprove a yes.
+    Returns the list of errors when no page could be read. Touches no shared state, so it is thread-safe."""
     pages, errors = gather(foundry)
     if not pages:
         return errors or ["no license page found"]
-    body = "\n\n".join(f"=== PAGE {url} ===\n{text}" for url, text in pages.items())
-    return ask_claude(PROMPT.format(name=foundry["name"], pages=body)), pages
+    try:
+        observation = browser.look(foundry["website"]) if foundry.get("website") else {"checked": False, "reason": "no website"}
+    except browser.BrowserUnavailable:
+        observation = {"checked": False, "reason": "browser not installed (run: python3 -m playwright install chromium)"}
+    observations = browser.describe(observation)
+    verdict = ask_claude(PROMPT.format(name=foundry["name"], observations=observations, pages=_page_block(pages)))
+    check = {}
+    if verdict.get("qualifies") == "yes":
+        check = ask_claude(SKEPTIC_PROMPT.format(verdict=json.dumps(verdict)[:3000], observations=observations, pages=_page_block(pages)))
+    return verdict, {**pages, "(browser observations)": observations}, {"observation": observation, "check": check}
 
 
-def apply(foundry: dict, verdict: dict, pages: dict[str, str]) -> str:
+def apply(foundry: dict, verdict: dict, pages: dict[str, str], extra: dict | None = None) -> str:
+    extra = extra or {}
     evidence = verified_evidence(verdict.get("evidence"), pages)
     qualifies = verdict.get("qualifies", "unknown")
+    notes: list[str] = []
     if qualifies == "yes":
-        # The automatic review tends to be generous, so a match is only ever set by a browser review.
-        qualifies = "likely"
-        reason = "Judged by the automatic review only; confirm in a browser review before treating it as a match."
-        if len(evidence) < 2 or verdict.get("web") != "yes":
-            reason += " Fewer than two quotes could be verified or web use is not confirmed."
-        verdict["todo"] = " ".join(filter(None, [(verdict.get("todo") or "").strip(), reason]))
+        objections = verified_evidence(extra.get("check", {}).get("objections"), pages)
+        if extra.get("check", {}).get("still_yes") is False and objections:
+            qualifies = extra["check"].get("downgrade_to") if extra["check"].get("downgrade_to") in ("partial", "likely") else "likely"
+            evidence += objections
+            notes.append("A second check found a problem: " + objections[0]["claim"][:200])
+        elif len(evidence) < 2 or verdict.get("web") != "yes":
+            qualifies = "likely"
+            notes.append("Fewer than two quotes could be verified or web use is not confirmed.")
+        elif not extra.get("observation", {}).get("checked"):
+            qualifies = "likely"
+            notes.append(f"Price options on a font page could not be inspected ({extra.get('observation', {}).get('reason', 'unknown')}).")
+    verdict["todo"] = " ".join(filter(None, [(verdict.get("todo") or "").strip(), *notes]))
     foundry.update({
         "pricing_metric": verdict.get("pricing_metric", "unknown"),
         "logo": verdict.get("logo", "unknown"),
@@ -159,10 +216,10 @@ def apply(foundry: dict, verdict: dict, pages: dict[str, str]) -> str:
         "qualifies": qualifies,
         "summary": verdict.get("summary", ""),
         "evidence": evidence,
-        "license_urls": list(pages),
+        "license_urls": [u for u in pages if u.startswith("http")],
         "verified": {"date": dt.date.today().isoformat(), "method": METHOD},
     })
-    if verdict.get("todo"):
+    if verdict["todo"]:
         foundry["todo"] = verdict["todo"]
     else:
         foundry.pop("todo", None)
@@ -236,6 +293,8 @@ def review(only: list[str] | None = None, force: bool = False, limit: int | None
                 print(f"  {f['name']}: could not read license pages ({reason[:60]})", flush=True)
             else:
                 print(f"  {f['name']}: {apply(f, *result)}", flush=True)
+            if dry_run and f.get("todo"):
+                print(f"    note: {f['todo'][:300]}", flush=True)
             if not dry_run:
                 db.save(foundries)
     finally:

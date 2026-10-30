@@ -31,6 +31,26 @@ LABELS = {
 TEMPLATE = db.ROOT / "fontfind" / "report_template.html"
 
 
+STATUS = {"yes": "match", "likely": "close", "partial": "close", "unknown": "unclear"}
+STATUS_LABELS = {"match": "Match", "close": "Close", "unclear": "Unclear"}
+
+
+def missing(f: dict) -> str:
+    """One line saying what stops a close foundry from being a full match."""
+    if f.get("qualifies") == "yes":
+        return ""
+    todo = " ".join(str(f.get("todo", "")).split())
+    if todo:
+        first = todo.split(". ")[0].rstrip(".")
+        return first[:90] + ("..." if len(first) > 90 else "")
+    gaps = []
+    if f.get("logo") not in ("included", None):
+        gaps.append("logo use is extra or not stated")
+    if f.get("all_media") in ("no", "partial"):
+        gaps.append("some media cost extra")
+    return "; ".join(gaps).capitalize()
+
+
 METHOD_LABELS = {
     "browser-reviewed": "Reviewed by Claude in a browser",
     "auto-reviewed": "Reviewed automatically by Claude",
@@ -70,6 +90,8 @@ def build() -> str:
             "name": f["name"],
             "website": f.get("website", ""),
             "qualifies": f.get("qualifies", "unknown"),
+            "status": STATUS.get(f.get("qualifies", "unknown"), "unclear"),
+            "missing": missing(f),
             "metric": LABELS["pricing_metric"].get(f.get("pricing_metric", "unknown"), "?"),
             "logo": LABELS["logo"].get(f.get("logo", "unknown"), "?"),
             "logo_raw": f.get("logo", "unknown"),
@@ -100,7 +122,7 @@ def build() -> str:
         .replace("__DIRCOUNT__", str(len(dir_rows)))
         .replace("__DATA__", js(rows))
         .replace("__DIRECTORY__", js(dir_rows))
-        .replace("__QLABELS__", js(LABELS["qualifies"]))
+        .replace("__QLABELS__", js(STATUS_LABELS))
     )
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(page, encoding="utf-8")

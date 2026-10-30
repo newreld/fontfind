@@ -35,13 +35,39 @@ if __name__ == "__main__":
     unittest.main()
 
 
-class CapTests(unittest.TestCase):
-    def test_automatic_yes_is_capped_at_likely(self):
-        pages = {"https://x.test/eula": "Prices depend on the number of employees in the company, logos are allowed."}
-        verdict = {"qualifies": "yes", "web": "yes", "evidence": [
-            {"claim": "a", "quote": "Prices depend on the number of employees in the company"},
-            {"claim": "b", "quote": "logos are allowed."}]}
+class GateTests(unittest.TestCase):
+    PAGES = {"https://x.test/eula": "Prices depend on the number of employees in the company, logos are allowed. Broadcast needs an extra license."}
+    VERDICT = {"qualifies": "yes", "web": "yes", "evidence": [
+        {"claim": "a", "quote": "Prices depend on the number of employees in the company"},
+        {"claim": "b", "quote": "logos are allowed. Broadcast needs"}]}
+
+    def run_gate(self, extra):
         f = {"name": "X"}
-        review.apply(f, verdict, pages)
+        review.apply(f, dict(self.VERDICT), self.PAGES, extra)
+        return f
+
+    def test_yes_needs_browser_look_and_clean_second_check(self):
+        extra = {"observation": {"checked": True}, "check": {"objections": [], "still_yes": True}}
+        self.assertEqual(self.run_gate(extra)["qualifies"], "yes")
+
+    def test_no_browser_look_caps_at_likely(self):
+        extra = {"observation": {"checked": False, "reason": "no font page found"}, "check": {"still_yes": True}}
+        f = self.run_gate(extra)
         self.assertEqual(f["qualifies"], "likely")
-        self.assertIn("browser review", f["todo"])
+        self.assertIn("could not be inspected", f["todo"])
+
+    def test_verified_objection_downgrades(self):
+        extra = {"observation": {"checked": True}, "check": {"still_yes": False, "downgrade_to": "partial", "objections": [
+            {"point": "broadcast is extra", "quote": "Broadcast needs an extra license."}]}}
+        f = self.run_gate(extra)
+        self.assertEqual(f["qualifies"], "partial")
+        self.assertIn("second check", f["todo"])
+
+    def test_invented_objection_does_not_downgrade(self):
+        extra = {"observation": {"checked": True}, "check": {"still_yes": False, "downgrade_to": "partial", "objections": [
+            {"point": "made up", "quote": "Everything costs ten times more than listed here."}]}}
+        self.assertEqual(self.run_gate(extra)["qualifies"], "yes")
+
+
+if __name__ == "__main__":
+    unittest.main()

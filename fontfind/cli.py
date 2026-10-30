@@ -1,73 +1,22 @@
-"""Command line: python -m fontfind <command>."""
+"""Command line: python3 -m fontfind [find | screen | review]."""
 
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 
-from fontfind import crawl, db, discover, fetch, info, pipeline, report, review, scrape
-
-
-def cmd_list(args) -> int:
-    print(report.table(set(args.qualifies.split(",")) if args.qualifies else None))
-    return 0
+from fontfind import crawl, pipeline, report
 
 
-def cmd_scrape(args) -> int:
-    return scrape.scrape(only=args.only, offline=args.offline)
+def cmd_all(args) -> int:
+    return pipeline.update(title="FontFind", limit=getattr(args, "limit", 25))
 
 
-def cmd_add(args) -> int:
-    foundries = db.load()
-    added = 0
-    for website in args.websites:
-        name = args.name if args.name and len(args.websites) == 1 else website.split("//")[-1].split("/")[0]
-        if db.find(foundries, name):
-            print(f"already in database: {name}")
-            continue
-        try:
-            urls = discover.discover(website)
-        except fetch.FetchError as e:
-            print(f"could not read {website}: {e}")
-            urls = []
-        entry = {
-            "name": name,
-            "website": website,
-            "license_urls": urls,
-            "pricing_metric": "unknown",
-            "logo": "unknown",
-            "all_media": "unknown",
-            "qualifies": "unknown",
-            "summary": "",
-            "evidence": [],
-            "verified": {"date": dt.date.today().isoformat(), "method": "added, not reviewed"},
-        }
-        foundries.append(entry)
-        added += 1
-        print(f"added {name}: {len(urls)} license page(s) found")
-        for u in urls:
-            print(f"    {u}")
-        if args.scrape:
-            scrape.scrape_one(entry)
-            auto = entry["auto"]
-            if "suggested_qualifies" in auto:
-                print(f"    suggestion: {auto['suggested_qualifies']} (metric={auto['suggested_metric']}, logo={auto['suggested_logo']})")
-    if added:
-        db.save(foundries)
-    return 0
+def cmd_find(args) -> int:
+    return pipeline.run_phase("find", deep=args.deep)
 
 
-def cmd_report(args) -> int:
-    print(f"wrote {report.build()}")
-    return 0
-
-
-def cmd_update(args) -> int:
-    return pipeline.update(steps=args.steps.split(",") if args.steps else None, limit=args.limit, deep=args.deep)
-
-
-def cmd_discover(args) -> int:
-    return pipeline.run_phase("discover", deep=args.deep)
+def cmd_screen(args) -> int:
+    return pipeline.run_phase("screen")
 
 
 def cmd_review(args) -> int:
@@ -76,79 +25,55 @@ def cmd_review(args) -> int:
     )
 
 
-def cmd_info(args) -> int:
-    return info.collect(only=args.only, force=args.force)
+def cmd_list(args) -> int:
+    print(report.table(set(args.qualifies.split(",")) if args.qualifies else None))
+    return 0
 
 
-def cmd_crawl(args) -> int:
-    if args.stage == "sources":
-        return crawl.sources(limit=args.limit)
-    if args.stage == "screen":
-        return crawl.screen(limit=args.limit, workers=args.workers)
-    if args.stage == "peers":
-        return crawl.peers()
-    if args.stage == "roundups":
-        return crawl.roundups(args.file)
-    if args.stage == "seed":
-        return crawl.seed(args.file)
-    if args.stage == "promote":
-        return crawl.promote()
-    for stage in (lambda: crawl.sources(limit=args.limit), lambda: crawl.screen(limit=args.limit, workers=args.workers), crawl.promote, review.review):
-        stage()
+def cmd_report(args) -> int:
+    print(f"wrote {report.build()}")
+    return 0
+
+
+def cmd_add(args) -> int:
+    added = crawl.add_seed_sites(args.websites)
+    print("Added. Run `screen` and then `review` to judge it." if added else "Already known.")
     return 0
 
 
 def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(prog="fontfind", description="Track company-size font licenses.")
-    sub = p.add_subparsers(dest="command", required=True)
+    p = argparse.ArgumentParser(
+        prog="fontfind",
+        description="Find type foundries that license by company size. With no command it runs find, screen and review.",
+    )
+    p.set_defaults(func=cmd_all)
+    sub = p.add_subparsers(dest="command", title="commands")
 
-    s = sub.add_parser("list", help="print the database as a table")
+    s = sub.add_parser("find", help="look for new foundry websites")
+    s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
+    s.set_defaults(func=cmd_find)
+
+    s = sub.add_parser("screen", help="read their license pages and keep the ones that look like company-size pricing")
+    s.set_defaults(func=cmd_screen)
+
+    s = sub.add_parser("review", help="Claude judges the candidates, adds images, rebuilds the report")
+    s.add_argument("only", nargs="*", help="foundry names (default: all waiting)")
+    s.add_argument("--force", action="store_true", help="also re-review automatic reviews")
+    s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
+    s.add_argument("--dry-run", action="store_true", help="print results without saving")
+    s.add_argument("--workers", type=int, default=3, help="foundries reviewed at the same time")
+    s.set_defaults(func=cmd_review)
+
+    s = sub.add_parser("list", help="print the list as a table")
     s.add_argument("--qualifies", help="comma list, e.g. yes,likely")
     s.set_defaults(func=cmd_list)
 
-    s = sub.add_parser("scrape", help="fetch license pages and classify them")
-    s.add_argument("only", nargs="*", help="foundry names (default: all)")
-    s.add_argument("--offline", action="store_true", help="re-classify saved snapshots without fetching")
-    s.set_defaults(func=cmd_scrape)
-
-    s = sub.add_parser("add", help="add foundries by website and find their license pages")
+    s = sub.add_parser("add", help="add foundry websites by hand")
     s.add_argument("websites", nargs="+")
-    s.add_argument("--name", help="display name (only with a single website)")
-    s.add_argument("--scrape", action="store_true", help="also classify the found pages")
     s.set_defaults(func=cmd_add)
 
-    s = sub.add_parser("report", help="write docs/index.html")
+    s = sub.add_parser("report", help="rebuild docs/index.html only")
     s.set_defaults(func=cmd_report)
-
-    s = sub.add_parser("discover", help="find new foundries and pick candidates")
-    s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
-    s.set_defaults(func=cmd_discover)
-
-    s = sub.add_parser("update", help="discover, then review (does everything)")
-    s.add_argument("--steps", help=f"comma list from: {','.join(pipeline.STEPS)}")
-    s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
-    s.add_argument("--deep", action="store_true", help="also crawl the full Fonts In Use directory (hours)")
-    s.set_defaults(func=cmd_update)
-
-    s = sub.add_parser("review", help="review candidates with Claude, collect info, rebuild the report")
-    s.add_argument("only", nargs="*", help="foundry names (default: all waiting for review)")
-    s.add_argument("--force", action="store_true", help="also re-review entries that were auto-reviewed")
-    s.add_argument("--limit", type=int, default=25, help="review at most this many foundries per run")
-    s.add_argument("--dry-run", action="store_true", help="print results without saving")
-    s.add_argument("--workers", type=int, default=4, help="foundries reviewed at the same time")
-    s.set_defaults(func=cmd_review)
-
-    s = sub.add_parser("info", help="fetch preview image, description and typeface names for each foundry")
-    s.add_argument("only", nargs="*", help="foundry names (default: all without info)")
-    s.add_argument("--force", action="store_true", help="refetch even if info exists")
-    s.set_defaults(func=cmd_info)
-
-    s = sub.add_parser("crawl", help="build the full foundry directory and screen it automatically")
-    s.add_argument("stage", nargs="?", default="all", choices=["all", "sources", "screen", "promote", "seed", "peers", "roundups"])
-    s.add_argument("file", nargs="?", help="seed/roundups: text file with one website (seed) or article URL (roundups) per line")
-    s.add_argument("--limit", type=int, help="process at most this many foundries per stage")
-    s.add_argument("--workers", type=int, default=8, help="parallel sites while screening")
-    s.set_defaults(func=cmd_crawl)
 
     args = p.parse_args(argv)
     return args.func(args)
