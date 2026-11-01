@@ -45,12 +45,13 @@ FALLBACK_MAX = 3
 def fallback(website: str) -> list[str]:
     """Common license addresses that answer with a real page, for sites whose homepage links none."""
     base = website.rstrip("/")
-    found = []
+    found, failures = [], 0
     for path in COMMON_PATHS:
         try:
             resp = fetch.get(base + path)
         except fetch.FetchError as e:
-            if "429" in str(e):
+            failures += 1
+            if "429" in str(e) or failures >= 2:  # rate limited, or the site is not answering
                 break
             continue
         if len(resp.text) > 500:

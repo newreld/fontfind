@@ -308,8 +308,8 @@ def screen(limit: int | None = None, workers: int = 8) -> int:
         host, site = item
         try:
             return host, {"website": site, **screen_site(site)}
-        except fetch.FetchError as e:
-            return host, {"website": site, "errors": [str(e)], "checked": dt.date.today().isoformat()}
+        except Exception as e:  # one broken site must not stop the run
+            return host, {"website": site, "errors": [str(e)[:200]], "checked": dt.date.today().isoformat()}
 
     progress.total(len(sites))
     pool = ThreadPoolExecutor(max_workers=workers)

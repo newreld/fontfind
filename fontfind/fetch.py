@@ -18,10 +18,20 @@ _robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
 _last_request: dict[str, float] = {}
 _lock = threading.Lock()
 MAX_CRAWL_DELAY = 15.0
+TOTAL_SECONDS = 60
+MAX_BYTES = 15_000_000
 
 
 class FetchError(Exception):
     pass
+
+
+def _session() -> requests.Session:
+    """A fresh session that gives up on endless redirect chains."""
+    s = requests.Session()
+    s.max_redirects = 5
+    s.headers["User-Agent"] = USER_AGENT
+    return s
 
 
 def _allowed(url: str) -> bool:
@@ -30,7 +40,7 @@ def _allowed(url: str) -> bool:
     if base not in _robots:
         rp = urllib.robotparser.RobotFileParser()
         try:
-            resp = requests.get(base + "/robots.txt", headers={"User-Agent": USER_AGENT}, timeout=15)
+            resp = _session().get(base + "/robots.txt", timeout=(8, 15))
             rp.parse(resp.text.splitlines() if resp.ok else [])
             _robots[base] = rp
         except requests.RequestException:
@@ -61,7 +71,13 @@ def get(url: str) -> requests.Response:
         raise FetchError(f"robots.txt disallows {url}")
     _throttle(urlparse(url).netloc, _delay_for(url))
     try:
-        resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+        resp = _session().get(url, timeout=(8, 30), stream=True)
+        deadline, body = time.time() + TOTAL_SECONDS, bytearray()
+        for chunk in resp.iter_content(65536):  # a slow-drip server must not stall the run
+            body += chunk
+            if time.time() > deadline or len(body) > MAX_BYTES:
+                raise FetchError(f"{url}: too slow or too large")
+        resp._content = bytes(body)
     except requests.RequestException as e:
         raise FetchError(f"{url}: {e}") from e
     if not resp.ok:
@@ -82,8 +98,11 @@ def pdf_to_text(data: bytes) -> str:
         from pypdf import PdfReader
     except ImportError as e:
         raise FetchError("install pypdf to read PDF license files") from e
-    reader = PdfReader(io.BytesIO(data))
-    return "\n".join(page.extract_text() or "" for page in reader.pages)
+    try:
+        reader = PdfReader(io.BytesIO(data))
+        return "\n".join(page.extract_text() or "" for page in reader.pages)
+    except Exception as e:  # encrypted, damaged or unsupported PDF
+        raise FetchError(f"could not read PDF: {e}") from e
 
 
 def fetch_text(url: str) -> str:

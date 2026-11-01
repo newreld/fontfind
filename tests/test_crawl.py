@@ -37,3 +37,10 @@ class PeerLinkTests(unittest.TestCase):
         html = ('<a href="https://other-foundry.com/x">o</a><a href="https://instagram.com/a">i</a>'
                 '<a href="/licensing">l</a><a href="https://www.me.com/y">me</a>')
         self.assertEqual(crawl.external_links(html, "https://me.com"), {"other-foundry.com": "https://other-foundry.com"})
+
+
+class BrokenPdfTests(unittest.TestCase):
+    def test_unreadable_pdf_is_a_fetch_error_not_a_crash(self):
+        from fontfind import fetch
+        with self.assertRaises(fetch.FetchError):
+            fetch.pdf_to_text(b"%PDF-1.7 not really a pdf")
