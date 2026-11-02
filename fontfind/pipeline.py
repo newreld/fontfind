@@ -82,7 +82,7 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, 
 
 
 def run_phase(phase: str, limit: int = 25, deep: bool = False, **review_opts) -> int:
-    steps = ["sources"] if (phase == "find" and deep) else PHASES[phase]
+    steps = ["sources"] if (phase == "find" and deep) else ["lookup"] if (phase == "find" and review_opts.pop("names", False)) else PHASES[phase]
     if review_opts.get("dry_run"):
         steps = [s for s in steps if s == "judge"]
     return update(steps, limit=limit, deep=deep, title=phase.capitalize(), review_opts=review_opts)
@@ -91,6 +91,7 @@ def run_phase(phase: str, limit: int = 25, deep: bool = False, **review_opts) ->
 def _run(steps: list[str], limit: int, src: dict, st: "status.Status", review_opts: dict) -> None:
     actions = {
         "sources": lambda: crawl.sources(),
+        "lookup": lambda: crawl.lookup_names(limit=limit),
         "roundups": lambda: (crawl.add_seed_sites(src.get("seeds") or []), crawl.add_roundup_pages(src.get("roundups") or [])),
         "searches": lambda: crawl.add_searched_sites(src.get("searches") or []),
         "peers": lambda: crawl.peers(),

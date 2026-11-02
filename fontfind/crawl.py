@@ -221,6 +221,61 @@ def add_roundup_pages(pages: list[str]) -> int:
     return added
 
 
+NAME_PROMPT = """Use web search to find the OWN official website of each of these type foundries or font designers.
+{names}
+Reply with ONLY a JSON object mapping each name exactly as given to its official website URL, or to null when you cannot find one with confidence. Exclude marketplaces (MyFonts, Fonts.com, Adobe, Google Fonts, Creative Market), articles, Fonts In Use and social media pages. Never guess a URL."""
+NAME_BATCH = 6
+
+
+def lookup_todo() -> list[str]:
+    directory = _read(DIRECTORY_PATH)
+    return [u for u, d in directory.items() if d.get("website") == "" and not d.get("searched")]
+
+
+def lookup_names(limit: int | None = None, workers: int = 3) -> int:
+    """Ask Claude (with web search) for the website of listed foundries that have none; resumable."""
+    import json as _json
+    from fontfind import review
+
+    directory = _read(DIRECTORY_PATH)
+    todo = [u for u in lookup_todo()][:limit]
+    batches = [todo[i:i + NAME_BATCH] for i in range(0, len(todo), NAME_BATCH)]
+    print(f"searching the web for {len(todo)} foundries without a website", flush=True)
+    progress.total(len(batches))
+
+    def work(batch):
+        names = "\n".join(f"- {directory[u]['name']}" for u in batch)
+        reply = review._complete(NAME_PROMPT.format(names=names), tools="WebSearch")
+        return batch, _json.loads(re.search(r"\{.*\}", reply, re.S).group(0))
+
+    found = 0
+    pool = ThreadPoolExecutor(max_workers=workers)
+    try:
+        futures = [pool.submit(work, b) for b in batches]
+        for i, fut in enumerate(as_completed(futures), 1):
+            try:
+                batch, answer = fut.result()
+            except Exception as e:  # unanswered batches stay in the queue for the next run
+                print(f"  search failed: {str(e)[:100]}", flush=True)
+                progress.tick("failed")
+                continue
+            for u in batch:
+                d = directory[u]
+                d["searched"] = dt.date.today().isoformat()
+                site = str(answer.get(d["name"]) or "").strip()
+                if site.startswith("http") and not IGNORED_HOSTS.search(host_of(site)) and "fontsinuse.com" not in site:
+                    d["website"], d["source"] = site, "fontsinuse.com + web search"
+                    found += 1
+            progress.tick(f"{found} websites found")
+            if i % SAVE_EVERY == 0:
+                _write(DIRECTORY_PATH, directory)
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
+        _write(DIRECTORY_PATH, directory)
+    print(f"found {found} websites", flush=True)
+    return found
+
+
 def roundups(path: str) -> int:
     add_roundup_pages([l.strip() for l in open(path, encoding="utf-8") if l.strip().startswith("http")])
     return 0

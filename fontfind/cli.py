@@ -12,7 +12,7 @@ def cmd_all(args) -> int:
 
 
 def cmd_find(args) -> int:
-    return pipeline.run_phase("find", deep=args.deep)
+    return pipeline.run_phase("find", deep=args.deep, names=args.names, limit=args.limit)
 
 
 def cmd_screen(args) -> int:
@@ -51,6 +51,8 @@ def main(argv: list[str] | None = None) -> int:
 
     s = sub.add_parser("find", help="look for new foundry websites")
     s.add_argument("--deep", action="store_true", help="instead, crawl the whole Fonts In Use directory for websites (hours, resumable)")
+    s.add_argument("--names", action="store_true", help="instead, search the web for the websites of listed foundries that have none (uses Claude)")
+    s.add_argument("--limit", type=int, default=None, help="with --names: only this many foundries (default: all)")
     s.set_defaults(func=cmd_find)
 
     s = sub.add_parser("screen", help="read their license pages and keep the ones that look like company-size pricing")

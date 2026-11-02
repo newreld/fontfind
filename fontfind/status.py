@@ -9,7 +9,7 @@ import time
 from fontfind import crawl, db, review
 
 LABELS = {
-    "sources": "Read Fonts In Use", "roundups": "Read roundup articles", "searches": "Search the web with Claude",
+    "sources": "Read Fonts In Use", "lookup": "Find websites by name", "roundups": "Read roundup articles", "searches": "Search the web with Claude",
     "peers": "Follow links from matches", "screen": "Screen license pages", "promote": "Pick candidates",
     "judge": "Review with Claude", "info": "Images and typefaces", "report": "Build report",
 }
