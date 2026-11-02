@@ -1,0 +1,36 @@
+# Where new foundries come from. `python3 -m fontfind update` reads this file.
+# Add lines here to widen the search; nothing else needs editing.
+
+# Articles and directories that link to many foundries. Every outbound link is screened.
+roundups:
+  - https://typewolf.com/blog/independent-type-foundries
+  - https://blakewatson.com/links/2026-02-07-the-punch-a-curated-directory-of-the-webs-finest-indie-type-foundries/
+  - https://www.sessions.edu/notes-on-design/5-contemporary-and-independent-type-foundries-to-know/
+  - https://www.sessions.edu/notes-on-design/5-type-foundries-worth-watching/
+  - https://vanschneider.com/blog/best-type-foundries-to-find-typefaces/
+  - https://webdesignerdepot.com/30-of-the-best-font-foundries
+  - https://archive.davidairey.com/creative-resources/type-foundries/
+  - https://peopleofprint.com/best-of/10-type-foundries-to-follow-on-instagram/
+  - https://rgd.ca/articles/six-foundries-refining-our-outlook-on-typography
+  - https://www.slanted.de/news/link-list/
+  - https://carterandcone.com/foundries/
+  - https://fontalternatives.com/foundries/
+  - https://the-brandidentity.com/resource/from-scandinavia-to-switzerland-6-contemporary-classic-and-experimental-type-foundries-from-europe
+  - https://matthiasott.com/notes/independent-type-foundry-advent-calendar-2022-12
+  - https://www.typografie.info/3/topic/41857-atlas-of-type-2025fw-in-review-new-foundries-and-services/
+  - https://www.slanted.de/typoteka/
+  - https://creativeboom.com/resources/20-most-popular-independent-foundries-with-designers/
+  - https://www.creativeboom.com/resources/18-highly-respected-type-foundries-that-remain-fiercely-independent/
+
+# Web searches Claude runs to find foundries that price by company size.
+searches:
+  - font license priced by number of employees one license covers web logo apps
+  - type foundry EULA "Business Size" employees contractors logos websites apps
+  - font licence tiers by company size all uses included independent foundry
+  - typeface license "number of employees" self-hosted webfonts logos social media
+  - new type foundry launch licensing by company size
+  - Schriftlizenz Anzahl der Mitarbeiter Unternehmensgröße Foundry
+  - licence typographique nombre d'employés taille de l'entreprise fonderie
+
+# Foundry websites you already know about, one per line.
+seeds: []
