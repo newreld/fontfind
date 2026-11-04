@@ -16,7 +16,7 @@ Three commands, each also runnable alone. Ctrl-C stops any of them safely; run i
 
 | Command | What it does |
 |---|---|
-| `find` | Looks for new foundry websites: the roundup articles and Claude web searches in `data/sources.yaml`, plus links from foundries already on the list. `find --deep` is a separate slow mode: it crawls all of Fonts In Use for websites (hours, resumable). |
+| `find` | Looks for new foundry websites: the roundup articles and Claude web searches in `data/sources.yaml`, plus links from foundries already on the list. `find --deep` is a separate slow mode: it crawls all of Fonts In Use for websites (hours, resumable). `find --names` web-searches the websites of listed foundries that have none (uses Claude; about 5% get one). |
 | `screen` | Reads each new site's license pages and keeps the ones whose text points to company-size pricing: these become candidates. |
 | `review` | Claude judges each candidate (up to 25 per run, `--limit N`), adds an image and typefaces, and rebuilds the report. `review "Name"` re-judges one foundry; `--dry-run` prints without saving. |
 

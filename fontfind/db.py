@@ -9,7 +9,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "data" / "foundries.yaml"
-SNAPSHOT_DIR = ROOT / "data" / "snapshots"
 
 QUALIFIES_ORDER = ["yes", "likely", "partial", "unknown", "no"]
 
@@ -20,7 +19,7 @@ def slugify(name: str) -> str:
 
 def load(path: Path = DB_PATH) -> list[dict]:
     with open(path, encoding="utf-8") as f:
-        data = yaml.safe_load(f) or {}
+        data = yaml.load(f, Loader=getattr(yaml, "CSafeLoader", yaml.SafeLoader)) or {}
     foundries = data.get("foundries", [])
     # YAML 1.1 reads a bare yes/no as a boolean; hand edits often leave them unquoted.
     for f in foundries:

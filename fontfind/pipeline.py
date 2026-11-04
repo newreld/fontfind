@@ -71,7 +71,7 @@ def update(steps: list[str] | None = None, limit: int = 25, deep: bool = False, 
 
     after = _tally()
     if aborted:
-        print("\nStopped. Everything finished so far is saved. Run update again to continue where it left off.")
+        print("\nStopped. Everything finished so far is saved. Run the same command again to continue where it left off.")
     print("\nSummary (before -> after)")
     for q in ("yes", "likely", "partial", "unknown", "no"):
         print(f"  {q:8} {before[q]:3} -> {after[q]:3}")

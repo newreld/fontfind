@@ -1,4 +1,4 @@
-"""Live terminal display for `update`: per-step progress bars, an overall bar and recent activity."""
+"""Live terminal display for the find, screen and review commands: per-step progress bars, an overall bar and recent activity."""
 
 from __future__ import annotations
 
@@ -160,7 +160,7 @@ def terminal_view(status: Status):
 
     recent = Text("\n".join(list(status.log)[-5:]) or " ", style="dim", no_wrap=True, overflow="ellipsis")
     if status.aborted:
-        title, border = "[bold yellow]Stopped[/]  progress is saved, run update again to continue", "yellow"
+        title, border = "[bold yellow]Stopped[/]  progress is saved, run the command again to continue", "yellow"
     elif status.finished:
         title, border = f"[bold green]{status.title} finished[/]", "green"
     else:

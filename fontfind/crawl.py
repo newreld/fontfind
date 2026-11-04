@@ -89,11 +89,6 @@ def sources(limit: int | None = None) -> int:
     return 0
 
 
-def seed(path: str) -> int:
-    add_seed_sites(open(path, encoding="utf-8").read().splitlines())
-    return 0
-
-
 def add_seed_sites(lines: list[str]) -> int:
     """Add foundries from lines of 'https://site' or 'Name, https://site'."""
     directory = _read(DIRECTORY_PATH)
@@ -274,11 +269,6 @@ def lookup_names(limit: int | None = None, workers: int = 3) -> int:
         _write(DIRECTORY_PATH, directory)
     print(f"found {found} websites", flush=True)
     return found
-
-
-def roundups(path: str) -> int:
-    add_roundup_pages([l.strip() for l in open(path, encoding="utf-8") if l.strip().startswith("http")])
-    return 0
 
 
 SEARCH_PROMPT = """Use web search to find independent type foundries or font studios that sell font licenses priced by company size or employee count.

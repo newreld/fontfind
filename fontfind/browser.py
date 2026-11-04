@@ -48,24 +48,6 @@ def _launch(p):
         raise BrowserUnavailable(str(e)) from e
 
 
-def render_text(url: str) -> str:
-    """Page text after JavaScript has run."""
-    from playwright.sync_api import sync_playwright
-
-    if not fetch._allowed(url):
-        raise fetch.FetchError(f"robots.txt disallows {url}")
-    with sync_playwright() as p:
-        browser = _launch(p)
-        try:
-            page = browser.new_page(user_agent=fetch.USER_AGENT)
-            _open(page, url)
-            return fetch.html_to_text(page.content())
-        except Exception as e:
-            raise fetch.FetchError(f"{url}: {e}") from e
-        finally:
-            browser.close()
-
-
 def product_pages(html: str, base_url: str, limit: int = 2) -> list[str]:
     from bs4 import BeautifulSoup
 

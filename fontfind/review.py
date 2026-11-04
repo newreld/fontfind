@@ -11,7 +11,6 @@ import json
 import os
 import re
 import subprocess
-import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
@@ -235,15 +234,6 @@ def mark_unreadable(foundry: dict, errors: list[str]) -> str:
     foundry["verified"] = {"date": dt.date.today().isoformat(), "method": f"{FAILED} (license pages unreadable)"}
     foundry["todo"] = f"License pages could not be read: {reason}. Retried automatically after {RETRY_AFTER_DAYS} days, or run `review --force`."
     return reason
-
-
-def review_one(foundry: dict) -> bool:
-    result = assess(foundry)
-    if isinstance(result, list):
-        print(f"    {mark_unreadable(foundry, result)}")
-        return False
-    print(f"    -> {apply(foundry, *result)}")
-    return True
 
 
 def needs_review(f: dict) -> bool:
