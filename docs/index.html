@@ -24,7 +24,7 @@ h1 { margin:0; font-size:clamp(30px, 4.6vw, 46px); letter-spacing:-.01em; line-h
 .bar button[aria-pressed="true"]::before { background:var(--on-strong); }
 .bar input { margin-left:auto; min-width:200px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:20px; }
-.card { height:100%; border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; background:var(--card); display:flex; flex-direction:column; text-align:left; padding:0; color:inherit; font:inherit; }
+.card { text-decoration:none; height:100%; border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; background:var(--card); display:flex; flex-direction:column; text-align:left; padding:0; color:inherit; font:inherit; }
 .card:hover, .card:focus-visible { border-color:var(--accent); outline:none; box-shadow:0 0 0 1px var(--accent); }
 .cover { aspect-ratio:16/10; background:var(--tile); display:grid; place-items:center; overflow:hidden; position:relative; }
 .cover img { width:100%; height:100%; object-fit:cover; display:block; }
@@ -99,7 +99,7 @@ function cover(d, big) {
 }
 function card(d, i) {
   const sub = [d.country, d.founded].filter(Boolean).join(" · ");
-  return `<button class="card" data-i="${i}">
+  return `<a class="card" data-i="${i}"${d.website ? ` href="${esc(d.website)}" target="_blank" rel="noopener"` : ""}>
     ${cover(d)}
     <div class="body">
       <div class="title"><b>${esc(d.name)}</b><span class="sub">${esc(sub)}</span></div>
@@ -109,7 +109,7 @@ function card(d, i) {
         <div class="price">${d.price ? esc(d.price) : '<small>Price on request</small>'}</div>
         <div class="marks">${marks(d)}</div>
       </div>
-    </div></button>`;
+    </div></a>`;
 }
 function detail(d) {
   const sub = [d.country, d.founded && "since " + d.founded].filter(Boolean).join(" · ");
@@ -141,7 +141,9 @@ function renderGrid() {
   const list = DATA.map((d, i) => [d, i]).filter(([d]) => active.has(d.status) &&
     (!needle || [d.name, d.country, d.typefaces.join(" ")].join(" ").toLowerCase().includes(needle)));
   document.getElementById("grid").innerHTML = list.map(([d, i]) => card(d, i)).join("");
-  document.querySelectorAll(".card").forEach(c => c.onclick = () => {
+  document.querySelectorAll(".card").forEach(c => c.onclick = e => {
+    if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey) return;  // middle or modified click follows the website link
+    e.preventDefault();
     const dlg = document.getElementById("dlg");
     dlg.innerHTML = detail(DATA[c.dataset.i]);
     dlg.showModal();
