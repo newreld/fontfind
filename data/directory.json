@@ -431,21 +431,25 @@
  },
  "https://fontsinuse.com/foundry/1066/atelier-laia": {
   "name": "Atelier laia",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1067/pixilate": {
   "name": "Pixilate",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.pixilate.com"
  },
  "https://fontsinuse.com/foundry/1068/furiosum": {
   "name": "Furiosum",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1069/lascaris": {
   "name": "Lascaris",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -456,16 +460,19 @@
  },
  "https://fontsinuse.com/foundry/1070/james-white": {
   "name": "James White",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1071/hoboart": {
   "name": "HoboArt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1072/b2302": {
   "name": "B2302",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -476,21 +483,25 @@
  },
  "https://fontsinuse.com/foundry/1074/exclamachine": {
   "name": "!Exclamachine",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1075/stawix": {
   "name": "Stawix",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1076/calderon-estudio-type-foundry": {
   "name": "Calderon Estudio Type Foundry",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.estudiocalderon.com"
  },
  "https://fontsinuse.com/foundry/1077/the-colour-grey": {
   "name": "The Colour Grey",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -511,51 +522,61 @@
  },
  "https://fontsinuse.com/foundry/1080/ivan-kostynyk": {
   "name": "Ivan Kostynyk",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1081/brian-magner": {
   "name": "Brian Magner",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1082/david-mccreight": {
   "name": "David McCreight",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1083/fabio-godoy": {
   "name": "Fabio Godoy",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1084/tipos-pereira": {
   "name": "Tipos Pereira",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1085/sander-s-conspiracy": {
   "name": "Sander's Conspiracy",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1086/10four": {
   "name": "10four",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1087/belldorado": {
   "name": "Belldorado",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1088/zeptonn": {
   "name": "Zeptonn",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1089/joao-henrique-lopes": {
   "name": "João Henrique Lopes",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -566,31 +587,37 @@
  },
  "https://fontsinuse.com/foundry/1090/bauer": {
   "name": "Bauer",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://bauertypes.com"
  },
  "https://fontsinuse.com/foundry/1091/typerror": {
   "name": "Typerror",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1092/florence": {
   "name": "Florence",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1093/myles-katherine": {
   "name": "Myles Katherine",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1094/ania-szerszen": {
   "name": "Ania Szerszen",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1095/akaki-razmadze": {
   "name": "Akaki Razmadze",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -601,16 +628,19 @@
  },
  "https://fontsinuse.com/foundry/1097/macrotipo": {
   "name": "Macrotipo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1098/moon8ype": {
   "name": "moon8ype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1099/luxus": {
   "name": "Luxus",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -626,6 +656,7 @@
  },
  "https://fontsinuse.com/foundry/1100/siren-fonts": {
   "name": "Siren Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -636,41 +667,49 @@
  },
  "https://fontsinuse.com/foundry/1102/fermin-guerrero": {
   "name": "Fermin Guerrero",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://fuertetype.com"
  },
  "https://fontsinuse.com/foundry/1103/estudiocrop": {
   "name": "estudioCrop",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1104/malwin-bela-huerkey": {
   "name": "Malwin Béla Hürkey",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1105/nocommentype": {
   "name": "NoCommenType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1106/sergey-oleynik": {
   "name": "Sergey Oleynik",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1107/matthew-eagles": {
   "name": "Matthew Eagles",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1108/val-kalinic": {
   "name": "Val Kalinic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1109/klingspor": {
   "name": "Klingspor",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -681,51 +720,61 @@
  },
  "https://fontsinuse.com/foundry/1110/lomax-design": {
   "name": "Lomax Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1111/m-b-creative": {
   "name": "M-B Creative",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1112/md-type": {
   "name": "MD-Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1113/marco-mueller": {
   "name": "Marco Müller",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1114/alexis-luengas": {
   "name": "Alexis Luengas",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1115/26": {
   "name": "26+",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1116/dp-fonts": {
   "name": "DP Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1117/jab-m": {
   "name": "JAB'M",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1118/cyberestudio": {
   "name": "CyberEstudio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1119/johannes-krenner": {
   "name": "Johannes Krenner",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -736,11 +785,13 @@
  },
  "https://fontsinuse.com/foundry/1120/dmitri-moruz": {
   "name": "Dmitri Moruz",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1121/blackdreamist": {
   "name": "Blackdreamist",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -756,83 +807,99 @@
  },
  "https://fontsinuse.com/foundry/1124/maarten-nettelbladt": {
   "name": "Mårten Nettelbladt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1125/nonbook": {
   "name": "NONBook",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1126/mogtahid": {
   "name": "Mogtahid",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1127/resident": {
   "name": "Resident",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1128/fascination-workshop": {
   "name": "Fascination Workshop",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1129/gulce-baycik": {
   "name": "Gulce Baycik",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/113/urw": {
   "name": "URW",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.urwtype.com"
  },
  "https://fontsinuse.com/foundry/1130/myfonts": {
   "name": "MyFonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1131/letrizmo": {
   "name": "Letrizmo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1132/nemek": {
   "name": "Nemek",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1133/khalid-jassim": {
   "name": "Khalid Jassim",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1134/looseleaf-fonts": {
   "name": "Looseleaf Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1135/kenneth-woodruff": {
   "name": "Kenneth Woodruff",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1136/nice-designz": {
   "name": "Nice Designz",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1137/typecaste": {
   "name": "Typecaste",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1138/braulio-amado": {
   "name": "Bráulio Amado",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.braulioamado.net"
  },
  "https://fontsinuse.com/foundry/1139/font-boutique": {
   "name": "Font Boutique",
@@ -846,21 +913,25 @@
  },
  "https://fontsinuse.com/foundry/1140/william-johnston": {
   "name": "William Johnston",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1141/mariess": {
   "name": "Mariess",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1142/mina-arko": {
   "name": "Mina Arko",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1143/this-is-not-typography": {
   "name": "This is Not Typography",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -871,11 +942,13 @@
  },
  "https://fontsinuse.com/foundry/1145/ecma": {
   "name": "ECMA",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1146/the-organic-type": {
   "name": "The Organic Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -886,11 +959,13 @@
  },
  "https://fontsinuse.com/foundry/1148/schriftgestaltung": {
   "name": "Schriftgestaltung",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1149/lan-huang": {
   "name": "Lan Huang",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -901,41 +976,49 @@
  },
  "https://fontsinuse.com/foundry/1150/v-design": {
   "name": "(v) design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1151/mark-ihrig": {
   "name": "Mark Ihrig",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1152/nebiolo": {
   "name": "Nebiolo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1153/jps-graphic-designs": {
   "name": "JPS Graphic Designs",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1154/tim-donaldson": {
   "name": "Tim Donaldson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1155/tk-type": {
   "name": "TK Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1156/pvisual": {
   "name": "Pvisual",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1157/james-j-connell": {
   "name": "James J. Connell",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -946,6 +1029,7 @@
  },
  "https://fontsinuse.com/foundry/1159/dayflash": {
   "name": "dayflash",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -956,51 +1040,61 @@
  },
  "https://fontsinuse.com/foundry/1160/echt-johan-manschot": {
   "name": "ECHT! Johan Manschot",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1161/felix-beckheuer": {
   "name": "Felix Beckheuer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1162/formation-type-foundry": {
   "name": "Formation Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1163/andrew-foster": {
   "name": "Andrew Foster",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1164/mmc-typengine-1": {
   "name": "MMC TypEngine",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1165/dyslexica": {
   "name": "Dyslexica",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1166/cas-van-de-goor": {
   "name": "Cas van de Goor",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1167/pictifont": {
   "name": "PictiFont",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1168/undt": {
   "name": "Undt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1169/greyletter": {
   "name": "Greyletter",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1011,6 +1105,7 @@
  },
  "https://fontsinuse.com/foundry/1170/diego-aravena": {
   "name": "Diego Aravena",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1021,36 +1116,43 @@
  },
  "https://fontsinuse.com/foundry/1172/brian-crick": {
   "name": "Brian Crick",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1173/lubudu": {
   "name": "ŁUBUDU",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1174/sketchbook-b": {
   "name": "Sketchbook B",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1175/pr-fonts": {
   "name": "PR Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1176/christopher-stahl": {
   "name": "Christopher Stahl",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1178/deberny-peignot": {
   "name": "Deberny & Peignot",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1179/freshmeat": {
   "name": "Freshmeat",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1061,36 +1163,43 @@
  },
  "https://fontsinuse.com/foundry/1180/ceyhun-birinci": {
   "name": "Ceyhun Birinci",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1181/letra-um": {
   "name": "letra Um",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1182/ivan-akinin": {
   "name": "Ivan Akinin",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1183/alphabets-inc": {
   "name": "Alphabets, Inc.",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1184/absoluut-designers": {
   "name": "Absoluut Designers",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1185/yamayama": {
   "name": "yamayama",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1186/jovan-ivanov": {
   "name": "Jovan Ivanov",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1106,6 +1215,7 @@
  },
  "https://fontsinuse.com/foundry/1189/domenico-ruffo": {
   "name": "Domenico Ruffo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1116,41 +1226,49 @@
  },
  "https://fontsinuse.com/foundry/1190/srdjan-kuzmanovic": {
   "name": "Srdjan Kuzmanovic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1191/public-type": {
   "name": "Public Type",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://publictype.fontdue.com"
  },
  "https://fontsinuse.com/foundry/1192/writ-large": {
   "name": "Writ Large",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1193/rockbee": {
   "name": "RockBee",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1194/river-city": {
   "name": "River City",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1195/rightleft-graphics": {
   "name": "RightLeft Graphics",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1196/ray-meadows": {
   "name": "Ray Meadows",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1197/the-tree-is-green": {
   "name": "The Tree is Green",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1161,6 +1279,7 @@
  },
  "https://fontsinuse.com/foundry/1199/joshua-mayfield": {
   "name": "Joshua Mayfield",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1176,86 +1295,103 @@
  },
  "https://fontsinuse.com/foundry/1200/brian-hall": {
   "name": "Brian Hall",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1201/daniel-fontenele-saracho": {
   "name": "Daniel Fontenele Saracho",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1202/boover-software": {
   "name": "Boover Software",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1203/pompe-hedengren": {
   "name": "Pompe Hedengren",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1204/lizzy-hartley-design": {
   "name": "Lizzy Hartley Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1205/puckertype": {
   "name": "Puckertype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1206/spark-creative": {
   "name": "Spark Creative",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1207/scorpion-tree": {
   "name": "Scorpion Tree",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1208/maury-mccown": {
   "name": "Maury McCown",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1209/paul-dersidan": {
   "name": "Paul Dersidan",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1210/afrojet": {
   "name": "Afrojet",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1211/shyfoundry": {
   "name": "ShyFoundry",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://shyfoundry.com"
  },
  "https://fontsinuse.com/foundry/1212/shtype": {
   "name": "shType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1213/iain-budgen": {
   "name": "Iain Budgen",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1214/aaron-design": {
   "name": "Aaron Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1215/letterhead-studio-ig": {
   "name": "Letterhead Studio-IG",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1216/andreas-soren-johansen": {
   "name": "Andreas Søren Johansen",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1266,11 +1402,13 @@
  },
  "https://fontsinuse.com/foundry/1218/wcm": {
   "name": "WCM",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1219/jason-mark-jones": {
   "name": "Jason Mark Jones",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1281,51 +1419,61 @@
  },
  "https://fontsinuse.com/foundry/1220/will-ryan": {
   "name": "Will Ryan",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1221/skybaeck-design": {
   "name": "Skybäck Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1222/sommerwerk": {
   "name": "Sommerwerk",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1223/remote-inc": {
   "name": "Remote Inc",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1224/tadas": {
   "name": "Tadas",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1225/philippe-souza": {
   "name": "Philippe Souza",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1226/sardiez": {
   "name": "Sardiez",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://sardiez.com"
  },
  "https://fontsinuse.com/foundry/1227/ajeet-mestry": {
   "name": "Ajeet Mestry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1228/cartoon-link": {
   "name": "Cartoon Link",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1229/manxz-fonts": {
   "name": "Manxz Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1336,26 +1484,31 @@
  },
  "https://fontsinuse.com/foundry/1230/subtitude": {
   "name": "Subtitude",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.subtitude.com/"
  },
  "https://fontsinuse.com/foundry/1231/ogentroost-collection": {
   "name": "Ogentroost Collection",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1232/supergrafik": {
   "name": "Supergrafik",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1233/horacio-lorente": {
   "name": "Horacio Lorente",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1234/lepine-studios": {
   "name": "LePine Studios",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1366,61 +1519,73 @@
  },
  "https://fontsinuse.com/foundry/1236/fabio-milito-design": {
   "name": "Fabio Milito Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1237/vladimir-vladimir": {
   "name": "Vladimir & vladimir",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1238/nikolai-sirotkin": {
   "name": "Nikolai Sirotkin",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1239/typewerk": {
   "name": "Typewerk",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/124/letraset": {
   "name": "Letraset",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1240/dnc": {
   "name": "DNC",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1241/pilar-cano": {
   "name": "Pilar Cano",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1242/valery-zaveryaev": {
   "name": "Valery Zaveryaev",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1243/atavistic": {
   "name": "Atavistic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1244/dresser-johnson": {
   "name": "Dresser Johnson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1245/mergenthaler": {
   "name": "Mergenthaler",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1246/istefonts": {
   "name": "IsteFonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1431,11 +1596,13 @@
  },
  "https://fontsinuse.com/foundry/1248/kalaamfonts": {
   "name": "KalaamFonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1249/szardesign": {
   "name": "SzarDesign",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1446,51 +1613,61 @@
  },
  "https://fontsinuse.com/foundry/1250/muykyta": {
   "name": "Muykyta",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1251/lmd": {
   "name": "LMD",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1252/jeff-kahn": {
   "name": "Jeff Kahn",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1253/mary-egorova": {
   "name": "Mary Egorova",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1254/siddharth-dasari": {
   "name": "Siddharth Dasari",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1255/zephyris": {
   "name": "Zephyris",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1256/markus-reiter": {
   "name": "Markus Reiter",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1257/pau-lamua": {
   "name": "Pau Lamuà",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1258/konrad-trzeszczkowski": {
   "name": "Konrad Trzeszczkowski",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1259/rodrigo-ortiz": {
   "name": "Rodrigo Ortiz",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1501,26 +1678,31 @@
  },
  "https://fontsinuse.com/foundry/1260/fontforecast": {
   "name": "Fontforecast",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1261/aleksandar-aleksandrov": {
   "name": "Aleksandar Aleksandrov",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1262/tz-design": {
   "name": "TZ-Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1263/uppercasetype": {
   "name": "uppercaseTYPE",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1264/jasmine-dearden": {
   "name": "Jasmine Dearden",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1531,11 +1713,13 @@
  },
  "https://fontsinuse.com/foundry/1266/alejandro-arrojo": {
   "name": "Alejandro Arrojo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1267/giles-edwards": {
   "name": "Giles Edwards",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1546,6 +1730,7 @@
  },
  "https://fontsinuse.com/foundry/1269/adi-ron": {
   "name": "Adi Ron",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1556,21 +1741,25 @@
  },
  "https://fontsinuse.com/foundry/1270/johannes-hoffmann": {
   "name": "Johannes Hoffmann",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1271/voltage-ltd": {
   "name": "Voltage Ltd",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.voltageltd.com"
  },
  "https://fontsinuse.com/foundry/1272/joachim-frank": {
   "name": "Joachim Frank",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1273/the-good-type": {
   "name": "The Good Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1586,21 +1775,25 @@
  },
  "https://fontsinuse.com/foundry/1276/joshua-conley": {
   "name": "Joshua Conley",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1277/mia-parcell": {
   "name": "Mia Parcell",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1278/anton-novik": {
   "name": "Anton Novik",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1279/viktor-konovalov": {
   "name": "Viktor Konovalov",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1611,31 +1804,37 @@
  },
  "https://fontsinuse.com/foundry/1280/bohfonts": {
   "name": "BohFonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1281/vladzh": {
   "name": "Vladzh",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1282/just-jace": {
   "name": "Just Jace",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1283/zombie-font-group": {
   "name": "Zombie Font Group",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1284/samokat": {
   "name": "samokat",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1285/great-dane-designs": {
   "name": "Great Dane Designs",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1646,6 +1845,7 @@
  },
  "https://fontsinuse.com/foundry/1287/http-www-dafont-com-k-steens-d2744": {
   "name": "K. Steens",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1666,6 +1866,7 @@
  },
  "https://fontsinuse.com/foundry/1290/google": {
   "name": "Google",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1686,6 +1887,7 @@
  },
  "https://fontsinuse.com/foundry/1295/miller-and-richard": {
   "name": "Miller & Richard",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1696,6 +1898,7 @@
  },
  "https://fontsinuse.com/foundry/1297/compugraphic": {
   "name": "Compugraphic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1711,26 +1914,31 @@
  },
  "https://fontsinuse.com/foundry/13/associated-graphics": {
   "name": "Associated Graphics",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/130/photo-lettering": {
   "name": "Photo-Lettering",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1300/trennert": {
   "name": "Trennert",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1302/ludwig-wagner": {
   "name": "Ludwig Wagner",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1303/gerhard-helzel": {
   "name": "Gerhard Helzel",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1751,16 +1959,19 @@
  },
  "https://fontsinuse.com/foundry/1307/enschede": {
   "name": "Enschedé",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1308/ludwig-and-mayer": {
   "name": "Ludwig & Mayer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1309/j-gille": {
   "name": "J. Gillé",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1771,11 +1982,13 @@
  },
  "https://fontsinuse.com/foundry/1310/louis-john-pouchee": {
   "name": "Louis John Pouchée",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1311/wtc": {
   "name": "WTC",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1786,11 +1999,13 @@
  },
  "https://fontsinuse.com/foundry/1313/woellmer": {
   "name": "Woellmer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1314/eduard-haenel": {
   "name": "Eduard Haenel",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1801,21 +2016,25 @@
  },
  "https://fontsinuse.com/foundry/1316/genzsch-heyse": {
   "name": "Genzsch & Heyse",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1317/friedrich-pustet": {
   "name": "Friedrich Pustet",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.verlag-pustet.de"
  },
  "https://fontsinuse.com/foundry/1318/egenolff-luthersche-schriftgiesserei": {
   "name": "Egenolff-Luthersche Schriftgießerei",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1319/fotostar-facsimile-fonts": {
   "name": "FotoStar/Facsimile Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1836,21 +2055,25 @@
  },
  "https://fontsinuse.com/foundry/1322/brendel-typeshop": {
   "name": "Brendel / Typeshop",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1323/keystone": {
   "name": "Keystone",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1324/mackellar-smiths-jordan": {
   "name": "MacKellar, Smiths & Jordan",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1325/hypefortype": {
   "name": "HypeForType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1861,6 +2084,7 @@
  },
  "https://fontsinuse.com/foundry/1327/weisert": {
   "name": "Weisert",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1891,6 +2115,7 @@
  },
  "https://fontsinuse.com/foundry/1332/western-type-foundry": {
   "name": "Western Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1901,8 +2126,9 @@
  },
  "https://fontsinuse.com/foundry/1335/james-t-edmondson": {
   "name": "James T. Edmondson",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://ohnotype.co"
  },
  "https://fontsinuse.com/foundry/1336/apostrof": {
   "name": "Apostrof",
@@ -1911,16 +2137,19 @@
  },
  "https://fontsinuse.com/foundry/1337/fann-street": {
   "name": "Fann Street",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1338/klinkhardt": {
   "name": "Klinkhardt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1339/st-bride-type-foundry": {
   "name": "St Bride Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1936,6 +2165,7 @@
  },
  "https://fontsinuse.com/foundry/1341/schriftguss": {
   "name": "Schriftguss",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1946,6 +2176,7 @@
  },
  "https://fontsinuse.com/foundry/1343/patent-shanks": {
   "name": "Patent/Shanks",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1971,6 +2202,7 @@
  },
  "https://fontsinuse.com/foundry/1349/boston-type-foundry": {
   "name": "Boston Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -1996,11 +2228,13 @@
  },
  "https://fontsinuse.com/foundry/1353/john": {
   "name": "John",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1354/caslon": {
   "name": "Caslon",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2016,6 +2250,7 @@
  },
  "https://fontsinuse.com/foundry/1357/face-photosetting": {
   "name": "Face Photosetting",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2026,6 +2261,7 @@
  },
  "https://fontsinuse.com/foundry/1359/vtf": {
   "name": "VTF",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2036,6 +2272,7 @@
  },
  "https://fontsinuse.com/foundry/1360/corel": {
   "name": "Corel",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2051,21 +2288,25 @@
  },
  "https://fontsinuse.com/foundry/1363/central": {
   "name": "Central",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1364/bruce": {
   "name": "Bruce",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1365/typsettra": {
   "name": "Typsettra",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1366/inland": {
   "name": "Inland",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2086,26 +2327,31 @@
  },
  "https://fontsinuse.com/foundry/137/fontomtype": {
   "name": "FontomType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1370/ag-fur-schriftgiesserei-u-m": {
   "name": "AG für Schriftgießerei u. M.",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1371/dickinson": {
   "name": "Dickinson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1372/alphabet-innovations": {
   "name": "Alphabet Innovations",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1373/lettergraphics": {
   "name": "Lettergraphics",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2121,11 +2367,13 @@
  },
  "https://fontsinuse.com/foundry/1376/schaedler": {
   "name": "Schaedler",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1377/graphic-systems": {
   "name": "Graphic Systems",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2136,6 +2384,7 @@
  },
  "https://fontsinuse.com/foundry/1379/casady-greene": {
   "name": "Casady & Greene",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2201,11 +2450,13 @@
  },
  "https://fontsinuse.com/foundry/1390/headliners": {
   "name": "Headliners",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1391/formatt": {
   "name": "Formatt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2231,6 +2482,7 @@
  },
  "https://fontsinuse.com/foundry/1408/brendler": {
   "name": "Brendler",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2266,6 +2518,7 @@
  },
  "https://fontsinuse.com/foundry/1421/typespectra": {
   "name": "TypeSpectra",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2276,11 +2529,13 @@
  },
  "https://fontsinuse.com/foundry/1423/ftf": {
   "name": "FTF",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1424/gans": {
   "name": "Gans",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2296,11 +2551,13 @@
  },
  "https://fontsinuse.com/foundry/1427/vigilante-typeface-corporation": {
   "name": "Vigilante Typeface Corporation",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1428/johannes-wagner": {
   "name": "Johannes Wagner",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2321,11 +2578,13 @@
  },
  "https://fontsinuse.com/foundry/1431/flinsch": {
   "name": "Flinsch",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1432/type-revivals": {
   "name": "Type Revivals",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2351,11 +2610,13 @@
  },
  "https://fontsinuse.com/foundry/1437/graphic-systems-rapitype": {
   "name": "Graphic Systems (Rapitype)",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1438/norddeutsche-schriftgiesserei": {
   "name": "Norddeutsche Schriftgießerei",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2376,16 +2637,19 @@
  },
  "https://fontsinuse.com/foundry/1441/lsc": {
   "name": "LSC",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1442/nesbitt": {
   "name": "Nesbitt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1443/wells-and-webb": {
   "name": "Wells & Webb",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2396,11 +2660,13 @@
  },
  "https://fontsinuse.com/foundry/1445/hollenstein": {
   "name": "Hollenstein",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1446/pesic": {
   "name": "Pesic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2411,11 +2677,13 @@
  },
  "https://fontsinuse.com/foundry/1448/krebs": {
   "name": "Krebs",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1449/incubator": {
   "name": "Incubator",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2426,16 +2694,19 @@
  },
  "https://fontsinuse.com/foundry/1450/hoffmeister": {
   "name": "Hoffmeister",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1451/artegra": {
   "name": "Artegra",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1452/ellmer-stefan-and-johannes-lang": {
   "name": "Ellmer Stefan & Johannes Lang",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2446,8 +2717,9 @@
  },
  "https://fontsinuse.com/foundry/1454/homelessfonts": {
   "name": "Homelessfonts",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://homelessfonts.org"
  },
  "https://fontsinuse.com/foundry/1456/aring-typeface": {
   "name": "Aring Typeface",
@@ -2456,16 +2728,19 @@
  },
  "https://fontsinuse.com/foundry/1457/lettermin-type-foundry": {
   "name": "Lettermin Type Foundry",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.lettermin.com"
  },
  "https://fontsinuse.com/foundry/1458/cloud9-type-dept": {
   "name": "Cloud9 Type Dept",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1459/sea-types": {
   "name": "Sea Types",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2486,11 +2761,13 @@
  },
  "https://fontsinuse.com/foundry/1462/roland-huse-design-1": {
   "name": "Roland Hüse Design",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.rolandhuse.com"
  },
  "https://fontsinuse.com/foundry/1463/klaudia-krynicka": {
   "name": "Klaudia Krynicka",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2511,6 +2788,7 @@
  },
  "https://fontsinuse.com/foundry/1471/jaf-34": {
   "name": "JAF 34",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2521,16 +2799,19 @@
  },
  "https://fontsinuse.com/foundry/1477/indie-type": {
   "name": "Indie Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1478/justyna-sokolowska": {
   "name": "Justyna Sokolowska",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1479/tydtyp": {
   "name": "TYDTYP",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2541,36 +2822,43 @@
  },
  "https://fontsinuse.com/foundry/1480/nine-font": {
   "name": "Nine Font",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1484/world-of-the-fonts": {
   "name": "World Of The Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1485/world-of-the-fonts-1": {
   "name": "World Of The Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1486/world-of-the-fonts-2": {
   "name": "World Of The Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1487/kirby-matherne": {
   "name": "Kirby Matherne",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1488/osialus": {
   "name": "osialus",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1489/osialus-1": {
   "name": "osialus",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2586,16 +2874,19 @@
  },
  "https://fontsinuse.com/foundry/1493/ohtype": {
   "name": "OhType!",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1497/ogentroost": {
   "name": "Ogentroost",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1498/ryan-keightley": {
   "name": "Ryan Keightley",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2616,16 +2907,19 @@
  },
  "https://fontsinuse.com/foundry/1505/nuno-dias": {
   "name": "Nuno Dias",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1507/andrew-footit": {
   "name": "Andrew Footit",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1508/powazne-studio": {
   "name": "Poważne Studio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2636,6 +2930,7 @@
  },
  "https://fontsinuse.com/foundry/1515/tipov": {
   "name": "TipoV",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2646,36 +2941,43 @@
  },
  "https://fontsinuse.com/foundry/1517/xavier-lanau": {
   "name": "Xavier Lanau",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1519/seven-eight": {
   "name": "seven/eight",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1523/thundertype": {
   "name": "Thundertype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1524/produce": {
   "name": "Produce",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1527/kingsley-atf": {
   "name": "Kingsley/ATF",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1528/vanderburgh-wells-and-company": {
   "name": "Vanderburgh Wells & Company",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1529/typeunion": {
   "name": "TypeUnion",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2686,11 +2988,13 @@
  },
  "https://fontsinuse.com/foundry/1530/majestype": {
   "name": "Majestype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1531/artcity": {
   "name": "Artcity",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2706,11 +3010,13 @@
  },
  "https://fontsinuse.com/foundry/1534/bushwick-happy-hour": {
   "name": "Bushwick Happy Hour",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1535/georg-john": {
   "name": "Georg John",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2721,18 +3027,21 @@
  },
  "https://fontsinuse.com/foundry/1537/sakkal-design": {
   "name": "Sakkal Design",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.sakkal.com"
  },
  "https://fontsinuse.com/foundry/1538/abjad": {
   "name": "Abjad",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1539/buntype": {
   "name": "Buntype",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.buntype.com"
  },
  "https://fontsinuse.com/foundry/154/microsoft": {
   "name": "Microsoft",
@@ -2741,16 +3050,19 @@
  },
  "https://fontsinuse.com/foundry/1540/renzler-design": {
   "name": "Renzler Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1541/fulvio-bisca": {
   "name": "Fulvio Bisca",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.fulviobisca.com"
  },
  "https://fontsinuse.com/foundry/1542/typoforge-studio": {
   "name": "Typoforge Studio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2761,18 +3073,21 @@
  },
  "https://fontsinuse.com/foundry/1544/letter-edit": {
   "name": "Letter Edit",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1545/miratype": {
   "name": "Miratype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1546/kidstudio": {
   "name": "Kidstudio",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.kidstudio.it"
  },
  "https://fontsinuse.com/foundry/1547/cast": {
   "name": "CAST",
@@ -2781,6 +3096,7 @@
  },
  "https://fontsinuse.com/foundry/1548/stypeface": {
   "name": "Stypeface",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2796,16 +3112,19 @@
  },
  "https://fontsinuse.com/foundry/1550/fontazy": {
   "name": "FontaZY",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1551/delicious-type": {
   "name": "Delicious Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1552/sean-johnson": {
   "name": "Sean Johnson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2816,11 +3135,13 @@
  },
  "https://fontsinuse.com/foundry/1554/cdtype": {
   "name": "CDType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1555/meat-studio": {
   "name": "Meat Studio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2836,11 +3157,13 @@
  },
  "https://fontsinuse.com/foundry/1558/gustav-and-brun": {
   "name": "Gustav & Brun",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1559/dominik-krotscheck": {
   "name": "Dominik Krotscheck",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2851,21 +3174,25 @@
  },
  "https://fontsinuse.com/foundry/1560/nikita-kanarev": {
   "name": "Nikita Kanarev",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1561/letra-type": {
   "name": "Letra Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1562/architaraz": {
   "name": "Architaraz",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1563/loshaj-foundry": {
   "name": "Loshaj Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2881,16 +3208,19 @@
  },
  "https://fontsinuse.com/foundry/1567/sh-grafikdesign": {
   "name": "SH Grafikdesign",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1568/ndiscovered": {
   "name": "Ndiscovered",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://ndiscover.com"
  },
  "https://fontsinuse.com/foundry/1569/one-fonty-day": {
   "name": "One Fonty Day",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2901,11 +3231,13 @@
  },
  "https://fontsinuse.com/foundry/1570/svetlana-usljebrka": {
   "name": "Svetlana Usljebrka",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1571/yokkmokk": {
   "name": "YOKKMOKK",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2921,16 +3253,19 @@
  },
  "https://fontsinuse.com/foundry/1574/type-me-fonts": {
   "name": "type me! fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1575/beige-type": {
   "name": "Beige Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1576/design-komando": {
   "name": "Design Komando",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2941,11 +3276,13 @@
  },
  "https://fontsinuse.com/foundry/1578/jan-buble": {
   "name": "Jan Buble",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1579/matyas-machat": {
   "name": "Matyas Machat",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2956,11 +3293,13 @@
  },
  "https://fontsinuse.com/foundry/1580/nikola-klimova": {
   "name": "Nikola Klimova",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1581/ondrej-kahanek": {
   "name": "Ondrej Kahanek",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2971,6 +3310,7 @@
  },
  "https://fontsinuse.com/foundry/1583/spurnej-type-foundry": {
   "name": "Spurnej Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -2981,41 +3321,49 @@
  },
  "https://fontsinuse.com/foundry/1585/tereza-smidova": {
   "name": "Tereza Smidova",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1586/absolut-foundry": {
   "name": "Absolut Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1587/government-studios": {
   "name": "Government Studios",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1588/marin-santic": {
   "name": "Marin Santic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1589/101-editions": {
   "name": "101 Editions",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/159/berthold": {
   "name": "Berthold",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.bertholdtypes.com"
  },
  "https://fontsinuse.com/foundry/1590/pisto-casero": {
   "name": "Pisto Casero",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1591/dbsv": {
   "name": "DBSV",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3036,21 +3384,25 @@
  },
  "https://fontsinuse.com/foundry/1595/lettersandnumbers": {
   "name": "Letters&Numbers",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1596/alexey-timokhovsky": {
   "name": "Alexey Timokhovsky",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1597/sofia-mohr": {
   "name": "Sofia Mohr",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1598/tipos-das-letras": {
   "name": "Tipos Das Letras",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3071,51 +3423,61 @@
  },
  "https://fontsinuse.com/foundry/1600/thalia-echevarria": {
   "name": "Thalia Echevarria",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1601/font-hu": {
   "name": "Font HU",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1602/sanchit-sawaria": {
   "name": "Sanchit Sawaria",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1603/park-street-studio": {
   "name": "Park Street Studio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1604/kprojects": {
   "name": "Kprojects",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1605/gtandcanary": {
   "name": "GT&CANARY",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1606/daniel-uzquiano": {
   "name": "Daniel Uzquiano",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1607/street-type": {
   "name": "Street Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1608/florian-klauer": {
   "name": "Florian Klauer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1609/maciej-swierczek": {
   "name": "Maciej Świerczek",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3126,36 +3488,43 @@
  },
  "https://fontsinuse.com/foundry/1610/lafonts": {
   "name": "Lafonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1611/wdc-fonts": {
   "name": "WDC Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1612/yasmina-creates": {
   "name": "Yasmina Creates",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1613/fontbilisi": {
   "name": "Fontbilisi",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1614/mpressinteractive": {
   "name": "mpressInteractive",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1615/huh-type-foundry": {
   "name": "Huh? Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1616/chrisnuijen-com": {
   "name": "ChrisNuijen.com",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3166,66 +3535,79 @@
  },
  "https://fontsinuse.com/foundry/1618/polyglyphic": {
   "name": "Polyglyphic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1619/anze-versnik": {
   "name": "Anže Veršnik",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/162/vgc": {
   "name": "VGC",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1620/leimone-design": {
   "name": "Leimone Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1621/twenty-six-types": {
   "name": "Twenty-Six Types",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1622/zap-studio": {
   "name": "Zap Studio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1623/anton-shlyonkin": {
   "name": "Anton Shlyonkin",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1624/mtt": {
   "name": "MTT",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1625/lgf-fonts": {
   "name": "LGF Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1626/grin3-marcinowicz": {
   "name": "GRIN3 (Marcinowicz)",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1627/peqpe": {
   "name": "peqpe",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1628/johan-winge": {
   "name": "Johan Winge",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1629/pio-pio": {
   "name": "Pío Pío",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3236,6 +3618,7 @@
  },
  "https://fontsinuse.com/foundry/1630/viktor-nubel": {
   "name": "Viktor Nubel",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3246,41 +3629,49 @@
  },
  "https://fontsinuse.com/foundry/1632/lukas-schiltknecht": {
   "name": "Lukas Schiltknecht",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1633/debi-sementelli-type-foundry": {
   "name": "Debi Sementelli Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1634/leo-colalillo": {
   "name": "Leo Colalillo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1635/smith-hands": {
   "name": "Smith Hands",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1636/9-crows-type-foundry": {
   "name": "9 Crows Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1637/alive-fonts": {
   "name": "Alive Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1638/mushroom": {
   "name": "Mushroom",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1639/alexey-makarov": {
   "name": "Alexey Makarov",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3291,26 +3682,31 @@
  },
  "https://fontsinuse.com/foundry/1640/happy-heart-fonts": {
   "name": "Happy Heart Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1641/chris-philson": {
   "name": "chris philson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1642/michael-nordstrom-kjaer": {
   "name": "Michael Nordstrom Kjaer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1643/miguel-ibarra-design": {
   "name": "Miguel Ibarra Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1644/tymime-fonts": {
   "name": "Tymime Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3321,21 +3717,25 @@
  },
  "https://fontsinuse.com/foundry/1646/symbolminded": {
   "name": "SymbolMinded",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1647/marr": {
   "name": "Marr",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1648/tijs-krammer": {
   "name": "Tijs Krammer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1649/fontfuel": {
   "name": "FontFuel",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3346,6 +3746,7 @@
  },
  "https://fontsinuse.com/foundry/1650/lh-fonts": {
   "name": "LH Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3356,11 +3757,13 @@
  },
  "https://fontsinuse.com/foundry/1652/kingthings": {
   "name": "Kingthings",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.kingthingsfonts.co.uk/"
  },
  "https://fontsinuse.com/foundry/1653/last-soundtrack": {
   "name": "Last Soundtrack",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3371,26 +3774,31 @@
  },
  "https://fontsinuse.com/foundry/1655/sergejs-kolecenko": {
   "name": "Sergejs Kolecenko",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1656/graffiti-fonts": {
   "name": "Graffiti Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1657/jan-paul": {
   "name": "Jan Paul",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1658/vanallerlei": {
   "name": "vanAllerlei",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1659/brian-kent": {
   "name": "Brian Kent",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3406,16 +3814,19 @@
  },
  "https://fontsinuse.com/foundry/1661/leslie-cabarga": {
   "name": "Leslie Cabarga",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://lesliecabarga.com"
  },
  "https://fontsinuse.com/foundry/1662/oscar-pastarus": {
   "name": "Oscar Pastarus",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1663/jose-maria-cerezo": {
   "name": "José María Cerezo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3426,26 +3837,31 @@
  },
  "https://fontsinuse.com/foundry/1665/veronika-elsner-guenther-flake": {
   "name": "Veronika Elsner, Günther Flake",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.elsner-flake.com"
  },
  "https://fontsinuse.com/foundry/1666/andreas-stoetzner": {
   "name": "Andreas_Stötzner",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.signographie.de"
  },
  "https://fontsinuse.com/foundry/1667/the-quick-brown-fox": {
   "name": "The Quick Brown Fox",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1668/nuevodeco": {
   "name": "NuevoDeco",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1669/tipos-reunidos": {
   "name": "Tipos Reunidos",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3461,16 +3877,19 @@
  },
  "https://fontsinuse.com/foundry/1671/ctr": {
   "name": "CTR",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1672/tgc": {
   "name": "TGC",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1673/the-font-company": {
   "name": "The Font Company",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3486,26 +3905,31 @@
  },
  "https://fontsinuse.com/foundry/1677/fundicion-tipografica-nacional": {
   "name": "Fundición Tipográfica Nacional",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1678/intel": {
   "name": "Intel",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1679/aarhaus": {
   "name": "Aarhaus",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/168/think-work-observe": {
   "name": "Think Work Observe",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1680/superfried": {
   "name": "Superfried",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3516,31 +3940,37 @@
  },
  "https://fontsinuse.com/foundry/1682/grover": {
   "name": "Grover",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1683/fry-s": {
   "name": "Fry’s",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1684/baltotype": {
   "name": "Baltotype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1685/rokas-cicenas": {
   "name": "Rokas Cicenas",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1686/wilhelm-eckert": {
   "name": "Wilhelm Eckert",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1687/rohh": {
   "name": "ROHH",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3551,6 +3981,7 @@
  },
  "https://fontsinuse.com/foundry/1689/oddsorts": {
   "name": "Oddsorts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3561,11 +3992,13 @@
  },
  "https://fontsinuse.com/foundry/1690/nm-concept-ltd": {
   "name": "NM Concept Ltd",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1691/jerome-knebusch": {
   "name": "Jérôme Knebusch",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3576,18 +4009,21 @@
  },
  "https://fontsinuse.com/foundry/1694/signature-type-foundry": {
   "name": "Signature Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1695/mindburger-studio": {
   "name": "Mindburger Studio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1696/thomas-phinney": {
   "name": "Thomas Phinney",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.thomasphinney.com"
  },
  "https://fontsinuse.com/foundry/1697/itemzero": {
   "name": "itemzero",
@@ -3601,6 +4037,7 @@
  },
  "https://fontsinuse.com/foundry/1699/dogukan-karapinar": {
   "name": "Doğukan Karapınar",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3621,21 +4058,25 @@
  },
  "https://fontsinuse.com/foundry/1701/agfa-compugraphic": {
   "name": "Agfa Compugraphic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1702/bulldog": {
   "name": "Bulldog",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1703/crescent-type-foundry": {
   "name": "Crescent Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1704/without-foundry": {
   "name": "Without Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3646,6 +4087,7 @@
  },
  "https://fontsinuse.com/foundry/1706/numrich": {
   "name": "Numrich",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3656,13 +4098,15 @@
  },
  "https://fontsinuse.com/foundry/1708/fontopia": {
   "name": "Fontopia",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1709/andrew-paglinawan": {
   "name": "Andrew Paglinawan",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.andrewpaglinawan.com"
  },
  "https://fontsinuse.com/foundry/171/misprinted-type": {
   "name": "Misprinted Type",
@@ -3676,6 +4120,7 @@
  },
  "https://fontsinuse.com/foundry/1711/erzaehlzeichen": {
   "name": "erzaehlzeichen",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3686,16 +4131,19 @@
  },
  "https://fontsinuse.com/foundry/1713/demilan-studios": {
   "name": "DeMilán Studios",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1714/manolo-type": {
   "name": "Manolo Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1715/seventh-imperium": {
   "name": "Seventh Imperium",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3716,6 +4164,7 @@
  },
  "https://fontsinuse.com/foundry/1719/farmer": {
   "name": "Farmer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3726,6 +4175,7 @@
  },
  "https://fontsinuse.com/foundry/1720/thirstype": {
   "name": "Thirstype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3736,6 +4186,7 @@
  },
  "https://fontsinuse.com/foundry/1722/chicago-neon-castcraft": {
   "name": "Chicago/Neon/Castcraft",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3751,26 +4202,31 @@
  },
  "https://fontsinuse.com/foundry/1725/about-type-foundry": {
   "name": "About Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1726/brainreactor": {
   "name": "BrainReactor",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1727/lunchbox": {
   "name": "Lunchbox",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1728/plazm": {
   "name": "Plazm",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1729/photoscript": {
   "name": "Photoscript",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3781,21 +4237,25 @@
  },
  "https://fontsinuse.com/foundry/1731/surface-design-group": {
   "name": "Surface Design Group",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1732/typecult-foundry": {
   "name": "TypeCult Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1733/deartype": {
   "name": "DearType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1734/natalie-thomson": {
   "name": "Natalie Thomson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3816,11 +4276,13 @@
  },
  "https://fontsinuse.com/foundry/1738/terry-biddle": {
   "name": "Terry Biddle",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1739/daylight-fonts": {
   "name": "Daylight Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3831,51 +4293,61 @@
  },
  "https://fontsinuse.com/foundry/1740/roman-cernohous": {
   "name": "Roman Černohous",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1741/hell-digiset": {
   "name": "Hell Digiset",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1742/taner-ardali": {
   "name": "Taner Ardali",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1743/winnie-tan": {
   "name": "Winnie Tan",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1744/borutta-group": {
   "name": "Borutta Group",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1745/andre-toet-design-inactive": {
   "name": "André Toet Design (inactive)",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1746/vladvertising": {
   "name": "Vladvertising",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1747/la-tipomatica": {
   "name": "La Tipomàtica",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1748/gvmnt-studios": {
   "name": "GVMNT STUDIOS™",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1749/titusprod": {
   "name": "Titusprod",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3886,6 +4358,7 @@
  },
  "https://fontsinuse.com/foundry/1750/kloberg": {
   "name": "Kloberg",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3896,36 +4369,43 @@
  },
  "https://fontsinuse.com/foundry/1752/kerry-gunn-designs": {
   "name": "Kerry Gunn Designs",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1753/manig": {
   "name": "Manig",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1754/graphite": {
   "name": "Graphite",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1755/textpref": {
   "name": "TextPref",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1756/marc-foley": {
   "name": "Marc Foley",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1757/sacha-rein": {
   "name": "Sacha Rein",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1758/jukebox-collection": {
   "name": "Jukebox Collection",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3946,11 +4426,13 @@
  },
  "https://fontsinuse.com/foundry/1761/gnome": {
   "name": "Gnome",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1762/bbdo-studio": {
   "name": "BBDO Studio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3961,11 +4443,13 @@
  },
  "https://fontsinuse.com/foundry/1764/totem": {
   "name": "Totem",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1765/tlai-enterprises": {
   "name": "TLai Enterprises",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -3986,21 +4470,25 @@
  },
  "https://fontsinuse.com/foundry/1769/cleveland": {
   "name": "Cleveland",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1770/brueder-butter": {
   "name": "Brüder Butter",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1771/gust": {
   "name": "GUST",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.gust.org.pl"
  },
  "https://fontsinuse.com/foundry/1772/john-bell": {
   "name": "John Bell",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4016,16 +4504,19 @@
  },
  "https://fontsinuse.com/foundry/1775/poeschel-and-trepte": {
   "name": "Poeschel & Trepte",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1776/sofratype": {
   "name": "Sofratype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1777/vasava-fonts": {
   "name": "Vasava Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4041,6 +4532,7 @@
  },
  "https://fontsinuse.com/foundry/178/jaw-fonts": {
   "name": "JAW Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4051,43 +4543,51 @@
  },
  "https://fontsinuse.com/foundry/1781/kastelov": {
   "name": "Kastelov",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1782/mikolaj-grabowski": {
   "name": "Mikołaj Grabowski",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1783/ivan-petrov": {
   "name": "Ivan Petrov",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1784/rocket-type": {
   "name": "Rocket Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1785/studio-jasper-nijssen": {
   "name": "Studio Jasper Nijssen",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1786/tipotecture": {
   "name": "Tipotecture",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1787/zeta-fonts": {
   "name": "Zeta Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1788/gumpita-rahayu": {
   "name": "Gumpita Rahayu",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://tokotype.com"
  },
  "https://fontsinuse.com/foundry/1789/the-microfoundry": {
   "name": "The MicroFoundry",
@@ -4101,6 +4601,7 @@
  },
  "https://fontsinuse.com/foundry/1790/typogabor": {
   "name": "TypoGabor",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4116,6 +4617,7 @@
  },
  "https://fontsinuse.com/foundry/1793/hubert-munier": {
   "name": "Hubert Munier",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4126,16 +4628,19 @@
  },
  "https://fontsinuse.com/foundry/1796/umbrella": {
   "name": "Umbrella",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1797/typoma": {
   "name": "Typoma",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1799/stevens-shanks": {
   "name": "Stevens, Shanks",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4151,16 +4656,19 @@
  },
  "https://fontsinuse.com/foundry/1800/bunny-dojo": {
   "name": "Bunny Dojo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1801/tipofil": {
   "name": "Tipofil",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1802/hoekaraengens-bokstavsfabrik": {
   "name": "Hökarängens Bokstavsfabrik",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4176,6 +4684,7 @@
  },
  "https://fontsinuse.com/foundry/1805/emb": {
   "name": "EMB",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4191,16 +4700,19 @@
  },
  "https://fontsinuse.com/foundry/1808/george-tulloch": {
   "name": "George Tulloch",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1809/delittle": {
   "name": "DeLittle",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/181/constellation": {
   "name": "Constellation",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4221,6 +4733,7 @@
  },
  "https://fontsinuse.com/foundry/1813/bobst-graphic": {
   "name": "Bobst Graphic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4236,11 +4749,13 @@
  },
  "https://fontsinuse.com/foundry/1816/polygraphmash": {
   "name": "Polygraphmash",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1817/walter-kafton-minkel": {
   "name": "Walter Kafton-Minkel",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4261,6 +4776,7 @@
  },
  "https://fontsinuse.com/foundry/1820/peignot-and-fils": {
   "name": "Peignot & Fils",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4281,26 +4797,31 @@
  },
  "https://fontsinuse.com/foundry/1824/design-by-pascal": {
   "name": "Design by Pascal",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1825/wei-huang": {
   "name": "Wei Huang",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1826/blackfriars": {
   "name": "Blackfriars",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1827/pavyers-and-bullens": {
   "name": "Pavyers & Bullens",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1829/lehmann": {
   "name": "Lehmann",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4311,16 +4832,19 @@
  },
  "https://fontsinuse.com/foundry/1830/gutenberg": {
   "name": "Gutenberg",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1831/orgelbranda": {
   "name": "Orgelbranda",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1832/gebr-arndt": {
   "name": "Gebr. Arndt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4331,26 +4855,31 @@
  },
  "https://fontsinuse.com/foundry/1834/marder-luse-and-co": {
   "name": "Marder, Luse & Co.",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1835/cincinnati": {
   "name": "Cincinnati",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1836/hansen": {
   "name": "Hansen",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1837/cagil-aygen": {
   "name": "Çağıl Aygen",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1838/grafotechna": {
   "name": "Grafotechna",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4361,26 +4890,31 @@
  },
  "https://fontsinuse.com/foundry/1840/gerstenberg": {
   "name": "Gerstenberg",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1841/conner": {
   "name": "Conner",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1842/johnson": {
   "name": "Johnson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1843/franklin": {
   "name": "Franklin",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1844/palmer-and-rey": {
   "name": "Palmer & Rey",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4391,11 +4925,13 @@
  },
  "https://fontsinuse.com/foundry/1846/a-e-t-o-s": {
   "name": "A.E.T.O.S",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1847/denada-industries": {
   "name": "DeNada Industries",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4406,6 +4942,7 @@
  },
  "https://fontsinuse.com/foundry/1849/ruehl": {
   "name": "Rühl",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4416,11 +4953,13 @@
  },
  "https://fontsinuse.com/foundry/1851/fausto-gallico": {
   "name": "Fausto Gallico",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1852/molotro": {
   "name": "Molotro",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4431,26 +4970,31 @@
  },
  "https://fontsinuse.com/foundry/1854/iranzo": {
   "name": "Iranzo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1855/roos-and-junge": {
   "name": "Roos & Junge",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1856/sparklefonts": {
   "name": "Sparklefonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1857/west-wind-fonts": {
   "name": "West Wind Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1858/dutreix": {
   "name": "Dutreix",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4466,26 +5010,31 @@
  },
  "https://fontsinuse.com/foundry/1860/neo-type-foundry": {
   "name": "Neo Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1861/ksenia-belobrova": {
   "name": "Ksenia Belobrova",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1862/fonts-with-love": {
   "name": "Fonts With Love",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1863/funtimod": {
   "name": "Funtimod",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1864/oxford-university-press": {
   "name": "Oxford University Press",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4496,21 +5045,25 @@
  },
  "https://fontsinuse.com/foundry/1866/reed-and-fox": {
   "name": "Reed & Fox",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1867/photon": {
   "name": "Photon",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1868/wimble": {
   "name": "Wimble",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1869/mediumextrabold": {
   "name": "Mediumextrabold",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4521,11 +5074,13 @@
  },
  "https://fontsinuse.com/foundry/1870/dotsandstripes-type": {
   "name": "Dots&Stripes Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1871/cooperativa": {
   "name": "Cooperativa",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4541,8 +5096,9 @@
  },
  "https://fontsinuse.com/foundry/1874/illunatic": {
   "name": "Illunatic",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "http://www.illunatic.de/"
  },
  "https://fontsinuse.com/foundry/1875/stiggy-and-sands": {
   "name": "Stiggy & Sands",
@@ -4551,11 +5107,13 @@
  },
  "https://fontsinuse.com/foundry/1876/typefaith-fonts": {
   "name": "TypeFaith Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1877/broderbund-software": {
   "name": "Brøderbund Software",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4586,11 +5144,13 @@
  },
  "https://fontsinuse.com/foundry/1882/veil-of-perception": {
   "name": "Veil of Perception",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1883/michael-brosnan": {
   "name": "Michael Brosnan",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4606,6 +5166,7 @@
  },
  "https://fontsinuse.com/foundry/1886/figgins": {
   "name": "Figgins",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4616,6 +5177,7 @@
  },
  "https://fontsinuse.com/foundry/1888/interfont": {
   "name": "Interfont",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4631,6 +5193,7 @@
  },
  "https://fontsinuse.com/foundry/1890/martin-gnadt": {
   "name": "Martin Gnadt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4641,53 +5204,63 @@
  },
  "https://fontsinuse.com/foundry/1892/jonathan-ball": {
   "name": "Jonathan Ball",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1893/aquatoad-design": {
   "name": "Aquatoad Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1894/mayfield-type-foundry": {
   "name": "Mayfield Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1895/m-l-atelier": {
   "name": "M l’Atelier",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1896/morografic": {
   "name": "Morografic",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1897/william-h-page-and-co": {
   "name": "William H. Page & Co",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1898/design-eva-wilsson": {
   "name": "Design Eva Wilsson",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1899/hurme": {
   "name": "Hurme",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/19/comicraft": {
   "name": "Comicraft",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/190/colophon": {
   "name": "Colophon",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.colophon-foundry.org/"
  },
  "https://fontsinuse.com/foundry/1900/locomotype": {
   "name": "Locomotype",
@@ -4696,6 +5269,7 @@
  },
  "https://fontsinuse.com/foundry/1901/gestu": {
   "name": "Gestu",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4706,6 +5280,7 @@
  },
  "https://fontsinuse.com/foundry/1903/gesine-todt": {
   "name": "Gesine Todt",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4716,13 +5291,15 @@
  },
  "https://fontsinuse.com/foundry/1906/marc-lohner": {
   "name": "Marc Lohner",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1907/american-greetings-corporation": {
   "name": "American Greetings Corporation",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://www.americangreetings.com"
  },
  "https://fontsinuse.com/foundry/1908/hagilda": {
   "name": "Hagilda",
@@ -4751,6 +5328,7 @@
  },
  "https://fontsinuse.com/foundry/1912/typic-schuss": {
   "name": "typic schuss",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4766,26 +5344,31 @@
  },
  "https://fontsinuse.com/foundry/1915/fabian-de-smet": {
   "name": "Fabian De Smet",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1916/hague-and-gill": {
   "name": "Hague & Gill",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1917/warszawska": {
   "name": "Warszawska",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1918/idzkowski": {
   "name": "Idźkowski",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1919/urania": {
   "name": "Urania",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4796,21 +5379,25 @@
  },
  "https://fontsinuse.com/foundry/1920/augusta": {
   "name": "Augusta",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1921/slevarna-pisem": {
   "name": "Slévárna písem",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1922/fischer": {
   "name": "Fischer",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1923/hand-foundry": {
   "name": "Hand Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4831,16 +5418,19 @@
  },
  "https://fontsinuse.com/foundry/1927/typefounders-of-chicago": {
   "name": "Typefounders of Chicago",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1928/sunity": {
   "name": "Sunity",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/193/neapolitan": {
   "name": "Neapolitan",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4851,11 +5441,13 @@
  },
  "https://fontsinuse.com/foundry/1931/gursch": {
   "name": "Gursch",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1932/vintagetype": {
   "name": "VintageType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4866,21 +5458,25 @@
  },
  "https://fontsinuse.com/foundry/1934/pierallini": {
   "name": "Pierallini",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1935/mm-fonts": {
   "name": "MM Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1936/laclede-type-foundry": {
   "name": "Laclede Type Foundry",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1937/boettger": {
   "name": "Böttger",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4916,11 +5512,13 @@
  },
  "https://fontsinuse.com/foundry/1944/cifonts": {
   "name": "Cifonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1945/new-cat-orange": {
   "name": "New Cat Orange",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4931,11 +5529,13 @@
  },
  "https://fontsinuse.com/foundry/1948/reggiani": {
   "name": "Reggiani",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1949/franklin-photolettering": {
   "name": "Franklin Photolettering",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4946,11 +5546,13 @@
  },
  "https://fontsinuse.com/foundry/1950/drugulin": {
   "name": "Drugulin",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1951/dftype": {
   "name": "dfType",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -4961,16 +5563,19 @@
  },
  "https://fontsinuse.com/foundry/1953/tuccicursive": {
   "name": "tuccicursive",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1954/greiner-grafik": {
   "name": "Greiner grafik",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1955/jim-ford": {
   "name": "Jim Ford",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -5016,31 +5621,37 @@
  },
  "https://fontsinuse.com/foundry/1964/liz-conley": {
   "name": "Liz Conley",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1965/dan-cotton-lettering": {
   "name": "Dan Cotton Lettering",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1966/cerulean-stimuli": {
   "name": "Cerulean Stimuli",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1967/alphatype": {
   "name": "Alphatype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1968/hitype": {
   "name": "Hitype",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1969/brittney-murphy-design": {
   "name": "Brittney Murphy Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -5051,6 +5662,7 @@
  },
  "https://fontsinuse.com/foundry/1970/fontyou": {
   "name": "FontYou",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -5086,6 +5698,7 @@
  },
  "https://fontsinuse.com/foundry/1979/weslo-fonts": {
   "name": "Weslo Fonts",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -5096,26 +5709,31 @@
  },
  "https://fontsinuse.com/foundry/1980/olexstudio": {
   "name": "olexstudio",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1981/mezzo-mezzo": {
   "name": "mezzo-mezzo",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1982/mysunday": {
   "name": "mysunday",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1983/rui-abreu": {
   "name": "Rui Abreu",
-  "source": "fontsinuse.com",
-  "website": ""
+  "searched": "2026-11-02",
+  "source": "fontsinuse.com + web search",
+  "website": "https://r-typography.com"
  },
  "https://fontsinuse.com/foundry/1984/genesislab": {
   "name": "Genesislab",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
@@ -5161,31 +5779,37 @@
  },
  "https://fontsinuse.com/foundry/1992/daniel-marina": {
   "name": "Daniel Marina",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1993/innit-design": {
   "name": "Innit Design",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1994/ornaments-of-grace": {
   "name": "Ornaments of Grace",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1995/bonjour-type": {
   "name": "Bonjour Type",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1996/tudy1311": {
   "name": "tudy1311",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
  "https://fontsinuse.com/foundry/1997/type714": {
   "name": "TYPE714",
+  "searched": "2026-11-02",
   "source": "fontsinuse.com",
   "website": ""
  },
