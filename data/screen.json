@@ -1412,6 +1412,13 @@
   ],
   "website": "https://www.ameanstoanend.xyz/typefaces"
  },
+ "americangreetings.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "robots.txt disallows https://www.americangreetings.com"
+  ],
+  "website": "https://www.americangreetings.com"
+ },
  "ampforest.com": {
   "checked": "2026-10-30",
   "errors": [
@@ -1472,6 +1479,25 @@
   ],
   "license_urls": [],
   "website": "https://www.andresimard.ca/en"
+ },
+ "andrewpaglinawan.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 44
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://andrewpaglinawan.com/",
+   "https://andrewpaglinawan.com/category/svensk-spellicens/",
+   "https://andrewpaglinawan.com/spela-pa-kvalitets-casino-utan-svensk-licens/"
+  ],
+  "website": "http://www.andrewpaglinawan.com"
  },
  "andrij.com.ua": {
   "auto": {
@@ -4195,6 +4221,14 @@
   ],
   "website": "https://www.brass-fonts.de/"
  },
+ "braulioamado.net": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.braulioamado.net"
+ },
  "breakmaiden.co": {
   "checked": "2026-10-30",
   "errors": [
@@ -4444,6 +4478,13 @@
   ],
   "license_urls": [],
   "website": "http://bumbayo.blogspot.de/"
+ },
+ "buntype.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "http://www.buntype.com: HTTP 404"
+  ],
+  "website": "http://www.buntype.com"
  },
  "bureaubrut.com": {
   "auto": {
@@ -11950,6 +11991,14 @@
   "license_urls": [],
   "website": "https://fullautofoundry.com/"
  },
+ "fulviobisca.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.fulviobisca.com"
+ },
  "futurefonts.com": {
   "auto": {
    "all_media_hits": 0,
@@ -12904,6 +12953,23 @@
   ],
   "website": "https://gunesmuhittin.com/"
  },
+ "gust.org.pl": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 1
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://www.gust.org.pl/faq"
+  ],
+  "website": "http://www.gust.org.pl"
+ },
  "gutenberg-intermedia.de": {
   "checked": "2026-10-30",
   "errors": [
@@ -13072,6 +13138,14 @@
    "https://haltypefaces.com/licensing"
   ],
   "website": "https://haltypefaces.com/"
+ },
+ "handselecta.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.handselecta.com"
  },
  "hanken.co": {
   "auto": {
@@ -13787,6 +13861,23 @@
   "license_urls": [],
   "website": "http://home.dootype.com/"
  },
+ "homelessfonts.org": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 21
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://www.homelessfonts.org/legal/en"
+  ],
+  "website": "https://homelessfonts.org"
+ },
  "honeywired.com": {
   "auto": {
    "all_media_hits": 0,
@@ -14280,6 +14371,25 @@
    "https://iliketoplay.dk/"
   ],
   "website": "https://iliketoplay.dk"
+ },
+ "illunatic.de": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 12
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://www.illunatic.de/",
+   "https://www.illunatic.de/",
+   "https://www.illunatic.de/"
+  ],
+  "website": "http://www.illunatic.de/"
  },
  "ilott-type.com": {
   "checked": "2026-10-30",
@@ -16159,6 +16269,14 @@
   ],
   "website": "https://khtype.com/"
  },
+ "kidstudio.it": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.kidstudio.it"
+ },
  "kilotype.de": {
   "checked": "2026-10-30",
   "errors": [
@@ -16231,6 +16349,14 @@
    "https://kindtype.co/"
   ],
   "website": "https://kindtype.co"
+ },
+ "kingthingsfonts.co.uk": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "http://www.kingthingsfonts.co.uk/"
  },
  "kiosk-fonts.de": {
   "auto": {
@@ -17079,6 +17205,14 @@
   ],
   "website": "http://les.besnardtypo.pagesperso-orange.fr/typographies/sommaire.html"
  },
+ "lesliecabarga.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://lesliecabarga.com"
+ },
  "letterbeeld.nl": {
   "checked": "2026-10-30",
   "errors": [
@@ -17273,6 +17407,43 @@
    "https://lettermatic.com/faq"
   ],
   "website": "https://lettermatic.com/fonts"
+ },
+ "lettermin.com": {
+  "auto": {
+   "all_media_hits": 1,
+   "evidence": {
+    "all_media": [
+     "Allows embedding of the font within software applications, including mobile apps, desktop programs, games, and web apps, for live text display in the user interface or content."
+    ],
+    "logo:included": [
+     "Allows installation of the font on a set number of computers to create fixed designs like printed flyers, PDFs, logos, brand graphics, social media posts, company documents, and eBooks."
+    ],
+    "metric:seats": [
+     "Allows installation of the font on a set number of computers to create fixed designs like printed flyers, PDFs, logos, brand graphics, social media posts, company documents, and eBooks.",
+     "You pay per user or computer."
+    ],
+    "metric:traffic": [
+     "Pricing varies by license type, usage scale (like page views or users), and number of styles, families or collections selected.",
+     "Pricing is based on monthly active users."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {
+    "seats": 2,
+    "traffic": 2
+   },
+   "suggested_logo": "included",
+   "suggested_metric": "traffic",
+   "suggested_qualifies": "no",
+   "web_hits": 2
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://lettermin.com/licenses"
+  ],
+  "website": "https://www.lettermin.com"
  },
  "letterror.com": {
   "auto": {
@@ -23428,6 +23599,42 @@
   ],
   "website": "https://pixesia.com/"
  },
+ "pixilate.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "metric:company_size": [
+     "Let freelancers, employees or contractors use the fonts in non-allowed ways",
+     "4.2 Use by Employees and Freelancers",
+     "It is your responsibility to inform employees, freelancers and any others who have access to the font(s) at your premises, of the terms and conditions of this EULA, and to ensure that they abide by these terms and conditions."
+    ],
+    "metric:seats": [
+     "Use the fonts in up to 5 computers in the same location or used by the same person",
+     "Use in more than 5 computers",
+     "1.1 Permitted Number of Users.",
+     "Permitted Number of Users."
+    ],
+    "metric:traffic": [
+     ", which is the person that purchases or downloads fonts from Pixilate.com or other affiliate sources."
+    ]
+   },
+   "logo_scores": {},
+   "metric_scores": {
+    "company_size": 3,
+    "seats": 8,
+    "traffic": 1
+   },
+   "suggested_logo": "unknown",
+   "suggested_metric": "mixed",
+   "suggested_qualifies": "partial",
+   "web_hits": 3
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://pixilate.com/licence/"
+  ],
+  "website": "http://www.pixilate.com"
+ },
  "pizzadude.dk": {
   "auto": {
    "all_media_hits": 0,
@@ -25213,6 +25420,14 @@
   "license_urls": [],
   "website": "https://www.roemerturm.de"
  },
+ "rolandhuse.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.rolandhuse.com"
+ },
  "rolltop-indigo.blogspot.com": {
   "checked": "2026-10-30",
   "errors": [
@@ -25500,6 +25715,30 @@
   ],
   "website": "https://www.sajatypeworks.com/"
  },
+ "sakkal.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "fees to design a logo range from US$2,000 for non-profit to US$4,000-10,000",
+     "like to use one of the calligraphic designs as a logo."
+    ]
+   },
+   "logo_scores": {
+    "included": 2
+   },
+   "metric_scores": {},
+   "suggested_logo": "included",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 7
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://www.sakkal.com/sakkal_FAQ.html"
+  ],
+  "website": "https://www.sakkal.com"
+ },
  "salecharacter.com": {
   "auto": {
    "all_media_hits": 0,
@@ -25618,6 +25857,14 @@
   ],
   "license_urls": [],
   "website": "http://sansoxygen.com/"
+ },
+ "sardiez.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://sardiez.com"
  },
  "saschabente.com": {
   "auto": {
@@ -26432,6 +26679,25 @@
   ],
   "website": "https://www.showmefonts.com"
  },
+ "shyfoundry.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {},
+   "logo_scores": {},
+   "metric_scores": {},
+   "suggested_logo": "unknown",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 0
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://shyfoundry.com/licensing",
+   "https://shyfoundry.com/license",
+   "https://shyfoundry.com/licenses"
+  ],
+  "website": "https://shyfoundry.com"
+ },
  "sickcapital.com": {
   "auto": {
    "all_media_hits": 2,
@@ -26482,6 +26748,14 @@
    "https://signalfoundry.com/licenses"
   ],
   "website": "http://www.signalfoundry.com/"
+ },
+ "signographie.de": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "http://www.signographie.de"
  },
  "silktype.co": {
   "auto": {
@@ -27703,6 +27977,14 @@
   "license_urls": [],
   "website": "http://studiobuchanan.xyz/"
  },
+ "studiodilena.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.studiodilena.com"
+ },
  "studiofew.com": {
   "auto": {
    "all_media_hits": 0,
@@ -27855,6 +28137,13 @@
   ],
   "license_urls": [],
   "website": "http://subflux.com/fonts.html"
+ },
+ "subtitude.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "http://www.subtitude.com/: HTTP 429"
+  ],
+  "website": "http://www.subtitude.com/"
  },
  "sudtipos.com": {
   "auto": {
@@ -29112,6 +29401,32 @@
   ],
   "license_urls": [],
   "website": "https://thomasjockin.com/"
+ },
+ "thomasphinney.com": {
+  "auto": {
+   "all_media_hits": 0,
+   "evidence": {
+    "logo:included": [
+     "I imagined it being used for product packaging, maybe some logos."
+    ]
+   },
+   "logo_scores": {
+    "included": 1
+   },
+   "metric_scores": {},
+   "suggested_logo": "included",
+   "suggested_metric": "unknown",
+   "suggested_qualifies": "unknown",
+   "web_hits": 31
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://www.thomasphinney.com/",
+   "https://www.thomasphinney.com/2024/12/also-quora-lies/",
+   "https://www.thomasphinney.com/2024/05/do-companies-get-sued-for-using-fonts-illegally/",
+   "https://www.thomasphinney.com/2024/05/do-companies-get-sued-for-using-fonts-illegally/?share=print"
+  ],
+  "website": "https://www.thomasphinney.com"
  },
  "threads.com": {
   "checked": "2026-10-30",
@@ -32805,6 +33120,65 @@
   ],
   "website": "http://www.urwpp.de"
  },
+ "urwtype.com": {
+  "auto": {
+   "all_media_hits": 2,
+   "evidence": {
+    "all_media": [
+     "We sell Desktop, Webfont, Mobile App, Digital Ad and Electronic Doc licenses.",
+     "Company Desktop does not cover using the font as a webfont or embedding it in a mobile app or digital ad."
+    ],
+    "logo:included": [
+     "— Minimally a Desktop license would be required to use a font in a logo, so that the font can be installed onto a workstation, and the design be created within a desktop application.",
+     "110% okay to use the font within a logo",
+     "Do not fear — Desktop EULAs that typically permit usage within a logo contain a term along the lines of,",
+     "If the font file itself won't be embedded on the website (for example, when the font is used in a static graphic image such as a logo) you should purchase a Desktop license instead."
+    ],
+    "logo:separate": [
+     "Where is the logo license?"
+    ],
+    "metric:company_size": [
+     "It covers your direct employees, with the tier based on total employee headcount.",
+     "If a defined group of up to 10 employees use the font on their workstations, Desktop may be enough.",
+     "Company Desktop makes more sense when employees across teams need to use the font.",
+     "The first tier covers organizations with up to 50 employees, even if only a few of them use the font."
+    ],
+    "metric:seats": [
+     "— Minimally a Desktop license would be required to use a font in a logo, so that the font can be installed onto a workstation, and the design be created within a desktop application.",
+     "Desktop licenses are based on the number of users of the fonts.",
+     "If a defined group of up to 10 employees use the font on their workstations, Desktop may be enough.",
+     "Install and use the font on their workstations."
+    ],
+    "metric:traffic": [
+     "Order history & downloads",
+     "You get a total number of pageviews that can be used per month.",
+     "This means that you will pay for a number of monthly pageviews, then you'll have to come back to purchase more after your site has been viewed that number of times in a single month.",
+     "For example, if you purchase 250,000 pageviews per month, when your webpages using the webfonts have been viewed 250,000 times in a single month, you will need to buy the webfont package again for a higher tier of pageviews per month."
+    ]
+   },
+   "logo_scores": {
+    "included": 9,
+    "separate": 1
+   },
+   "metric_scores": {
+    "company_size": 18,
+    "seats": 4,
+    "traffic": 6
+   },
+   "suggested_logo": "separate",
+   "suggested_metric": "company_size",
+   "suggested_qualifies": "partial",
+   "web_hits": 75
+  },
+  "checked": "2026-11-04",
+  "license_urls": [
+   "https://www.myfonts.com/pages/faq",
+   "https://www.myfonts.com/a/font/legal",
+   "https://www.myfonts.com/a/font/legal/terms-of-use",
+   "https://www.myfonts.com/a/font/legal/website-use-privacy-policy"
+  ],
+  "website": "https://www.urwtype.com"
+ },
  "us3.list-manage.com": {
   "checked": "2026-10-30",
   "errors": [
@@ -32911,6 +33285,14 @@
    "https://velvetyne.fr/greve/"
   ],
   "website": "https://velvetyne.fr"
+ },
+ "verlag-pustet.de": {
+  "checked": "2026-11-04",
+  "errors": [
+   "no license page found"
+  ],
+  "license_urls": [],
+  "website": "https://www.verlag-pustet.de"
  },
  "verycoolstudio.com": {
   "auto": {
@@ -33324,6 +33706,13 @@
    "https://www.vocaltype.co/information"
   ],
   "website": "https://www.vocaltype.co/"
+ },
+ "voltageltd.com": {
+  "checked": "2026-11-04",
+  "errors": [
+   "https://www.voltageltd.com: HTTP 429"
+  ],
+  "website": "https://www.voltageltd.com"
  },
  "vpcreativeshop.com": {
   "checked": "2026-10-30",
