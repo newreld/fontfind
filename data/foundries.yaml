@@ -14218,3 +14218,100 @@ foundries:
         - VELO Velo
         - Central Avenue
         - '-- : -- Bleep'
+
+  - name: URW
+    website: https://www.urwtype.com
+    license_urls:
+      - https://www.myfonts.com/a/font/legal
+      - https://www.myfonts.com/a/font/legal/terms-of-use
+      - https://www.myfonts.com/a/font/legal/website-use-privacy-policy
+    pricing_metric: unknown
+    logo: unknown
+    all_media: unknown
+    qualifies: unknown
+    summary: The supplied pages are only MyFonts legal pages (Terms of Use, Privacy Policy)
+      and a font page with a style selector and prices. None of them describes URW's own licensing
+      or says anything about company-size pricing. The privacy policy mentions web font page-view
+      counting, but that is generic MyFonts text and not specific to URW.
+    evidence:
+      - claim: The Terms of Use only cover use of the MyFonts site and say font licenses fall
+          under separate end user license agreements. "Such Additional Terms include, but
+          are not limited to, our Terms and Conditions of Business and end user license agreements
+          applicable to products which are made available with such products."
+        source: https://www.myfonts.com/a/font/legal/terms-of-use
+      - claim: The MyFonts web font service counts page views, but this is generic MyFonts
+          text and not specific to URW's license. "The transfer of such IP address takes place
+          in order to count the page views for our licensees and to prevent illicit use of
+          our web font software"
+        source: https://www.myfonts.com/a/font/legal/website-use-privacy-policy
+      - claim: 'The browser observation of the font page lists only a style selector and prices.
+          It shows no company-size, employee-count or license-scope control. "select "Select
+          style to display tech specs : British Institutional Extra Light": British Institutional
+          Extra Light; British Institutional Extra Light Italic; British Institutional Light"'
+        source: (browser observations)
+    verified:
+      date: '2026-11-04'
+      method: auto-reviewed (rendered page, second check)
+    auto:
+      all_media_hits: 2
+      evidence:
+        all_media:
+          - We sell Desktop, Webfont, Mobile App, Digital Ad and Electronic Doc licenses.
+          - Company Desktop does not cover using the font as a webfont or embedding it in
+            a mobile app or digital ad.
+        logo:included:
+          - — Minimally a Desktop license would be required to use a font in a logo, so that
+            the font can be installed onto a workstation, and the design be created within
+            a desktop application.
+          - 110% okay to use the font within a logo
+          - Do not fear — Desktop EULAs that typically permit usage within a logo contain
+            a term along the lines of,
+          - If the font file itself won't be embedded on the website (for example, when the
+            font is used in a static graphic image such as a logo) you should purchase a Desktop
+            license instead.
+        logo:separate:
+          - Where is the logo license?
+        metric:company_size:
+          - It covers your direct employees, with the tier based on total employee headcount.
+          - If a defined group of up to 10 employees use the font on their workstations, Desktop
+            may be enough.
+          - Company Desktop makes more sense when employees across teams need to use the font.
+          - The first tier covers organizations with up to 50 employees, even if only a few
+            of them use the font.
+        metric:seats:
+          - — Minimally a Desktop license would be required to use a font in a logo, so that
+            the font can be installed onto a workstation, and the design be created within
+            a desktop application.
+          - Desktop licenses are based on the number of users of the fonts.
+          - If a defined group of up to 10 employees use the font on their workstations, Desktop
+            may be enough.
+          - Install and use the font on their workstations.
+        metric:traffic:
+          - Order history & downloads
+          - You get a total number of pageviews that can be used per month.
+          - This means that you will pay for a number of monthly pageviews, then you'll have
+            to come back to purchase more after your site has been viewed that number of times
+            in a single month.
+          - For example, if you purchase 250,000 pageviews per month, when your webpages using
+            the webfonts have been viewed 250,000 times in a single month, you will need to
+            buy the webfont package again for a higher tier of pageviews per month.
+      logo_scores:
+        included: 9
+        separate: 1
+      metric_scores:
+        company_size: 18
+        seats: 4
+        traffic: 6
+      suggested_logo: separate
+      suggested_metric: company_size
+      suggested_qualifies: partial
+      web_hits: 75
+      checked: '2026-11-04'
+    todo: Find URW's own license or EULA page, or the MyFonts license options for URW fonts.
+      Check whether pricing depends on employee count, and whether logo use, web use and all
+      media are included.
+    info:
+      image: https://cdn.shopify.com/s/files/1/0568/7164/9450/files/myfont-logo-duck-500.png
+      description: 'Welcome to MyFonts, the #1 place to download great @font-face webfonts
+        and desktop fonts: classics (Baskerville, Futura, Garamond) alongside hot new fonts
+        (TT Fellows, Hernandez Bros,Phonk Sans).'
